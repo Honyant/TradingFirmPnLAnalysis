@@ -41,6 +41,7 @@
         "S6",
         "S4",
         "S24",
+        "S31",
         "S32"
       ],
       "notes": "Returns used: none in evidence (Composite and Oculus 2015 returns not found). PnL is a model estimate: alternatives ~55-60% of ~$37bn average investment capital (deshaw.com >$36bn Mar-2015, >$37bn Jul-2015) at an assumed ~12% net (long-run Composite/Oculus annualised net ~12.5-14%), grossed up to ~$3.8-4.4bn, plus a ~$15bn long-oriented book at roughly flat equity-market returns. Primary-lens Monte Carlo gave $4.5bn (2.2-7.0). Headcount interpolated between website floors >1,000 (late 2014) and >1,200 (Oct 2018); Form ADV US registrant reported 435 (subset, not used). Regulatory AUM $85.1bn is gross and leverage-inflated (not used)."
