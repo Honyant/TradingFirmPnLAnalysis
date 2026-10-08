@@ -1,0 +1,1553 @@
+{
+ "firm_key": "renaissance",
+ "firm_name": "Renaissance Technologies",
+ "pnl_definition": "Gross trading P&L per entity: dollar investment gains BEFORE management and performance fees, approximated as capital base x gross return, in USD millions, calendar year. Medallion gross return is reported (Zuckerman) for 2015-2018. Other years are backed out of net returns: 2015-2020 at 5% mgmt / 44% perf (gross = net/0.56 + 5); 2021 at 4% / 44% (net/0.56 + 4); 2022+ at 4% / 36-44% perf with a ~40% mid (net/0.60 + 4). RIEF/RIDA/RIDGE gross = net/0.9 + ~1% in gain years and net + ~1% in loss years. This assumes ~1% mgmt / 10% incentive; the ADV brochure ranges are RIEF 0.20-1.50% / 0-10% and RIDA 0.85-1.00% / 10%. Losses are negative. This is fund-level trading P&L, not the management company's fee revenue or profit; Renaissance publishes no accounts.",
+ "headcount_definition": "Total firm employees as reported in Form ADV Part 1A Item 5.A at each year's annual filing (late March/early April). The count is approximate, rounded to 10, and excludes clerical staff. The same firm-wide band appears in all three entity rows for a given year. Mid = ADV figure; low/high = -5%/+12% to allow for rounding and excluded clerical staff.",
+ "fx_note": "All figures are natively USD; no FX conversion is required.",
+ "methodology": "Per-entity P&L is derived as capital base x gross return, where gross returns are reported or backed out of net returns using the fee schedules disclosed in Form ADV brochures. Medallion capital follows press lore (Zuckerman/WSJ/Bloomberg: ~$9.5-12bn). Form ADV feeder/master gross asset values serve as upper-bound cross-checks, since they include undistributed profits and leverage. Outside-fund capital is anchored on II/FT net-AUM figures (start-2020, Sept 2024, Nov 2025, Jan 2026), with other years backed out of master GAVs using leverage ratios calibrated to the start-2020 anchors (RIEF ~1.56x, RIDA ~2.12x, RIDGE ~1.85x). Firm total is the sum of the two entities, with bands summed. Bands follow the project calibration: derived +/-20-40%, wider where the return itself is low-reliability, and pure estimate for Medallion 2026.",
+ "entities": [
+  {
+   "key": "medallion",
+   "name": "Medallion Fund",
+   "description": "Employee-only flagship fund, closed to outside investors since 2005. Capital is kept at about $10-12bn by periodic profit distributions. Charges 5% / 44% fees (4% mgmt from 2021; 36-44% perf from 2022)."
+  },
+  {
+   "key": "rief_rida",
+   "name": "RIEF + RIDA",
+   "description": "Outside-investor funds: Renaissance Institutional Equities Fund (RIEF), Renaissance Institutional Diversified Alpha (RIDA), and Renaissance Institutional Diversified Global Equities (RIDGE) from its April 2016 launch until it merged into RIDA on 2023-12-31. Lower-turnover, longer-horizon strategies."
+  },
+  {
+   "key": "firm_total",
+   "name": "Firm total",
+   "description": "Medallion + RIEF/RIDA/RIDGE, with the low, mid and high bands each summed. Excludes small vehicles such as the Kaleidoscope RF fund (~$31m)."
+  }
+ ],
+ "rows": [
+  {
+   "year": 2015,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 6000,
+    "mid": 6900,
+    "high": 8700
+   },
+   "headcount": {
+    "low": 275,
+    "mid": 290,
+    "high": 325
+   },
+   "aum_usd_m": {
+    "low": 9500,
+    "mid": 10000,
+    "high": 12500
+   },
+   "is_partial_year": false,
+   "period_label": "FY2015",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4",
+    "S7",
+    "S31"
+   ],
+   "notes": "PnL: Net 36.0%, gross 69.3% (Zuckerman via Cornell; equals a 5% mgmt / 44% perf back-out). Capital base ~$10bn: Zuckerman gives $9.5bn. ADV feeder GAV is $12.5bn at YE2014, which includes undistributed profits, so it sets the upper bound. PnL = 69.3% x capital. HEADCOUNT: 290 from the Form ADV Item 5.A filing of 2015-03-31. This is the firm-wide band, repeated in all three entity rows for 2015. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff. Bloomberg put it at about 275 circa 2015 (S31)."
+  },
+  {
+   "year": 2015,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": 1300,
+    "mid": 2200,
+    "high": 3300
+   },
+   "headcount": {
+    "low": 275,
+    "mid": 290,
+    "high": 325
+   },
+   "aum_usd_m": {
+    "low": 10000,
+    "mid": 12500,
+    "high": 16000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2015",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S19",
+    "S31"
+   ],
+   "notes": "PnL: RIEF ~+16.5% net is inferred from II's '+15.1pp vs S&P 500' (low reliability). RIDA is only 'double-digit' (~12% assumed). Fees are assumed at ~1% mgmt / 10% incentive, so gross = net/0.9+1: RIEF ~19.3%, RIDA ~14.3%, weighted ~17.5% (~64% RIEF). Capital ~$12.5bn is net, inferred from master GAVs (YE2014 $21.4bn) divided by 1.56x (RIEF) and 2.12x (RIDA) leverage. HEADCOUNT: 290 from the Form ADV Item 5.A filing of 2015-03-31. This is the firm-wide band, repeated in all three entity rows for 2015. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff. Bloomberg put it at about 275 circa 2015 (S31)."
+  },
+  {
+   "year": 2015,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 7300,
+    "mid": 9100,
+    "high": 12000
+   },
+   "headcount": {
+    "low": 275,
+    "mid": 290,
+    "high": 325
+   },
+   "aum_usd_m": {
+    "low": 19500,
+    "mid": 22500,
+    "high": 28500
+   },
+   "is_partial_year": false,
+   "period_label": "FY2015",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4",
+    "S7",
+    "S19",
+    "S31"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2015 was $71.8bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 290 from the Form ADV Item 5.A filing of 2015-03-31. This is the firm-wide band, repeated in all three entity rows for 2015. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff. Bloomberg put it at about 275 circa 2015 (S31)."
+  },
+  {
+   "year": 2016,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 6000,
+    "mid": 6850,
+    "high": 8600
+   },
+   "headcount": {
+    "low": 275,
+    "mid": 290,
+    "high": 325
+   },
+   "aum_usd_m": {
+    "low": 9500,
+    "mid": 10000,
+    "high": 12500
+   },
+   "is_partial_year": false,
+   "period_label": "FY2016",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4",
+    "S7"
+   ],
+   "notes": "PnL: Net 35.6%, gross 68.6% (Zuckerman via Cornell). Capital ~$10bn: Zuckerman gives $9.5bn, and the ADV feeder GAV of $13.6bn at YE2015 is the upper bound. PnL = 68.6% x capital. HEADCOUNT: 290 from the Form ADV Item 5.A filing of 2016-03-30. This is the firm-wide band, repeated in all three entity rows for 2016. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2016,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": 2400,
+    "mid": 3600,
+    "high": 5000
+   },
+   "headcount": {
+    "low": 275,
+    "mid": 290,
+    "high": 325
+   },
+   "aum_usd_m": {
+    "low": 14000,
+    "mid": 19000,
+    "high": 25000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2016",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S19"
+   ],
+   "notes": "PnL: RIEF +20.6%, RIDA +10.6% (II, S19). RIDGE launched Apr 2016 at ~6% over its first 12 months. Gross (net/0.9+1) is RIEF 23.9%, RIDA 12.8% and RIDGE ~6.6%, weighted ~19%. Average capital is ~$19bn: assets rose 42% to ~$42bn with ~$7bn of inflows (II), and the ADV master GAV went from $18.5bn to $42.3bn. HEADCOUNT: 290 from the Form ADV Item 5.A filing of 2016-03-30. This is the firm-wide band, repeated in all three entity rows for 2016. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2016,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 8400,
+    "mid": 10450,
+    "high": 13600
+   },
+   "headcount": {
+    "low": 275,
+    "mid": 290,
+    "high": 325
+   },
+   "aum_usd_m": {
+    "low": 23500,
+    "mid": 29000,
+    "high": 37500
+   },
+   "is_partial_year": false,
+   "period_label": "FY2016",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4",
+    "S7",
+    "S19"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2016 was $97.0bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 290 from the Form ADV Item 5.A filing of 2016-03-30. This is the firm-wide band, repeated in all three entity rows for 2016. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2017,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 8100,
+    "mid": 8950,
+    "high": 10800
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 10000,
+    "mid": 10500,
+    "high": 13000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2017",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4",
+    "S32"
+   ],
+   "notes": "PnL: Net 45.0%, gross 85.4% (Zuckerman via Cornell). Capital ~$10.5bn: Zuckerman and Bloomberg (Apr 2017) give $10bn, and the ADV feeder GAV is $13.8bn at YE2016. PnL = 85.4% x capital. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2017-03-30. This is the firm-wide band, repeated in all three entity rows for 2017. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2017,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": 2900,
+    "mid": 4600,
+    "high": 6800
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 25000,
+    "mid": 30000,
+    "high": 37000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2017",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S19",
+    "S20",
+    "S32"
+   ],
+   "notes": "PnL: RIEF +15.22% (ABCQuant monthly series). RIDA and RIDGE full-year returns were not found; Q1 2017 was +4.2% and +4.3%, and ~10% net is assumed with a 0-20% range. Weighted gross ~15%. Average capital ~$30bn: Bloomberg puts Medallion plus outside funds at about $42bn in April 2017, and the ADV-implied net is $23.5bn at YE2016 and $37bn at YE2017. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2017-03-30. This is the firm-wide band, repeated in all three entity rows for 2017. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2017,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 11000,
+    "mid": 13550,
+    "high": 17600
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 35000,
+    "mid": 40500,
+    "high": 50000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2017",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4",
+    "S19",
+    "S20",
+    "S32"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2017 was $130.8bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2017-03-30. This is the firm-wide band, repeated in all three entity rows for 2017. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2018,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 7200,
+    "mid": 8000,
+    "high": 9900
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 10000,
+    "mid": 10500,
+    "high": 13000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2018",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "notes": "PnL: Net 40.0%, gross 76.4% (Zuckerman via Cornell). Capital ~$10.5bn: Zuckerman gives $10bn, and the ADV feeder GAV is $15.6bn at YE2017 and $11.7bn at YE2018. PnL = 76.4% x capital. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2018-03-29. This is the firm-wide band, repeated in all three entity rows for 2018. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2018,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": 800,
+    "mid": 3200,
+    "high": 5500
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 35000,
+    "mid": 40000,
+    "high": 46000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2018",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S20"
+   ],
+   "notes": "PnL: RIEF +8.50% (ABCQuant monthly series). RIDA and RIDGE were not found; ~4% net is assumed with a -8% to +12% range. Weighted gross ~8%. Average capital ~$40bn, with the ADV-implied net at $37bn (YE2017) and $43bn (YE2018). Wide band because ~44% of capital has an unknown return. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2018-03-29. This is the firm-wide band, repeated in all three entity rows for 2018. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2018,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 8000,
+    "mid": 11200,
+    "high": 15400
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 45000,
+    "mid": 50500,
+    "high": 59000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2018",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4",
+    "S20"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2018 was $130.9bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2018-03-29. This is the firm-wide band, repeated in all three entity rows for 2018. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2019,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 5000,
+    "mid": 7800,
+    "high": 10500
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 9500,
+    "mid": 10500,
+    "high": 12000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2019",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S7",
+    "S9",
+    "S13"
+   ],
+   "notes": "PnL: Net ~39% comes only from the Quartr chart, which is low reliability and possibly circular. II (Jan 2021) implies 2019 was below 2020. Gross ~74.6% under 5%/44% (net/0.56+5). Capital ~$10.5bn (ADV feeder GAV $11.7bn at YE2018 and $11.0bn at YE2019). The band allows net of 25-50%. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2019-03-28. This is the firm-wide band, repeated in all three entity rows for 2019. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2019,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": 4000,
+    "mid": 7000,
+    "high": 9500
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 45000,
+    "mid": 52000,
+    "high": 60000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2019",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S20",
+    "S21",
+    "S23"
+   ],
+   "notes": "PnL: RIEF +14.14% (ABCQuant). RIDA and RIDGE were not found; ~5-10% net is assumed. Weighted gross ~12-15%. Average capital ~$52bn: ADV-implied ~$43bn at YE2018, ~$55bn in April 2019 (Zuckerman via Wikipedia), and $65bn at start-2020 (II). HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2019-03-28. This is the firm-wide band, repeated in all three entity rows for 2019. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2019,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 9000,
+    "mid": 14800,
+    "high": 20000
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 54500,
+    "mid": 62500,
+    "high": 72000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2019",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S7",
+    "S9",
+    "S13",
+    "S20",
+    "S21",
+    "S23"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2019 was $166.0bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2019-03-28. This is the firm-wide band, repeated in all three entity rows for 2019. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2020,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 12500,
+    "mid": 14800,
+    "high": 17500
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 10000,
+    "mid": 10500,
+    "high": 12000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2020",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S7",
+    "S9",
+    "S10",
+    "S11",
+    "S14"
+   ],
+   "notes": "PnL: Net +76% comes from a single investor quoted by II (S9); YTD to Apr 14 was +24%. Gross ~140.7% under 5%/44%. Acquired's 149% (S14) is treated as an outlier. Capital ~$10.5bn: WSJ gives $10bn in April 2020, and the ADV feeder is $11.0bn at YE2019. The YE2020 feeder of $20.5bn includes the year's undistributed profits. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2020-03-30. This is the firm-wide band, repeated in all three entity rows for 2020. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2020,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": -17500,
+    "mid": -15000,
+    "high": -12000
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 60000,
+    "mid": 65000,
+    "high": 68000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2020",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S4",
+    "S9",
+    "S20",
+    "S22",
+    "S23",
+    "S24",
+    "S25"
+   ],
+   "notes": "PnL: LOSS year. Net returns: RIEF -19.4% (II and ABCQuant agree; HSBC gives -19.94%), RIDA -31.6% (range -31% to -33.6%), RIDGE -31%. Gross before fees = net + ~1% mgmt, with no incentive. Start-2020 net capital was RIEF $35.8bn, RIDA $15bn and RIDGE $14.3bn (II/FT), so the PnL is ~-6.6, -4.6 and -4.3bn. Outflows began in late 2020. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2020-03-30. This is the firm-wide band, repeated in all three entity rows for 2020. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2020,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": -5000,
+    "mid": -200,
+    "high": 5500
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 70000,
+    "mid": 75500,
+    "high": 80000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2020",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S7",
+    "S9",
+    "S10",
+    "S11",
+    "S14",
+    "S20",
+    "S22",
+    "S23",
+    "S24",
+    "S25"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2020 was $130.9bn. This is a gross, leverage-inflated figure and is NOT used as capital. 2020: Medallion's ~+$15bn gain roughly offset the ~-$15bn outside-fund loss. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2020-03-30. This is the firm-wide band, repeated in all three entity rows for 2020. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2021,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 6500,
+    "mid": 10800,
+    "high": 18000
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 11000,
+    "mid": 12000,
+    "high": 20000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2021",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S6",
+    "S12",
+    "S13"
+   ],
+   "notes": "PnL: Net ~48% comes only from Quartr (low reliability). Q1 was +9.7% (II, S12). Fees were 4% mgmt / 44% perf from 2021-01-01 (S6), so gross is ~89.7% (net/0.56+4). Capital ~$12bn after a ~10% size increase (S12). The high end reflects the ADV feeder GAV of $20.5bn at YE2020 and $28.2bn at YE2021. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2021-03-30. This is the firm-wide band, repeated in all three entity rows for 2021. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2021,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": 4300,
+    "mid": 6500,
+    "high": 8500
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 28000,
+    "mid": 33000,
+    "high": 38000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2021",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S4",
+    "S12",
+    "S15",
+    "S20",
+    "S23",
+    "S24",
+    "S25",
+    "S26"
+   ],
+   "notes": "PnL: Net returns: RIEF +20.45%, RIDA ~14.6-17% (series/outlet differences), RIDGE +10%. Gross (net/0.9+1) is ~23.7%, ~17% and ~12%. Average capital ~$33bn after ~$15bn of outflows over 14 months: RIEF ~$26bn to ~$16bn, RIDA ~$6.6bn to ~$3.7bn and RIDGE ~$8.9bn to ~$5.6bn (ADV-implied). RIEF lost -9.5% in Jan 2021 on the larger base. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2021-03-30. This is the firm-wide band, repeated in all three entity rows for 2021. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2021,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 10800,
+    "mid": 17300,
+    "high": 26500
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 39000,
+    "mid": 45000,
+    "high": 58000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2021",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S6",
+    "S12",
+    "S13",
+    "S15",
+    "S20",
+    "S23",
+    "S24",
+    "S25",
+    "S26"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2021 was $121.8bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2021-03-30. This is the firm-wide band, repeated in all three entity rows for 2021. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2022,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 2500,
+    "mid": 4500,
+    "high": 8500
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 11000,
+    "mid": 13000,
+    "high": 23000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2022",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S5",
+    "S13",
+    "S33"
+   ],
+   "notes": "PnL: Net ~18-19% comes from Quartr and Portfolio123 (low reliability, circular). Fees were 4% mgmt and 36-44% perf (S5), so gross is ~35% (net/0.60+4, midpoint 40% perf). Scrivner's blog gives 33% gross, which is consistent. Capital ~$13bn; the ADV feeder GAV of $28.2bn at YE2021 and $25.3bn at YE2022 sets the upper bound. Fee-free employee interests were redeemed in 2022. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2022-03-31. This is the firm-wide band, repeated in all three entity rows for 2022. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2022,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": 800,
+    "mid": 1450,
+    "high": 2100
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 20000,
+    "mid": 23500,
+    "high": 27000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2022",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S5",
+    "S15",
+    "S20"
+   ],
+   "notes": "PnL: Net returns: RIEF +5.25% (two database extracts agree), RIDA +4.64% (Series A). RIDGE was not found; ~3% is assumed. Gross is ~6.8%, ~6.2% and ~4.3%. Capital ~$23.5bn (ADV-implied net: RIEF ~$16bn, RIDA ~$3bn, RIDGE ~$4bn average). HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2022-03-31. This is the firm-wide band, repeated in all three entity rows for 2022. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2022,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 3300,
+    "mid": 5950,
+    "high": 10600
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 31000,
+    "mid": 36500,
+    "high": 50000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2022",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S5",
+    "S13",
+    "S15",
+    "S20",
+    "S33"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2022 was $106.0bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2022-03-31. This is the firm-wide band, repeated in all three entity rows for 2022. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2023,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 3000,
+    "mid": 5750,
+    "high": 9000
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 10500,
+    "mid": 12500,
+    "high": 17000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2023",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S5",
+    "S15"
+   ],
+   "notes": "PnL: Net ~25% comes only from a Portfolio123 forum post (low reliability). Gross ~46% under 4% / ~40% perf. Capital ~$12.5bn; the ADV feeder GAV of $19.2bn at YE2023 is the upper bound. The band allows net of 15-32%. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2023-03-30. This is the firm-wide band, repeated in all three entity rows for 2023. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2023,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": 900,
+    "mid": 1500,
+    "high": 2100
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 17000,
+    "mid": 20000,
+    "high": 23000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2023",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S8",
+    "S15",
+    "S20"
+   ],
+   "notes": "PnL: Net returns: RIEF +7.53% (ABCQuant/database), RIDA -1.10% (Series A). RIDGE was not found (~0% assumed) and merged into RIDA on 2023-12-31 (S8). Gross is ~9.4% for RIEF and ~0% for RIDA. Capital ~$20bn: RIEF ~$15.8bn, RIDA ~$3bn, RIDGE ~$2.5bn. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2023-03-30. This is the firm-wide band, repeated in all three entity rows for 2023. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2023,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 3900,
+    "mid": 7250,
+    "high": 11100
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 27500,
+    "mid": 32500,
+    "high": 40000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2023",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S2",
+    "S4",
+    "S5",
+    "S8",
+    "S15",
+    "S20"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2023 was $89.3bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2023-03-30. This is the firm-wide band, repeated in all three entity rows for 2023. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2024,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 5000,
+    "mid": 6500,
+    "high": 9000
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 10500,
+    "mid": 12000,
+    "high": 16000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2024",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S4",
+    "S5",
+    "S16",
+    "S17"
+   ],
+   "notes": "PnL: Net 'about 30%' from Zuckerman (S16, relayed by Hedgeweek S17). Gross ~54% under 4% / ~40% perf; the range is 51-58% for perf of 36-44%. Capital about $12bn (Zuckerman, end-2024). YE2024 ADV feeder data are unavailable. Single named source, so the band is wide. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2024-03-27. This is the firm-wide band, repeated in all three entity rows for 2024. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2024,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": 4000,
+    "mid": 4800,
+    "high": 5800
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 18500,
+    "mid": 21000,
+    "high": 24000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2024",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S4",
+    "S15",
+    "S16",
+    "S17",
+    "S23"
+   ],
+   "notes": "PnL: Net returns: RIEF +22.7%, RIDA +15.6% (Hedgeweek/II; Series A 15.22%). Gross (net/0.9+1) is ~26.2% and ~18.3%. Start-2024 capital was ~$16.3bn for RIEF and ~$3.1bn for RIDA, backed out of the Sept 2024 figures of RIEF $19.6bn and RIDA $3.6bn (FT via Hedgeweek). The PnL is ~4.3bn + ~0.6bn. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2024-03-27. This is the firm-wide band, repeated in all three entity rows for 2024. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2024,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 9000,
+    "mid": 11300,
+    "high": 14800
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 29000,
+    "mid": 33000,
+    "high": 40000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2024",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S4",
+    "S5",
+    "S15",
+    "S16",
+    "S17",
+    "S23"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2024 was $92.0bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2024-03-27. This is the firm-wide band, repeated in all three entity rows for 2024. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2025,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": 1500,
+    "mid": 4400,
+    "high": 8500
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 10000,
+    "mid": 12000,
+    "high": 18000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2025",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S3",
+    "S4",
+    "S5",
+    "S15",
+    "S18",
+    "S29"
+   ],
+   "notes": "PnL: Net ~20% is labelled an estimate by low-reliability sources (Portfolio123, FUNanc1al blog). No named press origin. Gross ~37% under 4% / ~40% perf. Capital ~$12bn by Zuckerman lore. The Medallion master GAV of $61.2bn at YE2025 (S3) is levered and implies net capital possibly as high as $20-30bn, which widens the high end. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2025-03-28. This is the firm-wide band, repeated in all three entity rows for 2025. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff. II (Nov 2025) also says about 300 (S29)."
+  },
+  {
+   "year": 2025,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": -200,
+    "mid": 900,
+    "high": 1700
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 17500,
+    "mid": 20500,
+    "high": 24000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2025",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S4",
+    "S15",
+    "S27",
+    "S28",
+    "S29",
+    "S30"
+   ],
+   "notes": "PnL: Full-year net returns are RIEF +3.43% and RIDA +2.23% (database snapshot, S15). These are consistent with the II path: YTD Oct -7.5% / -10.3%, then RIEF +2.34% YTD Nov. Gross is ~4.8% and ~3.5%. Average capital ~$20.5bn: RIEF fell from ~$20bn to ~$16.2bn, RIDA from ~$3.6bn to ~$2bn. Outflows after the October drawdown mean the dollar PnL could be near zero. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2025-03-28. This is the firm-wide band, repeated in all three entity rows for 2025. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff. II (Nov 2025) also says about 300 (S29)."
+  },
+  {
+   "year": 2025,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": 1300,
+    "mid": 5300,
+    "high": 10200
+   },
+   "headcount": {
+    "low": 285,
+    "mid": 300,
+    "high": 335
+   },
+   "aum_usd_m": {
+    "low": 27500,
+    "mid": 32500,
+    "high": 42000
+   },
+   "is_partial_year": false,
+   "period_label": "FY2025",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S3",
+    "S4",
+    "S5",
+    "S15",
+    "S18",
+    "S27",
+    "S28",
+    "S29",
+    "S30"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Form ADV regulatory AUM at YE2025 was $96.4bn. This is a gross, leverage-inflated figure and is NOT used as capital. HEADCOUNT: 300 from the Form ADV Item 5.A filing of 2025-03-28. This is the firm-wide band, repeated in all three entity rows for 2025. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff. II (Nov 2025) also says about 300 (S29)."
+  },
+  {
+   "year": 2026,
+   "entity": "medallion",
+   "pnl_usd_m": {
+    "low": -600,
+    "mid": 400,
+    "high": 1400
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 10000,
+    "mid": 12000,
+    "high": 18000
+   },
+   "is_partial_year": true,
+   "period_label": "YTD 2026 (2026-01-01 to 2026-01-31)",
+   "pnl_basis": "estimated",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S3",
+    "S5"
+   ],
+   "notes": "PnL: No 2026 Medallion return is reported anywhere. Pure estimate for Jan 2026 (to the 2026-01-31 cutoff): about 1/12 of a ~40-50% annual gross return on ~$12bn, i.e. ~3% for the month. The band allows a loss month, since outside quant funds fell 4-6% in January. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2026-04-01. This is the firm-wide band, repeated in all three entity rows for 2026. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2026,
+   "entity": "rief_rida",
+   "pnl_usd_m": {
+    "low": -1350,
+    "mid": -1050,
+    "high": -800
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 16000,
+    "mid": 18500,
+    "high": 21000
+   },
+   "is_partial_year": true,
+   "period_label": "YTD 2026 (2026-01-01 to 2026-01-31)",
+   "pnl_basis": "derived",
+   "headcount_basis": "reported_primary",
+   "confidence": "medium",
+   "source_ids": [
+    "S3",
+    "S15"
+   ],
+   "notes": "PnL: YTD to 2026-01-31: RIEF -6.11%, RIDA -3.59% (database snapshot, S15). These are corroborated by a Business Insider/HSBC report of about -4% each through Jan 9. Gross ~ net + 1 month of mgmt fee. Capital is RIEF ~$16.2bn and RIDA ~$1.9-2.8bn; the YE2025 master GAVs of $21.8bn and $4.2bn are levered. An untraced claim of RIEF '+4.50% YTD Jul 2026' is excluded. HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2026-04-01. This is the firm-wide band, repeated in all three entity rows for 2026. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  },
+  {
+   "year": 2026,
+   "entity": "firm_total",
+   "pnl_usd_m": {
+    "low": -1950,
+    "mid": -650,
+    "high": 600
+   },
+   "headcount": {
+    "low": 295,
+    "mid": 310,
+    "high": 345
+   },
+   "aum_usd_m": {
+    "low": 26000,
+    "mid": 30500,
+    "high": 39000
+   },
+   "is_partial_year": true,
+   "period_label": "YTD 2026 (2026-01-01 to 2026-01-31)",
+   "pnl_basis": "estimated",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S3",
+    "S5",
+    "S15"
+   ],
+   "notes": "PnL: sum of the medallion and rief_rida rows (low+low, mid+mid, high+high). Because the entity errors are not perfectly correlated, the true 90% interval is narrower than this simple sum. AUM is the sum of net capital bases. Regulatory AUM at YE2025 was $96.4bn (gross; not capital). HEADCOUNT: 310 from the Form ADV Item 5.A filing of 2026-04-01. This is the firm-wide band, repeated in all three entity rows for 2026. The band runs from -5% to +12% to allow for ADV rounding to 10 and excluded clerical staff."
+  }
+ ],
+ "ytd_2026": {
+  "cutoff_date": "2026-01-31",
+  "period_label": "YTD 2026 (2026-01-01 to 2026-01-31)",
+  "description": "The latest reliable return datapoint is January 2026 month-end: RIEF -6.11% and RIDA -3.59%, from a hedge-fund database snapshot posted 2026-02-08/11 and corroborated by an HSBC report of about -4% through Jan 9. Outside-fund P&L is derived from those returns. No 2026 Medallion return exists, so the Medallion row (and the firm total) is a pure estimate with wide bars. An untraced claim of RIEF +4.50% YTD to July 31, 2026 was excluded."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "title": "Medallion Fund: The Ultimate Counterexample? (Table 1 reproducing Zuckerman, The Man Who Solved the Market, Appendix 1)",
+   "publisher": "Cornell Capital Group / Bradford Cornell (SSRN 3504766)",
+   "url": "https://www.cornell-capital.com/uploads/papers/medallion-fund.pdf",
+   "date": "2020-02-01",
+   "type": "book",
+   "reliability": "high",
+   "supports": "Medallion net returns 2015-2018 (36.0/35.6/45.0/40.0%), gross returns (69.3/68.6/85.4/76.4%), fund size $9.5-10bn, and 5%/44% fees"
+  },
+  {
+   "id": "S2",
+   "title": "Form ADV Schedule D 7.B.(1) private fund data, Renaissance Technologies LLC (CRD 106661), SEC bulk filing data 2011-2024",
+   "publisher": "U.S. SEC",
+   "url": "https://www.sec.gov/files/adv-filing-data-20111105-20241231-part2.zip",
+   "date": "2024-12-31",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Medallion feeder gross asset values for YE2014-YE2023 ($12.5-28.2bn), and RIEF Trading, GF Trading (RIDA) and RIDGE master gross asset values for YE2014-YE2023. All leverage-inflated; used only as capital cross-checks and upper bounds."
+  },
+  {
+   "id": "S3",
+   "title": "Form ADV (current) Renaissance Technologies LLC CRD 106661, annual filing 2026-04-01, amended 2026-07-01",
+   "publisher": "U.S. SEC IAPD",
+   "url": "https://reports.adviserinfo.sec.gov/reports/ADV/106661/PDF/106661.pdf",
+   "date": "2026-07-01",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Headcount of 310 (2026 filing), regulatory AUM of $96.4bn at YE2025, Medallion master GAV of $61.2bn, RIEF master GAV of $21.8bn and GF Trading (RIDA) GAV of $4.2bn at YE2025"
+  },
+  {
+   "id": "S4",
+   "title": "SEC Registered Investment Adviser monthly Form ADV data files (ia0601YY series, 2015-2025)",
+   "publisher": "U.S. SEC",
+   "url": "https://www.sec.gov/data-research/sec-markets-data/information-about-registered-investment-advisers-exempt-reporting-advisers",
+   "date": "2025-06-02",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Item 5.A employee counts at each annual filing: 290 (2015-16), 300 (2017-18), 310 (2019-23), 300 (2024-25). Item 5.F regulatory AUM YE2014-YE2024 ($65-166bn, gross)."
+  },
+  {
+   "id": "S5",
+   "title": "Form ADV Part 2A brochures dated 2022-08-01, 2024-03-27 and 2026-03-30",
+   "publisher": "U.S. SEC",
+   "url": "https://www.sec.gov/foia/docs/adv/part2/adv_brochures_2022_aug.zip",
+   "date": "2022-08-01",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Medallion fees of 4% management and 36-44% performance from 2022; fee-free employee interests redeemed in 2022; RIEF fees 0.20-1.50% / 0-10%; RIDA fees 0.85-1.00% / 10%"
+  },
+  {
+   "id": "S6",
+   "title": "Form ADV Part 2A brochure dated 2021-03-30 (Item 2 material changes)",
+   "publisher": "U.S. SEC",
+   "url": "https://www.sec.gov/foia/docs/adv/part2/adv_brochures_2021_mar_1.zip",
+   "date": "2021-03-30",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Medallion management fee cut from 5% to 4% effective 2021-01-01; performance allocation still up to 44%"
+  },
+  {
+   "id": "S7",
+   "title": "Form ADV Part 2A brochure dated 2020-03-30",
+   "publisher": "U.S. SEC (IAPD)",
+   "url": "https://files.adviserinfo.sec.gov/IAPD/Content/Common/crd_iapd_Brochure.aspx?BRCHR_VRSN_ID=636807",
+   "date": "2020-03-30",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Medallion fees of 5% / 44% in force through 2020"
+  },
+  {
+   "id": "S8",
+   "title": "Form ADV Part 2A brochure dated 2024-03-27 (SEC brochure archive)",
+   "publisher": "U.S. SEC",
+   "url": "https://www.sec.gov/foia/docs/adv/adv_brochures_2024_mar_1_of_10.zip",
+   "date": "2024-03-27",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "RIDGE merged into RIDA (GF Trading LLC) effective 2023-12-31"
+  },
+  {
+   "id": "S9",
+   "title": "Renaissance's Medallion Fund Surged 76% in 2020. But Funds Open to Outsiders Tanked",
+   "publisher": "Institutional Investor",
+   "url": "https://www.institutionalinvestor.com/article/b1q3fndg77d0tg/Renaissance-s-Medallion-Fund-Surged-76-in-2020-Bu",
+   "date": "2021-01-13",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "Medallion +76% net in 2020 (from one investor); RIEF -22.62% and RIDA -33.58% through 2020-12-25 (HSBC)"
+  },
+  {
+   "id": "S10",
+   "title": "The Famed Medallion Fund Is Crushing It. Other RenTech Funds, Not So Much (citing WSJ)",
+   "publisher": "Institutional Investor",
+   "url": "https://www.institutionalinvestor.com/article/b1l98yt4p0bvr4/The-Famed-Medallion-Fund-Is-Crushing-It-Other-Ren",
+   "date": "2020-04-21",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "Medallion +24% YTD through 2020-04-14"
+  },
+  {
+   "id": "S11",
+   "title": "Renaissance's $10 Billion Medallion Fund Gains 24% Year to Date in Tumultuous Market",
+   "publisher": "Wall Street Journal",
+   "url": "https://www.wsj.com/articles/renaissance-s-10-billion-medallion-fund-gains-24-year-to-datein-tumultuous-market",
+   "date": "2020-04-17",
+   "type": "top_tier_press",
+   "reliability": "medium",
+   "supports": "Medallion size about $10bn in April 2020 (headline only; article body not fetched)"
+  },
+  {
+   "id": "S12",
+   "title": "The Medallion Fund Is Still Outperforming. Other Renaissance Funds Still Lag",
+   "publisher": "Institutional Investor",
+   "url": "https://www.institutionalinvestor.com/article/2bswp26sjjpvgp7r5upz4/portfolio/the-medallion-fund-is-still-outp",
+   "date": "2021-04-19",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "Medallion Q1 2021 +9.7%; Medallion master GAV $34.75bn at YE2020 (from ADV); $5.4bn of outside-fund redemptions Dec 2020-Feb 2021; Medallion size raised about 10%"
+  },
+  {
+   "id": "S13",
+   "title": "Renaissance Technologies: The Highest-Performing Investment Firm in History",
+   "publisher": "Quartr",
+   "url": "https://quartr.com/insights/edge/renaissance-technologies-and-the-medallion-fund",
+   "date": "2024-03-20",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "Medallion net 2019 39%, 2021 48%, 2022 18% (chart; origin undisclosed, possibly circular)"
+  },
+  {
+   "id": "S14",
+   "title": "Renaissance Technologies (Acquired podcast episode)",
+   "publisher": "Acquired",
+   "url": "https://www.acquired.fm/episodes/renaissance-technologies",
+   "date": "2024-03-10",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "Medallion 2020 gross 149% (inconsistent with 5%/44% back-out of ~141%)"
+  },
+  {
+   "id": "S15",
+   "title": "Renaissance, Schonfeld, and Engineers Gate stung in a shaky start for quants (forum thread with hedge-fund database snapshot)",
+   "publisher": "Portfolio123 Community",
+   "url": "https://community.portfolio123.com/t/renaissance-schonfeld-and-engineers-gate-stung-in-a-shaky-start-for-quant",
+   "date": "2026-02-11",
+   "type": "social_or_forum",
+   "reliability": "low",
+   "supports": "RIEF Series B yearly returns 2021-2025 and -6.11% in Jan 2026; RIDA Series A 2021-2025 and -3.59% in Jan 2026; database AUM RIEF $16.2bn and RIDA $1.9bn (~Jan 2026); relays a Business Insider/HSBC report of about -4% through 2026-01-09; Medallion 2023 ~25% and 2025 ~20% (low reliability)"
+  },
+  {
+   "id": "S16",
+   "title": "Tweet: 'Renaissance Technologies finishes up a solid, if unspectacular...'",
+   "publisher": "Gregory Zuckerman (WSJ reporter) on X",
+   "url": "https://x.com/GZuckerman/status/1874158102356103249",
+   "date": "2024-12-31",
+   "type": "social_or_forum",
+   "reliability": "medium",
+   "supports": "Medallion about +30% in 2024 with about $12bn of capital; RIEF and RIDA up about 25%"
+  },
+  {
+   "id": "S17",
+   "title": "Renaissance Tech and Two Sigma lead 2024 quant gains",
+   "publisher": "Hedgeweek (citing FT and Zuckerman)",
+   "url": "https://hedgeweek.com/news/renaissance-tech-and-two-sigma-lead-2024-quant-gains",
+   "date": "2025-01-14",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "RIEF +22.7% and RIDA +15.6% in 2024; RIEF $19.6bn and RIDA $3.6bn (Sept 2024); Medallion about $12bn and 30%"
+  },
+  {
+   "id": "S18",
+   "title": "Renaissance Technologies in 2025: Quant Quake, Post-Simons Growing Pains",
+   "publisher": "FUNanc1al (blog)",
+   "url": "https://funanc1al.com/blogs/follow-the-pundits/renaissance-technologies-in-2025-quant-quake-post-simons-growin",
+   "date": "2026-01-28",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "Medallion 2025 about +20%, labelled an estimate"
+  },
+  {
+   "id": "S19",
+   "title": "Renaissance Bucks Trend with a Surge in Assets",
+   "publisher": "Institutional Investor",
+   "url": "https://www.institutionalinvestor.com/article/2bsvu83jxt353k11cxczk/portfolio/renaissance-bucks-trend-with-a-s",
+   "date": "2017-04-24",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "RIEF beat S&P 500 by 15.1pp in 2015; RIEF +20.6% and RIDA +10.6% in 2016; RIDA double-digit 2014-2016; assets up 42% to $42bn in 2016; RIDGE launched April 2016"
+  },
+  {
+   "id": "S20",
+   "title": "Renaissance Institutional Equities Fund (RIEF) LLC Series B analytic report",
+   "publisher": "ABCQuant",
+   "url": "https://www.abcquant.com/reports/Renaissance_hedge_fund.pdf",
+   "date": "2024-05-02",
+   "type": "aggregator_or_blog",
+   "reliability": "medium",
+   "supports": "RIEF Series B monthly returns compounding to 15.22% (2017), 8.50% (2018), 14.14% (2019), -19.43% (2020), 20.45% (2021), 5.25% (2022), 7.53% (2023)"
+  },
+  {
+   "id": "S21",
+   "title": "Jim Simons (Wikipedia, citing Zuckerman, The Man Who Solved the Market)",
+   "publisher": "Wikipedia / Zuckerman (Portfolio/Penguin)",
+   "url": "https://en.wikipedia.org/wiki/Jim_Simons",
+   "date": "2019-11-05",
+   "type": "book",
+   "reliability": "medium",
+   "supports": "About $55bn in the three outside funds (RIEF, RIDA, RIDGE) in April 2019"
+  },
+  {
+   "id": "S22",
+   "title": "Providence's Troubled Pension System Bet Big on Renaissance Technologies (citing HSBC weekly)",
+   "publisher": "Institutional Investor",
+   "url": "https://www.institutionalinvestor.com/article/b1qj7hcpc6j976/Providence-s-Troubled-Pension-System-Bet-Big-on-R",
+   "date": "2021-02-11",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "RIEF 2020 -19.94% (HSBC); conflicting share-class/cut-off figures"
+  },
+  {
+   "id": "S23",
+   "title": "Renaissance's 2024 Rebirth",
+   "publisher": "Institutional Investor",
+   "url": "https://www.institutionalinvestor.com/article/2e0uykr3vn5booz0smrcw/hedge-funds/renaissances-2024-rebirth",
+   "date": "2024-11-14",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "RIEF nearly $36bn at start of 2020; RIDA $15bn and RIDGE $14.3bn before 2020; RIEF -19.4% and RIDA -31.6% in 2020; RIEF +20.5% in 2021; RIEF just under $20bn and RIDA $3.6bn (Nov 2024)"
+  },
+  {
+   "id": "S24",
+   "title": "Renaissance Technologies sees USD15bn in outflows despite double-digit returns (citing Bloomberg)",
+   "publisher": "Hedgeweek",
+   "url": "https://hedgeweek.com/news/renaissance-technologies-sees-usd15bn-outflows-despite-double-digit-returns",
+   "date": "2022-01-21",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "RIDA -31% in 2020; 2021 RIEF ~20%, RIDA ~15%, RIDGE +10%; almost $15bn outflows over 14 months to Jan 2022"
+  },
+  {
+   "id": "S25",
+   "title": "Kapitalflykt fran Renaissance - men Medallion briljerar (citing FT)",
+   "publisher": "Realtid",
+   "url": "https://www.realtid.se/bors-finans/affarer/kapitalflykt-fran-renaissance-men-medallion-briljerar/",
+   "date": "2024-09-23",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "RIEF $35.8bn at start of 2020; RIDA 2020 -32% and 2021 +17% (FT)"
+  },
+  {
+   "id": "S26",
+   "title": "Jim Simons Makes Billions While Renaissance Investors Fume Over Losses (Bloomberg relay)",
+   "publisher": "The Wealth Advisor",
+   "url": "https://www.thewealthadvisor.com/article/jim-simons-makes-billions-while-renaissance-investors-fume-losses",
+   "date": "2021-02-12",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "RIEF about $26bn before the January 2021 decline; at least $5bn pulled since 2020-12-01; Medallion kept around $10bn"
+  },
+  {
+   "id": "S27",
+   "title": "Renaissance quant funds see steep losses amid tariff turmoil (citing FT)",
+   "publisher": "Hedgeweek",
+   "url": "https://www.hedgeweek.com/renaissance-quant-funds-see-steep-losses-amid-tariff-turmoil/",
+   "date": "2025-04-10",
+   "type": "trade_press",
+   "reliability": "high",
+   "supports": "2025 YTD to early April: RIEF +4.4%, RIDA +11.5%"
+  },
+  {
+   "id": "S28",
+   "title": "Renaissance Technologies suffers another tough month amid quant headwinds",
+   "publisher": "Hedgeweek",
+   "url": "https://www.hedgeweek.com/renaissance-technologies-suffers-another-tough-month-amid/",
+   "date": "2025-08-12",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "2025 YTD to end-July: RIEF +5.6%, RIDA +6.5%"
+  },
+  {
+   "id": "S29",
+   "title": "Renaissance Suffers Huge Losses in October",
+   "publisher": "Institutional Investor",
+   "url": "https://www.institutionalinvestor.com/article/renaissance-suffers-huge-losses-october",
+   "date": "2025-11-12",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "2025 YTD to end-October: RIEF -7.5%, RIDA -10.3%; RIDA about $2.8bn; RIEF 'just under $20bn' (possibly stale); Medallion fees 4% / 36-44%; about 300 employees"
+  },
+  {
+   "id": "S30",
+   "title": "Renaissance's Public Funds Stage Double-Digit Comeback in November",
+   "publisher": "Institutional Investor",
+   "url": "https://www.institutionalinvestor.com/article/premium/renaissances-public-funds-stage-double-digit-comeback-no",
+   "date": "2025-12-08",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "RIEF +12.65% in November and +2.34% YTD to end-November 2025"
+  },
+  {
+   "id": "S31",
+   "title": "How an Exclusive Hedge Fund Turbocharged Its Retirement Plan",
+   "publisher": "Bloomberg (Richard Rubin)",
+   "url": "https://www.bloomberg.com/news/articles/2015-06-16/how-an-exclusive-hedge-fund-turbocharged-retirement-plan",
+   "date": "2015-06-16",
+   "type": "top_tier_press",
+   "reliability": "medium",
+   "supports": "About 275 employees circa 2015 (via Wikipedia; not fetched directly)"
+  },
+  {
+   "id": "S32",
+   "title": "Renaissance Mints Another Billionaire, With Two More on the Cusp (Bloomberg)",
+   "publisher": "WealthManagement.com (Bloomberg relay)",
+   "url": "https://www.wealthmanagement.com/alternative-investments/renaissance-mints-another-billionaire-with-two-more-o",
+   "date": "2017-04-25",
+   "type": "top_tier_press",
+   "reliability": "medium",
+   "supports": "Medallion about $10bn; outside funds plus Medallion about $42bn (April 2017)"
+  },
+  {
+   "id": "S33",
+   "title": "Renaissance Technologies business breakdown",
+   "publisher": "Daniel Scrivner (blog)",
+   "url": "https://www.danielscrivner.com/renaissance-technologies-business-breakdown/",
+   "date": "2025-08-15",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "Medallion 2022 '33% gross' (used only as a cross-check). Its '400 employees' figure is rejected in favour of the ADV count."
+  }
+ ],
+ "caveats": [
+  "Renaissance is private and publishes no P&L. Every PnL figure is derived as capital x gross return, and the gross returns are themselves partly backed out from fee assumptions.",
+  "Medallion capital is the dominant uncertainty. Press lore puts it at ~$10-12bn, but ADV feeder GAVs ($20.5-28.2bn at YE2020-2022) and the YE2025 master GAV ($61.2bn, levered) imply it may have been materially larger after 2020. The high bands reflect this.",
+  "Medallion net returns for 2019, 2021, 2022, 2023 and 2025 come only from low-reliability, possibly circular secondary sources (Quartr chart, Portfolio123 forum, blogs). 2020 (+76%) traces to a single investor quoted by II.",
+  "Medallion fees changed: the 5% management fee dropped to 4% from 2021, and performance became 36-44% from 2022. Applying 5%/44% to later years would overstate gross returns.",
+  "Form ADV regulatory AUM ($65-166bn) and master-fund GAVs are gross and leverage-inflated; 13F holdings ($64-77bn) are long US equities only. Neither is used as capital.",
+  "RIDA and RIDGE returns for 2017-2019 (and RIDGE 2022-2023) were not found and are assumed, so the 2017-2019 outside-fund rows are low confidence.",
+  "Return figures vary by share class or series and by cut-off (e.g. RIEF 2020: -19.4% vs -19.94% vs -22.62% to Dec 25; RIDA 2024: 15.6% vs 15.22%).",
+  "Firm-total bands are simple sums of entity bands and so are wider than a true 90% interval.",
+  "Headcount is a point-in-time ADV figure that excludes clerical staff; it is not a year-average.",
+  "Do not confuse with Renaissance Capital (IPO ETF), RenaissanceRe, Medallion Financial, or the unrelated IAPD registrant 'Renaissance Technologies AI Supercomputing Hedge Capital Ltd.' (CRD 338503)."
+ ],
+ "overall_confidence": "low",
+ "open_questions": [
+  "What was Medallion's actual deployed capital in 2021-2025? Reconcile the ~$12bn lore with ADV feeder/master GAVs, and obtain YE2024 private-fund data from the March 2025 ADV.",
+  "Are there named-press (Bloomberg/WSJ/FT/II) Medallion net returns for 2019, 2021, 2022, 2023 and 2025?",
+  "What were RIDA and RIDGE annual returns for 2017-2019, and RIDGE's for 2022-2023?",
+  "What is any verifiable 2026 return beyond January for RIEF/RIDA (e.g. the untraced +4.50% YTD July claim), and is any Medallion 2026 figure available?",
+  "Is RIEF's net AUM at end-2025 nearer $16bn (database) or ~$20bn (II wording, possibly stale)?"
+ ],
+ "changelog": [],
+ "review_status": "draft: synthesized from 2 of 4 search lenses without adversarial review (stopped early to save budget)"
+}

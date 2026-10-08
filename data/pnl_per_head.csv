@@ -1,0 +1,157 @@
+firm,entity,year,period,partial,pnl_usd_m_low,pnl_usd_m_mid,pnl_usd_m_high,headcount_low,headcount_mid,headcount_high,pnl_per_head_usd_m_low,pnl_per_head_usd_m_mid,pnl_per_head_usd_m_high,pnl_per_head_worstcase_low,pnl_per_head_worstcase_high,pnl_basis,headcount_basis,confidence,source_ids
+jane_street,firm,2015,FY2015,False,450.0,1050.0,2100.0,450,550,750,0.774,1.909,3.928,0.6,4.667,estimated,derived,low,S30 S31 S32
+jane_street,firm,2016,FY2016,False,450.0,1100.0,2200.0,480,620,850,0.688,1.774,3.714,0.529,4.583,estimated,estimated,low,S20 S31
+jane_street,firm,2017,FY2017,False,450.0,1050.0,2100.0,530,690,950,0.615,1.522,3.195,0.474,3.962,estimated,estimated,low,S31 S33
+jane_street,firm,2018,FY2018,False,650.0,1450.0,2700.0,650,800,1050,0.777,1.812,3.491,0.619,4.154,estimated,derived,low,S33 S31
+jane_street,firm,2019,FY2019,False,1300.0,2400.0,4500.0,750,950,1250,1.291,2.526,4.945,1.04,6.0,estimated,estimated,low,S27 S28 S29
+jane_street,firm,2020,FY2020,False,10050.0,11000.0,12500.0,850,1100,1400,7.73,10.0,13.335,7.179,14.706,derived,estimated,medium,S1 S27 S28 S34
+jane_street,firm,2021,FY2021,False,10050.0,11000.0,13000.0,1150,1400,1750,6.176,7.857,10.171,5.743,11.304,derived,derived,medium,S1 S27 S35 S36
+jane_street,firm,2022,FY2022,False,10100.0,10700.0,11300.0,1700,2050,2350,4.5,5.22,6.343,4.298,6.647,reported_press,derived,medium,S3 S1 S2 S36 S37
+jane_street,firm,2023,FY2023,False,10300.0,10550.0,10800.0,2600,2631,2660,3.906,4.01,4.117,3.872,4.154,reported_press,reported_press,high,S1 S2 S9 S37
+jane_street,firm,2024,FY2024,False,20000.0,20500.0,21000.0,2900,2960,3020,6.709,6.926,7.148,6.623,7.241,reported_press,reported_press,high,S5 S6 S4 S1 S7 S8 S9
+jane_street,firm,2025,FY2025,False,38600.0,39600.0,40600.0,3250,3500,3750,10.512,11.314,12.234,10.293,12.492,reported_press,reported_press,high,S10 S11 S12 S13 S14 S43 S42 S15 S16 S17 S38 S39
+jane_street,firm,2026,YTD 2026 (2026-01-01 to 2026-07-31; reported mid-August 2026),True,39500.0,42000.0,46500.0,3450,3700,4000,10.279,11.351,12.844,9.875,13.478,reported_press,derived,medium,S20 S21 S23 S22 S18 S19 S26 S40 S41 S24 S25
+hrt,firm,2015,FY2015,False,200.0,380.0,700.0,90,130,190,1.387,2.923,5.964,1.053,7.778,estimated,estimated,low,S21 S7
+hrt,firm,2016,FY2016,False,190.0,360.0,680.0,100,150,220,1.139,2.4,5.102,0.864,6.8,estimated,estimated,low,S21 S7
+hrt,firm,2017,FY2017,False,170.0,320.0,620.0,115,170,250,0.897,1.882,4.058,0.68,5.391,estimated,estimated,low,S21 S7
+hrt,firm,2018,FY2018,False,250.0,470.0,800.0,180,260,340,0.91,1.808,3.451,0.735,4.444,estimated,estimated,low,S7 S21 S2
+hrt,firm,2019,FY2019,False,320.0,560.0,900.0,270,320,390,0.967,1.75,2.897,0.821,3.333,estimated,derived,low,S2 S9 S21
+hrt,firm,2020,FY2020,False,1000.0,1350.0,1800.0,400,440,510,2.196,3.068,4.154,1.961,4.5,derived,derived,low,S21 S9 S4 S2
+hrt,firm,2021,FY2021,False,2300.0,3100.0,4000.0,490,580,670,3.837,5.345,7.255,3.433,8.163,derived,derived,low,S9 S10 S22 S2 S5
+hrt,firm,2022,FY2022,False,1800.0,2800.0,3900.0,780,860,950,2.07,3.256,4.599,1.895,5.0,estimated,derived,low,S10 S8 S6 S2 S30
+hrt,firm,2023,FY2023,False,2600.0,3700.0,4700.0,900,990,1070,2.604,3.737,4.835,2.43,5.222,derived,derived,low,S10 S26 S8 S3
+hrt,firm,2024,FY2024,False,6900.0,7800.0,8200.0,1040,1100,1170,6.182,7.091,7.644,5.897,7.885,reported_press,reported_press,medium,S10 S11 S12 S20 S2 S23
+hrt,firm,2025,FY2025,False,11600.0,12300.0,12900.0,1070,1160,1250,9.643,10.603,11.646,9.28,12.056,reported_press,derived,medium,S13 S14 S11 S12 S15 S28 S20 S29 S1 S23 S22
+hrt,firm,2026,H1 2026 (2026-01-01 to 2026-06-30),True,16600.0,17800.0,18700.0,1180,1300,1420,12.235,13.692,15.264,11.69,15.847,reported_press,derived,medium,S15 S16 S17 S18 S19 S27 S24 S1 S23 S25
+citadel_sec,firm,2015,FY2015,False,1200.0,2000.0,2900.0,400,550,750,2.0,3.636,5.932,1.6,7.25,estimated,estimated,low,S1 S5
+citadel_sec,firm,2016,FY2016,False,1400.0,2200.0,3100.0,450,620,800,2.112,3.548,5.674,1.75,6.889,estimated,estimated,low,S1 S5
+citadel_sec,firm,2017,FY2017,False,1700.0,2500.0,3300.0,550,700,850,2.319,3.571,5.159,2.0,6.0,estimated,reported_press,low,S1 S5 S25
+citadel_sec,firm,2018,FY2018,False,3100.0,3550.0,4100.0,600,780,950,3.583,4.551,6.139,3.263,6.833,derived,estimated,low,S1 S25 S33
+citadel_sec,firm,2019,FY2019,False,2600.0,3200.0,3650.0,680,860,1050,2.79,3.721,4.87,2.476,5.368,estimated,estimated,low,S1 S2 S3 S4 S5 S33
+citadel_sec,firm,2020,FY2020,False,6400.0,6700.0,7000.0,800,950,1150,5.795,7.053,8.421,5.565,8.75,reported_press,derived,medium,S1 S2 S5
+citadel_sec,firm,2021,FY2021,False,6600.0,7000.0,7400.0,950,1150,1400,4.957,6.087,7.427,4.714,7.789,reported_press,estimated,medium,S6 S7 S9
+citadel_sec,firm,2022,FY2022,False,7200.0,7500.0,7800.0,1150,1400,1650,4.523,5.357,6.547,4.364,6.783,reported_press,estimated,medium,S9 S10 S11 S12 S17 S8
+citadel_sec,firm,2023,FY2023,False,6000.0,6300.0,6600.0,1400,1600,1800,3.466,3.938,4.536,3.333,4.714,reported_press,reported_press,medium,S13 S11 S12 S16 S31
+citadel_sec,firm,2024,FY2024,False,9300.0,9700.0,10100.0,1500,1700,1900,5.066,5.706,6.508,4.895,6.733,reported_press,derived,medium,S15 S16 S13 S14 S24 S30 S32
+citadel_sec,firm,2025,FY2025,False,11700.0,12200.0,12700.0,1650,1800,1950,6.192,6.778,7.459,6.0,7.697,reported_press,reported_press,medium,S23 S18 S19 S20 S21 S22 S25 S29 S24 S30 S32
+citadel_sec,firm,2026,2026-01-01 to 2026-06-30 (H1 2026 YTD),True,11000.0,11600.0,12200.0,1750,1900,2100,5.451,6.105,6.724,5.238,6.971,reported_press,estimated,medium,S26 S27 S28 S29 S32
+renaissance,medallion,2015,FY2015,False,6000.0,6900.0,8700.0,275,290,325,19.867,23.793,30.181,18.462,31.636,derived,reported_primary,medium,S1 S2 S4 S7 S31
+renaissance,medallion,2016,FY2016,False,6000.0,6850.0,8600.0,275,290,325,19.834,23.621,29.837,18.462,31.273,derived,reported_primary,medium,S1 S2 S4 S7
+renaissance,medallion,2017,FY2017,False,8100.0,8950.0,10800.0,285,300,335,25.709,29.833,36.248,24.179,37.895,derived,reported_primary,medium,S1 S2 S4 S32
+renaissance,medallion,2018,FY2018,False,7200.0,8000.0,9900.0,285,300,335,22.893,26.667,33.201,21.493,34.737,derived,reported_primary,medium,S1 S2 S4
+renaissance,medallion,2019,FY2019,False,5000.0,7800.0,10500.0,295,310,345,15.926,25.161,34.01,14.493,35.593,derived,reported_primary,low,S2 S4 S7 S9 S13
+renaissance,medallion,2020,FY2020,False,12500.0,14800.0,17500.0,295,310,345,39.091,47.742,56.859,36.232,59.322,derived,reported_primary,medium,S2 S4 S7 S9 S10 S11 S14
+renaissance,medallion,2021,FY2021,False,6500.0,10800.0,18000.0,295,310,345,20.735,34.839,58.204,18.841,61.017,derived,reported_primary,low,S2 S4 S6 S12 S13
+renaissance,medallion,2022,FY2022,False,2500.0,4500.0,8500.0,295,310,345,7.987,14.516,27.472,7.246,28.814,derived,reported_primary,low,S2 S4 S5 S13 S33
+renaissance,medallion,2023,FY2023,False,3000.0,5750.0,9000.0,295,310,345,9.593,18.548,29.112,8.696,30.508,derived,reported_primary,low,S2 S4 S5 S15
+renaissance,medallion,2024,FY2024,False,5000.0,6500.0,9000.0,285,300,335,16.3,21.667,30.121,14.925,31.579,derived,reported_primary,medium,S4 S5 S16 S17
+renaissance,medallion,2025,FY2025,False,1500.0,4400.0,8500.0,285,300,335,4.972,14.667,28.39,4.478,29.825,derived,reported_primary,low,S3 S4 S5 S15 S18 S29
+renaissance,medallion,2026,YTD 2026 (2026-01-01 to 2026-01-31),True,-600.0,400.0,1400.0,295,310,345,-1.939,1.29,4.517,-2.034,4.746,estimated,reported_primary,low,S3 S5
+renaissance,rief_rida,2015,FY2015,False,1300.0,2200.0,3300.0,275,290,325,4.428,7.586,11.419,4.0,12.0,derived,reported_primary,low,S2 S4 S19 S31
+renaissance,rief_rida,2016,FY2016,False,2400.0,3600.0,5000.0,275,290,325,8.147,12.414,17.315,7.385,18.182,derived,reported_primary,low,S2 S4 S19
+renaissance,rief_rida,2017,FY2017,False,2900.0,4600.0,6800.0,285,300,335,9.542,15.333,22.743,8.657,23.86,derived,reported_primary,low,S2 S4 S19 S20 S32
+renaissance,rief_rida,2018,FY2018,False,800.0,3200.0,5500.0,285,300,335,2.655,10.667,18.378,2.388,19.298,derived,reported_primary,low,S2 S4 S20
+renaissance,rief_rida,2019,FY2019,False,4000.0,7000.0,9500.0,295,310,345,12.773,22.581,30.768,11.594,32.203,derived,reported_primary,low,S2 S4 S20 S21 S23
+renaissance,rief_rida,2020,FY2020,False,-17500.0,-15000.0,-12000.0,295,310,345,-58.128,-48.387,-38.43,-59.322,-34.783,derived,reported_primary,medium,S4 S9 S20 S22 S23 S24 S25
+renaissance,rief_rida,2021,FY2021,False,4300.0,6500.0,8500.0,295,310,345,13.683,20.968,27.544,12.464,28.814,derived,reported_primary,medium,S4 S12 S15 S20 S23 S24 S25 S26
+renaissance,rief_rida,2022,FY2022,False,800.0,1450.0,2100.0,295,310,345,2.556,4.677,6.797,2.319,7.119,derived,reported_primary,medium,S2 S4 S5 S15 S20
+renaissance,rief_rida,2023,FY2023,False,900.0,1500.0,2100.0,295,310,345,2.871,4.839,6.799,2.609,7.119,derived,reported_primary,medium,S2 S4 S8 S15 S20
+renaissance,rief_rida,2024,FY2024,False,4000.0,4800.0,5800.0,285,300,335,12.929,16.0,19.466,11.94,20.351,derived,reported_primary,medium,S4 S15 S16 S17 S23
+renaissance,rief_rida,2025,FY2025,False,-200.0,900.0,1700.0,285,300,335,-0.683,3.0,5.671,-0.702,5.965,derived,reported_primary,medium,S4 S15 S27 S28 S29 S30
+renaissance,rief_rida,2026,YTD 2026 (2026-01-01 to 2026-01-31),True,-1350.0,-1050.0,-800.0,295,310,345,-4.428,-3.387,-2.564,-4.576,-2.319,derived,reported_primary,medium,S3 S15
+renaissance,firm_total,2015,FY2015,False,7300.0,9100.0,12000.0,275,290,325,24.484,31.379,41.589,22.462,43.636,derived,reported_primary,low,S1 S2 S4 S7 S19 S31
+renaissance,firm_total,2016,FY2016,False,8400.0,10450.0,13600.0,275,290,325,28.167,36.034,47.146,25.846,49.455,derived,reported_primary,low,S1 S2 S4 S7 S19
+renaissance,firm_total,2017,FY2017,False,11000.0,13550.0,17600.0,285,300,335,35.676,45.167,58.96,32.836,61.754,derived,reported_primary,low,S1 S2 S4 S19 S20 S32
+renaissance,firm_total,2018,FY2018,False,8000.0,11200.0,15400.0,285,300,335,26.201,37.333,51.544,23.881,54.035,derived,reported_primary,low,S1 S2 S4 S20
+renaissance,firm_total,2019,FY2019,False,9000.0,14800.0,20000.0,295,310,345,28.704,47.742,64.778,26.087,67.797,derived,reported_primary,low,S2 S4 S7 S9 S13 S20 S21 S23
+renaissance,firm_total,2020,FY2020,False,-5000.0,-200.0,5500.0,295,310,345,-16.129,-0.645,17.742,-16.949,18.644,derived,reported_primary,medium,S2 S4 S7 S9 S10 S11 S14 S20 S22 S23 S24 S25
+renaissance,firm_total,2021,FY2021,False,10800.0,17300.0,26500.0,295,310,345,34.423,55.806,85.73,31.304,89.831,derived,reported_primary,low,S2 S4 S6 S12 S13 S15 S20 S23 S24 S25 S26
+renaissance,firm_total,2022,FY2022,False,3300.0,5950.0,10600.0,295,310,345,10.543,19.194,34.266,9.565,35.932,derived,reported_primary,low,S2 S4 S5 S13 S15 S20 S33
+renaissance,firm_total,2023,FY2023,False,3900.0,7250.0,11100.0,295,310,345,12.466,23.387,35.91,11.304,37.627,derived,reported_primary,low,S2 S4 S5 S8 S15 S20
+renaissance,firm_total,2024,FY2024,False,9000.0,11300.0,14800.0,285,300,335,29.249,37.667,49.572,26.866,51.93,derived,reported_primary,medium,S4 S5 S15 S16 S17 S23
+renaissance,firm_total,2025,FY2025,False,1300.0,5300.0,10200.0,285,300,335,4.315,17.667,34.068,3.881,35.789,derived,reported_primary,low,S3 S4 S5 S15 S18 S27 S28 S29 S30
+renaissance,firm_total,2026,YTD 2026 (2026-01-01 to 2026-01-31),True,-1950.0,-650.0,600.0,295,310,345,-6.297,-2.097,1.937,-6.61,2.034,estimated,reported_primary,low,S3 S5 S15
+de_shaw,firm,2015,FY2015,False,1800.0,4300.0,7500.0,950,1100,1300,1.611,3.909,6.949,1.385,7.895,estimated,derived,low,S5 S6 S4 S24 S31 S32
+de_shaw,firm,2016,FY2016,False,2500.0,5300.0,8500.0,1000,1150,1350,2.137,4.609,7.542,1.852,8.5,estimated,derived,low,S7 S8 S4 S24 S33
+de_shaw,firm,2017,FY2017,False,4500.0,8500.0,12500.0,1050,1200,1400,3.682,7.083,10.653,3.214,11.905,estimated,derived,low,S9 S10 S24 S34
+de_shaw,firm,2018,FY2018,False,300.0,3400.0,6800.0,1150,1250,1400,0.239,2.72,5.467,0.214,5.913,estimated,reported_primary,low,S11 S24 S35
+de_shaw,firm,2019,FY2019,False,6500.0,11500.0,15500.0,1250,1350,1450,4.793,8.519,11.594,4.483,12.4,estimated,reported_primary,low,S12 S25 S36
+de_shaw,firm,2020,FY2020,False,8500.0,12500.0,16500.0,1600,1750,1900,4.815,7.143,9.562,4.474,10.312,derived,reported_primary,low,S66 S55 S13 S14 S51 S26 S27 S37
+de_shaw,firm,2021,FY2021,False,10000.0,14800.0,19500.0,1850,1950,2100,5.093,7.59,10.05,4.762,10.541,derived,reported_primary,low,S65 S64 S55 S62 S14 S15 S28 S38
+de_shaw,firm,2022,FY2022,False,6300.0,9200.0,12800.0,1950,2100,2300,2.968,4.381,6.146,2.739,6.564,derived,reported_primary,medium,S63 S64 S59 S57 S16 S29 S39
+de_shaw,firm,2023,FY2023,False,7800.0,10500.0,13500.0,2150,2450,2600,3.165,4.286,5.689,3.0,6.279,derived,derived,medium,S56 S57 S58 S60 S61 S17 S29 S30 S40
+de_shaw,firm,2024,FY2024,False,15500.0,19800.0,24000.0,2450,2700,2950,5.652,7.333,9.097,5.254,9.796,derived,derived,medium,S52 S53 S54 S18 S19 S30 S41
+de_shaw,firm,2025,FY2025,False,17500.0,22500.0,27500.0,2650,2950,3150,5.882,7.627,9.576,5.556,10.377,derived,derived,medium,S45 S44 S46 S47 S48 S49 S50 S51 S19 S20 S21 S30 S1 S42 S43
+de_shaw,firm,2026,2026-01-01 to 2026-09-30 (estimated YTD; no reported 2026 return),True,3000.0,12000.0,25000.0,2950,3150,3450,0.95,3.81,7.96,0.87,8.475,estimated,reported_primary,low,S1 S2 S3 S22 S23 S67
+two_sigma,firm,2015,FY2015,False,3000.0,5000.0,7200.0,780,840,900,3.555,5.952,8.636,3.333,9.231,derived,derived,low,S1 S2 S3 S4 S5 S25 S26
+two_sigma,firm,2016,FY2016,False,1500.0,3600.0,6000.0,975,1050,1125,1.425,3.429,5.745,1.333,6.154,derived,derived,low,S6 S5 S26 S27
+two_sigma,firm,2017,FY2017,False,1000.0,3500.0,7000.0,1185,1275,1365,0.783,2.745,5.511,0.733,5.907,estimated,derived,low,S6 S5 S3 S11 S27 S28
+two_sigma,firm,2018,FY2018,False,4300.0,5400.0,7000.0,1370,1475,1580,2.886,3.661,4.795,2.722,5.109,derived,derived,medium,S8 S11 S7 S6 S9 S40 S28 S29
+two_sigma,firm,2019,FY2019,False,200.0,2500.0,5000.0,1460,1570,1680,0.127,1.592,3.197,0.119,3.425,derived,derived,low,S10 S9 S29 S30
+two_sigma,firm,2020,FY2020,False,-800.0,1700.0,4200.0,1435,1545,1655,-0.52,1.1,2.72,-0.557,2.927,derived,derived,low,S10 S3 S30 S31
+two_sigma,firm,2021,FY2021,False,1200.0,3800.0,7000.0,1480,1590,1700,0.753,2.39,4.421,0.706,4.73,derived,derived,low,S10 S39 S31 S32
+two_sigma,firm,2022,FY2022,False,4500.0,8000.0,11500.0,1700,1920,2150,2.318,4.167,6.11,2.093,6.765,derived,derived,low,S12 S13 S32 S33
+two_sigma,firm,2023,FY2023,False,5500.0,8000.0,10800.0,1980,2180,2350,2.504,3.67,5.029,2.34,5.455,derived,derived,medium,S14 S13 S15 S39 S33 S34
+two_sigma,firm,2024,FY2024,False,7000.0,10800.0,14500.0,1820,2000,2180,3.47,5.4,7.358,3.211,7.967,derived,derived,medium,S18 S16 S20 S17 S19 S21 S39 S40 S34 S35
+two_sigma,firm,2025,FY2025,False,6000.0,10500.0,14500.0,1590,1710,1830,3.494,6.14,8.548,3.279,9.119,derived,derived,low,S21 S3 S37 S20 S35 S36
+two_sigma,firm,2026,2026 YTD through 2026-03-31 (Q1 2026),True,1800.0,3400.0,5200.0,1520,1650,1800,1.084,2.061,3.176,1.0,3.421,derived,derived,low,S22 S23 S3 S21 S37 S38 S40 S24 S36
+optiver,firm,2015,FY2015 (2015-01-01 to 2015-12-31),False,982.0,1032.0,1154.0,875,913,965,1.049,1.13,1.274,1.018,1.319,derived,reported_press,medium,S1 S2 S3 S4 S32
+optiver,firm,2016,FY2016 (2016-01-01 to 2016-12-31),False,919.0,948.0,980.0,960,997,1045,0.899,0.951,1.0,0.879,1.021,derived,reported_press,medium,S5 S33
+optiver,firm,2017,FY2017 (2017-01-01 to 2017-12-31),False,893.0,919.0,947.0,990,1020,1065,0.855,0.901,0.94,0.838,0.957,reported_press,reported_press,medium,S5 S6 S7
+optiver,firm,2018,FY2018 (2018-01-01 to 2018-12-31),False,1512.0,1535.0,1559.0,1020,1038,1080,1.417,1.479,1.514,1.4,1.528,reported_press,reported_primary,high,S6 S7 S8 S9
+optiver,firm,2019,FY2019 (2019-01-01 to 2019-12-31),False,1243.0,1269.0,1295.0,1090,1108,1150,1.098,1.145,1.176,1.081,1.188,reported_primary,reported_primary,high,S7 S8 S9
+optiver,firm,2020,FY2020 (2020-01-01 to 2020-12-31),False,3563.0,3637.0,3700.0,1170,1200,1250,2.895,3.031,3.125,2.85,3.162,reported_primary,reported_primary,high,S10 S11 S12 S13
+optiver,firm,2021,FY2021 (2021-01-01 to 2021-12-31),False,2668.0,2733.0,2780.0,1370,1390,1445,1.878,1.966,2.011,1.846,2.029,reported_primary,reported_primary,high,S13 S14 S15
+optiver,firm,2022,FY2022 (2022-01-01 to 2022-12-31),False,3395.0,3464.0,3534.0,1685,1709,1775,1.942,2.027,2.077,1.913,2.097,reported_primary,reported_primary,high,S15 S16 S17
+optiver,firm,2023,FY2023 (2023-01-01 to 2023-12-31),False,2938.0,2998.0,3058.0,1925,1952,2030,1.47,1.536,1.574,1.447,1.589,reported_primary,reported_primary,high,S17 S18 S19
+optiver,firm,2024,FY2024 (2024-01-01 to 2024-12-31),False,3705.0,3781.0,3856.0,2080,2112,2195,1.714,1.79,1.835,1.688,1.854,reported_primary,reported_primary,high,S19 S20 S21 S29
+optiver,firm,2025,FY2025 (2025-01-01 to 2025-12-31),False,5020.0,5148.0,5280.0,2200,2233,2320,2.202,2.305,2.374,2.164,2.4,reported_primary,reported_primary,high,S22 S23 S24 S26 S28 S30 S31 S34
+optiver,firm,2026,"2026-01-01 to 2026-06-30 (H1 2026, model estimate; no Optiver 2026 PnL has been published)",True,2450.0,3300.0,4150.0,2200,2300,2480,1.055,1.435,1.812,0.988,1.886,estimated,estimated,low,S23 S25 S26 S27 S30
+imc,firm,2015,FY2015 (2015-01-01 to 2015-12-31),False,635.0,651.6,668.0,500,520,545,1.188,1.253,1.313,1.165,1.336,reported_press,reported_press,medium,S14 S12 S13 S15 S16 S17
+imc,firm,2016,FY2016 (2016-01-01 to 2016-12-31),False,525.0,535.4,545.0,445,466,495,1.078,1.149,1.207,1.061,1.225,reported_press,reported_press,medium,S12 S11
+imc,firm,2017,FY2017 (2017-01-01 to 2017-12-31),False,408.0,417.1,426.0,415,465,540,0.771,0.897,1.007,0.756,1.027,reported_press,estimated,medium,S11
+imc,firm,2018,FY2018 (2018-01-01 to 2018-12-31),False,605.0,709.0,835.0,460,530,620,1.07,1.338,1.661,0.976,1.815,derived,estimated,low,S10 S11 S9
+imc,firm,2019,FY2019 (2019-01-01 to 2019-12-31),False,505.0,519.7,560.0,550,620,700,0.74,0.838,0.965,0.721,1.018,reported_press,estimated,medium,S9 S10 S4
+imc,firm,2020,FY2020 (2020-01-01 to 2020-12-31),False,1605.0,1636.5,1668.0,685,730,780,2.092,2.242,2.396,2.058,2.435,reported_primary,derived,high,S4 S9 S8
+imc,firm,2021,FY2021 (2021-01-01 to 2021-12-31),False,1605.0,1637.3,1670.0,830,890,970,1.684,1.84,1.978,1.655,2.012,reported_primary,derived,high,S4 S8
+imc,firm,2022,FY2022 (2022-01-01 to 2022-12-31),False,1612.0,1644.8,1678.0,1060,1121,1200,1.367,1.467,1.557,1.343,1.583,reported_primary,reported_press,high,S3 S7
+imc,firm,2023,FY2023 (2023-01-01 to 2023-12-31),False,1347.0,1367.0,1388.0,1260,1380,1520,0.898,0.991,1.086,0.886,1.102,reported_primary,derived,high,S3 S2 S21
+imc,firm,2024,FY2024 (2024-01-01 to 2024-12-31),False,2212.0,2235.0,2258.0,1540,1610,1680,1.329,1.388,1.453,1.317,1.466,reported_primary,derived,high,S2 S1 S26 S24
+imc,firm,2025,FY2025 (2025-01-01 to 2025-12-31),False,3090.0,3120.0,3150.0,1730,1775,1860,1.676,1.758,1.807,1.661,1.821,reported_primary,derived,high,S1 S6 S5 S25 S22
+imc,firm,2026,2026-01-01 to 2026-09-30 (estimated YTD; no reported 2026 PnL),True,1500.0,2350.0,3300.0,1950,2070,2200,0.722,1.135,1.603,0.682,1.692,estimated,reported_primary,low,S1 S18 S19 S20 S23 S22
+virtu,firm,2015,FY2015 (2015-01-01 to 2015-12-31),False,500.0,511.3,522.0,145,149,153,3.315,3.432,3.551,3.268,3.6,reported_primary,reported_primary,high,S1 S2 S3 S4 S5 S9 S50
+virtu,firm,2016,FY2016 (2016-01-01 to 2016-12-31),False,414.0,424.5,433.0,140,148,160,2.643,2.868,3.043,2.587,3.093,reported_primary,reported_primary,high,S6 S7 S8 S9 S12 S50
+virtu,firm,2017,FY2017 (2017-01-01 to 2017-12-31); KCG included from 2017-07-20,False,545.0,556.3,567.5,380,450,540,1.029,1.236,1.466,1.009,1.493,reported_primary,derived,medium,S8 S9 S10 S11 S12 S13 S14 S50
+virtu,firm,2018,FY2018 (2018-01-01 to 2018-12-31),False,1000.0,1020.3,1040.7,495,535,590,1.726,1.907,2.066,1.695,2.102,reported_primary,derived,medium,S15 S16 S17 S9 S12 S18 S50
+virtu,firm,2019,FY2019 (2019-01-01 to 2019-12-31); ITG included from 2019-03-01,False,955.2,974.7,994.2,990,1065,1140,0.852,0.915,0.987,0.838,1.004,reported_primary,derived,medium,S19 S20 S21 S22 S18 S24
+virtu,firm,2020,FY2020 (2020-01-01 to 2020-12-31),False,2226.0,2271.4,2316.8,970,995,1030,2.193,2.283,2.358,2.161,2.388,reported_primary,reported_primary,high,S23 S24 S22 S25 S21 S46
+virtu,firm,2021,FY2021 (2021-01-01 to 2021-12-31),False,1871.7,1909.9,1948.1,962,975,988,1.912,1.959,2.006,1.894,2.025,reported_primary,reported_primary,high,S26 S27 S25 S28 S46
+virtu,firm,2022,FY2022 (2022-01-01 to 2022-12-31),False,1438.2,1467.6,1497.0,968,985,1000,1.453,1.49,1.53,1.438,1.546,reported_primary,reported_primary,high,S29 S30 S28 S31 S46
+virtu,firm,2023,FY2023 (2023-01-01 to 2023-12-31),False,1186.5,1210.7,1234.9,965,980,998,1.202,1.235,1.267,1.189,1.28,reported_primary,reported_primary,high,S32 S33 S31 S34 S46
+virtu,firm,2024,FY2024 (2024-01-01 to 2024-12-31),False,1565.7,1597.7,1629.7,956,968,980,1.612,1.651,1.69,1.598,1.705,reported_primary,reported_primary,high,S35 S36 S34 S37 S53
+virtu,firm,2025,FY2025 (2025-01-01 to 2025-12-31),False,2102.4,2145.3,2188.2,965,985,1012,2.106,2.178,2.241,2.077,2.268,reported_primary,reported_primary,high,S41 S42 S37 S43 S38 S39 S40 S46 S54
+virtu,firm,2026,2026-01-01 to 2026-06-30 (H1 2026 YTD),True,1474.3,1504.4,1534.5,1010,1040,1090,1.374,1.447,1.499,1.353,1.519,reported_primary,derived,high,S44 S45 S46 S47 S48 S49 S42 S43 S51 S52
+xtx,firm,2015,FY2015 (company formed 30 Jan 2015; trading from 1 Jul 2015),False,106.0,111.0,118.0,40,47,56,1.97,2.362,2.806,1.893,2.95,reported_primary,derived,high,S1 S21
+xtx,firm,2016,FY2016,False,172.0,179.0,188.0,60,68,78,2.282,2.632,3.011,2.205,3.133,reported_primary,derived,high,S2 S21
+xtx,firm,2017,FY2017,False,192.0,200.0,210.0,70,80,92,2.161,2.5,2.882,2.087,3.0,reported_primary,derived,high,S3 S22
+xtx,firm,2018,FY2018,False,395.0,410.0,428.0,88,98,112,3.642,4.184,4.698,3.527,4.864,reported_primary,derived,high,S4 S22
+xtx,firm,2019,FY2019,False,505.0,536.0,600.0,100,115,135,3.928,4.661,5.578,3.741,6.0,derived,derived,medium,S5 S6 S23 S34
+xtx,firm,2020,FY2020,False,1460.0,1566.0,1660.0,112,130,150,10.272,12.046,14.137,9.733,14.821,derived,derived,medium,S6 S7 S11 S24 S29 S35 S53
+xtx,firm,2021,FY2021,False,2110.0,2257.0,2380.0,145,170,215,10.399,13.276,15.7,9.814,16.414,derived,derived,medium,S7 S12 S13 S16 S20 S25 S30 S36 S51
+xtx,firm,2022,FY2022,False,2850.0,3031.0,3170.0,150,175,220,13.666,17.32,20.336,12.955,21.133,derived,derived,medium,S8 S13 S14 S17 S25 S31 S37 S52
+xtx,firm,2023,FY2023,False,2880.0,3048.0,3170.0,180,205,235,12.824,14.868,17.032,12.255,17.611,derived,derived,medium,S9 S14 S17 S26 S38 S50
+xtx,firm,2024,FY2024,False,4560.0,4856.0,5060.0,210,240,275,17.416,20.233,23.268,16.582,24.095,derived,derived,medium,S10 S15 S18 S27 S32 S39 S47 S48
+xtx,firm,2025,FY2025,False,6330.0,6613.0,6900.0,230,260,300,21.9,25.435,28.959,21.1,30.0,derived,derived,medium,S10 S15 S19 S28 S33 S40 S41 S42 S43 S44 S45 S47 S49
+xtx,firm,2026,2026-01-01 to 2026-09-30 (estimated YTD; no reported 2026 PnL),True,3300.0,5400.0,7400.0,255,290,330,11.191,18.621,26.169,10.0,29.02,estimated,derived,low,S15 S28 S46 S49
+jump,firm,2015,FY2015,False,600.0,1200.0,2400.0,520,620,760,0.94,1.935,3.957,0.789,4.615,estimated,derived,low,S1 S2 S12 S23
+jump,firm,2016,FY2016,False,550.0,1100.0,2200.0,650,740,880,0.728,1.486,3.009,0.625,3.385,estimated,derived,low,S2 S3 S13
+jump,firm,2017,FY2017,False,450.0,900.0,1700.0,690,790,940,0.558,1.139,2.183,0.479,2.464,estimated,derived,low,S3 S14
+jump,firm,2018,FY2018,False,650.0,1250.0,2200.0,700,800,950,0.795,1.562,2.793,0.684,3.143,estimated,derived,low,S4 S5 S15
+jump,firm,2019,FY2019,False,550.0,1050.0,1900.0,740,840,1000,0.64,1.25,2.292,0.55,2.568,estimated,derived,low,S5 S6 S16
+jump,firm,2020,FY2020,False,1500.0,2750.0,4500.0,810,920,1100,1.589,2.989,4.971,1.364,5.556,estimated,derived,low,S6 S7 S17
+jump,firm,2021,FY2021,False,1900.0,3300.0,5800.0,950,1090,1300,1.696,3.028,5.41,1.462,6.105,estimated,derived,low,S7 S8 S18 S24 S26 S27 S33 S41
+jump,firm,2022,FY2022,False,1200.0,2400.0,4200.0,1200,1370,1640,0.856,1.752,3.113,0.732,3.5,estimated,derived,low,S8 S19 S28 S33
+jump,firm,2023,FY2023,False,1100.0,2100.0,3600.0,1350,1540,1830,0.698,1.364,2.375,0.601,2.667,estimated,derived,low,S9 S10 S20 S30
+jump,firm,2024,FY2024,False,1500.0,2600.0,4300.0,1370,1560,1860,0.936,1.667,2.802,0.806,3.139,estimated,derived,low,S10 S11 S21 S25 S29 S31
+jump,firm,2025,FY2025,False,2600.0,4600.0,7500.0,1500,1720,2050,1.472,2.674,4.443,1.268,5.0,estimated,derived,low,S11 S22 S29 S32 S39 S40
+jump,firm,2026,2026-01-01 to 2026-09-30,True,1600.0,3400.0,5800.0,1650,1900,2150,0.834,1.789,3.109,0.744,3.515,estimated,estimated,low,S11 S22 S34 S35 S36 S37 S38
