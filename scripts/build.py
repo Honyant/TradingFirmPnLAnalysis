@@ -180,6 +180,7 @@ def build_firm(key, name, short, ftype):
         "caveats": raw.get("caveats", []),
         "open_questions": raw.get("open_questions", []),
         "changelog": raw.get("changelog", []),
+        "review_status": raw.get("review_status", "final"),
         "sources": raw.get("sources", []),
     }
 

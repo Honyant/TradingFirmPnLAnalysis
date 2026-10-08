@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-10-08T07:49Z",
+  "stopped_at": "2026-10-08T08:48Z",
+  "agents_total": 42,
+  "rounds": [
+    {
+      "round": 1,
+      "started": "07:49 UTC",
+      "finished": "08:48 UTC",
+      "summary": "One workflow per firm. 34 search and synthesis agents completed before the run was stopped to save budget: all four search lenses for Optiver, IMC and Virtu; three for Jane Street, HRT and Citadel Securities; two for Renaissance, D. E. Shaw, Two Sigma and Jump; one for XTX. Optiver, IMC and Virtu were synthesized inside their workflows; the other eight were synthesized afterwards from the saved evidence, with no further web searching. Adversarial critics and reconciliation did not complete for any firm."
+    }
+  ]
+}

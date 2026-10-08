@@ -1,0 +1,990 @@
+{
+ "firm_key": "virtu",
+ "firm_name": "Virtu Financial",
+ "pnl_definition": "PnL is Adjusted Net Trading Income (ANTI), Virtu's own non-GAAP measure, in USD millions by calendar year. It uses the current definition, introduced with the KCG deal in 2017-18: trading income, net + commissions, net and technology services + interest and dividends income, minus brokerage, exchange, clearance fees and payments for order flow, minus interest and dividends expense. It excludes 'Other, net' items such as the TRA remeasurement, business-sale gains (BondPoint, RFQ-hub) and investment gains.\n\n2015 and 2016 use the restated values from the FY2017 10-K and Q4 2017 release ($511.3M and $424.5M). They were first reported as $500.7M and $414.1M under the older definition, which left out technology services and did not deduct PFOF.\n\nANTI is net revenue after variable trading costs. It is not profit: it is before compensation, communications, D&A, financing costs and taxes. It also includes the agency commissions earned by Execution Services, which comes from KCG and ITG.\n\nGAAP total revenues and GAAP consolidated net income (including noncontrolling interests, as audited in the 10-K) are given in the notes, and net income in net_income_usd_m.",
+ "headcount_definition": "Headcount is the time-weighted AVERAGE number of employees in the calendar year (for 2026, over 2026-01-01 to 2026-06-30). It covers all functions and offices and excludes contractors, which Virtu never discloses. The averages are interpolated from primary snapshots:\n- 10-K Item 1 counts are 'approximately N employees, all full-time'. From FY2017 onward they are dated February or March of the following year.\n- Proxy CEO pay-ratio populations are dated Dec 31 (2019-2025). They include 8-14 temporary employees in 2019-2022.\n- 2015 quarterly earnings releases and the November 2015 prospectus also give counts.\n\nFor 2017 and 2019 the averages are weighted by days before and after the acquisition close: KCG on 2017-07-20 and ITG on 2019-03-01. This matches the scope of ANTI, which includes each acquired business only from its close. Year-end counts are given in each row's notes.",
+ "fx_note": "No FX conversion was needed. Virtu Financial Inc. reports in USD, and every PnL, revenue and net income figure is taken directly from USD-denominated SEC filings. The orchestrator's EURUSD and GBPUSD tables were not used.",
+ "methodology": "ANTI, GAAP revenues and net income for every year come from Virtu's SEC filings (CIK 1592386): the Q4 and full-year earnings-release reconciliation tables, the 10-Ks, the 2026 10-Qs and the Q1 and Q2 2026 releases. Three independent research lenses fetched these and got identical figures. The synthesizer re-fetched the Q2 2026 release and the EDGAR 8-K index on 2026-10-08 to confirm the H1 2026 figures and that no Q3 2026 results had been filed.\n\nThe restated (current-definition) ANTI is used for 2015-2016 so the series is consistent. PnL bars are about +/-2%, reflecting definition and vintage risk on a deterministic non-GAAP reconciliation; 2015 is slightly wider to cover the old-definition figure.\n\nHeadcount averages are interpolated from 10-K, proxy pay-ratio and 2015 release snapshots. No year-end count was ever disclosed for 2017 or 2018 (Virtu was an emerging growth company), so those years were triangulated from:\n- the 10-K counts of about 560 on 2018-03-05 and about 483 on 2019-02-07;\n- KCG's last count (923 on 2017-03-31) and ITG's (883 on 2018-12-31);\n- DOL Form 5500 US 401(k) active-participant counts.\n\nThe 2017 and 2019 averages are weighted by days before and after each acquisition close. They therefore carry the widest bars, about +/-15% and +/-7%. The 2026 row is H1 only (cutoff 2026-06-30). Its headcount is estimated from 1,010 at 2025-12-31 and 1,027 at 2026-02-13.",
+ "entities": [
+  {
+   "key": "firm",
+   "name": "Virtu Financial (consolidated)",
+   "description": "Virtu Financial, Inc. (NASDAQ: VIRT until mid-2025, then NYSE: VIRT; SEC CIK 1592386) consolidated: Market Making plus Execution Services. It includes KCG Holdings from 2017-07-20 and Investment Technology Group (ITG) from 2019-03-01. Virtu Financial LLC is the operating subsidiary and its figures are the same as the consolidated ones. Pre-acquisition KCG and ITG results are NOT included."
+  }
+ ],
+ "rows": [
+  {
+   "year": 2015,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 500,
+    "mid": 511.3,
+    "high": 522
+   },
+   "headcount": {
+    "low": 145,
+    "mid": 149,
+    "high": 153
+   },
+   "net_income_usd_m": {
+    "low": 195.5,
+    "mid": 197.5,
+    "high": 199.5
+   },
+   "is_partial_year": false,
+   "period_label": "FY2015 (2015-01-01 to 2015-12-31)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "reported_primary",
+   "confidence": "high",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S9",
+    "S50"
+   ],
+   "notes": "ANTI is $511.3M under the current definition, as restated in the FY2017 10-K: $500.7M market making plus $10.6M technology services. It was first reported as $500.7M under the old definition; the low bar covers that figure. Quarterly ANTI as first reported was 148.4, 105.9, 138.6 and 107.8.\n\nVirtu was a pre-KCG pure market maker and IPO'd in April 2015.\n\nGAAP: total revenues $796.2M, consolidated net income (including NCI) $197.5M. Net income attributable to Class A was $20.9M. Adjusted EBITDA was $352.4M and employee compensation $88.0M.\n\nHeadcount, all full-time:\n- 148 at 2014-12-31\n- 149 at 2015-06-30 per the Q2 release (148 per the November 2015 prospectus)\n- 150 at 2015-09-30\n- 148 at 2015-12-31\nThe average is about 149; the year-end figure is 148."
+  },
+  {
+   "year": 2016,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 414,
+    "mid": 424.5,
+    "high": 433
+   },
+   "headcount": {
+    "low": 140,
+    "mid": 148,
+    "high": 160
+   },
+   "net_income_usd_m": {
+    "low": 156.7,
+    "mid": 158.3,
+    "high": 160
+   },
+   "is_partial_year": false,
+   "period_label": "FY2016 (2016-01-01 to 2016-12-31)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "reported_primary",
+   "confidence": "high",
+   "source_ids": [
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S12",
+    "S50"
+   ],
+   "notes": "ANTI is $424.5M under the current definition, as restated in the Q4 2017 release and FY2017 10-K. It was first reported as $414.1M under the old definition, which excluded $10.35M of technology services.\n\n2016 was a low-volatility year: ANTI fell about 17%.\n\nGAAP: total revenues $702.3M; consolidated net income $158.3M per the 10-K ($158.5M in the release). Adjusted EBITDA was $268.6M and comp $85.3M.\n\nHeadcount: the 10-K reports 148 full-time employees at 2016-12-31. That is the same figure as YE2014 and YE2015, so the sentence may have been carried forward unchanged; the bar is widened to 140-160. Form 5500 US 401(k) active participants (107 to 111 during 2016) are consistent with a flat headcount."
+  },
+  {
+   "year": 2017,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 545,
+    "mid": 556.3,
+    "high": 567.5
+   },
+   "headcount": {
+    "low": 380,
+    "mid": 450,
+    "high": 540
+   },
+   "net_income_usd_m": {
+    "low": 18.5,
+    "mid": 18.9,
+    "high": 19.3
+   },
+   "is_partial_year": false,
+   "period_label": "FY2017 (2017-01-01 to 2017-12-31); KCG included from 2017-07-20",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "derived",
+   "confidence": "medium",
+   "source_ids": [
+    "S8",
+    "S9",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S50"
+   ],
+   "notes": "Scope break: KCG closed 2017-07-20, so ANTI includes about 5.4 months of KCG. ANTI was $556.3M: Market Making $489.5M, Execution Services $67.3M, Corporate -$0.5M. Quarterly ANTI was 82.2 and 77.1 (Q1 and Q2, restated from 79.4 and 74.0), then 159.8 and 237.3.\n\nANTI excludes about $87-88M of Q4 2017 'Other, net'. Most of that is an $86.6M gain from remeasuring the tax receivable agreement (TRA) liability after the US Tax Cuts and Jobs Act. One lens attributed it to BondPoint, but the BondPoint sale closed 2018-01-02.\n\nGAAP: total revenues $1,028.0M per the 10-K ($1,023.9M in the release). Consolidated net income was $18.9M per the 10-K; the 2018-02-08 release said $33.3M, and later filings use $18.9M. Comp was $177.5M, including a $23.0M KCG retention bonus.\n\nHeadcount: no 2017-12-31 count was disclosed. The inputs are:\n- 148 at Virtu for the 200 days before the close\n- about 1,070 combined at close (Virtu 148 plus KCG's 923 on 2017-03-31), followed by integration cuts\n- year-end 2017 estimated at about 650 (range 560-750), triangulated from Form 5500 US active participants (KCG plan 449 plus Virtu plan 99 at YE2017)\n- about 560 at 2018-03-05 (10-K)\nThe time-weighted average is about 450 (lens estimates were 430, 460 and 480). PnL per head for 2017 depends heavily on this choice; using the year-end figure (about 650) would give a much lower ratio."
+  },
+  {
+   "year": 2018,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 1000,
+    "mid": 1020.3,
+    "high": 1040.7
+   },
+   "headcount": {
+    "low": 495,
+    "mid": 535,
+    "high": 590
+   },
+   "net_income_usd_m": {
+    "low": 614,
+    "mid": 620.2,
+    "high": 626.4
+   },
+   "is_partial_year": false,
+   "period_label": "FY2018 (2018-01-01 to 2018-12-31)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "derived",
+   "confidence": "medium",
+   "source_ids": [
+    "S15",
+    "S16",
+    "S17",
+    "S9",
+    "S12",
+    "S18",
+    "S50"
+   ],
+   "notes": "First full year with KCG, before ITG. ANTI was $1,020.3M: Market Making $923.9M, Execution Services $96.3M. Quarters were 340.3 (February 2018 'Volmageddon'), 202.9, 177.9 and 299.2; the January 2019 preliminary range for Q4 was 285-298. The BondPoint sale to ICE closed 2018-01-02.\n\nGAAP: total revenues $1,878.7M, which includes roughly $340M of other income such as business-sale gains; ANTI excludes it. Consolidated net income was $620.2M (Q1 alone $410M) and Adjusted EBITDA $620.0M.\n\nHeadcount: no Dec-31 count was disclosed (Virtu was an emerging growth company with no pay-ratio disclosure). The data points are:\n- year-end 2017 estimated at about 650\n- about 560 at 2018-03-05 (FY2017 10-K)\n- about 483 at 2019-02-07 (FY2018 10-K, before ITG)\n- 428 Form 5500 US active participants at YE2018\nThe Q3 2018 10-Q cites headcount decreases after KCG. The average is about 535 (lens estimates 520, 530 and 540); year-end 2018 is about 490."
+  },
+  {
+   "year": 2019,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 955.2,
+    "mid": 974.7,
+    "high": 994.2
+   },
+   "headcount": {
+    "low": 990,
+    "mid": 1065,
+    "high": 1140
+   },
+   "net_income_usd_m": {
+    "low": -104.7,
+    "mid": -103.7,
+    "high": -102.7
+   },
+   "is_partial_year": false,
+   "period_label": "FY2019 (2019-01-01 to 2019-12-31); ITG included from 2019-03-01",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "derived",
+   "confidence": "medium",
+   "source_ids": [
+    "S19",
+    "S20",
+    "S21",
+    "S22",
+    "S18",
+    "S24"
+   ],
+   "notes": "Scope break: ITG closed 2019-03-01, so ANTI includes about 10 months of ITG. ANTI was $974.7M: Market Making $604.6M, Execution Services $370.1M. Quarters were 228.8, 238.9, 249.8 and 257.2, consistent with the preliminary Q4 range of 256-258.\n\nGAAP: total revenues $1,517.5M as recast in the FY2020 10-K (first reported $1,530.1M; ANTI unchanged). The consolidated net LOSS of -$103.7M reflects ITG integration and financing costs and higher severance (comp $383.7M). Adjusted EBITDA was $431.9M.\n\nHeadcount:\n- about 483 at 2019-02-07, before ITG\n- ITG had 883 at 2018-12-31, so about 1,366 combined at close\n- 1,065 at 2019-12-31 (proxy pay ratio, including 14 temporary staff)\n- 1,012 at 2020-02-21 (10-K)\nThe time-weighted average is about 1,065 (lens estimates 1,065, 1,080 and 1,100); year-end 2019 is also about 1,065. A low-volatility year."
+  },
+  {
+   "year": 2020,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 2226,
+    "mid": 2271.4,
+    "high": 2316.8
+   },
+   "headcount": {
+    "low": 970,
+    "mid": 995,
+    "high": 1030
+   },
+   "net_income_usd_m": {
+    "low": 1109.7,
+    "mid": 1120.9,
+    "high": 1132.1
+   },
+   "is_partial_year": false,
+   "period_label": "FY2020 (2020-01-01 to 2020-12-31)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "reported_primary",
+   "confidence": "high",
+   "source_ids": [
+    "S23",
+    "S24",
+    "S22",
+    "S25",
+    "S21",
+    "S46"
+   ],
+   "notes": "Record year for the series to date, driven by COVID volatility. ANTI was $2,271.4M (shown as $2,271.3M in the FY2021 release): Market Making $1,782.4M, Execution Services $489.0M. Quarters were 784.5, 668.7, 362.3 and 456.0. The July 2026 lender deck restates $2,271M.\n\nGAAP: total revenues $3,239.3M, consolidated net income $1,120.9M (attributable to Class A $649.2M), Adjusted EBITDA $1,648.0M, comp $393.5M.\n\nHeadcount snapshots:\n- 1,065 at YE2019, including temps\n- 1,012 at 2020-02-21\n- about 1,009 plan-eligible at 2020-04-13\n- 970 at YE2020, including 8 temps\n- 976 at 2021-02-19 (nine countries; 74% Americas)\nThe average is about 995; year-end is 970."
+  },
+  {
+   "year": 2021,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 1871.7,
+    "mid": 1909.9,
+    "high": 1948.1
+   },
+   "headcount": {
+    "low": 962,
+    "mid": 975,
+    "high": 988
+   },
+   "net_income_usd_m": {
+    "low": 819,
+    "mid": 827.2,
+    "high": 835.5
+   },
+   "is_partial_year": false,
+   "period_label": "FY2021 (2021-01-01 to 2021-12-31)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "reported_primary",
+   "confidence": "high",
+   "source_ids": [
+    "S26",
+    "S27",
+    "S25",
+    "S28",
+    "S46"
+   ],
+   "notes": "Retail and meme-stock boom year; Q1 2021 ANTI alone was $728.0M. FY ANTI was $1,909.9M: Market Making $1,427.6M, Execution Services $482.4M. Quarters were 728.0, 341.8, 354.4 and 485.6.\n\nGAAP: total revenues $2,811.5M, consolidated net income $827.2M (attributable to Class A $476.9M), Adjusted EBITDA $1,301.2M, comp $376.3M.\n\nHeadcount snapshots: 970 at YE2020, 976 in February 2021, 977 at YE2021 (including 11 temps) and 973 at 2022-02-11. The average is about 975; year-end is 977."
+  },
+  {
+   "year": 2022,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 1438.2,
+    "mid": 1467.6,
+    "high": 1497
+   },
+   "headcount": {
+    "low": 968,
+    "mid": 985,
+    "high": 1000
+   },
+   "net_income_usd_m": {
+    "low": 463.6,
+    "mid": 468.3,
+    "high": 473
+   },
+   "is_partial_year": false,
+   "period_label": "FY2022 (2022-01-01 to 2022-12-31)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "reported_primary",
+   "confidence": "high",
+   "source_ids": [
+    "S29",
+    "S30",
+    "S28",
+    "S31",
+    "S46"
+   ],
+   "notes": "ANTI was $1,467.6M: Market Making $1,058.5M, Execution Services $409.2M. Quarters were 505.1, 357.4, 331.1 and 274.1. Volatility was high, but retail activity fell back from 2021.\n\nGAAP: total revenues $2,364.8M, consolidated net income $468.3M (attributable to Class A $265.0M), Adjusted EBITDA $859.1M, comp $390.9M.\n\nHeadcount snapshots: 973 at 2022-02-11, about 962 plan-eligible at 2022-04-07, 990 at YE2022 (including 8 temps) and 993 at 2023-02-03. The average is about 985; year-end is 990."
+  },
+  {
+   "year": 2023,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 1186.5,
+    "mid": 1210.7,
+    "high": 1234.9
+   },
+   "headcount": {
+    "low": 965,
+    "mid": 980,
+    "high": 998
+   },
+   "net_income_usd_m": {
+    "low": 261.3,
+    "mid": 263.9,
+    "high": 266.5
+   },
+   "is_partial_year": false,
+   "period_label": "FY2023 (2023-01-01 to 2023-12-31)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "reported_primary",
+   "confidence": "high",
+   "source_ids": [
+    "S32",
+    "S33",
+    "S31",
+    "S34",
+    "S46"
+   ],
+   "notes": "ANTI was $1,210.7M, the lowest year since the ITG deal: Market Making $846.6M, Execution Services $364.1M. Quarters were 373.1, 278.7, 298.0 and 260.9.\n\nGAAP: total revenues $2,293.4M. That figure is inflated by $462.6M of interest and dividends income, which is largely offset inside ANTI. Consolidated net income was $263.9M (attributable to Class A $142.0M), Adjusted EBITDA $568.0M and comp $394.0M.\n\nHeadcount snapshots: 990 at YE2022, 993 at 2023-02-03, 972 at YE2023 (all full-time) and 975 at 2024-02-02. The average is about 980; year-end is 972."
+  },
+  {
+   "year": 2024,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 1565.7,
+    "mid": 1597.7,
+    "high": 1629.7
+   },
+   "headcount": {
+    "low": 956,
+    "mid": 968,
+    "high": 980
+   },
+   "net_income_usd_m": {
+    "low": 529.2,
+    "mid": 534.5,
+    "high": 539.9
+   },
+   "is_partial_year": false,
+   "period_label": "FY2024 (2024-01-01 to 2024-12-31)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "reported_primary",
+   "confidence": "high",
+   "source_ids": [
+    "S35",
+    "S36",
+    "S34",
+    "S37",
+    "S53"
+   ],
+   "notes": "ANTI was $1,597.7M, up 32%: Market Making $1,195.1M, Execution Services $402.6M. Quarters were 366.9, 385.1, 388.0 and 457.7. The FY2025 10-K repeats the same figure, so there was no restatement.\n\nGAAP: total revenues $2,876.9M, consolidated net income $534.5M, Adjusted EBITDA $918.7M, comp $434.8M. Wikipedia's 'net income $276.4M' is net income attributable to Class A, which is a different metric and is not used.\n\nHeadcount snapshots: 972 at YE2023, 975 in February 2024, 965 at YE2024 (all full-time) and 969 at 2025-02-14 (12 countries). The average is about 968; year-end is 965."
+  },
+  {
+   "year": 2025,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 2102.4,
+    "mid": 2145.3,
+    "high": 2188.2
+   },
+   "headcount": {
+    "low": 965,
+    "mid": 985,
+    "high": 1012
+   },
+   "net_income_usd_m": {
+    "low": 903.2,
+    "mid": 912.3,
+    "high": 921.4
+   },
+   "is_partial_year": false,
+   "period_label": "FY2025 (2025-01-01 to 2025-12-31)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "reported_primary",
+   "confidence": "high",
+   "source_ids": [
+    "S41",
+    "S42",
+    "S37",
+    "S43",
+    "S38",
+    "S39",
+    "S40",
+    "S46",
+    "S54"
+   ],
+   "notes": "ANTI was $2,145.3M, up 34%: Market Making $1,666.3M, Execution Services $479.0M. Quarters were 497.1, 567.7, 467.0 and 613.4, which sum to the total; the FY2025 10-K matches.\n\nGAAP: total revenues $3,632.1M, which includes a $67.0M gain on the RFQ-hub sale in Q2 2025 under 'Other, net' (excluded from ANTI). Consolidated net income was $912.3M (attributable to Class A $468.4M), Adjusted EBITDA $1,399.2M (65.2% of ANTI) and comp $528.1M.\n\nOther 2025 events: CEO Douglas Cifu was succeeded by Aaron Simons on 2025-08-01, and the listing moved from NASDAQ to NYSE in mid-2025.\n\nHeadcount snapshots: 965 at YE2024, 969 at 2025-02-14, about 1,010 at YE2025 (proxy pay ratio) and 1,027 at 2026-02-13. The average is about 985; year-end is about 1,010. StockAnalysis/S&P mislabels the 1,027 figure (dated 2026-02-13) as a Dec-31-2025 count."
+  },
+  {
+   "year": 2026,
+   "entity": "firm",
+   "pnl_usd_m": {
+    "low": 1474.3,
+    "mid": 1504.4,
+    "high": 1534.5
+   },
+   "headcount": {
+    "low": 1010,
+    "mid": 1040,
+    "high": 1090
+   },
+   "net_income_usd_m": {
+    "low": 625.2,
+    "mid": 631.5,
+    "high": 637.8
+   },
+   "is_partial_year": true,
+   "period_label": "2026-01-01 to 2026-06-30 (H1 2026 YTD)",
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "derived",
+   "confidence": "high",
+   "source_ids": [
+    "S44",
+    "S45",
+    "S46",
+    "S47",
+    "S48",
+    "S49",
+    "S42",
+    "S43",
+    "S51",
+    "S52"
+   ],
+   "notes": "YTD through 2026-06-30. ANTI was $1,504.4M, up 41% on $1,064.9M in H1 2025: Market Making $1,216.9M, Execution Services $287.5M.\n- Q1 2026: $786.5M, a record quarter at $12.9M/day.\n- Q2 2026: $717.9M at $11.6M/day.\nThe 2026-07-14 preliminary flash ($718M) is the same Q2 number; do not double count it. A GuruFocus/Yahoo headline calls Q2 a 'Record', but the record is trailing-twelve-month: Q1 was higher than Q2.\n\nLower SEC Section 31 fees cut 2026 brokerage costs, which modestly flatters ANTI.\n\nGAAP: H1 total revenues $2,285.3M and consolidated net income $631.5M (Q1 $346.6M, Q2 $284.9M). Adjusted EBITDA was $957.4M. Comp was $425.0M, up 66%; the 10-Qs attribute this to incentive accruals, not hiring.\n\nQ3 2026 results had not been filed as of 2026-10-08. The EDGAR 8-K index shows the last Item 2.02 on 2026-07-30. One lens reports the Q3 release is scheduled for 2026-11-05; that is not independently verified.\n\nHeadcount: the latest disclosed count is about 1,027 at 2026-02-13 (FY2025 10-K; 13 countries, 69% Americas). There was about 1,010 at YE2025. The 2026 10-Qs give no count, and the 10-K flags planned 'increases in headcount'. The H1 average is estimated at about 1,040 (1,010-1,090).\n\nThis is a half year, so PnL per head is not comparable with full years without annualizing: roughly x2 gives about a $3.0B run-rate, with H2 unknown."
+  }
+ ],
+ "ytd_2026": {
+  "cutoff_date": "2026-06-30",
+  "period_label": "2026-01-01 to 2026-06-30 (H1 2026)",
+  "description": "2026 YTD is the six months ended 2026-06-30. The source is the Q2 2026 earnings release (8-K Ex. 99.1, 2026-07-30) and the Q2 2026 10-Q (2026-07-31). ANTI was $1,504.4M (Q1 $786.5M + Q2 $717.9M), GAAP total revenues $2,285.3M and GAAP consolidated net income $631.5M. As of 2026-10-08 no Q3 2026 results had been filed (synthesizer's EDGAR check), and Virtu does not publish monthly ANTI. 2026 headcount is the estimated H1 average (about 1,040), anchored on the latest disclosed count of about 1,027 at 2026-02-13."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "title": "Virtu Announces Fourth Quarter and Full Year 2015 Results (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465916093767/a16-3481_1ex99d1.htm",
+   "date": "2016-02-04",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2015 ANTI as first reported ($500.7M, old definition); GAAP revenues $796.2M; net income $197.5M; Adjusted EBITDA $352.4M; 148 full-time employees at 2015-12-31"
+  },
+  {
+   "id": "S2",
+   "title": "Virtu Financial Inc. Form 10-K FY2015",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000155837016004397/virt-20151231x10k.htm",
+   "date": "2016-03-25",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Headcount of 148 at 2015-12-31 and 148 at 2014-12-31; FY2015 GAAP revenues and net income"
+  },
+  {
+   "id": "S3",
+   "title": "Virtu Q2 2015 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465915056233/a15-17022_1ex99d1.htm",
+   "date": "2015-08-05",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "149 full-time employees at 2015-06-30; Q2 2015 ANTI"
+  },
+  {
+   "id": "S4",
+   "title": "Virtu Q3 2015 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465915075471/a15-21742_1ex99d1.htm",
+   "date": "2015-11-04",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "150 full-time employees at 2015-09-30; Q3 2015 ANTI"
+  },
+  {
+   "id": "S5",
+   "title": "Virtu Financial prospectus 424B4 (November 2015 secondary offering)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000104746915008620/a2226592z424b4.htm",
+   "date": "2015-11-13",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "'as of June 30, 2015, we had only 148 employees'"
+  },
+  {
+   "id": "S6",
+   "title": "Virtu Q4/FY2016 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000104746917000474/a2230831zex-99_1.htm",
+   "date": "2017-02-02",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2016 ANTI as first reported ($414.1M); GAAP revenues $702.3M; net income $158.5M; Adjusted EBITDA $268.6M"
+  },
+  {
+   "id": "S7",
+   "title": "Virtu Financial Inc. Form 10-K FY2016",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000155837017001698/virt-20161231x10k.htm",
+   "date": "2017-03-14",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "148 employees at 2016-12-31; FY2016 net income $158.3M"
+  },
+  {
+   "id": "S8",
+   "title": "Virtu Q4/FY2017 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465918007391/a18-5567_1ex99d1.htm",
+   "date": "2018-02-08",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2017 ANTI $556.3M (MM/ES split); restated FY2016 ANTI $424.5M; FY2017 revenues and net income as first reported ($1,023.9M / $33.3M)"
+  },
+  {
+   "id": "S9",
+   "title": "Virtu Financial Inc. Form 10-K FY2017",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000155837018002007/virt-20171231x10k.htm",
+   "date": "2018-03-13",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Restated FY2015 ANTI $511.3M and FY2016 $424.5M; FY2017 GAAP revenues $1,028.0M and net income $18.9M; about 560 employees at 2018-03-05; $86.6M TRA remeasurement"
+  },
+  {
+   "id": "S10",
+   "title": "KCG Holdings, Inc. Form 10-K FY2016",
+   "publisher": "KCG Holdings Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1569391/000156939117000003/kcg1231201610k.htm",
+   "date": "2017-02-24",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "KCG headcount of 952 full-time at 2016-12-31 (1,006 at YE2015)"
+  },
+  {
+   "id": "S11",
+   "title": "KCG Holdings, Inc. Form 10-Q Q1 2017",
+   "publisher": "KCG Holdings Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1569391/000156939117000006/kcg0331201710q.htm",
+   "date": "2017-05-08",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "KCG had 923 full-time employees at 2017-03-31, its last count before the merger"
+  },
+  {
+   "id": "S12",
+   "title": "DOL EBSA Form 5500 datasets (KCG Holdings 401(k) plan PY2017; Virtu Financial LLC 401K Plan PY2015-2021)",
+   "publisher": "US Department of Labor (EBSA)",
+   "url": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets",
+   "date": "2018-10-12 / 2022-09-20",
+   "type": "primary_filing",
+   "reliability": "medium",
+   "supports": "US 401(k) active participants: KCG plan 449 and Virtu plan 99 at YE2017; Virtu plan 428 at YE2018. Used to triangulate the undisclosed YE2017 and YE2018 headcount (US-only and imperfect)"
+  },
+  {
+   "id": "S13",
+   "title": "Virtu Q3 2017 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465917066445/a17-26091_1ex99d1.htm",
+   "date": "2017-11-07",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Q3 2017 ANTI $159.8M (new definition, KCG from 2017-07-20)"
+  },
+  {
+   "id": "S14",
+   "title": "Virtu Q1 2018 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465918030404/a18-12743_1ex99d1.htm",
+   "date": "2018-05-04",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Q1 2018 ANTI $340.3M; restated Q1 2017 ANTI $82.2M"
+  },
+  {
+   "id": "S15",
+   "title": "Virtu Q4/FY2018 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465919006175/a19-4090_1ex99d1.htm",
+   "date": "2019-02-07",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2018 ANTI $1,020.3M; GAAP revenues $1,878.7M; net income $620.2M; Adjusted EBITDA $620.0M"
+  },
+  {
+   "id": "S16",
+   "title": "Virtu Announces Preliminary Estimated Fourth Quarter 2018 Results",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465919001266/a19-2107_1ex99d1.htm",
+   "date": "2019-01-08",
+   "type": "primary_filing",
+   "reliability": "medium",
+   "supports": "Q4 2018 preliminary ANTI range of $285-298M (actual $299.2M)"
+  },
+  {
+   "id": "S17",
+   "title": "Virtu Financial Inc. Form 10-K FY2018",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238619000003/virtufinancial12-31x1810k.htm",
+   "date": "2019-03-01",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 483 employees at 2019-02-07 (pre-ITG); FY2017 ANTI $556.291M"
+  },
+  {
+   "id": "S18",
+   "title": "Investment Technology Group Form 10-K FY2018",
+   "publisher": "Investment Technology Group (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/920424/000155837019001996/itg-20181231x10k.htm",
+   "date": "2019-03-14",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "ITG employed 883 staff globally at 2018-12-31"
+  },
+  {
+   "id": "S19",
+   "title": "Virtu Q4/FY2019 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465920015262/tm207264d1_ex99-1.htm",
+   "date": "2020-02-11",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2019 ANTI $974.7M; GAAP revenues $1,530.1M as first reported; net loss -$103.7M; Adjusted EBITDA $431.9M"
+  },
+  {
+   "id": "S20",
+   "title": "Virtu Announces Preliminary Estimated Fourth Quarter 2019 Results and Update on the Market Environment for January 2020",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465920009869/tm205981d2_ex99-1.htm",
+   "date": "2020-02-03",
+   "type": "primary_filing",
+   "reliability": "medium",
+   "supports": "Q4 2019 preliminary ANTI range of $256-258M (actual $257.2M)"
+  },
+  {
+   "id": "S21",
+   "title": "Virtu Financial Inc. Form 10-K FY2019",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238620000003/virtufinancial12-31x19.htm",
+   "date": "2020-02-28",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 1,012 employees at 2020-02-21; FY2019 net loss; comp increase from ITG headcount and severance"
+  },
+  {
+   "id": "S22",
+   "title": "Virtu Financial DEF 14A proxy statement 2020 (CEO pay ratio)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000104746920002576/a2241364zdef14a.htm",
+   "date": "2020-04-24",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 1,065 employees at 2019-12-31 (14 temporary); about 1,009 plan-eligible at 2020-04-13"
+  },
+  {
+   "id": "S23",
+   "title": "Virtu Q4/FY2020 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465921020227/tm216148d1_ex99-1.htm",
+   "date": "2021-02-11",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2020 ANTI $2,271.4M; GAAP revenues $3,239.3M; net income $1,120.9M; Adjusted EBITDA $1,648.0M; recast FY2019 revenues $1,517.5M"
+  },
+  {
+   "id": "S24",
+   "title": "Virtu Financial Inc. Form 10-K FY2020",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238621000005/virt-20201231.htm",
+   "date": "2021-02-25",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 976 employees at 2021-02-19 (nine countries); recast FY2019 revenues $1,517.5M"
+  },
+  {
+   "id": "S25",
+   "title": "Virtu Financial DEF 14A proxy statement 2021 (CEO pay ratio)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465921054475/tm2113222-1_def14a.htm",
+   "date": "2021-04-23",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 970 employees at 2020-12-31 (8 temporary)"
+  },
+  {
+   "id": "S26",
+   "title": "Virtu Q4/FY2021 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465922013007/tm225694d1_ex99-1.htm",
+   "date": "2022-02-08",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2021 ANTI $1,909.9M; GAAP revenues $2,811.5M; net income $827.2M; Adjusted EBITDA $1,301.2M"
+  },
+  {
+   "id": "S27",
+   "title": "Virtu Financial Inc. Form 10-K FY2021",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238622000041/virt-20211231.htm",
+   "date": "2022-02-18",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 973 employees at 2022-02-11"
+  },
+  {
+   "id": "S28",
+   "title": "Virtu Financial DEF 14A proxy statement 2022 (CEO pay ratio)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465922049033/tm223693-1_def14a.htm",
+   "date": "2022-04-22",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 977 employees at 2021-12-31 (11 temporary); about 962 plan-eligible at 2022-04-07"
+  },
+  {
+   "id": "S29",
+   "title": "Virtu Q4/FY2022 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465923006685/tm234365d1_ex99-1.htm",
+   "date": "2023-01-26",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2022 ANTI $1,467.6M; GAAP revenues $2,364.8M; net income $468.3M; Adjusted EBITDA $859.1M"
+  },
+  {
+   "id": "S30",
+   "title": "Virtu Financial Inc. Form 10-K FY2022",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238623000025/virt-20221231.htm",
+   "date": "2023-02-17",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 993 employees at 2023-02-03"
+  },
+  {
+   "id": "S31",
+   "title": "Virtu Financial DEF 14A proxy statement 2023 (CEO pay ratio)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465923051402/tm232014d5_def14a.htm",
+   "date": "2023-04-27",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 990 employees at 2022-12-31 (8 temporary)"
+  },
+  {
+   "id": "S32",
+   "title": "Virtu Q4/FY2023 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238624000007/exhibit991q423.htm",
+   "date": "2024-01-25",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2023 ANTI $1,210.7M; GAAP revenues $2,293.4M; net income $263.9M; Adjusted EBITDA $568.0M"
+  },
+  {
+   "id": "S33",
+   "title": "Virtu Financial Inc. Form 10-K FY2023",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238624000026/virt-20231231.htm",
+   "date": "2024-02-16",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 975 employees at 2024-02-02"
+  },
+  {
+   "id": "S34",
+   "title": "Virtu Financial DEF 14A proxy statement 2024 (CEO pay ratio)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465924052953/tm242796d2_def14a.htm",
+   "date": "2024-04-26",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 972 employees at 2023-12-31 (all full-time)"
+  },
+  {
+   "id": "S35",
+   "title": "Virtu Q4/FY2024 results release (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238625000003/exhibit991q424.htm",
+   "date": "2025-01-29",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2024 ANTI $1,597.7M; GAAP revenues $2,876.9M; net income $534.5M; Adjusted EBITDA $918.7M"
+  },
+  {
+   "id": "S36",
+   "title": "Virtu Financial Inc. Form 10-K FY2024",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238625000055/virt-20241231.htm",
+   "date": "2025-02-21",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 969 employees at 2025-02-14 (12 countries); FY2024 comp $434.8M"
+  },
+  {
+   "id": "S37",
+   "title": "Virtu Financial DEF 14A proxy statement 2025 (CEO pay ratio)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465925037735/tm252433-1_def14a.htm",
+   "date": "2025-04-23",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 965 employees at 2024-12-31 (all full-time)"
+  },
+  {
+   "id": "S38",
+   "title": "Virtu Announces First Quarter 2025 Results (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238625000071/exhibit991q125.htm",
+   "date": "2025-04-23",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Q1 2025 ANTI $497.1M"
+  },
+  {
+   "id": "S39",
+   "title": "Virtu Announces Second Quarter 2025 Results (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238625000116/exhibit991q225.htm",
+   "date": "2025-07-30",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Q2 2025 ANTI $567.7M; $67.0M RFQ-hub sale gain in 'Other, net'"
+  },
+  {
+   "id": "S40",
+   "title": "Virtu Announces Third Quarter 2025 Results (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238625000144/exhibit991q325.htm",
+   "date": "2025-10-29",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Q3 2025 ANTI $467.0M"
+  },
+  {
+   "id": "S41",
+   "title": "Virtu Announces Fourth Quarter 2025 Results (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000003/exhibit991q425.htm",
+   "date": "2026-01-29",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "FY2025 ANTI $2,145.3M; Q4 2025 ANTI $613.4M; GAAP revenues $3,632.1M; net income $912.3M; Adjusted EBITDA $1,399.2M"
+  },
+  {
+   "id": "S42",
+   "title": "Virtu Financial Inc. Form 10-K FY2025",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000009/virt-20251231.htm",
+   "date": "2026-02-20",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 1,027 employees at 2026-02-13 (13 countries); FY2025 ANTI, revenues, net income and comp $528.1M confirmed; risk factor on headcount investment"
+  },
+  {
+   "id": "S43",
+   "title": "Virtu Financial DEF 14A proxy statement 2026 (CEO pay ratio)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000110465926051774/tm261474-1_def14a.htm",
+   "date": "2026-04-29",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "About 1,010 employees at 2025-12-31 (all full-time); median employee pay about $310k"
+  },
+  {
+   "id": "S44",
+   "title": "Virtu Announces First Quarter 2026 Results (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000012/exhibit991q126.htm",
+   "date": "2026-04-29",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Q1 2026 ANTI $786.5M; net income $346.6M; revenues $1,095.3M"
+  },
+  {
+   "id": "S45",
+   "title": "Virtu Announces Preliminary Estimated Second Quarter 2026 Results and Commences Marketing of Incremental First Lien Term Loan",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000019/exhibit991q226prelim.htm",
+   "date": "2026-07-14",
+   "type": "primary_filing",
+   "reliability": "medium",
+   "supports": "Unaudited Q2 2026 flash: ANTI about $718M ($11.6M/day) and net income about $285M, later confirmed by the final release"
+  },
+  {
+   "id": "S46",
+   "title": "Virtu Financial Lender Presentation July 2026 (8-K Ex. 99.2)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000019/exhibit992q226presentati.htm",
+   "date": "2026-07-14",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Restated FY2020-FY2025 ANTI series; LTM to 2026-03-31 ANTI about $2.4B and Adjusted EBITDA $1.6B; daily ANTI by quarter"
+  },
+  {
+   "id": "S47",
+   "title": "Virtu Completes Incremental First Lien Term Loan (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000095014226002156/eh260810393_ex9901.htm",
+   "date": "2026-07-23",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "$500M incremental term loan, upsized from $400M (a debt event, not PnL)"
+  },
+  {
+   "id": "S48",
+   "title": "Virtu Announces Second Quarter 2026 Results (8-K Ex. 99.1)",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000023/exhibit991q226.htm",
+   "date": "2026-07-30",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Q2 2026 ANTI $717.9M; H1 2026 ANTI $1,504.4M (H1 2025 $1,064.9M); H1 revenues $2,285.3M; H1 net income $631.5M; H1 Adjusted EBITDA $957.4M. Re-verified by the synthesizer on 2026-10-08"
+  },
+  {
+   "id": "S49",
+   "title": "Virtu Financial Inc. Form 10-Q for quarter ended 2026-06-30",
+   "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000028/virt-20260630.htm",
+   "date": "2026-07-31",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "H1 2026 comp $425.0M (+66%), attributed to incentive accruals; no headcount disclosed"
+  },
+  {
+   "id": "S50",
+   "title": "Virtu Financial XBRL company facts (CIK 1592386)",
+   "publisher": "SEC EDGAR XBRL API",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001592386.json",
+   "date": "2026-10-08 (accessed)",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "Cross-check of revenues, ProfitLoss (consolidated net income) and LaborAndRelatedExpense for 2015-H1 2026"
+  },
+  {
+   "id": "S51",
+   "title": "Virtu Revenue Hits $1.19 Billion, but Q2 Profit Slips as Costs Rise 30%",
+   "publisher": "Finance Magnates",
+   "url": "https://www.financemagnates.com/forex/virtu-revenue-hits-119-billion-but-q2-profit-slips-as-costs-rise-30/",
+   "date": "2026-07-30",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "Restates Q2 2026 ANTI $717.9M and H1 2026 revenue and net income; matches the filing (not independent)"
+  },
+  {
+   "id": "S52",
+   "title": "Virtu Financial Inc (VIRT) (Q2 2026) Earnings Call Highlights",
+   "publisher": "GuruFocus via Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/virtu-financial-inc-virt-q2-190029351.html",
+   "date": "2026-07-30",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "Q2 2026 ANTI about $718M ($11.6M/day). Its 'record' headline refers to TTM, not the quarter"
+  },
+  {
+   "id": "S53",
+   "title": "Virtu Financial - Wikipedia",
+   "publisher": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Virtu_Financial",
+   "date": "2026-10-08 (accessed)",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "2024 revenue of $2.88B matches the filing. Its 'net income $276.4M' is Class A-attributable, not consolidated, and its '969 employees (2025)' is the February 2025 snapshot"
+  },
+  {
+   "id": "S54",
+   "title": "Virtu Financial (VIRT) Number of Employees",
+   "publisher": "StockAnalysis.com (S&P Global data)",
+   "url": "https://stockanalysis.com/stocks/virt/employees/",
+   "date": "2026-10-08 (accessed)",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "Shows the 10-K counts (1,027; 969) mislabeled as Dec-31 figures; used only to flag the dating error"
+  }
+ ],
+ "caveats": [
+  "ANTI is a non-GAAP net revenue measure, not profit. It is before compensation ($85M-$528M a year), communications, D&A, interest on corporate debt and taxes. Its Execution Services part includes agency commissions, so it is not pure proprietary trading PnL. Compare PnL per head with peers using a gross or net trading revenue measure, not net profit.",
+  "The ANTI definition changed after the KCG deal: commissions and technology services were added and PFOF is deducted. 2015-2016 use the restated values ($511.3M and $424.5M; first reported $500.7M and $414.1M). Mixing the two vintages creates a spurious ~2% break.",
+  "There are scope breaks. KCG is included only from 2017-07-20 and ITG only from 2019-03-01, and pre-acquisition results of the acquired firms are excluded. Pre-2017 Virtu was a 148-person pure market maker. From 2019 it is a roughly 1,000-person firm that includes an agency execution business with many sales and support staff. PnL per head is therefore not like-for-like across eras.",
+  "2017 and 2018 headcounts are derived. No Dec-31 count was disclosed: Virtu was an emerging growth company with no pay-ratio data. The YE2017 figure (about 650) is triangulated from US-only Form 5500 401(k) participant counts. The 2017 average (about 450) depends on how front-loaded the KCG cuts were; using year-end counts instead of averages would change 2017 and 2019 PnL per head substantially.",
+  "Headcount snapshots differ in timing and scope. 10-K counts are dated February or March of the following year and are full-time only. Proxy pay-ratio counts are at Dec 31 and include 8-14 temporary staff in 2019-2022. All annual figures are interpolated averages. Contractors are never disclosed.",
+  "2026 covers H1 only (2026-01-01 to 2026-06-30). Its headcount (about 1,040) is an estimate, because there has been no disclosure after 2026-02-13. Do not compare H1 PnL per head directly with full years; naive annualization gives about a $3.0B run-rate, but H2 is unknown.",
+  "GAAP total revenues are much larger than ANTI and should not be used as PnL. They are gross of brokerage, exchange and clearance fees, PFOF and interest expense, and are inflated by $460-510M a year of interest income in 2023-2025. They also include one-off 'Other, net' items: the 2017 TRA remeasurement of about $86.6M, about $340M of 2018 business-sale gains, and the $67.0M RFQ-hub gain in 2025.",
+  "GAAP net income here is consolidated including noncontrolling interests (the Virtu Financial LLC unitholders). Net income attributable to Class A holders is roughly half; for example, 2024 was $276.4M versus $534.5M. FY2017 net income was revised from $33.3M (release) to $18.9M (10-K).",
+  "The orchestrator's lead of 'ANTI roughly $0.6B-$2.6B' was wrong: actual ANTI ranges from $424.5M (2016) to $2,271.4M (2020). The headcount lead (~150 rising to ~1,000) was correct.",
+  "The research lenses ran out of web-search budget, so independent press corroboration is thin: Finance Magnates, GuruFocus and Wikipedia only restate the filings. For an SEC registrant the primary filings are authoritative, and the synthesizer re-verified the Q2 2026 release and the EDGAR 8-K index directly."
+ ],
+ "overall_confidence": "high",
+ "open_questions": [
+  "Q3 2026 results (quarter ending 2026-09-30) would extend the 2026 YTD cutoff to 2026-09-30. They had not been filed as of 2026-10-08; one lens reports a 2026-11-05 release date, unverified. Re-pull ANTI from that release when it lands.",
+  "Actual 2017-12-31 and 2018-12-31 headcounts, and the post-KCG integration path, would shrink the widest headcount bars (2017: 380-540). Possible sources are 2017-2018 earnings-call transcripts, investor-day decks, 10-Q MD&A or FINRA/regulatory filings of the broker-dealer subsidiaries.",
+  "The intra-2019 headcount path after the ITG close (how fast the roughly 1,366 combined staff were cut to 1,065 by year-end) would tighten the 2019 average (990-1,140). Earnings-call commentary and synergy disclosures are the likely sources.",
+  "A mid-2026 headcount, from Q2 or Q3 2026 earnings-call remarks, LinkedIn employee-count trends, or ultimately the FY2026 10-K due around February 2027, would firm up the 2026 denominator. The FY2025 10-K signals headcount growth.",
+  "Pro-forma combined ANTI and headcount including KCG (2015-2017) and ITG (2015-2019) would allow a like-for-like comparison across the acquisition breaks.",
+  "A split of headcount between Market Making (technology and trading) and Execution Services (sales, agency, support) would allow PnL per head comparable to pure prop or market-making peers. Virtu does not disclose this; segment comp or proxy commentary might proxy it.",
+  "Contractor and consultant counts (not disclosed) and capitalized software-development compensation (for example $45.8M in 2025) would allow a fuller labor-input measure."
+ ],
+ "review_status": "draft: synthesized from 4 search lenses; adversarial review stopped early to save budget"
+}

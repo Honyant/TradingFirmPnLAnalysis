@@ -71,7 +71,7 @@ Each firm had its own multi-agent workflow:
 3. **Challenge**: two adversarial critics. A source auditor re-verified load-bearing numbers against their sources. A consistency critic attacked definitions, FX arithmetic, headcount jumps, per-head plausibility and interval calibration.
 4. **Reconcile**: a final agent ruled on every challenge and logged the changes.
 
-Later rounds targeted the widest intervals and weakest sources, and cross-checked firms against industry-wide tables.
+**Status of this edition:** research was stopped early to save budget. The search lenses that finished (one to four per firm, recorded in `data/raw/<key>_round1.json` and each firm's `review_status`) were synthesized into tables. Steps 3 and 4 did not run, so no firm's table has been adversarially reviewed. Optiver's consistency critic did finish, and its challenges are saved in the raw file but were not applied.
 
 Agents ranked sources by trust: filings and official documents first, then Bloomberg, FT, WSJ and Reuters reporting from documents, then trade press. Blogs, wikis, forums and AI-written pages served only as leads. Agents were told to trace recycled claims back to their origin. Most private-firm figures still rest on press reports of debt-offering documents, which are informative but are not audited public disclosures.
 

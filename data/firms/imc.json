@@ -1,0 +1,667 @@
+{
+ "firm_key": "imc",
+ "firm_name": "IMC Trading (IMC group: IMC B.V. through FY2023, IMC Global Holdings LLC from FY2024)",
+ "pnl_definition": "PnL is IMC's 'net trading revenues' line. The key-results tables call it 'net revenue'; Dutch press calls it 'nettohandelsresultaat' or 'handelsresultaat'. It is trading results net of direct trading costs (understood to be exchange, clearing and brokerage fees) and before personnel and other operating expenses, which IMC reports separately as 'expenses'. Calendar year, group-consolidated: IMC B.V. in EUR through FY2023, IMC Global Holdings LLC in USD from FY2024. This matches the project definition directly, so no adjustment was needed. Net profit attributable to shareholders goes in net_income_usd_m. The '\u20ac680m inkomsten' that Quote reported for 2019 is treated as a different, gross line and is not used.",
+ "headcount_definition": "Total IMC group employees across all offices. For 2015-2025 the figure is the ANNUAL AVERAGE, because that is the right denominator for a full year's PnL; Dutch statutory accounts also disclose averages.\n- 2015 and 2016 are reported averages.\n- 2022 (1,121) comes from the jaarrekening and is treated as an average.\n- 2020-2025 averages are estimated from consecutive year-end counts and cross-checked against the CO2-per-employee denominators in the annual reports. Year-end values are given in the row notes for anyone who prefers that basis.\n- 2017-2019 are modelled from cost per employee.\nCompany figures are round '+' floors and probably exclude contractors. Interns (80-250 a year) are probably excluded from year-end counts, but this is not stated.\n2026 follows the project rule and uses the LATEST KNOWN company figure, not a YTD average: '+2,070 employees', set no later than 2026-07-11. The Jan-Sep 2026 average is probably about 1,990-2,060.",
+ "fx_note": "Annual-average EURUSD rates applied to the EUR years: 2015 1.110, 2016 1.107, 2017 1.130, 2018 1.181, 2019 1.120, 2020 1.142, 2021 1.183, 2022 1.053.\n\n2023 uses IMC's own USD restatement in the 2024 annual report and is not converted again: $1,367m net trading revenue (from \u20ac1,264m) and $312m net profit (from \u20ac288m). The implied rate is 1.0815, against 1.081 in the project table.\n\nFY2024 and FY2025 are reported in USD by IMC Global Holdings LLC, and the 2026 estimate is built in USD. So the approximate 2025 (~1.13) and 2026 (~1.16) rates were never needed.\n\nAbout \u00b10.5% of FX uncertainty is folded into the EUR-year error bars. Much of IMC's trading is USD-based (Chicago is the largest office), so the EUR figures were themselves translations; converting them back at average rates approximates the USD economics. The strong dollar in 2022 makes that year look flat in USD ($1,645m vs $1,637m in 2021), even though EUR net trading revenue rose 13%.",
+ "methodology": "I combined four independent research lenses (press, primary documents, headcount, recent). They overlapped heavily and agreed on every reported number. PnL is IMC's own 'net trading revenues' line. For FY2020-2025 it comes from audited annual reports (2021, 2023, 2024 and 2025, including their prior-year comparatives). For 2015-2019 it comes from Quote/FD/Amsterdamtrader articles quoting the KvK-filed accounts. No 2018 figure was ever published, so I rebuilt it from reported net profit, cost per employee and the opex trend. 2026 is a run-rate estimate, because IMC publishes no interim results. EUR figures were converted at annual-average rates, except 2023, where IMC's own USD restatement was used. Headcount is an annual average:\n- reported averages for 2015-2016 and 2022;\n- averages of consecutive year-end figures for 2020-2025, cross-checked against the CO2-per-employee denominators in the annual reports;\n- a cost-per-head model plus interpolation for 2017-2019.\nError bars are about 90% intervals scaled to source quality: \u00b11-2% for audited USD figures, \u00b12-4% for press-quoted accounts plus FX, about -15%/+18% for the rebuilt 2018 figure, and about -36%/+40% for 2026.",
+ "entities": [
+  {
+   "key": "firm",
+   "name": "IMC (group-wide)",
+   "description": "Consolidated IMC trading group: IMC B.V. (Amsterdam top holding, reporting in EUR) through FY2023, then IMC Global Holdings LLC (Delaware top holding from 2024-01-01, reporting in USD, registered with the Dutch KvK). Covers all offices: Chicago, Amsterdam, Sydney, Mumbai, Zug, London, Seoul, New York, Hong Kong and Aarhus (from 2026). Excludes unrelated 'IMC' companies such as IMC S.A. (Ukrainian agriculture), IMC Global (fertilizer) and IMC Group (Hong Kong conglomerate). Excludes Cardano, which was deconsolidated in 2015."
+  }
+ ],
+ "rows": [
+  {
+   "year": 2015,
+   "entity": "firm",
+   "period_label": "FY2015 (2015-01-01 to 2015-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 635,
+    "mid": 651.6,
+    "high": 668
+   },
+   "headcount": {
+    "low": 500,
+    "mid": 520,
+    "high": 545
+   },
+   "net_income_usd_m": {
+    "low": 200,
+    "mid": 203.7,
+    "high": 207
+   },
+   "pnl_basis": "reported_press",
+   "headcount_basis": "reported_press",
+   "confidence": "medium",
+   "source_ids": [
+    "S14",
+    "S12",
+    "S13",
+    "S15",
+    "S16",
+    "S17"
+   ],
+   "notes": "PnL: net trading income was \u20ac587m. Source is Amsterdamtrader citing FD and the annual report (S14), converted at 1.110. Quote 2017 (S12) corroborates it: the 2016 figure of \u20ac483.6m was 'more than \u20ac100m' lower, so 2015 was above \u20ac583.6m. Quote 2016 (S13) gives personnel costs of \u20ac244m and pre-tax profit of about \u20ac235m, which leaves about \u20ac108m of other opex, in line with 2016. CONFLICT: FY2014 was reported at \u20ac474m (S15, S16), so the stated '+12%' implies a restated 2014 base of about \u20ac524m. The likely cause is the 2015 deconsolidation of Cardano and the asset-management wind-down (S17). This does not affect the 2015 level.\nNet profit: \u20ac182.7m (Quote comparative, S12) vs \u20ac185m (FD/Amsterdamtrader, S14). I used \u20ac183.5m.\nHeadcount: average of 520 (S14). Quote's 'down 10.5%' and \u20ac244m / \u20ac470k per head give about 519 independently (S13). It may include about 40 asset-management staff who were being wound down."
+  },
+  {
+   "year": 2016,
+   "entity": "firm",
+   "period_label": "FY2016 (2016-01-01 to 2016-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 525,
+    "mid": 535.4,
+    "high": 545
+   },
+   "headcount": {
+    "low": 445,
+    "mid": 466,
+    "high": 495
+   },
+   "net_income_usd_m": {
+    "low": 140,
+    "mid": 142.4,
+    "high": 147
+   },
+   "pnl_basis": "reported_press",
+   "headcount_basis": "reported_press",
+   "confidence": "medium",
+   "source_ids": [
+    "S12",
+    "S11"
+   ],
+   "notes": "PnL: net trading result of \u20ac483.6m, from Quote quoting the KvK-filed 2016 accounts (S12). An FD snippet gives \u20ac483.7m. 2016 was a low-volatility year. Converted at 1.107.\nNet profit: \u20ac128.6m. The article's lead says 'ruim \u20ac132m', but the body figure is confirmed by the 2017 arithmetic (\u20ac85m + \u20ac43.6m, S11).\nHeadcount: 466 employees, from the 2016 accounts (S12). The basis is not stated; Dutch accounts normally disclose the average, which fits the 2015 average of 520 and the continued downsizing since 2013 (619). Single source, so the bar is about \u00b15%. Personnel cost was about \u20ac205m (466 \u00d7 \u20ac439k). The \u20ac89m figure is bonuses only."
+  },
+  {
+   "year": 2017,
+   "entity": "firm",
+   "period_label": "FY2017 (2017-01-01 to 2017-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 408,
+    "mid": 417.1,
+    "high": 426
+   },
+   "headcount": {
+    "low": 415,
+    "mid": 465,
+    "high": 540
+   },
+   "net_income_usd_m": {
+    "low": 94,
+    "mid": 96.1,
+    "high": 98
+   },
+   "pnl_basis": "reported_press",
+   "headcount_basis": "estimated",
+   "confidence": "medium",
+   "source_ids": [
+    "S11"
+   ],
+   "notes": "PnL: nettohandelsresultaat of \u20ac369.15m, down 23.7%, from Quote quoting the filed 2017 accounts (S11). 2017 was a low-volatility trough year. Converted at 1.130. Net profit \u20ac85m; no dividend was paid.\nHeadcount: not published; the average is estimated. Quote gives a cost of \u20ac319k per employee (S11). Implied personnel cost is NTI minus pre-tax profit (about \u20ac106-113m) minus other opex (about \u20ac105-125m, the 2015-16 level), or about \u20ac130-160m, which means about 410-500 people. Interpolating between 466 (2016) and about 620 (2019) gives a similar figure.\nQuote's '\u20ac125m bonuspot' is cash paid including deferrals, not the year's expense, so it was not used."
+  },
+  {
+   "year": 2018,
+   "entity": "firm",
+   "period_label": "FY2018 (2018-01-01 to 2018-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 605,
+    "mid": 709,
+    "high": 835
+   },
+   "headcount": {
+    "low": 460,
+    "mid": 530,
+    "high": 620
+   },
+   "net_income_usd_m": {
+    "low": 222,
+    "mid": 231,
+    "high": 240
+   },
+   "pnl_basis": "derived",
+   "headcount_basis": "estimated",
+   "confidence": "low",
+   "source_ids": [
+    "S10",
+    "S11",
+    "S9"
+   ],
+   "notes": "PnL: no net trading figure was ever found for 2018. I rebuilt it as follows.\n- Net profit was about \u20ac194-198m: 2019 fell '53% to just under \u20ac92m' (S10), and FD called 2018 a record year. Pre-tax profit is therefore about \u20ac245-255m.\n- Personnel cost was about \u20ac225-245m: about 530 staff at \u20ac426k or more each (2019's \u20ac326k was 'well over \u20ac100k' lower in 2019, S10).\n- Other opex was about \u20ac120-140m.\n- Total: net trading income of about \u20ac590-640m.\nA gross-to-net cross-check gives about \u20ac545m: 2018 'inkomsten' of \u20ac800m or more (S10) times the 2019 net/gross ratio (464/680).\nCentral estimate \u20ac600m \u00d7 1.181 = $709m. 90% interval \u20ac515-705m.\nA figure near \u20ac800m is ruled out by the cost structure, because it would imply about 950 staff. The market regime (February 2018 volatility spike, Q4 sell-off) supports 2018 being above both 2017 and 2019.\nHeadcount: estimated by interpolation from about 465 (2017) to about 620 (2019). The 2019 article mentions an 'uitdijend personeelsbestand' (growing workforce)."
+  },
+  {
+   "year": 2019,
+   "entity": "firm",
+   "period_label": "FY2019 (2019-01-01 to 2019-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 505,
+    "mid": 519.7,
+    "high": 560
+   },
+   "headcount": {
+    "low": 550,
+    "mid": 620,
+    "high": 700
+   },
+   "net_income_usd_m": {
+    "low": 100,
+    "mid": 102.7,
+    "high": 104
+   },
+   "pnl_basis": "reported_press",
+   "headcount_basis": "estimated",
+   "confidence": "medium",
+   "source_ids": [
+    "S9",
+    "S10",
+    "S4"
+   ],
+   "notes": "PnL: net trading income of \u20ac464m, converted at 1.120. Quote 2021 (S9) took it from the FY2020 report comparatives: handelsresultaat 'rose from \u20ac464m to over \u20ac1.4bn'. The \u20ac1.4bn matches the audited \u20ac1,433m (S4).\nCONFLICT: Quote 2020 (S10) reported 2019 'inkomsten' of \u20ac680m (down 15%+). I treat that as gross trading income before direct trading costs. At \u20ac680m, costs would be about \u20ac560m, implying about 1,300 staff at \u20ac326k each, which is incompatible with 774 at end-2020. The high bar is stretched to $560m for residual risk.\nNet profit: just under \u20ac92m (S10), which also follows from \u20ac561m minus \u20ac469m (S9).\nHeadcount: estimated. Personnel cost is about \u20ac464m minus pre-tax profit (about \u20ac118m) minus other opex (about \u20ac135-155m; IT spending rose), or about \u20ac190-210m. At \u20ac326k per head that is about 590-650 people, consistent with growth to 774 at end-2020."
+  },
+  {
+   "year": 2020,
+   "entity": "firm",
+   "period_label": "FY2020 (2020-01-01 to 2020-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 1605,
+    "mid": 1636.5,
+    "high": 1668
+   },
+   "headcount": {
+    "low": 685,
+    "mid": 730,
+    "high": 780
+   },
+   "net_income_usd_m": {
+    "low": 634,
+    "mid": 640.7,
+    "high": 648
+   },
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "derived",
+   "confidence": "high",
+   "source_ids": [
+    "S4",
+    "S9",
+    "S8"
+   ],
+   "notes": "PnL: net revenue of \u20ac1,433m, from the key-results comparative in IMC's 2021 annual report (S4). Quote says the same ('ruim \u20ac1,4 mld', S9). 2020 was a COVID-volatility record year. Converted at 1.142.\nNet profit: \u20ac561m, the record until 2024.\nHeadcount: 774 'on the payroll' at the end of 2020, per Quote citing the KvK filing (S8). I estimate the average at about 730, assuming end-2019 was about 680-700. The 2021 report calls its 200+ starters the 'biggest influx ever', so earlier hiring was below 200 a year. Use 774 if you want the year-end basis."
+  },
+  {
+   "year": 2021,
+   "entity": "firm",
+   "period_label": "FY2021 (2021-01-01 to 2021-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 1605,
+    "mid": 1637.3,
+    "high": 1670
+   },
+   "headcount": {
+    "low": 830,
+    "mid": 890,
+    "high": 970
+   },
+   "net_income_usd_m": {
+    "low": 586,
+    "mid": 592.7,
+    "high": 600
+   },
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "derived",
+   "confidence": "high",
+   "source_ids": [
+    "S4",
+    "S8"
+   ],
+   "notes": "PnL: net revenue of \u20ac1,384m, from the key results in IMC's 2021 annual report, which I fetched as a PDF (S4). Quote (S8) gives the same figure. 2021 was the retail and crypto boom year. Converted at 1.183.\nNet profit: \u20ac501m.\nHeadcount: the 2021 report gives '1,000+' at year-end, with 200+ new starters and 80+ interns (S4); end-2020 was 774 (S8). I estimate the average at about 890. Year-end was about 1,000-1,080, including the FRIJT Trading acquisition."
+  },
+  {
+   "year": 2022,
+   "entity": "firm",
+   "period_label": "FY2022 (2022-01-01 to 2022-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 1612,
+    "mid": 1644.8,
+    "high": 1678
+   },
+   "headcount": {
+    "low": 1060,
+    "mid": 1121,
+    "high": 1200
+   },
+   "net_income_usd_m": {
+    "low": 527,
+    "mid": 532.8,
+    "high": 539
+   },
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "reported_press",
+   "confidence": "high",
+   "source_ids": [
+    "S3",
+    "S7"
+   ],
+   "notes": "PnL: net revenue of \u20ac1,562m, from the key-results comparative in IMC's 2023 annual report (S3). It matches Quote's 'bijna \u20ac1,6 mld' (S7) and the 2023 report's '-19%'. Converted at 1.053; the strong dollar makes the USD figure flat on 2021 even though EUR rose 13%.\nNet profit: \u20ac506m (S3, S7).\nHeadcount: 1,121 ('1121-koppige personeel'), per Quote citing the 2022 jaarrekening (S7), with \u20ac646m staff cost (about \u20ac576k per head). The basis is not stated. Dutch statutory accounts disclose the average number of employees, so I treat it as an average; if it is year-end, the average would be about 1,075. The orchestrator's '~EUR 1B+' lead understated the true figure."
+  },
+  {
+   "year": 2023,
+   "entity": "firm",
+   "period_label": "FY2023 (2023-01-01 to 2023-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 1347,
+    "mid": 1367,
+    "high": 1388
+   },
+   "headcount": {
+    "low": 1260,
+    "mid": 1380,
+    "high": 1520
+   },
+   "net_income_usd_m": {
+    "low": 308,
+    "mid": 312,
+    "high": 316
+   },
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "derived",
+   "confidence": "high",
+   "source_ids": [
+    "S3",
+    "S2",
+    "S21"
+   ],
+   "notes": "PnL: net trading revenues of \u20ac1,264m (down 19%; IMC's 2023 annual report, S3). IMC itself restated this as $1,367m in the 2024 report (S2), and that figure is used directly. Expenses were \u20ac874m. Net profit was \u20ac288m, or $312m.\nHeadcount: the 2023 report gives '1,500+' at year-end, with 420+ new starters and 250+ interns, plus two acquisitions: Altas Technologies (July) and Cardinal Capital, now IMC Securities (September) (S3). The CO2-per-employee figure implies about 1,501. I estimate the average at about 1,380, between about 1,200 at end-2022 and about 1,520 at end-2023. The upper bar allows for the CO2 denominator being an average.\nThe 'more than 1600' in the December 2023 press-release boilerplate (S21) sits on a page re-created in the CMS in October 2024, so it was probably updated later. It is disregarded."
+  },
+  {
+   "year": 2024,
+   "entity": "firm",
+   "period_label": "FY2024 (2024-01-01 to 2024-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 2212,
+    "mid": 2235,
+    "high": 2258
+   },
+   "headcount": {
+    "low": 1540,
+    "mid": 1610,
+    "high": 1680
+   },
+   "net_income_usd_m": {
+    "low": 682,
+    "mid": 686,
+    "high": 690
+   },
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "derived",
+   "confidence": "high",
+   "source_ids": [
+    "S2",
+    "S1",
+    "S26",
+    "S24"
+   ],
+   "notes": "PnL: net trading revenues of $2,235m (up 63%), reported in USD by IMC Global Holdings LLC and audited by PwC (S2). Wikipedia (S24) repeats it, so that is not independent confirmation. Expenses were $1,336m; net profit was $686m.\nHeadcount: the 2024 report gives '1,600+', with 300 new starters and 200 interns (S2). The office counts sum to at least 1,555. The CO2-per-employee figure implies about 1,648-1,655 (S2, S1). End-2025's 1,900+ divided by 1.16 FTE growth gives about 1,640. IMC also cited '1,600+ colleagues' in March 2025 (S26). I estimate the average at about 1,610; year-end was about 1,640-1,660."
+  },
+  {
+   "year": 2025,
+   "entity": "firm",
+   "period_label": "FY2025 (2025-01-01 to 2025-12-31)",
+   "is_partial_year": false,
+   "pnl_usd_m": {
+    "low": 3090,
+    "mid": 3120,
+    "high": 3150
+   },
+   "headcount": {
+    "low": 1730,
+    "mid": 1775,
+    "high": 1860
+   },
+   "net_income_usd_m": {
+    "low": 963,
+    "mid": 968,
+    "high": 973
+   },
+   "pnl_basis": "reported_primary",
+   "headcount_basis": "derived",
+   "confidence": "high",
+   "source_ids": [
+    "S1",
+    "S6",
+    "S5",
+    "S25",
+    "S22"
+   ],
+   "notes": "PnL: net trading revenues of $3,120m (up 40%), from IMC's audited 2025 annual report (S1). Bloomberg (S6), Quote (S5) and the Substack newsletter (S25) all repeat the report, so they are not independent. Expenses were $1,800m (up 35%); net profit was $968m. IMC took on its first external debt in 2025: a Term Loan B of $500m, upsized to $650m.\nHeadcount: the report says '1,900+ IMCers' and 16% net FTE growth, putting year-end at about 1,900-1,990. The CO2-per-employee figure (27,075 t / 15.3) implies about 1,770, close to the mean of about 1,650 and about 1,915, so I estimate the average at about 1,775. Revelio Labs' modelled 2,491 (S22) over-counts, probably interns, contractors or stale profiles, and is rejected."
+  },
+  {
+   "year": 2026,
+   "entity": "firm",
+   "period_label": "2026-01-01 to 2026-09-30 (estimated YTD; no reported 2026 PnL)",
+   "is_partial_year": true,
+   "pnl_usd_m": {
+    "low": 1500,
+    "mid": 2350,
+    "high": 3300
+   },
+   "headcount": {
+    "low": 1950,
+    "mid": 2070,
+    "high": 2200
+   },
+   "pnl_basis": "estimated",
+   "headcount_basis": "reported_primary",
+   "confidence": "low",
+   "source_ids": [
+    "S1",
+    "S18",
+    "S19",
+    "S20",
+    "S23",
+    "S22"
+   ],
+   "notes": "PnL: no 2026 figure has been disclosed. IMC publishes only annual reports (FY2025 came out 2026-03-25), and the lenses found no interim, press or rating-agency figure for 2026; their search budget ran out before rating-agency and Term Loan B coverage could be checked. ESTIMATE for January-September 2026: 9/12 of the FY2025 run-rate ($3,120m \u00d7 0.75 = about $2,340m), centred at $2,350m. The 90% band of $1,500-3,300m reflects IMC's historical year-on-year swings (-24% to +209%), narrowed by signs of continued expansion: headcount up about 9% since year-end, the New York office expansion announced 2026-08-11, and HPC spending above 2025. This is a 9-MONTH figure; multiply by 4/3 to compare with full years.\nHeadcount: the latest known figure, '+2,070 employees across 10 offices' on imc.com (S18), was set no later than 2026-07-11 according to the site's CMS. It is a floor and may include summer interns. Office signals: Sydney 350+ (S19), Mumbai about 120 (S20, May 2026), and stale office pages (S23). The January-September average is probably about 1,990-2,060. Revelio's 2,627 (Q1 2026, S22) is rejected."
+  }
+ ],
+ "ytd_2026": {
+  "cutoff_date": "2026-09-30",
+  "period_label": "2026-01-01 to 2026-09-30",
+  "description": "ESTIMATED, NOT REPORTED. IMC publishes audited results only once a year. The latest reported PnL covers FY2025 (period ending 2025-12-31, report published 2026-03-25), and no 2026 interim figure was found as of 2026-10-08. The YTD PnL is 9/12 of the FY2025 run-rate ($3,120m) with wide bars ($1,500-3,300m, mid $2,350m). The 2026 headcount is the latest company figure, '+2,070 employees' on imc.com, set no later than 2026-07-11 and still live on 2026-10-08."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "title": "IMC GH LLC Annual Report 2025",
+   "publisher": "IMC Global Holdings LLC (imc.com / cdn.sanity.io)",
+   "url": "https://cdn.sanity.io/files/l1io23s3/production/42a83890cf5d1735090e988ba91a595c889e8d09.pdf",
+   "date": "2026-03-25",
+   "type": "company_official",
+   "reliability": "high",
+   "supports": "FY2025: net trading revenues $3,120m (+40%), expenses $1,800m, net profit $968m, equity $2,581m, Term Loan B of $500m upsized to $650m, '1,900+ IMCers', 16% net FTE growth. CO2 per employee implies about 1,770 (2025) and about 1,655 (2024 restated)."
+  },
+  {
+   "id": "S2",
+   "title": "IMC Annual Report 2024",
+   "publisher": "IMC Global Holdings LLC (imc.com / cdn.sanity.io)",
+   "url": "https://cdn.sanity.io/files/l1io23s3/production/1217c79f8a506fad5c7662231709d2241588e064.pdf",
+   "date": "2025-03-27",
+   "type": "company_official",
+   "reliability": "high",
+   "supports": "FY2024: net trading revenues $2,235m (+63%), expenses $1,336m, net profit $686m. 2023 restated in USD: $1,367m revenue, $312m profit. Headcount 1,600+ with 300 new starters and 200 interns; office counts; CO2 per employee implies about 1,648."
+  },
+  {
+   "id": "S3",
+   "title": "IMC Annual Report 2023",
+   "publisher": "IMC B.V. (cdn.sanity.io)",
+   "url": "https://cdn.sanity.io/files/l1io23s3/production/230602f0997010ebbc22337f140fc0532656e731.pdf",
+   "date": "2024-03-14",
+   "type": "company_official",
+   "reliability": "high",
+   "supports": "FY2023: net trading revenues \u20ac1,264m (-19%), expenses \u20ac874m, net profit \u20ac288m. FY2022 comparatives: \u20ac1,562m revenue, \u20ac506m profit. Headcount 1,500+ with 420+ starters and 250+ interns; office counts; 2023 acquisitions. The PDF asset is dated 2024-05-22; the report was signed 2024-03-14."
+  },
+  {
+   "id": "S4",
+   "title": "IMC Annual Report 2021",
+   "publisher": "IMC B.V. (Publitas-hosted)",
+   "url": "https://view.publitas.com/cfreport/imc-annual-report-2021/page/1",
+   "date": "2022-03-16",
+   "type": "company_official",
+   "reliability": "high",
+   "supports": "Key results in EUR m: 2021 net revenue 1,384 and net profit 501; 2020 net revenue 1,433 and net profit 561. Headcount 1,000+ with 200+ new starters ('biggest influx') and 80+ interns. Variable pay paid: \u20ac213m in 2021, \u20ac125m in 2020."
+  },
+  {
+   "id": "S5",
+   "title": "Goeie handel! IMC van Quote 500-miljardair Rob Defares draait bijna $1 miljard winst",
+   "publisher": "Quote (quotenet.nl)",
+   "url": "https://www.quotenet.nl/financien/a70854676/goeie-handel-imc-van-quote-500-miljardair-rob-defares-draait-bijna-1-miljard-winst/",
+   "date": "2026-03-26",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "Repeats FY2025 figures from S1: $3.12bn trading revenue, $968m profit, 'ruim 1900' employees. Circular to S1."
+  },
+  {
+   "id": "S6",
+   "title": "Market Maker IMC's Trading Revenue Rises 40% on Volatility Surge",
+   "publisher": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-03-26/market-maker-imc-s-trading-revenue-rises-40-on-volatility-surge",
+   "date": "2026-03-26",
+   "type": "top_tier_press",
+   "reliability": "high",
+   "supports": "FY2025 net trading revenue of $3.12bn and net profit of $968m, according to the annual report. Seen in search snippets only (paywalled); circular to S1."
+  },
+  {
+   "id": "S7",
+   "title": "Opnieuw extreem veel winst en dividend voor beurshandelaar IMC",
+   "publisher": "Quote (quotenet.nl)",
+   "url": "https://www.quotenet.nl/financien/beurs/a43493089/beurshandelaar-imc-winst-omzet-dividend-2022/",
+   "date": "2023-04-03",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "FY2022 from the jaarrekening: 'bijna \u20ac1,6 miljard' revenue, net profit \u20ac506m, tax \u20ac119m, 1,121 staff sharing \u20ac646m."
+  },
+  {
+   "id": "S8",
+   "title": "Beurshandelaar IMC boekt ook in 2021 flitsend resultaat en maakt meer dan een half miljard winst",
+   "publisher": "Quote (quotenet.nl)",
+   "url": "https://www.quotenet.nl/financien/beurs/a39633891/beurshandelaar-imc-megawinst-2021/",
+   "date": "2022-04-11",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "FY2021 handelsresultaat \u20ac1,384m vs \u20ac1,433m in 2020; net profit \u20ac501m; 774 staff at end-2020; 200+ hires in 2021 taking the total past 1,000."
+  },
+  {
+   "id": "S9",
+   "title": "Ook bij beurshandelaar IMC leiden recordresultaten tot recordbeloningen en recorddividenden",
+   "publisher": "Quote (quotenet.nl)",
+   "url": "https://www.quotenet.nl/financien/beurs/a36140408/ook-bij-beurshandelaar-imc-leiden-recordresultaten-tot-recordbeloningen-en-recorddividenden/",
+   "date": "2021-04-16",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "Handelsresultaat rose from \u20ac464m (2019) to over \u20ac1.4bn (2020); 2020 net profit \u20ac561m (+\u20ac469m); average jaarwedde \u20ac678k in 2020 vs \u20ac270k in 2019."
+  },
+  {
+   "id": "S10",
+   "title": "Inkomsten en winst beurshandelaar IMC gedaald, dividend van \u20ac71 miljoen is doekje voor het bloeden",
+   "publisher": "Quote (quotenet.nl)",
+   "url": "https://www.quotenet.nl/financien/beurs/a32312291/inkomsten-en-winst-beurshandelaar-imc-gedaald-dividend-van-euro71-miljoen-is-doekje-voor-het-bloeden/",
+   "date": "2020-04-29",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "FY2019: net profit down 53% to just under \u20ac92m (implying about \u20ac196m for 2018); 'inkomsten' of \u20ac680m (down 15%+; ambiguous metric, likely gross); cost per employee \u20ac326k in 2019 and over \u20ac100k more in 2018; growing workforce."
+  },
+  {
+   "id": "S11",
+   "title": "Beurshandelaar IMC ziet winst met 33,9% dalen, geen dividenduitkering voor aandeelhouders",
+   "publisher": "Quote (quotenet.nl)",
+   "url": "https://www.quotenet.nl/quote-500/a213624/beurshandelaar-imc-ziet-winst-met-33-9-dalen-geen-dividenduitkering-voor-aandeelhouders-213624/",
+   "date": "2018-04-16",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "FY2017: nettohandelsresultaat \u20ac369.15m (-23.7%); net profit \u20ac85m (-\u20ac43.6m); cost per employee \u20ac319k in 2017 vs \u20ac439k in 2016."
+  },
+  {
+   "id": "S12",
+   "title": "Winst beurshandelaar IMC daalt met 30% in 2016, twee aandeelhouders cashen \u20ac80 miljoen dividend",
+   "publisher": "Quote (quotenet.nl)",
+   "url": "https://www.quotenet.nl/quote-500/a195139/winst-beurshandelaar-imc-daalt-met-30-in-2016-twee-aandeelhouders-cashen-80-miljoen-dividend-195139/",
+   "date": "2017-04-18",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "FY2016: nettohandelsresultaat \u20ac483.6m, down more than \u20ac100m (so 2015 was above \u20ac583.6m); net profit \u20ac128.6m vs \u20ac182.7m in 2015; 466 employees; \u20ac439k cost per employee."
+  },
+  {
+   "id": "S13",
+   "title": "Panama Papers? No way! Zoveel belasting betaalt winstmachine IMC in Nederland",
+   "publisher": "Quote (quotenet.nl)",
+   "url": "https://www.quotenet.nl/quote-500/a176707/panama-papers-no-way-zoveel-belasting-betaalt-winstmachine-imc-in-nederland-176707/",
+   "date": "2016-04-13",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "FY2015 from the KvK-filed accounts: personnel cost of more than \u20ac244m at \u20ac470k per head (about 519 staff); headcount down 10.5%; pre-tax profit about \u20ac235m; tax \u20ac47.5m."
+  },
+  {
+   "id": "S14",
+   "title": "Decent profits for IMC in 2015",
+   "publisher": "Amsterdamtrader (blog citing FD)",
+   "url": "https://www.amsterdamtrader.com/2016/04/decent-profits-for-imc.html",
+   "date": "2016-04-01",
+   "type": "aggregator_or_blog",
+   "reliability": "medium",
+   "supports": "FY2015: trading income up 12% to \u20ac587m; net profit \u20ac185m; 520 employees on average; \u20ac95m bonus pool."
+  },
+  {
+   "id": "S15",
+   "title": "IMC Financial Markets posts record profits",
+   "publisher": "Amsterdamtrader (blog citing FD)",
+   "url": "https://www.amsterdamtrader.com/2015/04/imc-posts-record-profits.html",
+   "date": "2015-04-18",
+   "type": "aggregator_or_blog",
+   "reliability": "medium",
+   "supports": "FY2014 base: trading result \u20ac474m, profit \u20ac165m, headcount 581 (down from 619). Used only to flag the inconsistency with 2015's '+12%'."
+  },
+  {
+   "id": "S16",
+   "title": "Beursbengels Rob Defares en Wiet Pot van IMC vangen \u20ac312 miljoen (!) in 2 jaar",
+   "publisher": "Quote (quotenet.nl)",
+   "url": "https://www.quotenet.nl/quote-500/a151414/beurshandelaar-rob-defares-en-wiet-pot-van-imc-vangen-312-miljoen-in-2-jaar-151414/",
+   "date": "2015-04-23",
+   "type": "trade_press",
+   "reliability": "medium",
+   "supports": "FY2014 handelsresultaat of \u20ac474m (+17%) and profit of about \u20ac165m, from the KvK filing. Corroborates S15 for the 2014 base."
+  },
+  {
+   "id": "S17",
+   "title": "IMC Annual Report 2015 (third-party hosted copy)",
+   "publisher": "IMC (hosted on silo.tips)",
+   "url": "https://silo.tips/download/imc-annual-report-2015",
+   "date": "2016-04-01",
+   "type": "company_official",
+   "reliability": "medium",
+   "supports": "2015 'record revenues' (no figure); Cardano deconsolidated and asset management wound down (scope change); variable remuneration of \u20ac95.3m paid."
+  },
+  {
+   "id": "S18",
+   "title": "Who we are - IMC in numbers",
+   "publisher": "IMC (imc.com)",
+   "url": "https://www.imc.com/us/who-we-are",
+   "date": "2026-07-11",
+   "type": "company_official",
+   "reliability": "medium",
+   "supports": "'+2070 Employees, Across 10 global offices'. Value set in CMS records last updated 2026-07-11; still live on 2026-10-08 (also on the /eu/about and home pages). A floor figure with no exact as-of date."
+  },
+  {
+   "id": "S19",
+   "title": "IMC Australia - Modern Slavery Statement FYE 2025",
+   "publisher": "IMC Pacific Holdings Pty Ltd / IMC Pacific Pty Ltd",
+   "url": "https://cdn.sanity.io/files/l1io23s3/production/0536d4859cc11a752e0756be6a6f9c8e8f3c3a09.pdf",
+   "date": "2026-06-09",
+   "type": "primary_filing",
+   "reliability": "high",
+   "supports": "More than 350 employees in Sydney at FYE 2025 (regional cross-check of group growth)."
+  },
+  {
+   "id": "S20",
+   "title": "High-Frequency Trader IMC Is Spending Big to Build in India",
+   "publisher": "Bloomberg News (copy hosted by IMC)",
+   "url": "https://cdn.sanity.io/files/l1io23s3/production/e28187d7caae658489ba19972fe9bdb2cb607604.pdf",
+   "date": "2026-05-08",
+   "type": "top_tier_press",
+   "reliability": "high",
+   "supports": "About 120 people in Mumbai (IMC's fourth-largest office) as of May 2026; India-unit employee expense of INR 2.2bn in 2024; India unit projected INR 4.27bn profit for 2025 (subsidiary only)."
+  },
+  {
+   "id": "S21",
+   "title": "IMC Announces Update to Corporate Holding Structure",
+   "publisher": "IMC (imc.com corporate news)",
+   "url": "https://www.imc.com/eu/corporate-news/IMC-announces-an-update-to-its-corporate-holding-structure",
+   "date": "2023-12-21",
+   "type": "company_official",
+   "reliability": "low",
+   "supports": "IMC Global Holdings LLC becomes the top holding from 2024-01-01. The boilerplate 'more than 1600' employees is probably post-dated (CMS record created 2024-10-16) and was disregarded for the 2023 headcount."
+  },
+  {
+   "id": "S22",
+   "title": "IMC Trading Number of Employees 2026",
+   "publisher": "Revelio Labs",
+   "url": "https://www.reveliolabs.com/companies/imc-trading/employees/",
+   "date": "2026-10-08",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "Modelled headcount: 2,491 (Q4 2025) and 2,627 (Q1 2026), about 25-30% above company figures. Cited only as a rejected cross-check."
+  },
+  {
+   "id": "S23",
+   "title": "IMC office pages (Chicago, Amsterdam, Sydney, Mumbai, Zug, London)",
+   "publisher": "IMC (imc.com)",
+   "url": "https://www.imc.com/us/contact/offices/chicago",
+   "date": "2026-10-08",
+   "type": "company_official",
+   "reliability": "low",
+   "supports": "Undated or stale office counts (Chicago 650+, Amsterdam 520+, Sydney 300+, Mumbai 90+, Zug 70+, London 85+; CMS updated 2025-03 to 2026-08). Office-mix evidence only."
+  },
+  {
+   "id": "S24",
+   "title": "IMC Financial Markets - Wikipedia",
+   "publisher": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/IMC_Financial_Markets",
+   "date": "2025-07-20",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "Infobox: 1,600 employees, net income $686m, equity $1.866bn (2024). Copied from S2, so circular."
+  },
+  {
+   "id": "S25",
+   "title": "IMC Drops $3.1B Revenue Year, Jump Trading's Terraform Counterstrike, and Private Credit's $1.8T Problem",
+   "publisher": "Young and Calculated (Substack)",
+   "url": "https://youngandcalculated.substack.com/p/imc-drops-31b-revenue-year-jump-tradings",
+   "date": "2026-03-27",
+   "type": "aggregator_or_blog",
+   "reliability": "low",
+   "supports": "Repeats the FY2025 report figures ($3,120m revenue, $1,800m expenses, $968m profit, 1,900+ employees, 450+ joiners, 220+ interns). Circular to S1."
+  },
+  {
+   "id": "S26",
+   "title": "Tour de IMC: cycling in support of species under threat",
+   "publisher": "IMC (imc.com)",
+   "url": "https://www.imc.com/eu/articles/tour-de-imc-cycling-in-support-of-species-under-threat",
+   "date": "2025-03-18",
+   "type": "company_official",
+   "reliability": "medium",
+   "supports": "'its 1,600+ colleagues' as of March 2025, consistent with an end-2024 headcount of about 1,600-1,700."
+  }
+ ],
+ "caveats": [
+  "Reporting entity and currency change. Through FY2023 the reporting entity was IMC B.V., in EUR; from FY2024 it is IMC Global Holdings LLC, in USD. IMC says the group perimeter is unchanged. 2015-2022 USD values depend on average-rate translation; 2022 in particular looks flat in USD only because of the strong dollar.",
+  "The PnL is IMC's 'net trading revenues', i.e. after direct trading costs and before personnel and other opex, which matches the project definition. For 2015-2019 the figures come from Dutch press quoting the filed accounts ('nettohandelsresultaat'), not from statements I fetched myself. They are assumed to be the same line, but this is not verified.",
+  "2018 net trading income was never published. The $709m figure is rebuilt from net profit, cost per employee and opex trends, and its interval runs from about $605m to $835m.",
+  "2019 has a metric conflict. Quote reported \u20ac680m of 'inkomsten' (2020 article) but \u20ac464m of 'handelsresultaat' (2021 article, from the FY2020 report comparatives). \u20ac464m is used; the \u20ac680m figure is believed to be gross trading income.",
+  "There is a 2014-2015 base inconsistency. 2014 was reported at \u20ac474m, but 2015's '+12%' implies about \u20ac524m, probably reflecting the 2015 scope change (Cardano deconsolidated, asset management wound down). Comparisons across 2014-2016 are not fully like-for-like.",
+  "Headcount is reported here as an ANNUAL AVERAGE for 2015-2025, but IMC mostly publishes year-end '+' floors (1,000+, 1,500+, 1,600+, 1,900+). Year-end counts run about 5-9% above the averages in high-growth years (2021, 2023, 2025). PnL per head on a year-end basis would be correspondingly lower; year-end values are in the row notes.",
+  "2017-2019 headcounts are modelled from cost per employee and interpolation (\u00b115%). No source gives a headcount for those years.",
+  "It is not stated whether IMC headcount figures include interns: 80-250 a year, peaking in summer. The '+2,070' 2026 website figure may include summer interns.",
+  "The 2026 PnL is a pure estimate: 9/12 of the FY2025 run-rate. It covers 9 months, so PnL per head for 2026 is not comparable with full years unless annualized (\u00d74/3).",
+  "All 2024-2025 press coverage (Bloomberg, Quote, Substack, Wikipedia) traces back to IMC's own annual reports, so it is not independent corroboration. For 2015-2022, Quote, FD and Amsterdamtrader all draw on the same KvK accounts.",
+  "Quote's 'bonuspot' and 'variable remuneration paid' figures (\u20ac89m, \u20ac125m, \u20ac213m) are cash paid, including deferred awards, not the year's compensation expense. They were not used to infer headcount.",
+  "Third-party workforce data (Revelio Labs: 2,491 at Q4 2025; 2,627 at Q1 2026) is 25-30% above company figures and was rejected. The IBISWorld figure for IMC Pacific is a regional subsidiary figure, not group data."
+ ],
+ "overall_confidence": "medium",
+ "open_questions": [
+  "Are there 2026 interim figures? IMC's Term Loan B ($500m in June 2025, upsized to $650m in December 2025) implies credit ratings and lender reporting. Moody's, S&P or Fitch reports, or Bloomberg/9fin/Octus coverage of the loan or any 2026 repricing, could give trailing-twelve-month or H1 2026 revenue and EBITDA. That would replace the pure 2026 estimate.",
+  "Obtain IMC B.V.'s FY2018 and FY2019 jaarrekeningen from the KvK. They would give 2018 net trading income directly, resolve the 2019 \u20ac464m vs \u20ac680m conflict, and give average employee counts for 2017-2019, the three most uncertain headcount years.",
+  "Get the KvK accounts for FY2020-2022 to confirm the statutory average number of employees (is 1,121 for 2022 an average or year-end?) and the average headcounts for 2020 and 2021.",
+  "Confirm the FY2015 net trading income of \u20ac587m and the 2014 base (\u20ac474m reported vs about \u20ac524m implied) from the original 2015 accounts or FD coverage, and quantify the effect of the Cardano deconsolidation.",
+  "Pin down what IMC's headcount figures count ('1,900+', '+2,070', and the CO2-per-employee denominators): interns, FTE or headcount, year-end or average. An as-of date for the website's 2,070 figure would also help.",
+  "Regional filings for cross-checks: ASIC accounts for IMC Pacific Holdings, the X-17A-5 for IMC Chicago/IMC Securities, and Indian MCA filings for IMC India. These give regional revenue and headcount to triangulate the group trajectory, especially for 2026."
+ ],
+ "review_status": "draft: synthesized from 4 search lenses; adversarial review stopped early to save budget"
+}
