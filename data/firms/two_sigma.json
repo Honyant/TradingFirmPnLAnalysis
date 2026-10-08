@@ -1,0 +1,841 @@
+{
+  "firm_key": "two_sigma",
+  "firm_name": "Two Sigma",
+  "pnl_definition": "Gross trading P&L: dollar investment gains across all Two Sigma funds and managed accounts (Two Sigma Investments LP + Two Sigma Advisers LP, including fee-free proprietary/employee funds) BEFORE management and performance fees, approximated as average investment capital x composite gross return. LCH net gains (after fees) are grossed up. Excludes Two Sigma Securities, Two Sigma Ventures (spun out as Deviation Capital, May 2026), Venn and Real Estate economics. USD millions, calendar year.",
+  "headcount_definition": "Average total Two Sigma employees during the calendar year: the mean of opening and closing year-end proxies, where each year-end proxy is the sum of Form ADV Item 5.A employee counts across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates such as Ventures, Investor Solutions/Venn and Real Estate) in the annual amendment filed ~March of the following year. TSI/TSA staff overlap may overstate by up to ~5%. 2026 is the Jan-Mar 2026 level.",
+  "fx_note": "No FX conversion needed: all fund returns, AUM, LCH gains and fees are USD-denominated.",
+  "methodology": "Only one firm-level dollar figure exists (LCH net gains of $3.2bn for 2018), so most years are derived as average investment capital (press figures, not leverage-inflated regulatory AUM of $67-233bn) times a composite net fund return (Spectrum, Absolute Return / Absolute Return Enhanced, Compass, Risk Premia), grossed up for ~2.25% management and ~27% incentive fees (ADV ranges: up to 4% and 12-42.5%). Bars are wide (+/-25-60%) because full-year returns are missing for many fund-years (all of 2017, 2022 named funds, 2025 except ARE through November) and the ~$60bn AUM quote is repeated from 2019 to early 2025. Headcount comes from primary Form ADV Item 5.A counts, shifted so each filing (~March) represents the prior year-end, then averaged over the year. 2026 is Q1 only (cutoff 2026-03-31), the latest flagship return datapoint.",
+  "entities": [
+    {
+      "key": "firm",
+      "name": "Two Sigma (firm-wide)",
+      "description": "Two Sigma Investments LP and Two Sigma Advisers LP (TSA merged into TSI on 2026-01-01), covering all commingled funds, managed accounts and proprietary funds. Two Sigma Securities, Ventures, Venn and Real Estate are not counted separately."
+    }
+  ],
+  "rows": [
+    {
+      "year": 2015,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 3000,
+        "mid": 5000,
+        "high": 7200
+      },
+      "headcount": {
+        "low": 780,
+        "mid": 840,
+        "high": 900
+      },
+      "aum_usd_m": {
+        "low": 29000,
+        "mid": 31500,
+        "high": 34500
+      },
+      "is_partial_year": false,
+      "period_label": "FY2015",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S25",
+        "S26"
+      ],
+      "notes": "Fund returns used: Compass +15% and Absolute Return +15% net (Forbes); no Spectrum figure. Composite net assumed ~+12% (range +8 to +15%). Average investment capital ~$28bn (about $24bn early 2015 to ~$32bn YE2015); the $34bn Jan 2015 Wikipedia figure looks regulatory and is not used. Gross-up: gross return ~= mgmt fee (~2.25%) + net return / (1 - ~27% incentive), applied to all capital (proprietary capital is fee-free but assumed to earn a similar gross return). Gross ~18-19% x $28bn ~ $5.2bn, trimmed for an unknown Spectrum. Headcount = average of Form ADV year-end proxies 764 (YE2014) and 916 (YE2015)."
+    },
+    {
+      "year": 2016,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1500,
+        "mid": 3600,
+        "high": 6000
+      },
+      "headcount": {
+        "low": 975,
+        "mid": 1050,
+        "high": 1125
+      },
+      "aum_usd_m": {
+        "low": 34000,
+        "mid": 39000,
+        "high": 43000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2016",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S6",
+        "S5",
+        "S26",
+        "S27"
+      ],
+      "notes": "Fund returns used: Compass +10.35%, Spectrum +3% (Insider Monkey, unsourced, low reliability); no Absolute Return figure. Composite net ~+6% (range +2 to +10%). Average capital ~$35bn (II Hedge Fund 100: $30.55bn start-2016, $38.97bn probably start-2017). Gross-up: gross return ~= mgmt fee (~2.25%) + net return / (1 - ~27% incentive), applied to all capital (proprietary capital is fee-free but assumed to earn a similar gross return). Gross ~10.5% x $35bn ~ $3.7bn. Headcount = average of ADV proxies 916 (YE2015) and 1,177 (YE2016)."
+    },
+    {
+      "year": 2017,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1000,
+        "mid": 3500,
+        "high": 7000
+      },
+      "headcount": {
+        "low": 1185,
+        "mid": 1275,
+        "high": 1365
+      },
+      "aum_usd_m": {
+        "low": 47000,
+        "mid": 51000,
+        "high": 55000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2017",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S6",
+        "S5",
+        "S3",
+        "S11",
+        "S27",
+        "S28"
+      ],
+      "notes": "No full-year return for any fund; only Compass -4.4% Jan-Jul 2017 (Insider Monkey). Composite net assumed ~+4% (range 0 to +9%). Capital grew fast: ~$39bn start-2017, $41bn May 2017 (Bloomberg via Wikipedia), >$50bn Oct 2017 (FT via Wikipedia), $52bn Mar 2018 (Bloomberg); average ~$45bn. Gross-up: gross return ~= mgmt fee (~2.25%) + net return / (1 - ~27% incentive), applied to all capital (proprietary capital is fee-free but assumed to earn a similar gross return). Gross ~7.7% x $45bn ~ $3.5bn. Headcount = average of ADV proxies 1,177 (YE2016) and 1,372 (YE2017)."
+    },
+    {
+      "year": 2018,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 4300,
+        "mid": 5400,
+        "high": 7000
+      },
+      "headcount": {
+        "low": 1370,
+        "mid": 1475,
+        "high": 1580
+      },
+      "aum_usd_m": {
+        "low": 50000,
+        "mid": 55000,
+        "high": 60000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2018",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S8",
+        "S11",
+        "S7",
+        "S6",
+        "S9",
+        "S40",
+        "S28",
+        "S29"
+      ],
+      "notes": "Anchor: LCH Investments net gains to investors of $3.2bn in 2018 (after fees; single-year, not the $15.2bn cumulative). Grossed up by ~$0.95bn management fees (~2.25% on ~78% fee-paying share of ~$54bn average capital) and ~$0.9-1.2bn incentive fees (~27%); upper bar allows for proprietary-capital gains not in LCH (~+$1bn). Implied composite net ~+6%. Fund returns: Compass +14% FY (blog), H1 Compass +2.96% / Absolute Return +2.4%. Capital $52bn Mar 2018 to ~$55-60bn by 2019. Headcount = average of ADV proxies 1,372 (YE2017) and 1,581 (YE2018)."
+    },
+    {
+      "year": 2019,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 200,
+        "mid": 2500,
+        "high": 5000
+      },
+      "headcount": {
+        "low": 1460,
+        "mid": 1570,
+        "high": 1680
+      },
+      "aum_usd_m": {
+        "low": 54000,
+        "mid": 59000,
+        "high": 63000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2019",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S10",
+        "S9",
+        "S29",
+        "S30"
+      ],
+      "notes": "Fund returns used: Spectrum +1.1%, Risk Premia -0.69% and Enhanced -2.25% (II); no Absolute Return/ARE or Compass figures. Composite net ~+2% (range -1 to +6%). Average capital ~$59bn (~$60bn mid-2019). At low returns gross ~= net gains (~$1.2bn) + management fees (~$1.0bn) + small incentive (~$0.3bn). Headcount = average of ADV proxies 1,581 (YE2018) and 1,556 (YE2019); II cites ~1,600 in mid-2019."
+    },
+    {
+      "year": 2020,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": -800,
+        "mid": 1700,
+        "high": 4200
+      },
+      "headcount": {
+        "low": 1435,
+        "mid": 1545,
+        "high": 1655
+      },
+      "aum_usd_m": {
+        "low": 56000,
+        "mid": 60000,
+        "high": 63000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2020",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S10",
+        "S3",
+        "S30",
+        "S31"
+      ],
+      "notes": "Fund returns used: Spectrum +6.71%, Absolute Return -1.24%, Compass -12.21%, Risk Premia -7.62% / Enhanced -11.76% (II). Composite net ~+1% (range -3 to +4%). Average capital ~$59bn ($58bn Oct 2020; $60bn start-2021). Gross ~= net gains (~$0.6bn) + management fees (~$1.0bn) + small incentive. Headcount = average of ADV proxies 1,556 (YE2019) and 1,529 (YE2020)."
+    },
+    {
+      "year": 2021,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1200,
+        "mid": 3800,
+        "high": 7000
+      },
+      "headcount": {
+        "low": 1480,
+        "mid": 1590,
+        "high": 1700
+      },
+      "aum_usd_m": {
+        "low": 60000,
+        "mid": 63000,
+        "high": 66000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2021",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S10",
+        "S39",
+        "S31",
+        "S32"
+      ],
+      "notes": "Fund returns used (YTD through Nov 2021, not final): Spectrum ~+3%, Absolute Return -0.36%, Compass +8.75%, Risk Premia +11.4% / Enhanced +18.19% (II). Composite net ~+3% (range 0 to +7%). Average capital ~$61.5bn ($60bn start, $63bn Dec 2021). Gross-up: gross return ~= mgmt fee (~2.25%) + net return / (1 - ~27% incentive), applied to all capital (proprietary capital is fee-free but assumed to earn a similar gross return). Gross ~6% x $61.5bn ~ $3.6-3.8bn. Jian Wu model changes (2021-23) are inside fund returns. Headcount = average of ADV proxies 1,529 (YE2020) and 1,648 (YE2021)."
+    },
+    {
+      "year": 2022,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 4500,
+        "mid": 8000,
+        "high": 11500
+      },
+      "headcount": {
+        "low": 1700,
+        "mid": 1920,
+        "high": 2150
+      },
+      "aum_usd_m": {
+        "low": 54000,
+        "mid": 60000,
+        "high": 65000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2022",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S12",
+        "S13",
+        "S32",
+        "S33"
+      ],
+      "notes": "Fund returns used: 'largest diversified funds' +8-10% (II, unnamed funds; no Spectrum/ARE/Compass figures). Composite net ~+8.5% (range +5 to +11%). Average capital ~$61bn (~$60bn early 2023). Gross-up: gross return ~= mgmt fee (~2.25%) + net return / (1 - ~27% incentive), applied to all capital (proprietary capital is fee-free but assumed to earn a similar gross return). Gross ~14% x $61bn ~ $8.5bn, trimmed for unreported weaker funds. Founders earned ~$1bn each (II), consistent with a strong year. Do NOT use the $8.2bn LCH figure some summaries attribute to Two Sigma (it is D.E. Shaw). Headcount = average of ADV proxies 1,648 (YE2021) and 2,192 (YE2022); the +35% TSI jump may partly be a counting change, hence wide bars."
+    },
+    {
+      "year": 2023,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 5500,
+        "mid": 8000,
+        "high": 10800
+      },
+      "headcount": {
+        "low": 1980,
+        "mid": 2180,
+        "high": 2350
+      },
+      "aum_usd_m": {
+        "low": 55000,
+        "mid": 60000,
+        "high": 66000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2023",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S14",
+        "S13",
+        "S15",
+        "S39",
+        "S33",
+        "S34"
+      ],
+      "notes": "Fund returns used: Absolute Return Enhanced +12%, Spectrum +8.6%, Compass -6%, Compass Enhanced -16% (Bloomberg and BI via Hedgeweek; two semi-independent origins). Compass is small, so composite net ~+8.5% (range +6 to +11%). Average capital ~$60bn. Gross-up: gross return ~= mgmt fee (~2.25%) + net return / (1 - ~27% incentive), applied to all capital (proprietary capital is fee-free but assumed to earn a similar gross return). Gross ~14% x $60bn ~ $8.3bn. Jian Wu affair: ~$165m client underperformance repaid by the firm (a firm cost, small vs PnL). Founders earned ~$1.2bn each. Headcount = average of ADV proxies 2,192 (YE2022) and 2,169 (YE2023; 2,215 incl. Real Estate)."
+    },
+    {
+      "year": 2024,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 7000,
+        "mid": 10800,
+        "high": 14500
+      },
+      "headcount": {
+        "low": 1820,
+        "mid": 2000,
+        "high": 2180
+      },
+      "aum_usd_m": {
+        "low": 56000,
+        "mid": 60000,
+        "high": 70000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2024",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S18",
+        "S16",
+        "S20",
+        "S17",
+        "S19",
+        "S21",
+        "S39",
+        "S40",
+        "S34",
+        "S35"
+      ],
+      "notes": "Fund returns used: Spectrum +10.9%, Absolute Return Enhanced +14.3% (single source-close-to-firm leak, recycled), consistent with Bloomberg H1 2024 Spectrum +6.1% / ARE +10.6%. Composite net ~+12% (range +8 to +15%). Average capital ~$60bn (~$60bn Jan 2024, Aug 2024 and Jan 2025 per Bloomberg; may be stale, hence high AUM bar). Gross-up: gross return ~= mgmt fee (~2.25%) + net return / (1 - ~27% incentive), applied to all capital (proprietary capital is fee-free but assumed to earn a similar gross return). Gross ~18.7% x $60bn ~ $11.2bn, trimmed slightly for weaker macro/risk-premia funds. Headcount: ADV proxies 2,169 (YE2023) and 1,794 (YE2024); ~2,000 in Aug 2024 (Hedgeweek), ~200 laid off late 2024, ~1,700 by Jan 2025 (SEC order)."
+    },
+    {
+      "year": 2025,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 6000,
+        "mid": 10500,
+        "high": 14500
+      },
+      "headcount": {
+        "low": 1590,
+        "mid": 1710,
+        "high": 1830
+      },
+      "aum_usd_m": {
+        "low": 66000,
+        "mid": 71000,
+        "high": 82000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2025",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S21",
+        "S3",
+        "S37",
+        "S20",
+        "S35",
+        "S36"
+      ],
+      "notes": "Fund returns used: Absolute Return Enhanced ~+13% through Nov 2025 (Bloomberg via Hedgeweek); no Spectrum, Compass or full-year figures. Capital rose from ~$60bn (Jan) to a record >$70bn (Dec; only ~$1.1bn of that from new funds), consistent with composite net ~+11% (range +5 to +14%). Average capital ~$65bn. Gross-up: gross return ~= mgmt fee (~2.25%) + net return / (1 - ~27% incentive), applied to all capital (proprietary capital is fee-free but assumed to earn a similar gross return). Gross ~17% x $65bn ~ $11bn, trimmed for missing Spectrum/December data. AUM high bar reflects the ~$80bn ADV NAV proxy incl. proprietary capital (not regulatory AUM of $185-233bn). Headcount = average of ADV proxies 1,794 (YE2024) and 1,627 (YE2025); Bloomberg ~1,700 in Dec 2025."
+    },
+    {
+      "year": 2026,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1800,
+        "mid": 3400,
+        "high": 5200
+      },
+      "headcount": {
+        "low": 1520,
+        "mid": 1650,
+        "high": 1800
+      },
+      "aum_usd_m": {
+        "low": 64000,
+        "mid": 72000,
+        "high": 84000
+      },
+      "is_partial_year": true,
+      "period_label": "2026 YTD through 2026-03-31 (Q1 2026)",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S22",
+        "S23",
+        "S3",
+        "S21",
+        "S37",
+        "S38",
+        "S40",
+        "S24",
+        "S36"
+      ],
+      "notes": "YTD through 2026-03-31 (Q1 2026) only. Fund returns used: Spectrum +3.0%, Absolute Return +3.7% YTD through 2026-03-31 (Bloomberg via Hedgeweek). Composite net ~+3.3%. Capital ~$70-72bn (Dec 2025 >$70bn carried forward plus Q1 gains). Gross ~5% (0.56% quarterly mgmt fee + 3.3%/0.73) x ~$71bn ~ $3.6bn, trimmed for China macro losses. Later signals not used for the cutoff: Two Sigma-sub-advised UCITS sleeve +7.4% YTD to 2026-06-30 (suggests further H1 gains); China macro fund losses Mar-May 2026 (Compass is small). Headcount: ADV filed 2026-03-31 = 1,627 (TSI 1,555 + Ventures 36 + Real Estate 36; 1,591 ex-Ventures, spun out May 2026; Venn sold Jan 2026); website ~1,700; Bloomberg/Wikipedia c.2,000 (Feb 2026) conflicts and is treated as an outlier."
+    }
+  ],
+  "ytd_2026": {
+    "cutoff_date": "2026-03-31",
+    "period_label": "2026 YTD through 2026-03-31 (Q1 2026)",
+    "description": "Based on Bloomberg-reported (via Hedgeweek, 2026-04-07) YTD returns through 2026-03-31: Spectrum +3.0% and Absolute Return +3.7%, applied to ~$71bn capital and grossed up for fees. No flagship returns after March were found. A small Two Sigma-sub-advised UCITS fund was +7.4% YTD to 2026-06-30 (proxy only), and the China macro fund lost money in spring 2026."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Top Quant Hedge Funds Stand Out With Good 2015",
+      "publisher": "Forbes (Nathan Vardi)",
+      "url": "https://www.forbes.com/sites/nathanvardi/2016/01/13/top-quant-hedge-funds-stand-out-with-good-2015/",
+      "date": "2016-01-13",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "Compass +15% and Absolute Return +15% net in FY2015; via Wikipedia, about $32bn AUM at YE2015"
+    },
+    {
+      "id": "S2",
+      "title": "Best Hedge Fund: Two Sigma Investments",
+      "publisher": "Markets Media",
+      "url": "https://www.marketsmedia.com/best-hedge-fund-two-sigma-investments/",
+      "date": "2015-02-19",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "About $24bn AUM in early 2015 (Feb 2015)"
+    },
+    {
+      "id": "S3",
+      "title": "Two Sigma (Wikipedia), citing Forbes (Vardi, 2016-01-13)",
+      "publisher": "Wikipedia / Forbes",
+      "url": "https://en.wikipedia.org/wiki/Two_Sigma",
+      "date": "2026-10-08",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Relays Forbes YE2015 ~$32bn, Bloomberg May 2017 $41bn, FT Oct 2017 >$50bn, Bloomberg Oct 2020 $58bn and Dec 2025 ~$70bn AUM; c.2,000 headcount (Bloomberg 2026-02-05, conflicts with ADV); qualitative China macro fund losses in spring 2026"
+    },
+    {
+      "id": "S4",
+      "title": "John Overdeck (Wikipedia)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_Overdeck",
+      "date": "2026-10-08",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "$34.21bn AUM for Jan 2015 (probably a regulatory/gross figure, not investment capital); Overdeck 2016 earnings $375m"
+    },
+    {
+      "id": "S5",
+      "title": "Two Sigma (Institutional Investor premium profile)",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2bsv5bc1amcxba59esykg/premium/two-sigma",
+      "date": "2015-05-26",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "II Hedge Fund 100 AUM: $30.55bn at start of 2016 and $38.97bn probably at start of 2017"
+    },
+    {
+      "id": "S6",
+      "title": "Two Sigma Advisors' Return, AUM, and Holdings",
+      "publisher": "Insider Monkey (also on Yahoo Finance)",
+      "url": "https://www.insidermonkey.com/blog/two-sigma-advisors-return-aum-and-holdings-692231/",
+      "date": "2019-01-14",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Unsourced fund returns: 2016 Compass +10.35%, Spectrum +3%; Compass -4.4% Jan-Jul 2017; H1 2018 Compass +2.96%, Absolute Return +2.4%; $48.66bn single-adviser regulatory AUM (not investment capital)"
+    },
+    {
+      "id": "S7",
+      "title": "Did These Funds Crack the Market's Code? (A Closer Look at the Success of Quant Hedge Funds in 2018)",
+      "publisher": "Liberty Through Wealth (Nicholas Vardy)",
+      "url": "https://libertythroughwealth.com/2019/01/09/success-of-quant-hedge-funds-2019/",
+      "date": "2019-01-09",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Compass +14% in FY2018"
+    },
+    {
+      "id": "S8",
+      "title": "The Best Hedge Fund Manager of All Time Is... (LCH Investments ranking)",
+      "publisher": "Institutional Investor (Stephen Taub), reporting LCH Investments",
+      "url": "https://www.institutionalinvestor.com/article/2bswhgrmp6rwew5okdo8w/portfolio/the-best-hedge-fund-manager-of-all-time-is",
+      "date": "2019-01-27",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "LCH Investments: Two Sigma made $3.2bn net gains for investors in 2018 (3rd of top 20); $15.2bn net gains since inception at end-2018"
+    },
+    {
+      "id": "S9",
+      "title": "Inside the Geeky, Quirky, and Wildly Successful World of Quant Shop Two Sigma",
+      "publisher": "Institutional Investor (Stephen Taub)",
+      "url": "https://www.institutionalinvestor.com/article/2bsw4ehe37jv5y886qtxc/corner-office/inside-the-geeky-quirky-and-wildly-successful-world-of-quant-shop-two-sigma",
+      "date": "2019-06-28",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "About $60bn AUM and about 1,600 employees in mid-2019"
+    },
+    {
+      "id": "S10",
+      "title": "Two Sigma, Renaissance Rebound in 2021",
+      "publisher": "Institutional Investor (Stephen Taub)",
+      "url": "https://www.institutionalinvestor.com/article/2bswrhqnqgdyo779uscg0/portfolio/two-sigma-renaissance-rebound-in-2021",
+      "date": "2021-12-21",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "FY2019-FY2020 fund returns (Spectrum +1.1%/+6.71%, Absolute Return -1.24% 2020, Compass -12.21% 2020, Risk Premia); 2021 YTD through Nov (Spectrum ~+3%, Absolute Return -0.36%, Compass +8.75%, Risk Premia +11.4%/+18.19%); AUM $60bn start-2021 and $63bn Dec 2021"
+    },
+    {
+      "id": "S11",
+      "title": "The Algos at $52 Billion Two Sigma Are Struggling to Make Money",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2018-03-14/two-sigma-hedge-funds-see-slow-start-in-2018-as-quants-struggle",
+      "date": "2018-03-14",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "$52bn AUM in March 2018"
+    },
+    {
+      "id": "S12",
+      "title": "The Rich List: The 22nd Annual Ranking of the Highest-Earning Hedge Fund Managers",
+      "publisher": "Institutional Investor (Stephen Taub)",
+      "url": "https://www.institutionalinvestor.com/article/2bstpd4t08pc8xwj4we80/corner-office/the-rich-list-the-22nd-annual-ranking-of-the-highest-earning-hedge-fund-managers",
+      "date": "2023-03",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "2022: 'largest diversified funds' +8-10%; founders earned ~$1bn each; ~$60bn AUM and >1,500 staff (likely stale) in early 2023"
+    },
+    {
+      "id": "S13",
+      "title": "Two Sigma posts solid gains despite year of drama",
+      "publisher": "Hedgeweek (relaying Business Insider, citing investor documents)",
+      "url": "https://www.hedgeweek.com/two-sigma-posts-solid-gains-despite-year-of-drama/",
+      "date": "2024-01-08",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Business Insider via Hedgeweek: Absolute Return Enhanced ~10% annualised since inception through late 2022; FY2023 ARE +12%; ~$60bn AUM Jan 2024; ~$170m Jian Wu client losses"
+    },
+    {
+      "id": "S14",
+      "title": "Two Sigma records 16% loss for Compass Enhanced Fund",
+      "publisher": "Hedgeweek (relaying Bloomberg 2024-01-29, unnamed sources)",
+      "url": "https://www.hedgeweek.com/two-sigma-records-16-loss-for-compass-enhanced-fund/",
+      "date": "2024-01-31",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Bloomberg via Hedgeweek: FY2023 ARE +12%, Spectrum +8.6%, Compass -6%, Compass Enhanced -16%"
+    },
+    {
+      "id": "S15",
+      "title": "The 23rd Annual Ranking of the Highest-Earning Hedge Fund Managers",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2d0quhk4ghsahyyia26m8/corner-office/the-23nd-annual-ranking-of-the-highest-earning-hedge-fund-managers",
+      "date": "2024-03-27",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Founders Overdeck and Siegel earned ~$1.2bn each in 2023"
+    },
+    {
+      "id": "S16",
+      "title": "Two Sigma's Feuding Founders Step Down, New CEOs Taking Over",
+      "publisher": "Carrier Management (Bloomberg syndication, Hema Parmar)",
+      "url": "https://www.carriermanagement.com/news/2024/08/28/265933.htm",
+      "date": "2024-08-28",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "Bloomberg syndication: H1 2024 Absolute Return Enhanced +10.6%, Spectrum +6.1%"
+    },
+    {
+      "id": "S17",
+      "title": "Two Sigma's feuding founders step down as co-CEOs",
+      "publisher": "Hedgeweek",
+      "url": "https://www.hedgeweek.com/two-sigmas-feuding-founders-step-down-as-co-ceos/",
+      "date": "2024-08-28",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "About 2,000 employees and ~$60bn AUM as of Aug 2024"
+    },
+    {
+      "id": "S18",
+      "title": "Renaissance Tech and Two Sigma lead 2024 quant gains",
+      "publisher": "Hedgeweek (source close to the firm)",
+      "url": "https://www.hedgeweek.com/renaissance-tech-and-two-sigma-lead-2024-quant-gains/",
+      "date": "2025-01-14",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "FY2024 Spectrum +10.9%, Absolute Return Enhanced +14.3% (source close to the firm); ~$60bn AUM"
+    },
+    {
+      "id": "S19",
+      "title": "The Rich List: The 24th Annual Ranking of the Highest-Earning Hedge Fund Managers",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2ekchq8rll8mbbn2glq80/hedge-funds/the-rich-list-the-24th-annual-ranking-of-the-highest-earning-hedge-fund-managers",
+      "date": "2025-03-21",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "~2,000 staff before late-2024 layoffs of ~200; founders earned ~$970m each in 2024"
+    },
+    {
+      "id": "S20",
+      "title": "Upstart Holdings (UPST) among billionaire quant Two Sigma's stock picks (Insider Monkey, via Yahoo Finance)",
+      "publisher": "Insider Monkey / Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/upstart-holdings-inc-upst-among-074431039.html",
+      "date": "2025-05-09",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Recycles FY2024 Spectrum +10.9% / ARE +14.3%; ~$60bn AUM as of April 2025"
+    },
+    {
+      "id": "S21",
+      "title": "Two Sigma raises $1.1bn across new funds as assets hit record $70bn",
+      "publisher": "Hedgeweek (relaying Bloomberg 2025-12-04, 'Two Sigma Starts New Funds, Raises Cash Despite Internal Turmoil')",
+      "url": "https://www.hedgeweek.com/two-sigma-raises-1-1bn-across-new-funds-as-assets-hit-record-70bn/",
+      "date": "2025-12-05",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Bloomberg via Hedgeweek: ARE ~+13% through Nov 2025; record >$70bn AUM (up from ~$60bn in Jan 2025); ~1,700 employees; >$1.1bn raised for new funds in 2025"
+    },
+    {
+      "id": "S22",
+      "title": "Two Sigma outperforms multi-strat peers amid March market volatility",
+      "publisher": "Hedgeweek (relaying Bloomberg 2026-04-06, people familiar)",
+      "url": "https://www.hedgeweek.com/two-sigma-outperforms-multi-strat-peers-amid-march-market-volatility/",
+      "date": "2026-04-07",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Bloomberg via Hedgeweek: Spectrum +3.0% and Absolute Return +3.7% YTD through 2026-03-31"
+    },
+    {
+      "id": "S23",
+      "title": "Two Sigma Diversified Gains 4.6% In Q2 On AI Longs And Shorts In Oil & Consumer Stocks [Q2 Letter]",
+      "publisher": "Hedge Fund Alpha (investor letter summary)",
+      "url": "https://hedgefundalpha.com/investor-letters/two-sigma-diversified-fund/",
+      "date": "2026-08-07",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Schroder GAIA Two Sigma Diversified (~$382m UCITS sub-advised sleeve) +4.6% in Q2 2026, +7.4% YTD to 2026-06-30; directional proxy only"
+    },
+    {
+      "id": "S24",
+      "title": "About Us",
+      "publisher": "Two Sigma (twosigma.com)",
+      "url": "https://www.twosigma.com/about-us/",
+      "date": "2026-10-08",
+      "type": "company_official",
+      "reliability": "medium",
+      "supports": "About 1,700 employees (undated page, accessed 2026-10-08)"
+    },
+    {
+      "id": "S25",
+      "title": "SEC registered adviser roster 2015-06-01 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/data/frequently-requested-foia-document-information-about-registered-investment-advisers-and-exempt/ia060115.zip",
+      "date": "2015-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 764; treated as proxy for year-end 2014"
+    },
+    {
+      "id": "S26",
+      "title": "SEC registered adviser roster 2016-06-01 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/data/frequently-requested-foia-document-information-about-registered-investment-advisers-and-exempt/ia060116.zip",
+      "date": "2016-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 916; treated as proxy for year-end 2015"
+    },
+    {
+      "id": "S27",
+      "title": "SEC registered adviser roster 2017-06-01 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/data/frequently-requested-foia-document-information-about-registered-investment-advisers-and-exempt/ia060117.zip",
+      "date": "2017-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 1177; treated as proxy for year-end 2016"
+    },
+    {
+      "id": "S28",
+      "title": "SEC registered adviser roster 2018-06-01 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060118.zip",
+      "date": "2018-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 1372; treated as proxy for year-end 2017"
+    },
+    {
+      "id": "S29",
+      "title": "SEC registered adviser roster 2019-06-03 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060319-1.zip",
+      "date": "2019-06-03",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 1581; treated as proxy for year-end 2018"
+    },
+    {
+      "id": "S30",
+      "title": "SEC registered adviser roster 2020-06-01 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060120.zip",
+      "date": "2020-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 1556; treated as proxy for year-end 2019"
+    },
+    {
+      "id": "S31",
+      "title": "SEC registered adviser roster 2021-06-01 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060121.zip",
+      "date": "2021-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 1529; treated as proxy for year-end 2020"
+    },
+    {
+      "id": "S32",
+      "title": "SEC registered adviser roster 2022-06-01 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060122.zip",
+      "date": "2022-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 1648; treated as proxy for year-end 2021"
+    },
+    {
+      "id": "S33",
+      "title": "SEC registered adviser roster 2023-06-02 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-exempt-reporting-advisers/ia060223.xlsx",
+      "date": "2023-06-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 2192; treated as proxy for year-end 2022"
+    },
+    {
+      "id": "S34",
+      "title": "SEC registered adviser roster 2024-06-05 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-exempt-reporting-advisers/ia060524.xlsx",
+      "date": "2024-06-05",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 2169; treated as proxy for year-end 2023"
+    },
+    {
+      "id": "S35",
+      "title": "SEC registered adviser roster 2025-04-21 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-exempt-reporting-advisers/ia042125.xlsx",
+      "date": "2025-04-21",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 1794; treated as proxy for year-end 2024"
+    },
+    {
+      "id": "S36",
+      "title": "SEC registered adviser roster 2026-04-01 (Form ADV Item 5.A)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/other/information-about-registered-investment-advisers-exempt-reporting-advisers/ia040126.zip",
+      "date": "2026-04-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Item 5.A employee counts summed across Two Sigma SEC-registered advisers (TSI, TSA and small affiliates): 1627; treated as proxy for year-end 2025"
+    },
+    {
+      "id": "S37",
+      "title": "Form ADV Part 1A, Two Sigma Investments, LP (Annual Amendment, 3/31/2026)",
+      "publisher": "U.S. SEC IAPD",
+      "url": "https://reports.adviserinfo.sec.gov/reports/ADV/137137/PDF/137137.pdf",
+      "date": "2026-03-31",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Part 1A, TSI annual amendment 2026-03-31: 1,555 employees (784 advisory); $232.8bn regulatory AUM as of 2026-01-31 (gross, includes former TSA clients); FY2025 fund GAVs (Spectrum $10.6bn, Absolute Return Master $15.2bn, Strategies Fund $13.0bn proprietary, Compass $0.27bn); NAV-proxy ~$80bn incl. proprietary capital (agent computation)"
+    },
+    {
+      "id": "S38",
+      "title": "Form ADV Part 1A, Two Sigma Advisers, LP (Other-Than-Annual Amendment 1/30/2026)",
+      "publisher": "U.S. SEC IAPD",
+      "url": "https://reports.adviserinfo.sec.gov/reports/ADV/152254/PDF/152254.pdf",
+      "date": "2026-01-30",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Part 1A, TSA final other-than-annual amendment 2026-01-30: 101 employees; clients moved to TSI 2026-01-01"
+    },
+    {
+      "id": "S39",
+      "title": "SEC Order Instituting Proceedings, In re Two Sigma Investments LP and Two Sigma Advisers LP (Rel. 34-102207)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/litigation/admin/2025/34-102207.pdf",
+      "date": "2025-01-16",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "SEC order 2025-01-16: ~1,700 employees; unauthorized model changes caused >$400m over- and ~$165m under-performance (2021-2023); $90m civil penalties"
+    },
+    {
+      "id": "S40",
+      "title": "Form ADV Part 2A Brochure, Two Sigma Investments, LP (March 31, 2026)",
+      "publisher": "U.S. SEC IAPD",
+      "url": "https://files.adviserinfo.sec.gov/IAPD/Content/Common/crd_iapd_Brochure.aspx?BRCHR_VRSN_ID=1039342",
+      "date": "2026-03-31",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Form ADV Part 2A (2026-03-31): management fees up to 4%; incentive fees 12.0-42.5% of net profits; proprietary funds fee-free and more leveraged"
+    }
+  ],
+  "caveats": [
+    "Regulatory AUM ($67bn in 2015 to $232.8bn in Jan 2026) is gross and leverage-inflated (2-3x investment capital) and is not used for aum_usd_m or PnL.",
+    "LCH figures are net of fees and cover only 2018 ($3.2bn single-year; $15.2bn is cumulative since inception). Two Sigma was not in the LCH top 20 in other years, so no other dollar gains are published.",
+    "The $8.2bn 2022 'LCH net profit' that some summaries attribute to Two Sigma belongs to D.E. Shaw and is excluded.",
+    "Fee gross-up assumes ~2.25% management and ~27% incentive fees on ~75-80% fee-paying capital; actual terms range up to 4% and 12-42.5%, and large proprietary funds (e.g. Strategies Fund ~$13bn GAV) pay no fees.",
+    "The ~$60bn AUM figure is repeated from 2019 to Jan 2025 and may be stale; the ADV-based NAV proxy is ~$80bn at YE2025 vs Bloomberg's >$70bn. If true capital was higher, PnL is understated proportionally.",
+    "The 2024 fund returns trace to a single unattributed leak; 2016-2018 returns come from unsourced aggregators; 2021 returns are through November only.",
+    "Form ADV headcount: each filing (~March) is used as the prior year-end; the 2022-23 TSI jump (+35%) may be partly a counting change; entity sums may double count TSI/TSA shared staff by up to ~5%.",
+    "Headcount from 2026 excludes Venn (sold Jan 2026) and, after May 2026, Ventures (spun out); a Bloomberg/Wikipedia c.2,000 figure for Feb 2026 conflicts with ADV and the website (~1,700).",
+    "13F-based portfolio values and returns are equity holdings marks, not fund NAV or AUM, and were ignored."
+  ],
+  "overall_confidence": "low",
+  "open_questions": [
+    "Full-year fund returns for 2015 (Spectrum), 2016 (Absolute Return), 2017 (all funds), 2018 (Spectrum/ARE), 2022 (named funds) and 2025 (Spectrum, full-year ARE).",
+    "Flagship returns after 2026-03-31 to extend the 2026 YTD cutoff (April-September 2026).",
+    "Year-end investment capital for 2016, 2018, 2022-2024 (is ~$60bn stale?), and whether press AUM includes proprietary capital.",
+    "Whether the 2022-23 Form ADV headcount jump reflects real hiring or a counting change; Two Sigma International (UK) accounts as a cross-check.",
+    "Whether LCH 2018 net gains include proprietary/employee capital."
+  ],
+  "changelog": [],
+  "review_status": "draft: synthesized from 2 of 4 search lenses without adversarial review (stopped early to save budget)"
+}

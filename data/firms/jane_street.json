@@ -1,0 +1,802 @@
+{
+  "firm_key": "jane_street",
+  "firm_name": "Jane Street",
+  "pnl_definition": "Net trading revenue (NTR) of Jane Street Group, LLC and all affiliates globally: trading gains net of exchange, clearing, brokerage and financing costs, before compensation and other operating expenses. Calendar year, USD millions. From 2025 the reported NTR includes mark-to-market gains and losses on private and AI-company stakes (e.g. Anthropic, CoreWeave, Situational Awareness). Gross revenue (e.g. FT's $21.9bn for 2023) and adjusted EBITDA are excluded.",
+  "headcount_definition": "Total firm employees worldwide (all offices). Year-end where a document-based count exists (2023: 2,631; 2024: 2,960). Other years are approximate year-end values interpolated from dated point-in-time snapshots (firm website, press). 2025 is a rounded 'about 3,500', and 2026 is an estimate as of mid-2026 (cutoff).",
+  "fx_note": "Jane Street reports in USD; no FX conversion needed. India figures in INR (SEBI) and UK subsidiary accounts are excluded from the firm-wide series.",
+  "methodology": "Rows for 2022-2026 rest on figures from Jane Street's bond offering documents and debt-investor disclosures, as relayed by Bloomberg, FT, Reuters and specialist trade press; the firm is private and publishes no accounts. 2020-2021 are bounded below by the FT's reading of the 2024 prospectus (NTR > $10bn in each of 2020-2023) and centred using Bloomberg's 12-months-to-March-2021 figure and an unverified Substack. 2015-2019 have no reported PnL and are scale-anchored estimates: US broker-dealer and firm-wide members' equity, headcount, the Q2 2019 ~$0.5bn chart reading, and market regime. Headcount combines document-based year-end counts (2023, 2024) with website, press and aggregator snapshots interpolated to year-end. Credible intervals follow the stated calibration: about \u00b12-3% for document-based press years, \u00b15-15% for bounded or single-source years, and \u00b150-100% for pre-2020 estimates.",
+  "entities": [
+    {
+      "key": "firm",
+      "name": "Jane Street (firm-wide)",
+      "description": "Jane Street Group, LLC consolidated with all trading affiliates worldwide (US, London, Hong Kong, Singapore, Amsterdam, India-linked entities). Subsidiary-only figures (Jane Street Capital LLC X-17A-5, Jane Street Europe Ltd, Jane Street UK Partnership LLP, India entities per SEBI) are context only and never used as firm-wide PnL."
+    }
+  ],
+  "rows": [
+    {
+      "year": 2015,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 450,
+        "mid": 1050,
+        "high": 2100
+      },
+      "headcount": {
+        "low": 450,
+        "mid": 550,
+        "high": 750
+      },
+      "is_partial_year": false,
+      "period_label": "FY2015",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S30",
+        "S31",
+        "S32"
+      ],
+      "notes": "No firm-wide revenue is reported for 2015. The PnL is a pure estimate anchored on scale. The US broker-dealer alone had $1.25bn of member's equity at end-2015 (X-17A-5; subsidiary balance sheet, not revenue). Firm-wide members' equity was about $2.1bn in 2016, derived from '$45bn, up nearly 2,000% since 2016'. Equity-to-NTR ran about 2x in 2023, which suggests NTR of roughly $1bn. The August 2015 ETF dislocation was a favourable volatility event. Headcount: about 500 in April 2015 (MIT Technology Review via Wikipedia), grown to an assumed ~550 by year-end. Bars are wide and asymmetric."
+    },
+    {
+      "year": 2016,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 450,
+        "mid": 1100,
+        "high": 2200
+      },
+      "headcount": {
+        "low": 480,
+        "mid": 620,
+        "high": 850
+      },
+      "is_partial_year": false,
+      "period_label": "FY2016",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S20",
+        "S31"
+      ],
+      "notes": "No reported PnL. Members' equity of about $2.1-2.3bn (derived) gives the scale. Reuters notes July 2026 was the 'first negative month since 2016', so 2016 had at least one losing month. Modest growth on 2015 is assumed (Brexit and US-election volatility). Headcount is interpolated between ~500 (Apr 2015) and ~750 (Aug 2018)."
+    },
+    {
+      "year": 2017,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 450,
+        "mid": 1050,
+        "high": 2100
+      },
+      "headcount": {
+        "low": 530,
+        "mid": 690,
+        "high": 950
+      },
+      "is_partial_year": false,
+      "period_label": "FY2017",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S31",
+        "S33"
+      ],
+      "notes": "No reported PnL. 2017 was a historically low-volatility, lean year for market makers, so the estimate is flat to slightly down on 2016 despite headcount growth. Pure estimate with wide bars. Headcount is interpolated toward ~750 (website, Aug 2018)."
+    },
+    {
+      "year": 2018,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 650,
+        "mid": 1450,
+        "high": 2700
+      },
+      "headcount": {
+        "low": 650,
+        "mid": 800,
+        "high": 1050
+      },
+      "is_partial_year": false,
+      "period_label": "FY2018",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S33",
+        "S31"
+      ],
+      "notes": "No reported PnL. Volatility spikes (Feb 2018 'Volmageddon', Q4 2018 selloff) and continued ETF share gains suggest growth on 2017. Pure estimate. Headcount: about 750 per the firm website in Aug 2018 (via Wikipedia, low reliability), set at ~800 for year-end."
+    },
+    {
+      "year": 2019,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1300,
+        "mid": 2400,
+        "high": 4500
+      },
+      "headcount": {
+        "low": 750,
+        "mid": 950,
+        "high": 1250
+      },
+      "is_partial_year": false,
+      "period_label": "FY2019",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S27",
+        "S28",
+        "S29"
+      ],
+      "notes": "No calendar-2019 figure. Anchors disagree. (a) An X post reading a Bloomberg chart puts Q2 2019 NTR at ~$0.5bn, about $2-2.5bn annualised. (b) An unverified Substack says 2020 EBITDA jumped ~1,000%, implying low-single-digit-billion 2019 revenue. (c) Bloomberg's +54% to $10.6bn for the 12 months to Mar 2021 implies ~$6.9bn for Apr 2019-Mar 2020, but that window includes the extreme COVID Q1 2020 (likely ~$4-5bn alone). 2019 was a lean low-volatility year. The mid of $2.4bn is skewed high to allow for the LTM-based reading. Headcount is interpolated (website ~750 in 2018, ~900 snapshot possibly stale)."
+    },
+    {
+      "year": 2020,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 10050,
+        "mid": 11000,
+        "high": 12500
+      },
+      "headcount": {
+        "low": 850,
+        "mid": 1100,
+        "high": 1400
+      },
+      "is_partial_year": false,
+      "period_label": "FY2020",
+      "pnl_basis": "derived",
+      "headcount_basis": "estimated",
+      "confidence": "medium",
+      "source_ids": [
+        "S1",
+        "S27",
+        "S28",
+        "S34"
+      ],
+      "notes": "Lower bound from the FT reading of the 2024 prospectus: 2023 was the 'fourth straight year of NTR exceeding $10bn', so 2020 > $10bn. Bloomberg reported +54% to $10.6bn for the 12 months to March 2021 (non-calendar, via Wikipedia/MarketsWiki, net vs gross unclear). An unverified Substack gives FY2020 $11.4bn; its H1 2020 $8.4bn equals Bloomberg's H1 2024 figure, so it may be mis-dated. 2020 was an exceptionally strong volatile year (COVID, ETF/bond dislocations). Mid $11.0bn. The 'about 900' website figure (Aug 2020 Wikipedia, citing a 2018 access) looks stale, so year-end headcount is estimated at ~1,100."
+    },
+    {
+      "year": 2021,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 10050,
+        "mid": 11000,
+        "high": 13000
+      },
+      "headcount": {
+        "low": 1150,
+        "mid": 1400,
+        "high": 1750
+      },
+      "is_partial_year": false,
+      "period_label": "FY2021",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S1",
+        "S27",
+        "S35",
+        "S36"
+      ],
+      "notes": "Only a document-based lower bound: NTR > $10bn (FT, 2024 prospectus streak). No point figure. 2021 was a retail and crypto boom year; Q1 2021 (meme-stock volatility) fell inside Bloomberg's $10.6bn LTM to March 2021. Bloomberg later said 2023 was 'roughly flat' on 2022 ($10.7bn), and nothing suggests 2021 far exceeded 2022, so the upper bar is ~$13bn. Headcount: ~1,200 (website, May 2021) and 1,700+ (July 2022), so year-end ~1,400."
+    },
+    {
+      "year": 2022,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 10100,
+        "mid": 10700,
+        "high": 11300
+      },
+      "headcount": {
+        "low": 1700,
+        "mid": 2050,
+        "high": 2350
+      },
+      "is_partial_year": false,
+      "period_label": "FY2022",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S3",
+        "S1",
+        "S2",
+        "S36",
+        "S37"
+      ],
+      "notes": "$10.7bn per Bloomberg (Jan 2024; figures disclosed to debt investors, people familiar; snippet only, not fetched). This is consistent with FT's >$10bn streak and Bloomberg's '2023 roughly flat'. The FT's +34% gross-revenue comparison implies 2022 GROSS revenue of ~$16.3bn. That is not the PnL metric and is excluded. Headcount: website 1,700+ (Jul 2022) and eFC/FT 'from 2,000 to 2,500' before Sep 2023, so year-end ~2,050."
+    },
+    {
+      "year": 2023,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 10300,
+        "mid": 10550,
+        "high": 10800
+      },
+      "headcount": {
+        "low": 2600,
+        "mid": 2631,
+        "high": 2660
+      },
+      "is_partial_year": false,
+      "period_label": "FY2023",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "reported_press",
+      "confidence": "high",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S9",
+        "S37"
+      ],
+      "notes": "NTR $10.5bn (FT Alphaville, from the April 2024 bond prospectus) and $10.6bn (Bloomberg). The difference is rounding; mid $10.55bn. TRAP RESOLVED: the FT's $21.9bn is explicitly GROSS revenue (before trading costs and interest; +34% YoY). The same article gives the $10.5bn net figure, so $21.9bn is excluded. Adjusted EBITDA was $7.4bn and comp $2.4bn. Headcount: 2,631 at 2023-12-31 per the prospectus (year-end), about $4.0m NTR per head. The Bloomberg 9M-2023 figure (~$7.0-7.3bn) implies Q4 of about $3.3bn."
+    },
+    {
+      "year": 2024,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 20000,
+        "mid": 20500,
+        "high": 21000
+      },
+      "headcount": {
+        "low": 2900,
+        "mid": 2960,
+        "high": 3020
+      },
+      "net_income_usd_m": {
+        "low": 12300,
+        "mid": 13000,
+        "high": 13700
+      },
+      "is_partial_year": false,
+      "period_label": "FY2024",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "reported_press",
+      "confidence": "high",
+      "source_ids": [
+        "S5",
+        "S6",
+        "S4",
+        "S1",
+        "S7",
+        "S8",
+        "S9"
+      ],
+      "notes": "NTR $20.5bn from the April 2025 bond offering documents, via Bloomberg, corroborated by FT and by The DESK's $6.9m NTR per employee (6.9 x 2,960 = $20.4bn). Quarterly build: Q1 $4.4bn (FT), H1 ~$8.4bn, 9M $14.2bn (Bloomberg), so Q4 ~$6.3bn. Net income $13bn per a Bloomberg relay (period not explicitly labelled there; consistent with FY). Members' equity $29.9bn. Headcount 2,960 at year-end 2024 (offering docs via Disruption Banking/eFC); The DESK implies ~2,970."
+    },
+    {
+      "year": 2025,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 38600,
+        "mid": 39600,
+        "high": 40600
+      },
+      "headcount": {
+        "low": 3250,
+        "mid": 3500,
+        "high": 3750
+      },
+      "is_partial_year": false,
+      "period_label": "FY2025",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "reported_press",
+      "confidence": "high",
+      "source_ids": [
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S43",
+        "S42",
+        "S15",
+        "S16",
+        "S17",
+        "S38",
+        "S39"
+      ],
+      "notes": "NTR $39.6bn per Bloomberg, independently Reuters. Quarters reconcile: Q1 ~$7.2bn (H1 $17.3bn less Q2), Q2 $10.1bn, Q3 $6.83bn, Q4 $15.5bn, summing to ~$39.6bn. The figure includes large mark-to-market gains on private and AI stakes (Anthropic, CoreWeave; ~$830m VC gains in Q3), so it is not pure market-making revenue. Adjusted EBITDA $31.2bn exceeds NTR less comp ($30.2bn), so it adds back some items and is not used. No FY2025 net income was reported (Q2 2025 net income was $6.9bn). Headcount ~3,500 (Bloomberg, 'only 3,500 employees'; consistent with the $9.4bn pay pool / $2.7m per head = ~3,480). This is a rounded, unlabelled figure; LinkedIn shows ~3,184-3,300 at end-2025. Treated as approximately year-end, with a \u00b17% band. TRAP: UK Companies House's $643m for 2025 is Jane Street Europe Ltd, a subsidiary/transfer-pricing entity, so it is excluded. UK LLP average staff grew 688 to 790 (+15%), consistent with firm-wide growth of ~15-18%."
+    },
+    {
+      "year": 2026,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 39500,
+        "mid": 42000,
+        "high": 46500
+      },
+      "headcount": {
+        "low": 3450,
+        "mid": 3700,
+        "high": 4000
+      },
+      "is_partial_year": true,
+      "period_label": "YTD 2026 (2026-01-01 to 2026-07-31; reported mid-August 2026)",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S20",
+        "S21",
+        "S23",
+        "S22",
+        "S18",
+        "S19",
+        "S26",
+        "S40",
+        "S41",
+        "S24",
+        "S25"
+      ],
+      "notes": "Latest reliable figure: 'more than $40bn' of NTR year to date, including July's loss (Reuters, from people familiar plus a note to employees; FT says 'in the year to Friday', i.e. to 2026-08-14). Cutoff is 2026-07-31 because no August results were disclosed and the figure is the July month-end close revealed in the August refinancing. Q1 2026 was a record $16.1bn (Bloomberg and Reuters, with $10.3bn net income). July was about -$14-15bn (the refinancing disclosure says $14bn; FT/Reuters/WSJ say $15bn), the first negative month since 2016, driven by the Situational Awareness stake and AI-stock risk cuts. Reuters' 'down roughly 25% from the end-June peak' plus a $14-15bn July loss implies YTD of about $42-45bn (implied H1 ~$56-60bn, Q2 ~$40bn+). It also rules out reading the FT's $40bn as trailing-12-month. Mid $42bn. The low is set just under $40bn to allow for 'still $40bn' rounding. Q1-2026 TRAP RESOLVED: Hedgeweek's $27bn is Q1 2026 revenue COMBINED for Citadel Securities, Jane Street and HRT, not Jane Street alone, so there is no conflict with $16.1bn. Headcount: Reuters' boilerplate ~3,500 is likely carried over. Aggregators give 3,700-4,000 (Tracxn 3,865 at 2026-08-31), and the website says 'more than 3,000' (stale floor). Mid ~3,700 is derived from the ~15%/yr trend."
+    }
+  ],
+  "ytd_2026": {
+    "cutoff_date": "2026-07-31",
+    "period_label": "YTD 2026 (2026-01-01 to 2026-07-31; reported mid-August 2026)",
+    "description": "The latest reliable firm-wide PnL is 'more than $40bn' of net trading revenue for 2026 to date, net of a ~$14-15bn July loss. Reuters and the FT reported it on 2026-08-14, based on the August 2026 bond-refinancing disclosure and a note to employees. Best estimate is ~$42bn (90% CI $39.5-46.5bn). The cutoff is the July 2026 month-end: Reuters explicitly says the figure includes July, no August data has been disclosed, and the FT's 'year to Friday' (2026-08-14) phrasing describes the same disclosure. Components: Q1 2026 $16.1bn (record); implied end-June peak ~$56-60bn; July ~-$14-15bn. No Q2, H1 or Q3 2026 figure has been reported. Headcount at cutoff is ~3,700 (range 3,450-4,000)."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Takeaways from the Jane Street bond prospectus (FT Alphaville), as quoted on Hacker News",
+      "publisher": "Financial Times (FT Alphaville)",
+      "url": "https://news.ycombinator.com/item?id=40220722",
+      "date": "2024-04-30",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "Reading of the April 2024 bond prospectus: FY2023 net trading revenue (NTR) $10.5bn; FY2023 GROSS revenue $21.9bn (+34% YoY, before trading costs and interest, so not the PnL metric); 2,631 employees at end-2023; comp $2.4bn; 2023 was the 'fourth straight year of net trading revenues exceeding $10bn' (lower bound for 2020-2022); Q1 2024 NTR $4.4bn. Also quoted in a second HN thread: https://news.ycombinator.com/item?id=40237310"
+    },
+    {
+      "id": "S2",
+      "title": "Jane Street Scores $10.6 Billion Trading Haul Amid Growth Push",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2024-04-17/jane-street-scores-10-6-billion-trading-haul-amid-growth-push",
+      "date": "2024-04-17",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "FY2023 NTR $10.6bn, 'roughly flat' on 2022; adjusted EBITDA $7.4bn."
+    },
+    {
+      "id": "S3",
+      "title": "Jane Street Scores $7 Billion Trading Haul Amid Market Swings",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2024-01-09/jane-street-scores-7-billion-trading-haul-amid-market-swings",
+      "date": "2024-01-09",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "FY2022 NTR $10.7bn (debt-deal disclosure, people familiar; snippet only, 403 on fetch); 9M 2023 about $7.0-7.3bn."
+    },
+    {
+      "id": "S4",
+      "title": "Jane Street Reaps $14.2 Billion in First Nine Months of Trading",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2024-12-02/jane-street-reaps-14-2-billion-in-first-nine-months-of-trading",
+      "date": "2024-12-02",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "9M 2024 NTR $14.2bn; Q3 2024 $5.8bn; H1 2024 about $8.4bn (derived)."
+    },
+    {
+      "id": "S5",
+      "title": "Jane Street's $20.5 Billion Trading Haul Tops Citigroup, BofA",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-04-23/jane-street-s-20-5-billion-trading-haul-tops-citigroup-bofa",
+      "date": "2025-04-23",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "FY2024 NTR $20.5bn from the April 2025 bond offering documents; corroborated by FT."
+    },
+    {
+      "id": "S6",
+      "title": "Jane Street Group reports record $20.5 billion net trading revenue - Bloomberg",
+      "publisher": "Investing.com relaying Bloomberg News",
+      "url": "https://www.investing.com/news/stock-market-news/jane-street-group-reports-record-205-billion-net-trading-revenue--bloomberg-93CH-3999431",
+      "date": "2025-04-23",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "FY2024 NTR $20.5bn and FY2024 net income $13bn (period label implicit; AI-assisted relay)."
+    },
+    {
+      "id": "S7",
+      "title": "Jane Street issues US$1.35 billion bond as market makers bulks up balance sheet",
+      "publisher": "The DESK (fi-desk.com)",
+      "url": "https://www.fi-desk.com/jane-street-issues-us1-35-billion-bond-as-market-makers-bulk-up-balance-sheets/",
+      "date": "2025-04-28",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Reading of the April 2025 offering memo: $6.9m NTR per employee in 2024 (implies about 2,970 staff), members' equity $29.9bn at end-2024."
+    },
+    {
+      "id": "S8",
+      "title": "Jane Street's $20.5B Trading Surge Outpaces Citi, BofA",
+      "publisher": "Disruption Banking",
+      "url": "https://www.disruptionbanking.com/2025/04/24/jane-streets-20-5b-trading-surge-outpaces-citi-bofa/",
+      "date": "2025-04-24",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "2,960 employees at end-2024 (37% in tech); preliminary Q1 2025 range (NTR about $7.15bn midpoint)."
+    },
+    {
+      "id": "S9",
+      "title": "Jane Street's rush of recruiter hiring suggests more $1.4m jobs are coming",
+      "publisher": "eFinancialCareers",
+      "url": "https://www.efinancialcareers.com/news/jane-street-s-rush-of-recruiter-hiring-suggests-headcount-will-follow-revenues",
+      "date": "2025-04-23",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "'At the end of 2024, Jane Street employed 2,960 people, up from 2,631 at the end of 2023'; 2024 comp about $4.1bn."
+    },
+    {
+      "id": "S10",
+      "title": "Jane Street Snatches Wall Street Crown With Record $39.6 Billion Trading Haul",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-24/jane-street-snatches-wall-street-crown-with-record-39-6-billion-trading-haul",
+      "date": "2026-04-24",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "FY2025 NTR $39.6bn (record; about +93% YoY)."
+    },
+    {
+      "id": "S11",
+      "title": "Jane Street Group posts record $39.6 billion trading revenue",
+      "publisher": "Investing.com relaying Bloomberg News",
+      "url": "https://www.investing.com/news/economy-news/jane-street-group-posts-record-396-billion-trading-revenue-93CH-4636250",
+      "date": "2026-04-24",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "FY2025 NTR $39.6bn; Q4 2025 $15.5bn; adjusted EBITDA $31.2bn; 'only 3,500 employees'."
+    },
+    {
+      "id": "S12",
+      "title": "Jane Street outpaces rivals with record $40bn trading haul (citing Reuters)",
+      "publisher": "Hedgeweek (citing Reuters)",
+      "url": "https://hedgeweek.com/news/jane-street-outpaces-rivals-with-record-40bn-trading-haul",
+      "date": "2026-04-27",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Independent (Reuters) corroboration of FY2025 NTR $39.6bn."
+    },
+    {
+      "id": "S13",
+      "title": "Jane Street beats JPMorgan and Goldman Sachs with record US$10.1b trading haul",
+      "publisher": "Capital Brief (citing Bloomberg)",
+      "url": "https://www.capitalbrief.com/briefing/jane-street-beats-jpmorgan-and-goldman-sachs-with-record-usd101b-trading-haul-c33c4177-7f0a-409d-8177-8c1eea66239e/",
+      "date": "2025-09-03",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "Q2 2025 NTR $10.1bn, H1 2025 $17.3bn (so Q1 2025 about $7.2bn); Q2 2025 net income $6.9bn; Q2 2024 net income $2.4bn."
+    },
+    {
+      "id": "S14",
+      "title": "Jane Street and Citadel Q3 revenues at record levels",
+      "publisher": "Investing.com (citing Bloomberg)",
+      "url": "https://www.investing.com/news/stock-market-news/jane-street-and-citadel-q3-revenues-at-record-levels-93CH-4384364",
+      "date": "2025-12-01",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "Q3 2025 NTR $6.83bn."
+    },
+    {
+      "id": "S15",
+      "title": "Jane Street's 3,500 employees generated $9m each in profits last year",
+      "publisher": "eFinancialCareers",
+      "url": "https://www.efinancialcareers.com/news/jane-street-employees",
+      "date": "2026-04-24",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "About 3,500 employees in 2025; $11.3m revenue per head; Q3 2025 $830m private-investment gains inside NTR."
+    },
+    {
+      "id": "S16",
+      "title": "Jane Street Pay Pool Hits $9.4 Billion, More Than Doubles in 2025",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-01/jane-street-pay-pool-hits-9-4-billion-more-than-doubles-in-2025",
+      "date": "2026-05-01",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "FY2025 comp pool $9.4bn; with $2.7m per head (eFC) implies about 3,480 people."
+    },
+    {
+      "id": "S17",
+      "title": "Jane Street is hiring \"rigorously\" to maintain \"intellectual density\"",
+      "publisher": "eFinancialCareers",
+      "url": "https://www.efinancialcareers.com/news/jane-street-wants-to-slow-hiring-to-maintain-intellectual-density",
+      "date": "2026-03-18",
+      "type": "trade_press",
+      "reliability": "low",
+      "supports": "LinkedIn-based about 3,300 staff at end-2025; 'just under 3,000' at end-2024."
+    },
+    {
+      "id": "S18",
+      "title": "Jane Street Pulls In Record $16.1 Billion Quarterly Trading Haul",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-08/jane-street-pulls-in-record-16-1-billion-quarterly-trading-haul",
+      "date": "2026-05-08",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "Q1 2026 NTR $16.1bn, 'more than double' Q1 2025; partly marks on private AI stakes."
+    },
+    {
+      "id": "S19",
+      "title": "Jane Street Rakes in Record First-Quarter Trading Haul of $16.1 Billion, Sources Say",
+      "publisher": "Reuters (via Yahoo Finance)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jane-street-one-wall-street-180232164.html",
+      "date": "2026-05-08",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "Independent corroboration of Q1 2026 NTR $16.1bn; Q1 2026 net income $10.3bn."
+    },
+    {
+      "id": "S20",
+      "title": "Exclusive-Jane Street took $15 billion hit in July tied to Situational Awareness, AI selloff, sources say",
+      "publisher": "Reuters (syndicated by WTVB)",
+      "url": "https://wtvbam.com/2026/08/14/exclusive-jane-street-took-15-billion-hit-in-july-tied-to-situational-awareness-sources-say/",
+      "date": "2026-08-14",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "'More than $40 billion' trading revenue year to date including July (two people familiar plus a note to employees); July 2026 about -$15bn, 'first negative month since 2016'; revenue 'down roughly 25% from its peak at the end of June'; about 3,500 employees."
+    },
+    {
+      "id": "S21",
+      "title": "Jane Street takes $15 billion hit following tech sell-off, FT reports",
+      "publisher": "Financial Times (via Investing.com/Yahoo)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jane-street-takes-15-billion-222108224.html",
+      "date": "2026-08-14",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "'More than $40 billion in net trading revenues in the year to Friday' (2026-08-14), after the July loss disclosed to lenders in a debt refinancing."
+    },
+    {
+      "id": "S22",
+      "title": "Jane Street Suffers Loss of About $15 Billion Following Troubles at Situational Awareness",
+      "publisher": "Wall Street Journal",
+      "url": "https://www.wsj.com/finance/investing/jane-street-suffers-loss-of-about-15-billion-due-to-troubles-at-situation-awareness-9be40c51",
+      "date": "2026-08-14",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "July 2026 loss about $15bn (up to $7bn Situational Awareness plus about $8bn from cutting AI-stock risk); headline only."
+    },
+    {
+      "id": "S23",
+      "title": "Morning Coffee: What a Jane Street partner said about losing $15bn in July alone",
+      "publisher": "eFinancialCareers (relaying FT)",
+      "url": "https://www.efinancialcareers.com/news/jane-street-12bn-loss",
+      "date": "2026-08-17",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "FT: refinancing disclosure 'revealed the $14bn loss'; 'net revenues ... still $40bn in the year to Friday'; 3,500 employees."
+    },
+    {
+      "id": "S24",
+      "title": "Jane Street - 2026 Company Profile",
+      "publisher": "Tracxn",
+      "url": "https://tracxn.com/d/companies/jane-street/__EWAahUcYWRiMkkLs0Wg6jIsu5FwNq35DcMQhkx-R0Bw",
+      "date": "2026-08-31",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "3,865 employees as of 2026-08-31 (LinkedIn-type aggregator; snippet)."
+    },
+    {
+      "id": "S25",
+      "title": "Who We Are :: Jane Street",
+      "publisher": "Jane Street (janestreet.com)",
+      "url": "https://www.janestreet.com/who-we-are/",
+      "date": "2026-10-08",
+      "type": "company_official",
+      "reliability": "medium",
+      "supports": "'More than 3000 employees across five global offices' (official floor; copy appears stale)."
+    },
+    {
+      "id": "S26",
+      "title": "Non-bank trading firms surge as Jane Street and Citadel Securities drive record $114bn revenue pool",
+      "publisher": "Hedgeweek (citing FT / Crisil Coalition Greenwich)",
+      "url": "https://www.hedgeweek.com/non-bank-trading-firms-surge-as-jane-street-and-citadel-securities-drive-record-114bn-revenue-pool/",
+      "date": "2026-06-03",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "About $27bn Q1 2026 trading revenue COMBINED for Citadel Securities, Jane Street and HRT; not a Jane Street figure. Consistent with Jane Street $16.1bn plus about $11bn for the other two."
+    },
+    {
+      "id": "S27",
+      "title": "Jane Street and DRW Traders Made Billions in Pandemic Markets (figures via Wikipedia/MarketsWiki paraphrase)",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2021-06-18/jane-street-and-drw-traders-made-billions-in-pandemic-markets",
+      "date": "2021-06-18",
+      "type": "top_tier_press",
+      "reliability": "low",
+      "supports": "Revenue +54% to $10.6bn for the 12 months ended March 2021 (implies about $6.9bn for Apr 2019-Mar 2020); net vs gross unclear; known only via Wikipedia and MarketsWiki (https://www.marketswiki.com/wiki/Jane_Street)."
+    },
+    {
+      "id": "S28",
+      "title": "Unspecified Substack analysis surfaced by search summary",
+      "publisher": "Substack (unverified attribution)",
+      "url": "https://rupakghose.substack.com/p/is-jane-street-the-biggest-firm-virtually",
+      "date": "2024-08-01",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "FY2020 trading revenue $11.4bn, EBITDA about $8bn ('~1,000% jump'); H1 2020 $8.4bn possibly mis-dated (equals H1 2024). Unverified."
+    },
+    {
+      "id": "S29",
+      "title": "Eric Seufert on X (quarterly net trading revenue chart)",
+      "publisher": "X (Eric Seufert), likely reading a Bloomberg chart",
+      "url": "https://x.com/eric_seufert/status/1844718086038942058",
+      "date": "2024-10-11",
+      "type": "social_or_forum",
+      "reliability": "low",
+      "supports": "Q2 2019 NTR about $0.5bn; the only pre-2020 quarterly datapoint."
+    },
+    {
+      "id": "S30",
+      "title": "Jane Street Capital, LLC Form X-17A-5 statement of financial condition (FY2015)",
+      "publisher": "SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1103083/000110308316000006/1jscsofc.pdf",
+      "date": "2016-02-26",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US broker-dealer subsidiary only: member's equity $1.25bn, total assets $7.97bn at 2015-12-31. Scale context, not revenue."
+    },
+    {
+      "id": "S31",
+      "title": "Jane Street Pays $9.38 Billion As Trading Revenue Hits $39.6 Billion",
+      "publisher": "Yahoo Finance / GuruFocus relaying Bloomberg",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jane-street-pays-9-38-162520429.html",
+      "date": "2026-05-01",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "FY2025 comp $9.38bn; members' equity $45bn, up 'nearly 2,000% since 2016' (implies about $2.1-2.3bn in 2016)."
+    },
+    {
+      "id": "S32",
+      "title": "Toolkits for the Mind (MIT Technology Review), as cited in Wikipedia",
+      "publisher": "MIT Technology Review (via Wikipedia)",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=731725607",
+      "date": "2015-04-02",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "About 500 employees in April 2015."
+    },
+    {
+      "id": "S33",
+      "title": "Wikipedia: Jane Street Capital (revision 854051042), citing janestreet.com",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=854051042",
+      "date": "2018-08-08",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "About 750 employees (firm website, Aug 2018)."
+    },
+    {
+      "id": "S34",
+      "title": "Wikipedia: Jane Street Capital (revision 974891771), citing janestreet.com",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=974891771",
+      "date": "2020-08-25",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "About 900 employees (website, possibly stale; citation access date 2018)."
+    },
+    {
+      "id": "S35",
+      "title": "Wikipedia: Jane Street Capital (revision 1025808544), citing janestreet.com",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1025808544",
+      "date": "2021-05-29",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "About 1,200 employees (website, May 2021)."
+    },
+    {
+      "id": "S36",
+      "title": "Wikipedia: Jane Street Capital (revision 1097755811), citing janestreet.com",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1097755811",
+      "date": "2022-07-12",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Over 1,700 employees (website, mid-2022; lower bound)."
+    },
+    {
+      "id": "S37",
+      "title": "Morning Coffee: Jane Street, the strange place, where intelligent people are paid obscenely",
+      "publisher": "eFinancialCareers (citing FT)",
+      "url": "https://www.efinancialcareers.com/news/working-for-jane-street",
+      "date": "2024-10-07",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Headcount went 'from 2,000 to 2,500' over a period ending about Sep 2023."
+    },
+    {
+      "id": "S38",
+      "title": "Jane Street Europe Limited FY2025 accounts",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05903707/filing-history",
+      "date": "2026-06-30",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK subsidiary group revenue $643m in 2025 (subsidiary/transfer-pricing entity, NOT firm-wide); unprovisioned SEBI escrow INR 48.44bn. Excluded from PnL."
+    },
+    {
+      "id": "S39",
+      "title": "Jane Street UK Partnership LLP Reports and Financial Statements, year ended 31 December 2025",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC439668/filing-history",
+      "date": "2026-09-08",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK LLP average staff 790 in 2025 (688 in 2024); subsidiary only, used as growth context."
+    },
+    {
+      "id": "S40",
+      "title": "Jane Street with $77bn in AUM and $40bn in revenue, lost $15 billion in July",
+      "publisher": "Convergences (Substack)",
+      "url": "https://convergences.substack.com/p/jane-street-with-77bn-in-aum-and",
+      "date": "2026-08-20",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Author-derived end-June 2026 peak of about $55bn and Q2 2026 about $39bn (explicitly 'derived rather than disclosed')."
+    },
+    {
+      "id": "S41",
+      "title": "Jane Street outlook raised to positive by S&P on business growth",
+      "publisher": "Investing.com (summarizing S&P Global Ratings)",
+      "url": "https://www.investing.com/news/stock-market-news/jane-street-outlook-raised-to-positive-by-sp-on-business-growth-93CH-4761617",
+      "date": "2026-06-25",
+      "type": "rating_agency",
+      "reliability": "high",
+      "supports": "Members' equity about $55bn at 2026-03-31 (scale cross-check for Q1 2026 earnings)."
+    },
+    {
+      "id": "S42",
+      "title": "Is Jane Street the best hedge fund in the world?",
+      "publisher": "Rupak Ghose (Substack)",
+      "url": "https://rupakghose.substack.com/p/is-jane-street-the-best-hedge-fund",
+      "date": "2026-04-25",
+      "type": "aggregator_or_blog",
+      "reliability": "medium",
+      "supports": "Q3 2025 NTR $6.83bn including about $830m gains on private-company investments; FY2025 EBITDA $31.5bn (vs Bloomberg $31.2bn)."
+    },
+    {
+      "id": "S43",
+      "title": "Morning Coffee: Jane Street hiked pay above Citadel Securities",
+      "publisher": "eFinancialCareers (citing Bloomberg)",
+      "url": "https://www.efinancialcareers.com/news/jane-street-versus-citadel-securities-pay",
+      "date": "2025-12-02",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "9M 2025 NTR about $24bn; LinkedIn 3,184 employees (Dec 2025)."
+    }
+  ],
+  "caveats": [
+    "Jane Street is private. Every figure comes from debt-investor disclosures relayed by the press, often through syndications (Investing.com AI-assisted relays, Yahoo/GuruFocus, eFC) because Bloomberg/FT/WSJ bodies were paywalled. Several top-tier figures are confirmed only at headline or snippet level.",
+    "2015-2019 PnL values are scale-anchored estimates with no reported datapoint (2019 has only a social-media chart reading of Q2 ~$0.5bn). Do not treat them as data.",
+    "2020 and 2021 are bounded below at $10bn by the prospectus; mids are judgement. Bloomberg's $10.6bn (12 months to March 2021) is non-calendar, known only via Wikipedia/MarketsWiki, and numerically identical to FY2023's $10.6bn, a possible confusion risk.",
+    "The FT's $21.9bn for 2023 is GROSS revenue (and the derived ~$16.3bn for 2022 is gross too). Net trading revenue is roughly half of gross. These figures are excluded.",
+    "From 2025, NTR includes large investment marks (Anthropic, CoreWeave, Situational Awareness), so 2025-2026 PnL is more volatile and less comparable with earlier market-making-only years. July 2026 alone was about -$14-15bn.",
+    "The Hedgeweek $27bn Q1 2026 figure is a three-firm combined total (Citadel Securities + Jane Street + HRT), not a Jane Street number. UK Companies House figures ($643m Jane Street Europe revenue; 790 UK LLP staff) and SEBI India figures are subsidiary-only.",
+    "Circular sourcing: many 2025-2026 trade-press items (eFC, Hedgeweek, GuruFocus, Wikipedia) restate the same Bloomberg/Reuters/FT line and are not independent corroboration. Bloomberg and Reuters are treated as the independent pair.",
+    "Headcount before 2023 comes from firm-website snapshots transcribed on Wikipedia, which may be stale (e.g. ~900 in 2020 cites a 2018 access). The 2025 '3,500' is rounded and unlabelled (year-end vs average). The 2026 headcount relies partly on aggregators."
+  ],
+  "overall_confidence": "medium",
+  "open_questions": [
+    "Exact calendar-year NTR for 2020 and 2021 (FT 'New titans of Wall Street' 2024-10-07 or Bloomberg 2017-2021 term-loan coverage may carry multi-year charts).",
+    "Any reported revenue for 2015-2019 (S&P first rating 2017-07-25; leveraged-loan coverage of the 2017-2020 term loans).",
+    "H1/Q2 2026 NTR and August-September 2026 results; the August 2026 offering memo was not obtained. Is the July loss $14bn or $15bn?",
+    "FY2025 net income and whether the 2025 '3,500 employees' is year-end or average.",
+    "Verified pre-2023 headcount (Wayback snapshots of janestreet.com) and an official 2026 headcount."
+  ],
+  "changelog": [],
+  "review_status": "draft: synthesized from 3 of 4 search lenses without adversarial review (stopped early to save budget)"
+}

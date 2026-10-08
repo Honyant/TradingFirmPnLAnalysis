@@ -1,0 +1,771 @@
+{
+  "firm_key": "jump",
+  "firm_name": "Jump Trading",
+  "pnl_definition": "Net trading revenue, firm-wide: trading gains net of direct trading costs (exchange, clearing, brokerage, financing), before compensation and other opex, by calendar year, in USD millions. Covers the Jump Trading group under Jump Financial, LLC, including Jump Crypto crypto market-making. Excludes Jump Capital (VC), venture or token-deal gains (e.g. the alleged Terra/LUNA profit) and regulatory settlements. Jump has never disclosed this figure, so every value here is an estimate.",
+  "headcount_definition": "Total employees worldwide across all Jump Trading group offices (13 offices, 8 countries), as an approximate annual average. It is derived from the US 401(k) active participants of the US employer, Jump Operations LLC, at year-end, plus the UK subsidiary's filed average headcount, plus an assumed 15-30% for rest-of-world offices (Singapore, Hong Kong, Shanghai, Sydney, India, Amsterdam), which have no free filings. 2026 is the estimated average for Jan-Sep.",
+  "fx_note": "All values are in USD. The UK subsidiary reports in USD (amounts in the evidence are USD or USD thousands, converted to USD millions here). The India figure (INR crore) is cited only for context and is not converted into any row.",
+  "methodology": "Jump publishes no firm-wide revenue, and neither research lens found any press, filing or rating-agency figure for any year 2015-2026, so every PnL value is an estimate with wide bars. Each mid blends three approaches. (1) Headcount x peer median net trading revenue per head, from this project's IMC, Optiver and Virtu files, scaled by a Jump premium of about 1.2-1.5x. (2) A comp-ratio cross-check: global heads x UK staff cost per head (Companies House; about 0.9x for a cheaper global mix) divided by an assumed comp ratio of 30-60%, higher in weak years. (3) The independent year-by-year judgements of the press and primary lenses. Market regime sets the shape (lean 2016, 2017 and 2019; boom 2020-21; the 2022 crypto collapse; record volumes 2024-26), and the UK comp-per-head index sets the timing of Jump's own bonus cycle. Headcount is derived from primary US 401(k) and UK filings plus an assumed rest-of-world uplift.",
+  "entities": [
+    {
+      "key": "firm",
+      "name": "Jump Trading (firm-wide)",
+      "description": "The Jump Trading group under its ultimate parent Jump Financial, LLC. It includes Jump Trading LLC (US broker-dealer), Jump Operations LLC (US employer), Jump Trading International Ltd (UK service company), Jump Trading Europe B.V., the Asia-Pacific and India entities, and Jump Crypto (incl. Tai Mo Shan Ltd). It excludes Jump Capital (VC)."
+    }
+  ],
+  "rows": [
+    {
+      "year": 2015,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 600,
+        "mid": 1200,
+        "high": 2400
+      },
+      "headcount": {
+        "low": 520,
+        "mid": 620,
+        "high": 760
+      },
+      "is_partial_year": false,
+      "period_label": "FY2015",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S12",
+        "S23"
+      ],
+      "notes": "PnL: there is no firm-wide figure. Estimate: about 620 heads x peer median of about $1.25M per head (IMC 1.25, Optiver 1.13; Virtu's 3.4 is excluded as a pre-KCG outlier) x a Jump premium of about 1.5 gives about $1.15B. Both research lenses independently got $1.2-1.3B. Anchor: Bloomberg's 2010 US-entity operating revenue of $512M (net income $268M) from SEC filings. UK subsidiary net trading revenue of $159M (restated from $119M) is a Europe slice and is not added. Headcount: US 401(k) active participants 535 at year-end plus UK average 49, about 584, plus 15-30% for Singapore and other offices. Bloomberg's ~350 (early 2014, from a deleted website version) looks stale and widens the low tail."
+    },
+    {
+      "year": 2016,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 550,
+        "mid": 1100,
+        "high": 2200
+      },
+      "headcount": {
+        "low": 650,
+        "mid": 740,
+        "high": 880
+      },
+      "is_partial_year": false,
+      "period_label": "FY2016",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S2",
+        "S3",
+        "S13"
+      ],
+      "notes": "PnL estimate. A lean-ish year for market makers (peer median about $1.15M per head). UK net trading revenue was flat at $158M. UK staff cost per head fell from about $1.4M to about $0.74M, but the UK mix changed (it was trader-heavy before), so this is not comparable. About 740 heads x about $1.0-1.5M per head gives a mid of $1.1B. The lenses got $1.0B (press) and $1.1B (primary). Headcount: US 578 at year-end plus UK 68 average, plus a rest-of-world uplift."
+    },
+    {
+      "year": 2017,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 450,
+        "mid": 900,
+        "high": 1700
+      },
+      "headcount": {
+        "low": 690,
+        "mid": 790,
+        "high": 940
+      },
+      "is_partial_year": false,
+      "period_label": "FY2017",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S3",
+        "S14"
+      ],
+      "notes": "PnL estimate. A lean year: record-low volatility, peer per-head about $0.9M (IMC 0.90, Optiver 0.90). UK staff cost per head was about $0.56M, the trough of the series, which points to a small bonus pool. About 790 heads x about $1.1M gives $0.9B, matching both lenses. UK net trading revenue was $154M (Europe slice, not added). Headcount: US 565 plus UK 94 average, plus a rest-of-world uplift."
+    },
+    {
+      "year": 2018,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 650,
+        "mid": 1250,
+        "high": 2200
+      },
+      "headcount": {
+        "low": 700,
+        "mid": 800,
+        "high": 950
+      },
+      "is_partial_year": false,
+      "period_label": "FY2018",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S4",
+        "S5",
+        "S15"
+      ],
+      "notes": "PnL estimate. A better year (the Feb 'Volmageddon' and the Q4 sell-off); peer median about $1.5M per head (IMC 1.34, Optiver 1.48, Virtu 1.91). UK net trading revenue rose 35% to $207M, the last full year the UK entity traded its own book. UK staff cost per head was about $0.62M. Mid $1.25B, against $1.1-1.2B from the lenses and about $1.8B from a pure peer-scaling approach. Headcount: US 535 plus UK 114 average, plus a rest-of-world uplift."
+    },
+    {
+      "year": 2019,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 550,
+        "mid": 1050,
+        "high": 1900
+      },
+      "headcount": {
+        "low": 740,
+        "mid": 840,
+        "high": 1000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2019",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S5",
+        "S6",
+        "S16"
+      ],
+      "notes": "PnL estimate. A lean year; peer per-head about $0.9M (IMC 0.84, Virtu 0.92). From mid-2019 the UK entity became a cost-plus service company and EU trading moved to Jump Trading Europe B.V. (NL), so UK revenue of $159M is no longer trading revenue. UK staff cost per head was about $0.66M. Comp-ratio cross-check: about 840 heads x about $0.6M at 40-50% gives $1.0-1.25B. Mid $1.05B; the lenses got $1.0-1.2B. Headcount: US 588 plus UK 138 average, plus a rest-of-world uplift."
+    },
+    {
+      "year": 2020,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1500,
+        "mid": 2750,
+        "high": 4500
+      },
+      "headcount": {
+        "low": 810,
+        "mid": 920,
+        "high": 1100
+      },
+      "is_partial_year": false,
+      "period_label": "FY2020",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S17"
+      ],
+      "notes": "PnL estimate. A boom year (COVID volatility); peer per-head about $2.3M (IMC 2.24, Optiver 3.03, Virtu 2.28). UK staff cost per head rose about 75% to about $1.15M, consistent with a large bonus pool. Comp-ratio cross-check: about 920 heads x about $1.0M at 30-40% gives $2.4-3.2B. Pure peer scaling gives about $3.1B. Mid $2.75B; the lenses got $2.5-2.7B. UK revenue of $331M is transfer-pricing income and is excluded. Headcount: US 637 plus UK 154 average, plus a rest-of-world uplift."
+    },
+    {
+      "year": 2021,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1900,
+        "mid": 3300,
+        "high": 5800
+      },
+      "headcount": {
+        "low": 950,
+        "mid": 1090,
+        "high": 1300
+      },
+      "is_partial_year": false,
+      "period_label": "FY2021",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S18",
+        "S24",
+        "S26",
+        "S27",
+        "S33",
+        "S41"
+      ],
+      "notes": "PnL estimate. A boom year that includes crypto: Jump Crypto was active in crypto market-making and DeFi. Peer per-head about $2.0M. UK staff cost per head was about $1.20M, a series high until 2025 (directors' pay about $33.5M). Comp-ratio cross-check: about 1,090 x about $1.1M at 30-40% gives $2.9-3.9B. Mid $3.3B. It EXCLUDES the alleged ~$1.0-1.28B Terra/LUNA token gain (SEC complaint allegation; WSJ says about $1B). That gain spans 2021-22, only $73.45M was SEC-adjudicated, and it is a token-deal gain rather than trading revenue; the high bound leaves room for part of it. PrivCo ($120M revenue) and the insights4vc profit guess ($500M-1B) are rejected. Headcount: US 797 plus UK 183 average, plus a rest-of-world uplift."
+    },
+    {
+      "year": 2022,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1200,
+        "mid": 2400,
+        "high": 4200
+      },
+      "headcount": {
+        "low": 1200,
+        "mid": 1370,
+        "high": 1640
+      },
+      "is_partial_year": false,
+      "period_label": "FY2022",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S8",
+        "S19",
+        "S28",
+        "S33"
+      ],
+      "notes": "PnL estimate. Crypto collapse and the Terra unwind: Wormhole bridge replenishment of about $320M (Feb) and FTX exposure of about $300M (Nov) weighed on Jump Crypto. Traditional market-making was solid (volatile markets; peer per-head about $1.5M, Optiver about $2.0M). In Mar 2022 Moody's cited a 'strong profitable track record' as Jump Financial added a $200M term loan, about $500M in total, for trading capital. UK staff cost per head fell about 11% to about $1.07M. Mid $2.4B; the lenses got $2.0B (press) and $2.8B (primary). Headcount: US 995 plus UK 246 average, plus a rest-of-world uplift. The welfare-plan count of 1,575 is erratic and rejected."
+    },
+    {
+      "year": 2023,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1100,
+        "mid": 2100,
+        "high": 3600
+      },
+      "headcount": {
+        "low": 1350,
+        "mid": 1540,
+        "high": 1830
+      },
+      "is_partial_year": false,
+      "period_label": "FY2023",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S9",
+        "S10",
+        "S20",
+        "S30"
+      ],
+      "notes": "PnL estimate. A lean year (low volatility); peer per-head about $1.24M (IMC 0.99, Optiver 1.54, Virtu 1.24). UK staff cost per head fell again, to about $0.95M. Comp-ratio cross-check: about 1,540 x about $0.86M at 45-60% gives $2.2-2.9B. Pure peer scaling gives about $2.7B. The lenses got $1.5B (press) and $2.5B (primary). Mid $2.1B. US broker-dealer member's equity was $235M (balance sheet only). Headcount: US 1,010 plus UK 275 average (281 at year-end), plus a rest-of-world uplift."
+    },
+    {
+      "year": 2024,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1500,
+        "mid": 2600,
+        "high": 4300
+      },
+      "headcount": {
+        "low": 1370,
+        "mid": 1560,
+        "high": 1860
+      },
+      "is_partial_year": false,
+      "period_label": "FY2024",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S10",
+        "S11",
+        "S21",
+        "S25",
+        "S29",
+        "S31"
+      ],
+      "notes": "PnL estimate. Record market volumes, but Jump's own signals are mixed. UK staff cost per head fell to about $0.84M, the lowest since 2019, while peers' per-head rose (median about $1.65M). Jump Crypto was scaled back, and Tai Mo Shan paid a $123.1M SEC settlement (a cost, not revenue). S&P revised its outlook to stable (BB-). Comp-ratio cross-check: about 1,560 x about $0.76M at 40-55% gives $2.1-2.9B. Pure peer scaling gives about $3.6B. The lenses got $2.4-2.5B. Mid $2.6B. UK revenue of $386M is service income and is excluded. Headcount: US 1,006 plus UK 288 average, plus a rest-of-world uplift."
+    },
+    {
+      "year": 2025,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 2600,
+        "mid": 4600,
+        "high": 7500
+      },
+      "headcount": {
+        "low": 1500,
+        "mid": 1720,
+        "high": 2050
+      },
+      "is_partial_year": false,
+      "period_label": "FY2025",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S11",
+        "S22",
+        "S29",
+        "S32",
+        "S39",
+        "S40"
+      ],
+      "notes": "PnL estimate. A probable record year. UK staff costs rose about 71% to $410M (wages up 73% to $342M) with a 'higher year-end accrued bonus pool', and UK cost per head was about $1.29M, a series high. Peers: IMC $1.76M, Optiver $2.31M and Virtu $2.18M per head; HRT is about $11M per head (press lens), the upper benchmark. Jump Financial issued $750M of debt in Feb 2025. Comp-ratio cross-check: about 1,720 x about $1.16M at 35-45% gives $4.4-5.7B. Pure peer scaling gives about $5.6B. The lenses got $4.0B (press) and $5.0B (primary). Mid $4.6B. UK revenue of $527M is service income and is excluded. India revenue of about INR 1,000 cr (Tracxn, unverified) is a slice only. ZoomInfo's $952M is rejected. Headcount: US 1,125 plus UK 336 at year-end gives 1,461, so the firm was about 1,800 at year-end; the average is shown."
+    },
+    {
+      "year": 2026,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1600,
+        "mid": 3400,
+        "high": 5800
+      },
+      "headcount": {
+        "low": 1650,
+        "mid": 1900,
+        "high": 2150
+      },
+      "is_partial_year": true,
+      "period_label": "2026-01-01 to 2026-09-30",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S32",
+        "S22",
+        "S34",
+        "S35",
+        "S36",
+        "S37",
+        "S38"
+      ],
+      "notes": "YTD 2026-01-01 to 2026-09-30, ESTIMATED. There is no 2026 PnL data of any kind. Estimate: about 0.75 x the FY2025 mid, i.e. 9 months at the 2025 run-rate in a continuing record-volume regime, giving about $3.4B with wide bars. This matches how peer 2026 YTD values were built (IMC and Optiver are run-rate estimates too). Headcount: the homepage says '2000+ employees' (fetched 2026-10-08; a marketing round number that may include interns or contractors). Built In says 1,488 and newsletters say about 1,500-1,600. The primary US+UK floor was already 1,461 at year-end 2025. The Jan-Sep 2026 average is estimated at about 1,900."
+    }
+  ],
+  "ytd_2026": {
+    "cutoff_date": "2026-09-30",
+    "period_label": "2026-01-01 to 2026-09-30",
+    "description": "ESTIMATED, NOT REPORTED. Jump publishes no results, and no 2026 PnL datapoint of any kind was found as of 2026-10-08. The YTD PnL is about 0.75 x the FY2025 mid ($4.6B), i.e. 9 months at the 2025 run-rate in a continuing record-volume regime: mid $3.4B, range $1.6-5.8B. Headcount (about 1,900, range 1,650-2,150) combines the year-end 2025 primary US+UK floor of 1,461, an uplift for rest-of-world offices, and the homepage claim of 2000+ employees (fetched 2026-10-08)."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Jump Trading International Limited - Report and financial statements for the year ended 31 December 2015 (Companies House 05976015)",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzE1OTE3MDc5MWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2016-10-08",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2015 net_income_or_profit = 36.426 USD_m; FY2015 comp_expense = 70.216 USD_m; FY2015 average headcount = 49 people; FY2015 (as originally reported) gross_revenue = 119,033,908 USD; FY2015 average monthly headcount = 49 people."
+    },
+    {
+      "id": "S2",
+      "title": "Jump Trading International Limited - Report and financial statements for the year ended 31 December 2016 (Companies House 05976015)",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzE4NjY0NTY4MWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2017-10-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2015 (restated in FY2016 accounts) net_trading_revenue = 159.075 USD_m; FY2016 net_trading_revenue = 157.598 USD_m; FY2016 gross_revenue = 157,597,542 USD; FY2016 average monthly headcount = 68 people; FY2016 comp_expense = 69,076,506 USD."
+    },
+    {
+      "id": "S3",
+      "title": "Jump Trading International Limited - Report and financial statements for the year ended 31 December 2017 (Companies House 05976015)",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzIxNTgxODgyN2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2018-10-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2017 net_trading_revenue = 153.745 USD_m; FY2016 (as reclassified in FY2017 accounts) comp_expense = 50.247 USD_m; FY2017 comp_expense = 52.355 USD_m; FY2016 average headcount = 68 people; FY2017 average headcount = 94 people; FY2017 net_income_or_profit = 23,100 USD_k."
+    },
+    {
+      "id": "S4",
+      "title": "Jump Trading International Limited - Full accounts made up to 31 December 2018",
+      "publisher": "UK Companies House (co. 05976015)",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzI0NTgyOTU2NmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2019-10-05",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2018 gross_revenue = 207,101 USD_k; FY2018 average monthly headcount = 114 people; FY2018 comp_expense = 60,642 USD_k."
+    },
+    {
+      "id": "S5",
+      "title": "Jump Trading International Limited - Report and financial statements for the year ended 31 December 2019 (Companies House 05976015)",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzI4NTg4MjYwMGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2020-12-15",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2018 (comparative in FY2019 accounts) net_trading_revenue = 207.101 USD_m; FY2019 net_trading_revenue = 158.735 USD_m; FY2018 net_income_or_profit = 56.334 USD_m; FY2018 comp_expense = 70.117 USD_m; FY2019 comp_expense = 91 USD_m; FY2018 average headcount = 114 people; FY2019 average headcount = 138 people; FY2019 (comparative in FY2020 accounts) gross_revenue = 158,735 USD_k."
+    },
+    {
+      "id": "S6",
+      "title": "Jump Trading International Limited - Annual report and consolidated financial statements for the year ended 31 December 2020 (Companies House 05976015)",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzMxNTg5MTA2M2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-10-04",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2020 comp_expense = 177.351 USD_m; FY2020 average headcount = 154 people; FY2020 gross_revenue = 331,052 USD_k; FY2020 net_income_or_profit = 119,777 USD_k; FY2020 average monthly headcount = 154 people; FY2020 comp_expense = 155,275 USD_k; FY2019 comp_expense = 78,247 USD_k; FY2019 average monthly headcount = 138 people."
+    },
+    {
+      "id": "S7",
+      "title": "Jump Trading International Limited - Annual report and consolidated financial statements for the year ended 31 December 2021 (Companies House 05976015)",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzM1MzY3NzU2OGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2022-10-03",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2020 (comparative in FY2021 accounts) other = 331.052 USD_m; FY2021 other = 355.904 USD_m; FY2021 comp_expense = 220.163 USD_m; FY2021 average headcount = 183 people; FY2021 net_income_or_profit = 99,279 USD_k."
+    },
+    {
+      "id": "S8",
+      "title": "Jump Trading International Limited - Annual report and consolidated financial statements for the year ended 31 December 2022 (Companies House 05976015)",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzM5NTYwNTY4NGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2023-10-10",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2022 other = 388.536 USD_m; FY2022 comp_expense = 263.507 USD_m; FY2022 average headcount = 246 people; FY2022 gross_revenue = 388,536 USD_k; FY2022 net_income_or_profit = 103,170 USD_k; FY2022 average monthly headcount = 246 people; FY2022 comp_expense = 223,145 USD_k; FY2021 (comparative in FY2022 accounts) gross_revenue = 355,904 USD_k; FY2021 average monthly headcount = 183 people; FY2021 comp_expense = 187,940 USD_k."
+    },
+    {
+      "id": "S9",
+      "title": "Jump Trading International Limited - Annual report and consolidated financial statements for the year ended 31 December 2023 (Companies House 05976015)",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzQzODUxNDQ4N2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2024-10-11",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2023 other = 351.888 USD_m; FY2023 comp_expense = 260.494 USD_m; FY2023 average headcount = 275 people."
+    },
+    {
+      "id": "S10",
+      "title": "Jump Trading International Limited - Group accounts made up to 31 December 2024",
+      "publisher": "UK Companies House (co. 05976015)",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzQ4MzYwMDQ0MWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2025-10-06",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2024 (CY) gross_revenue = 385,926 USD_k; FY2024 net_income_or_profit = 98,977 USD_k; FY2024 average monthly headcount = 288 people; FY2024 comp_expense = 197,849 USD_k; FY2023 (comparative in FY2024 accounts) gross_revenue = 351,888 USD_k; FY2023 net_income_or_profit = 51,668 USD_k; FY2023 average monthly headcount = 275 people; FY2023 comp_expense = 223,410 USD_k."
+    },
+    {
+      "id": "S11",
+      "title": "Jump Trading International Limited - Annual report and consolidated financial statements for the year ended 31 December 2025 (Companies House 05976015)",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05976015/filing-history/MzU0ODE2MjcwM2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-09-29",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK SUBSIDIARY ONLY (Jump Trading International Ltd, co. 05976015); NOT firm-wide. From mid-2019 a cost-plus research/service company, so revenue is transfer-pricing income, not trading revenue. Used for UK headcount and as a comp-per-head index of Jump's bonus cycle. Datapoints: FY2024 (comparative in FY2025 accounts) other = 385.926 USD_m; FY2025 other = 527.422 USD_m; FY2024 (comparative in FY2025 accounts) comp_expense = 240.487 USD_m; FY2025 comp_expense = 410.216 USD_m; FY2024 average headcount = 288 people; FY2025 average headcount = 319 people; FY2025 (CY) gross_revenue = 527,422 USD_k; FY2025 (CY) net_income_or_profit = 62,898 USD_k; FY2025 average monthly headcount = 319 people; as of 2025-12-31 headcount = 336 people; FY2025 comp_expense = 341,717 USD_k."
+    },
+    {
+      "id": "S12",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2015",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2015/Latest/F_5500_2015_Latest.zip",
+      "date": "2016-10-06",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2015-12-31 (401(k) EOY active participants) headcount = 535 people."
+    },
+    {
+      "id": "S13",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2016",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2016/Latest/F_5500_2016_Latest.zip",
+      "date": "2017-10-12",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2016-12-31 (401(k) EOY active participants) headcount = 578 people."
+    },
+    {
+      "id": "S14",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2017",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2017/Latest/F_5500_2017_Latest.zip",
+      "date": "2018-08-15",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2017-12-31 (401(k) EOY active participants) headcount = 565 people."
+    },
+    {
+      "id": "S15",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2018",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2018/Latest/F_5500_2018_Latest.zip",
+      "date": "2019-08-13",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2018-12-31 (401(k) EOY active participants) headcount = 535 people."
+    },
+    {
+      "id": "S16",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2019",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2019/Latest/F_5500_2019_Latest.zip",
+      "date": "2020-08-14",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2019-12-31 (401(k) EOY active participants) headcount = 588 people."
+    },
+    {
+      "id": "S17",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2020",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2020/Latest/F_5500_2020_Latest.zip",
+      "date": "2021-07-21",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2020-12-31 (401(k) EOY active participants) headcount = 637 people."
+    },
+    {
+      "id": "S18",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2021",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2021/Latest/F_5500_2021_Latest.zip",
+      "date": "2022-09-21",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2021-12-31 (401(k) EOY active participants) headcount = 797 people."
+    },
+    {
+      "id": "S19",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2022",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2022/Latest/F_5500_2022_Latest.zip",
+      "date": "2023-07-27",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2022-12-31 (401(k) EOY active participants) headcount = 995 people; welfare plan year 2022-06-01 to 2023-05-31, EOY active headcount = 1,575 people."
+    },
+    {
+      "id": "S20",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2023",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2023/Latest/F_5500_2023_Latest.zip",
+      "date": "2024-09-05",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2023-12-31 (401(k) EOY active participants) headcount = 1,010 people."
+    },
+    {
+      "id": "S21",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2024",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2024/Latest/F_5500_2024_Latest.zip",
+      "date": "2025-07-28",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2024-12-31 (401(k) EOY active participants) headcount = 1,006 people."
+    },
+    {
+      "id": "S22",
+      "title": "Form 5500, Jump Operations, LLC Employee 401(k) Plan, plan year 2025 (DOL EFAST2 FOIA dataset F_5500_2025_Latest)",
+      "publisher": "US Department of Labor (EBSA)",
+      "url": "https://askebsa.dol.gov/FOIA%20Files/2025/Latest/F_5500_2025_Latest.zip",
+      "date": "2026-08-28",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US ONLY: year-end active participants in the Jump Operations, LLC 401(k) plan (the US employer). Used as the US headcount component. Datapoints: as of 2025-12-31 (401(k) plan year 2025 EOY active participants) headcount = 1,125 people."
+    },
+    {
+      "id": "S23",
+      "title": "Don't Tell Anybody About This Story on HFT Power Jump Trading (Bloomberg story reposted)",
+      "publisher": "Bloomberg via Traders Magazine",
+      "url": "https://www.tradersmagazine.com/departments/brokerage/dont-tell-anybody-about-this-story-on-hft-power-jump-trading/",
+      "date": "2014-07-24",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "Pre-2015 anchors from SEC filings: US entity 2010 operating revenue $512M and net income $268M; 2008 profit $316M; about 350 staff in early 2014 (from a deleted website version)."
+    },
+    {
+      "id": "S24",
+      "title": "In the Matter of Tai Mo Shan Limited, Securities Act Release No. 33-11349 (Order Instituting Cease-and-Desist Proceedings)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/litigation/admin/2024/33-11349.pdf",
+      "date": "2024-12-20",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "Tai Mo Shan (Jump Crypto) profit of about $73.45M on amended-agreement LUNA (Sep 2021 to May 2022). This is the only SEC-adjudicated Terra gain; it is a token gain, not net trading revenue."
+    },
+    {
+      "id": "S25",
+      "title": "Tai Mo Shan to Pay $123 Million for Negligently Misleading Investors About Stability of Terra USD (Press Release 2024-212)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/newsroom/press-releases/2024-212",
+      "date": "2024-12-20",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2024 settlement totalling $123.1M (disgorgement $73.45M + interest $12.9M + penalty $36.7M). This is a cost, not revenue."
+    },
+    {
+      "id": "S26",
+      "title": "Jump Crypto Is Unnamed Firm That Made $1.28B From Do Kwon's Doomed Terra Ecosystem: Sources",
+      "publisher": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2023/02/17/jump-crypto-is-unnamed-firm-that-made-128b-from-do-kwons-doomed-terra-ecosystem-sources",
+      "date": "2023-02-17",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Reports the SEC complaint allegation that Jump Crypto made about $1.28B from Terra/LUNA (2021-22). An unproven, cumulative token gain; excluded from PnL."
+    },
+    {
+      "id": "S27",
+      "title": "Terraform's Bankruptcy Boss Sues Jump Trading for $4B Over Terra Crash",
+      "publisher": "CoinDesk (relaying Wall Street Journal)",
+      "url": "https://www.coindesk.com/business/2025/12/19/jump-trading-sued-for-usd4-billion-in-connection-to-do-kwon-s-terra-labs-collapse-wsj",
+      "date": "2025-12-19",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Relays the WSJ figure of about $1B in Terra profits and the $4B Terraform suit (Dec 2025). Excluded from PnL."
+    },
+    {
+      "id": "S28",
+      "title": "Jump Financial, LLC -- Moody's affirms Jump Financial's Ba2 Term Loan Rating and Ba1 Corporate Family Rating, outlook remains stable",
+      "publisher": "Moody's Investors Service (via Yahoo Finance)",
+      "url": "https://finance.yahoo.com/news/jump-financial-llc-moodys-affirms-174406251.html",
+      "date": "2022-03-11",
+      "type": "rating_agency",
+      "reliability": "high",
+      "supports": "Jump Financial, LLC (ultimate parent of the Jump Trading group): Ba1 CFR / Ba2 TLB affirmed; a $200M add-on brings the term loan due 2028 to about $500M, to increase trading capital. Cites a strong profitable track record. Gives no revenue figure."
+    },
+    {
+      "id": "S29",
+      "title": "Risk profiling electronic market makers after Jane Street, Jump re-rated",
+      "publisher": "The DESK (fi-desk.com)",
+      "url": "https://www.fi-desk.com/risk-profiling-electronic-market-makers-after-jane-street-jump-re-rated/",
+      "date": "2025-05-15",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Jump Financial issued $750M of debt in Feb 2025. S&P revised its outlook to stable from negative in 2024, BB- affirmed."
+    },
+    {
+      "id": "S30",
+      "title": "Jump Trading, LLC Statement of Financial Condition as of December 31, 2023 (X-17A-5 public portion)",
+      "publisher": "U.S. SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/vprr/2400/24002549.pdf",
+      "date": "2024-02-29",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US broker-dealer balance sheet only: member's equity $234.6M at YE2023. No income statement."
+    },
+    {
+      "id": "S31",
+      "title": "Jump Trading, LLC Statement of Financial Condition as of December 31, 2024 (X-17A-5 public portion)",
+      "publisher": "U.S. SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/vprr/2500/25000854.pdf",
+      "date": "2025-03-03",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US broker-dealer balance sheet only: member's equity $293.4M, net capital $220.9M at YE2024. No income statement."
+    },
+    {
+      "id": "S32",
+      "title": "Jump Trading, LLC Form X-17A-5 Statement of Financial Condition FY2025",
+      "publisher": "SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1127998/000112799826000006/public2025.pdf",
+      "date": "2026-03-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US broker-dealer balance sheet only: member's equity $321.9M at YE2025. Confirms Jump Financial LLC as the group parent and Jump Operations as the staff employer."
+    },
+    {
+      "id": "S33",
+      "title": "Inside Jump Crypto: $1.3B Terra Trade, $321M Wormhole Rescue & More",
+      "publisher": "insights4vc (Substack)",
+      "url": "https://insights4vc.substack.com/p/inside-jump-crypto-13b-terra-trade",
+      "date": "2025-07-17",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Low-reliability blog. Author estimate of 2021 profit $500M-1B (mid $750M); crypto PnL of about $0 (2022) and $150M (2023); Wormhole replenishment about $321M (Feb 2022); about 150 Jump Crypto staff; firm about 1,500 staff. Internally inconsistent, so used only for event context."
+    },
+    {
+      "id": "S34",
+      "title": "jumptrading.com homepage counters ('Employees', 'Offices', 'Countries')",
+      "publisher": "Jump Trading (company website)",
+      "url": "https://www.jumptrading.com/",
+      "date": "2026-10-08",
+      "type": "company_official",
+      "reliability": "medium",
+      "supports": "Homepage counters, fetched 2026-10-08: '2000+ Employees', 13 offices, 8 countries. A marketing round number."
+    },
+    {
+      "id": "S35",
+      "title": "Jump Trading Group company profile",
+      "publisher": "Built In",
+      "url": "https://builtin.com/company/jump-trading-group",
+      "date": "2026-10-08",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Undated profile: 1,488 employees. Probably LinkedIn-derived."
+    },
+    {
+      "id": "S36",
+      "title": "Inside the Quant Empires: How Citadel Securities, XTX, Jump, and HRT Built the Modern Market",
+      "publisher": "Quant Enthusiasts (youngandcalculated Substack)",
+      "url": "https://youngandcalculated.substack.com/p/inside-the-quant-empires-how-citadel",
+      "date": "2026-04-26",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Newsletter (2026-04-26): about 1,600 employees. Low reliability."
+    },
+    {
+      "id": "S37",
+      "title": "Jump Trading Careers Guide",
+      "publisher": "Quantt",
+      "url": "https://www.quantt.co.uk/resources/jump-trading-guide",
+      "date": "2026-04-09",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Careers guide (2026-04-09): about 1,500 employees. Low reliability."
+    },
+    {
+      "id": "S38",
+      "title": "Jump Trading (Wikipedia)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jump_Trading",
+      "date": "2026-10-08",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Says '2000+' employees. The citation does not support it, so this is low reliability."
+    },
+    {
+      "id": "S39",
+      "title": "Jump Trading Financial India Private Limited - Company Profile & Financials",
+      "publisher": "Tracxn",
+      "url": "https://tracxn.com/d/legal-entities/india/jump-trading-financial-india-private-limited/__qMApQ8gR2cRJSKw0pELETq4eZsYNca843CbS7jquj8o",
+      "date": "2026-10-08",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Jump Trading Financial India: gross revenue about INR 1,000 cr for the Indian FY ending 2025-03-31. Unverified, and a slice of the group only."
+    },
+    {
+      "id": "S40",
+      "title": "Jump Trading - Overview, News & Similar companies",
+      "publisher": "ZoomInfo",
+      "url": "https://www.zoominfo.com/c/jump-trading-llc/49071961",
+      "date": "2026-10-08",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Model-estimated revenue of $952M, undated. REJECTED: not credible against the comp evidence."
+    },
+    {
+      "id": "S41",
+      "title": "Jump Operations company profile (PrivCo) - search snippet",
+      "publisher": "PrivCo",
+      "url": "https://system.privco.com/company/jump-operations_private_stock_annual_report_financials",
+      "date": "unknown",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "2021 revenue $120M and net income $12M, for an uncertain entity (search snippet). REJECTED."
+    }
+  ],
+  "caveats": [
+    "Every PnL value is an estimate: Jump has never published group revenue, and no top-tier press figure exists for 2015-2026. The last hard figures are for the US entity in 2008 and 2010 (Bloomberg, from SEC filings).",
+    "UK Companies House figures (revenue $352M 2023, $386M 2024, $527M 2025; headcount 275-336) cover the UK subsidiary only. From 2019 that revenue is cost-plus transfer-pricing income, so it is used here only as a comp-per-head index and is never added to group PnL.",
+    "US DOL 401(k) counts (about 1,010-1,125) are US-only active plan participants. They may lag new hires and exclude interns and contractors.",
+    "Terra/LUNA gains (alleged $1.28B, WSJ about $1B, SEC-adjudicated $73.45M) and the $123.1M Tai Mo Shan settlement are excluded from PnL. So are Jump Capital and venture/token gains.",
+    "Peer per-head benchmarks come from this project's own IMC, Optiver and Virtu files, some of which are partly estimated. The Jump premium factor is a judgement.",
+    "Rest-of-world headcount (about 15-30% uplift) is assumed: Singapore ACRA, Australia ASIC, Dutch KvK and Indian MCA filings were not retrieved.",
+    "Company-data aggregator figures (ZoomInfo $952M, PrivCo $120M, Owler, Growjo) are mutually inconsistent and rejected."
+  ],
+  "overall_confidence": "low",
+  "open_questions": [
+    "S&P (BB-) and Moody's (Ba1) full reports on Jump Financial, LLC. They likely disclose revenue, EBITDA and capital, and would replace these estimates.",
+    "Lender materials and leveraged-loan press for the 2021 $300M TLB, the Mar 2022 $200M add-on and the Feb 2025 $750M issuance.",
+    "Accounts of Jump Trading Europe B.V. (KvK), Jump Trading Pacific Pte (ACRA) and Jump Trading Financial India (MCA): rest-of-world revenue and headcount.",
+    "How much of the alleged Terra/LUNA gain, if any, was booked as trading revenue in 2021 versus 2022.",
+    "Any 2026 figure, for example Bloomberg's 2026-09-17 coverage of HFT profits in India (not retrieved).",
+    "Whether the homepage claim of 2000+ employees includes interns or contractors, and the true rest-of-world headcount."
+  ],
+  "changelog": [],
+  "review_status": "draft: synthesized from 2 of 4 search lenses without adversarial review (stopped early to save budget)"
+}
