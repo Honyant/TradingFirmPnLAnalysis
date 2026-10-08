@@ -1,0 +1,675 @@
+{
+  "firm_key": "hrt",
+  "firm_name": "Hudson River Trading",
+  "pnl_definition": "Net trading revenue for the calendar year in USD millions: trading gains net of exchange, clearing and financing costs, before compensation and operating expenses. Post-2024 figures are the lender-reported 'net trading revenue' series that Bloomberg, the FT and Reuters cite. 2026 press uses 'trading revenue', which is treated as the same metric.",
+  "headcount_definition": "Total firm employees worldwide across all HRT affiliates (US, UK, Ireland, Asia), approximate year-end (31 December) point-in-time. 2026 is a point estimate for about September 2026. Built from US Form 5500 active participants (a US-only floor) plus UK Companies House counts and estimated other non-US staff, cross-checked with press figures.",
+  "fx_note": "All PnL figures are reported in USD and need no conversion. The only non-USD data, HRT Europe Ltd's £84.3m FY2024 revenue (UK subsidiary, likely cost-plus transfer pricing), was not used for firm-wide PnL.",
+  "methodology": "HRT is private and publishes no financials, so 2024-2026 PnL rests on press reports that cite people with access to HRT's lender reporting: chiefly Bloomberg (Katherine Doherty), with the FT for Q2 2026, Reuters for FY2025 and Business Insider for FY2024. These were cross-checked through quarterly arithmetic (reported year-on-year growth rates back-solve prior-year quarters). 2020-2023 are derived from a few anchors (Ghose's 2020 range, Bloomberg's Q1 2021, and S&P's 'earnings nearly doubled' through 9M2024) and interpolated with the market regime and S&P's note of weak 2022 performance. 2015-2019 PnL is a pure estimate with wide, upward-skewed bars, because no figure exists. Headcount uses US Department of Labor Form 5500 year-end active participants (2019-2025) as a US-only floor, adds UK subsidiary counts and estimated other non-US staff, and checks the result against press figures (400 in 2020, 500 in 2021, 1,110 in early 2025). Bars follow the calibration guide: about ±5% for two-outlet press figures, about ±10-15% for single-source figures, ±25-40% for derived years and ±45-90% for estimates.",
+  "entities": [
+    {
+      "key": "firm",
+      "name": "Hudson River Trading (firm-wide)",
+      "description": "Hudson River Trading LLC and all affiliates globally, including the US broker-dealer, HRT Europe Ltd, HRT Research Ltd, HRTSVC Ltd, Dublin and Asian entities, and the Prism mid-frequency unit. Figures are firm-wide; subsidiary-only data (UK entities, US Form 5500 plans) is used only as an input."
+    }
+  ],
+  "rows": [
+    {
+      "year": 2015,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 200,
+        "mid": 380,
+        "high": 700
+      },
+      "headcount": {
+        "low": 90,
+        "mid": 130,
+        "high": 190
+      },
+      "is_partial_year": false,
+      "period_label": "FY2015",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S21",
+        "S7"
+      ],
+      "notes": "PnL is a PURE ESTIMATE; no figure exists for 2015-2019. Anchors: HRT traded about 5% of US equity volume by 2014 with about 100 staff (Ghose, low reliability), and S&P called it 'highly profitable' in 2018. 2015 had the August flash-crash volatility. The estimate is built back from the derived 2020 level (about $1.35bn, roughly 2.4x 2019) with a modest high-frequency-trading (HFT) industry profit pool, and the bars are wide and skewed up. Headcount is year-end, estimated by growth from about 100 in 2014."
+    },
+    {
+      "year": 2016,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 190,
+        "mid": 360,
+        "high": 680
+      },
+      "headcount": {
+        "low": 100,
+        "mid": 150,
+        "high": 220
+      },
+      "is_partial_year": false,
+      "period_label": "FY2016",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S21",
+        "S7"
+      ],
+      "notes": "PURE ESTIMATE. A moderate-volatility year (Brexit, US election) during a period of falling US-equity HFT margins, so held roughly flat to 2015. Headcount is year-end, interpolated between about 100 (2014) and the post-Sun Trading level of 2018."
+    },
+    {
+      "year": 2017,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 170,
+        "mid": 320,
+        "high": 620
+      },
+      "headcount": {
+        "low": 115,
+        "mid": 170,
+        "high": 250
+      },
+      "is_partial_year": false,
+      "period_label": "FY2017",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S21",
+        "S7"
+      ],
+      "notes": "PURE ESTIMATE. 2017 was a record low-volatility year and lean for market makers, so it is set as the trough of the 2015-2019 range. Headcount is year-end and interpolated."
+    },
+    {
+      "year": 2018,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 250,
+        "mid": 470,
+        "high": 800
+      },
+      "headcount": {
+        "low": 180,
+        "mid": 260,
+        "high": 340
+      },
+      "is_partial_year": false,
+      "period_label": "FY2018",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S7",
+        "S21",
+        "S2"
+      ],
+      "notes": "PURE ESTIMATE. The February 2018 volatility spike and Q4 2018 selloff help market makers. S&P's first rating (March 2018, $250m TLB) calls HRT 'highly profitable' but gives no numbers. Headcount is year-end and includes the 2018 acquisition of the roughly 120-person Sun Trading (noted in the press lens; no datapoint captured). That is consistent with the US Form 5500 count of 280 at end of 2019."
+    },
+    {
+      "year": 2019,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 320,
+        "mid": 560,
+        "high": 900
+      },
+      "headcount": {
+        "low": 270,
+        "mid": 320,
+        "high": 390
+      },
+      "is_partial_year": false,
+      "period_label": "FY2019",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S2",
+        "S9",
+        "S21"
+      ],
+      "notes": "PnL is a PURE ESTIMATE for a lean low-volatility year: roughly 40% of 2020 (market makers' 2020 revenue was typically 2-2.5x 2019). Bloomberg's Q1 2021 (+150% or more) implies Q1 2020 of $480m or less, consistent with a 2019 quarterly run-rate of about $140m. Headcount is year-end, DERIVED from US Form 5500 active participants (welfare 280, 401(k) 249) plus an estimated 30-80 non-US staff in London, Singapore and Dublin."
+    },
+    {
+      "year": 2020,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1000,
+        "mid": 1350,
+        "high": 1800
+      },
+      "headcount": {
+        "low": 400,
+        "mid": 440,
+        "high": 510
+      },
+      "is_partial_year": false,
+      "period_label": "FY2020",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S21",
+        "S9",
+        "S4",
+        "S2"
+      ],
+      "notes": "PnL is DERIVED: Ghose (LinkedIn, single uncited source) gives 2020 revenue 'in the $1-1.5bn range' with about 50% margins, and the mid is placed near the top of that range. Cross-check: Bloomberg implies Q1 2020 of $480m or less (Q1 2021 was $1.2bn, up 150% or more) and Q1 2020 EBITDA of about $253m. A COVID-volatility year that was strong for market makers. Headcount is year-end: Moody's says 'over 400 employees' (August 2020) and US Form 5500 shows 375 welfare / 312 401(k) participants at end of 2020, plus non-US staff."
+    },
+    {
+      "year": 2021,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 2300,
+        "mid": 3100,
+        "high": 4000
+      },
+      "headcount": {
+        "low": 490,
+        "mid": 580,
+        "high": 670
+      },
+      "is_partial_year": false,
+      "period_label": "FY2021",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S9",
+        "S10",
+        "S22",
+        "S2",
+        "S5"
+      ],
+      "notes": "PnL is DERIVED: only Q1 2021 is reported (Bloomberg, about $1.2bn trading revenue and $719m EBITDA, people familiar; the headline says $1bn). Q2-Q4 are ESTIMATED at about $0.55-0.9bn per quarter as the meme-stock and retail frenzy faded but crypto and retail volumes stayed high. Headcount conflicts: Bloomberg said '400-person' in June 2021, Business Insider '500 in 2021', and Ghose/eFC '400-500'. US Form 5500 at end of 2021 shows 546 welfare and 434 401(k) participants. The year-end mid of 580 adds about 60 non-US staff to the US welfare count. The press figures probably describe early or mid-2021."
+    },
+    {
+      "year": 2022,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1800,
+        "mid": 2800,
+        "high": 3900
+      },
+      "headcount": {
+        "low": 780,
+        "mid": 860,
+        "high": 950
+      },
+      "is_partial_year": false,
+      "period_label": "FY2022",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S10",
+        "S8",
+        "S6",
+        "S2",
+        "S30"
+      ],
+      "notes": "PnL is ESTIMATED; no figure exists. 2022 was a strong, volatile year for market makers in general, but HRT-specific evidence is weak: S&P (via Business Insider) reports a rare loss quarter (Q2 2022) and weaker-than-peer 2022 performance, and Moody's downgraded the CFR to Ba2 in August 2022. So the mid is set slightly below 2021, with wide bars. Headcount is year-end, DERIVED from US Form 5500 (welfare 735, 401(k) 767) plus an estimated 90-150 non-US staff. PrivCo's modelled $90m for 2022 (and $120m for 2021, $380m for 2024) is EXCLUDED as wrong by 10-100x."
+    },
+    {
+      "year": 2023,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 2600,
+        "mid": 3700,
+        "high": 4700
+      },
+      "headcount": {
+        "low": 900,
+        "mid": 990,
+        "high": 1070
+      },
+      "is_partial_year": false,
+      "period_label": "FY2023",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S10",
+        "S26",
+        "S8",
+        "S3"
+      ],
+      "notes": "PnL is DERIVED and weak. S&P (via Business Insider) says HRT 'nearly doubled its earnings compared with 2023' through September 2024. Derived 9M2024 net trading revenue is about $4.98bn (Q1 1.65 + Q2 1.29 + Q3 2.04). If 9M revenue grew 60-100% while earnings doubled, FY2023 comes to about $3.3-4.2bn. The blog reading ('$8bn nearly doubling 2023', so about $4bn) conflates earnings with revenue and 9M with the full year. A lean, low-volatility year, but HRT was gaining share. Headcount is year-end, DERIVED from US Form 5500 (welfare 811, 401(k) 772) plus an estimated 140 UK staff and 50-100 in other non-US offices."
+    },
+    {
+      "year": 2024,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 6900,
+        "mid": 7800,
+        "high": 8200
+      },
+      "headcount": {
+        "low": 1040,
+        "mid": 1100,
+        "high": 1170
+      },
+      "is_partial_year": false,
+      "period_label": "FY2024",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "reported_press",
+      "confidence": "medium",
+      "source_ids": [
+        "S10",
+        "S11",
+        "S12",
+        "S20",
+        "S2",
+        "S23"
+      ],
+      "notes": "PnL is reported by Business Insider: 'nearly $8bn' net trading revenue (people familiar; single outlet; blogs echo it). Quarterly cross-check: Q1 about $1.65bn (derived from Ghose), Q2 $1.29bn (Bloomberg comparator), Q3 about $2.04bn (derived from Bloomberg's +81%), leaving a Q4 residual of about $2.8-3.0bn. That residual would make Q4 2025 ($3.3bn) only about +15% year on year, against +65-103% in the other quarters. That suggests 'nearly $8bn' may be generous, hence the wider downside bar. Headcount: Business Insider's 1,110 (March 2025, approximately year-end 2024) is consistent with US Form 5500 at end of 2024 (welfare 808, 401(k) 794) plus 152 UK staff plus other non-US offices. TRAP avoided: the roughly 800 Form 5500 counts are US-only."
+    },
+    {
+      "year": 2025,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 11600,
+        "mid": 12300,
+        "high": 12900
+      },
+      "headcount": {
+        "low": 1070,
+        "mid": 1160,
+        "high": 1250
+      },
+      "net_income_usd_m": {
+        "low": 6000,
+        "mid": 7000,
+        "high": 7800
+      },
+      "is_partial_year": false,
+      "period_label": "FY2025",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S13",
+        "S14",
+        "S11",
+        "S12",
+        "S15",
+        "S28",
+        "S20",
+        "S29",
+        "S1",
+        "S23",
+        "S22"
+      ],
+      "notes": "PnL: Bloomberg reports about $12.3bn of net trading revenue (initial estimates, January 2026) and Reuters repeats it in April 2026 after the year closed. Quarterly sum: Q1 about 2.72 (derived) + Q2 2.62 + Q3 3.7 + Q4 about 3.3 = 12.34; Disruption Banking reports more than $9bn through Q3. All of this traces to one origin, people with access to lender reporting, and is circular across relays. Net income is DERIVED, not reported: Q1 2025 profit was about $1.53bn (56% margin, back-solved from Q1 2026's +175%), the FY EBITDA margin was about 63% (Ghose, so EBITDA about $7.75bn), and 2026 net income ran at about 92-93% of EBITDA, giving about $7.0bn. Headcount is year-end, DERIVED: US Form 5500 (welfare 859, 401(k) 858) plus 165 UK staff plus an estimated 100-180 elsewhere. Press figures of about 1,100 and 'around 1,000' recycle Business Insider's 1,110 or are loose lower bounds."
+    },
+    {
+      "year": 2026,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 16600,
+        "mid": 17800,
+        "high": 18700
+      },
+      "headcount": {
+        "low": 1180,
+        "mid": 1300,
+        "high": 1420
+      },
+      "net_income_usd_m": {
+        "low": 10600,
+        "mid": 11600,
+        "high": 12300
+      },
+      "is_partial_year": true,
+      "period_label": "H1 2026 (2026-01-01 to 2026-06-30)",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S27",
+        "S24",
+        "S1",
+        "S23",
+        "S25"
+      ],
+      "notes": "PARTIAL YEAR: H1 2026 (2026-01-01 to 2026-06-30) only. PnL is the sum of Q1 at $6.4bn (Bloomberg, preliminary) and Q2 at $11.4bn (both the FT and Bloomberg; 4.35x Q2 2025). Net income is the sum of Q1 'profit' of about $4.2bn and Q2 'net income' of $7.4bn, which may not be defined identically. No Q3, July or August figure had been reported as of 2026-10-08. Do NOT annualize: the July 2026 selloff hurt peers and HRT's Q3 is unknown. Headcount is a point-in-time figure for about September 2026, not year-end, and DERIVED: about 1,160 at end of 2025 plus at least 200 net hires YTD (eFC) gives about 1,360. eFC's own '+20%' implies a base of about 1,000, so about 1,200. LinkedIn's 1,387 is an upper cross-check. The 'more than 1,000' in May 2026 is a lower bound."
+    }
+  ],
+  "ytd_2026": {
+    "cutoff_date": "2026-06-30",
+    "period_label": "H1 2026 (2026-01-01 to 2026-06-30)",
+    "description": "H1 2026 net trading revenue of about $17.8bn: Q1 at $6.4bn (Bloomberg 2026-05-11, preliminary) plus Q2 at $11.4bn (FT 2026-08-19/20 and Bloomberg). Net income is about $11.6bn ($4.2bn plus $7.4bn). This is the latest reliable datapoint as of 2026-10-08. No Q3 2026 or monthly figure has been reported; by the pattern of past Bloomberg reports, Q3 would surface around mid-November 2026. Headcount in the 2026 row is a point estimate for about September 2026."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "DOL EBSA Form 5500 dataset 2025 (latest): Hudson River Trading LLC Employee Benefits Plan / 401(k) Plan",
+      "publisher": "US Department of Labor (EFAST2 Form 5500 FOIA data)",
+      "url": "https://www.askebsa.dol.gov/FOIA%20Files/2025/Latest/F_5500_2025_Latest.zip",
+      "date": "2026-09-30",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US-only headcount floor: Hudson River Trading LLC (EIN 45-0465436) welfare plan had 859 active participants at end of 2025 (808 at start); the 401(k) plan had 858 active. Excludes all non-US staff."
+    },
+    {
+      "id": "S2",
+      "title": "DOL EBSA Form 5500 dataset 2024 (latest): Hudson River Trading LLC Employee Benefits Plan / 401(k) Plan",
+      "publisher": "US Department of Labor (EFAST2 Form 5500 FOIA data)",
+      "url": "https://www.askebsa.dol.gov/FOIA%20Files/2024/Latest/F_5500_2024_Latest.zip",
+      "date": "2026-09-25",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US-only: welfare plan 808 active at end of 2024, 401(k) 794. The year-end series extracted by the recent lens from earlier dataset copies: welfare 2019 280, 2020 375, 2021 546, 2022 735, 2023 811; 401(k) 2019 249, 2020 312, 2021 434, 2022 767, 2023 772."
+    },
+    {
+      "id": "S3",
+      "title": "DOL EBSA Form 5500 dataset 2023 (latest): Hudson River Trading LLC Employee Benefits Plan",
+      "publisher": "US Department of Labor (EFAST2 Form 5500 FOIA data)",
+      "url": "https://www.askebsa.dol.gov/FOIA%20Files/2023/Latest/F_5500_2023_Latest.zip",
+      "date": "2026-09-25",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US-only: welfare plan 811 active at end of 2023, 401(k) 772."
+    },
+    {
+      "id": "S4",
+      "title": "Hudson River Trading LLC -- Moody's Affirms Hudson River Trading's Ba2 Term Loan Rating and Assigns Ba1 Corporate Family Rating",
+      "publisher": "Moody's Investors Service (press release syndicated on Yahoo Finance)",
+      "url": "https://finance.yahoo.com/news/hudson-river-trading-llc-moodys-160107803.html",
+      "date": "2020-08-10",
+      "type": "rating_agency",
+      "reliability": "high",
+      "supports": "'Over 400 employees' in mid-2020 (firm-wide, offices in New York, Chicago, Austin, London, Dublin and Singapore). A $690m term loan plus a $400m upsize. 'Strong profitable track record' with low earnings volatility. No P&L figures."
+    },
+    {
+      "id": "S5",
+      "title": "Hudson River Trading LLC -- Moody's Affirms Hudson River Trading's Ba2 Term Loan Rating and Ba1 Corporate Family Rating",
+      "publisher": "Moody's Investors Service (via Yahoo Finance)",
+      "url": "https://finance.yahoo.com/news/hudson-river-trading-llc-moodys-203606799.html",
+      "date": "2021-03-04",
+      "type": "rating_agency",
+      "reliability": "high",
+      "supports": "A $1,725m TLB due 2028 refinancing a $1,222m loan. The release says HRT navigated 2020 profitably but gives no P&L figure."
+    },
+    {
+      "id": "S6",
+      "title": "Hudson River Trading LLC -- Moody's says Hudson River Trading's term loan upsize does not affect firm's ratings",
+      "publisher": "Moody's Investors Service (via Yahoo Finance)",
+      "url": "https://finance.yahoo.com/news/hudson-river-trading-llc-moodys-185305900.html",
+      "date": "2022-01-05",
+      "type": "rating_agency",
+      "reliability": "high",
+      "supports": "A $100m TLB upsize to grow trading capital; 'profitable track record'. Per the evidence notes, Moody's later downgraded the CFR to Ba2 on 2022-08-31 over risk appetite. No P&L figure."
+    },
+    {
+      "id": "S7",
+      "title": "Hudson River Trading LLC Assigned 'BB-' Rating; Outlook Is Stable; Senior Secured Term Loan Rated 'BB-'",
+      "publisher": "S&P Global Ratings (abstract via Alacra Store)",
+      "url": "https://www.alacrastore.com/s-and-p-credit-research/Hudson-River-Trading-LLC-Assigned-BB-Rating-Outlook-Is-Stable-Senior-Secured-Term-Loan-Rated-BB-2003105",
+      "date": "2018-03-07",
+      "type": "rating_agency",
+      "reliability": "high",
+      "supports": "Qualitative only: 'a highly profitable high-frequency trading market-making business'; a $250m TLB. No revenue figure."
+    },
+    {
+      "id": "S8",
+      "title": "Hudson River Trading LLC (2023/07/28)",
+      "publisher": "S&P Global Ratings (abstract via Alacra Store)",
+      "url": "https://www.alacrastore.com/s-and-p-credit-research/Hudson-River-Trading-LLC-3027019",
+      "date": "2023-07-28",
+      "type": "rating_agency",
+      "reliability": "high",
+      "supports": "RAC ratio of 11.3% at 2023-03-31; expects continued profitability. Other reporting says S&P noted weaker-than-peer 2022 performance. No revenue figure."
+    },
+    {
+      "id": "S9",
+      "title": "Prop Trader Hudson River Reaps $1 Billion in Frenzied Quarter",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2021-06-24/prop-trader-hudson-river-reaps-1-billion-in-frenzied-quarter",
+      "date": "2021-06-24",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "Q1 2021 trading revenue of about $1.2bn (headline rounds to $1bn), up more than 150% year on year, which implies Q1 2020 of $480m or less. Q1 2021 EBITDA $719m (+184%). A '400-person' firm with $4.5bn of trading capital. Body behind a 403 paywall; read via snippets and Wikipedia."
+    },
+    {
+      "id": "S10",
+      "title": "Hudson River Trading has quietly built an $8 billion global powerhouse",
+      "publisher": "Business Insider (Alex Morrell); read via B17 News and BI Japan syndicated copies",
+      "url": "https://www.businessinsider.com/hudson-river-trading-hrt-8-billion-trading-revenue-2025-3",
+      "date": "2025-03-02",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "FY2024 net trading revenue of nearly $8bn (people familiar). 'Employee head count has climbed to 1,110 from 500 in 2021.' S&P note: HRT 'nearly doubled its earnings compared with 2023' through September 2024. One loss quarter (Q2 2022). Prism unit made $2bn or more in 2024."
+    },
+    {
+      "id": "S11",
+      "title": "Hudson River Trading Revenue More than Doubles to $2.62 Billion",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-02/hudson-river-trading-revenue-more-than-doubles-to-2-62-billion",
+      "date": "2025-09-02",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "Q2 2025 net trading revenue of $2.62bn, up 103% from $1.29bn in Q2 2024 (people familiar, lender reporting)."
+    },
+    {
+      "id": "S12",
+      "title": "Hudson River Quarterly Trading Revenue Hits Record $3.7 Billion",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-11-17/hudson-river-quarterly-trading-revenue-hits-record-3-7-billion",
+      "date": "2025-11-17",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "Q3 2025 net trading revenue of about $3.7bn, up 81%, which implies Q3 2024 of about $2.04bn."
+    },
+    {
+      "id": "S13",
+      "title": "Hudson River's 2025 Trading Revenue Set for Record $12.3 Billion",
+      "publisher": "Bloomberg (Katherine Doherty)",
+      "url": "https://www.bloomberg.com/news/articles/2026-01-13/hudson-river-s-2025-trading-revenue-set-for-record-12-3-billion",
+      "date": "2026-01-13",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "FY2025 net trading revenue of about $12.3bn (initial estimates, people familiar). Q4 2025 about $3.3bn."
+    },
+    {
+      "id": "S14",
+      "title": "Jane Street outpaces rivals with record $40bn trading haul",
+      "publisher": "Hedgeweek (citing Reuters)",
+      "url": "https://hedgeweek.com/news/jane-street-outpaces-rivals-with-record-40bn-trading-haul",
+      "date": "2026-04-27",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Reuters (April 2026) repeats HRT FY2025 at about $12.3bn, after the year closed. Origin is likely the same as Bloomberg's."
+    },
+    {
+      "id": "S15",
+      "title": "Hudson River Trading Notches Record $6.4 Billion Quarterly Markets Haul",
+      "publisher": "Bloomberg (Katherine Doherty)",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-11/hudson-river-trading-notches-record-6-4-billion-quarterly-markets-haul",
+      "date": "2026-05-11",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "Q1 2026 trading revenue of $6.4bn (preliminary), up about 135% year on year, which implies Q1 2025 of about $2.72bn. Headline confirmed via Bloomberg's sitemap; body behind 403."
+    },
+    {
+      "id": "S16",
+      "title": "Hudson River Trading reports record Q1 revenue",
+      "publisher": "Hedgeweek (citing Bloomberg)",
+      "url": "https://hedgeweek.com/news/hudson-river-trading-reports-record-q1-revenue",
+      "date": "2026-05-12",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "Q1 2026: $6.4bn trading revenue, profit of about $4.2bn and EBITDA of about $4.5bn (all preliminary). 'More than 1,000 staff globally'. Net trading capital of about $20bn at 2026-03-31."
+    },
+    {
+      "id": "S17",
+      "title": "Hudson River Trading Posts Record $11.4 Billion in Second-Quarter Revenue",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-19/hudson-river-trading-posts-record-11-4-billion-trading-haul",
+      "date": "2026-08-19",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "Q2 2026 trading revenue of $11.4bn, 'more than quadrupled' from Q2 2025 (11.4/2.62 = 4.35x). Adjusted EBITDA of about $8bn."
+    },
+    {
+      "id": "S18",
+      "title": "Hudson River Trading racks up record $11.4bn revenue amid market volatility",
+      "publisher": "Hedgeweek (citing Financial Times)",
+      "url": "https://hedgeweek.com/news/hudson-river-trading-racks-up-record-11-4bn-revenue-amid-market-volatility",
+      "date": "2026-08-20",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Financial Times, via Hedgeweek: Q2 2026 trading revenue of $11.4bn and net profit of $7.4bn for the three months through June. This makes the FT a second top-tier outlet alongside Bloomberg."
+    },
+    {
+      "id": "S19",
+      "title": "Citadel Securities posts record $7.3bn trading revenue",
+      "publisher": "Hedgeweek (citing Bloomberg)",
+      "url": "https://hedgeweek.com/news/citadel-securities-posts-record-7-3bn-trading-revenue",
+      "date": "2026-08-28",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Repeats Bloomberg's figure of $11.4bn for HRT's Q2 2026, more than four times the year-earlier quarter. Gives regime context: Citadel Securities had a record Q2 2026."
+    },
+    {
+      "id": "S20",
+      "title": "Hudson River Trading Q1 revenues up 135% and profits up 175%",
+      "publisher": "Rupak Ghose (Substack)",
+      "url": "https://rupakghose.substack.com/p/hudson-river-trading-q1-revenues",
+      "date": "2026-05-11",
+      "type": "aggregator_or_blog",
+      "reliability": "medium",
+      "supports": "Q1 2026 up 288% on Q1 2024, which implies Q1 2024 of about $1.65bn. EBITDA margin about 63% for FY2025 and about 60% for Q1 2025, and a record 70% in Q1 2026. Q1 2026 annualized revenue of $23.3m per employee, which implies about 1,100 staff and is circular with Business Insider's figure. Former analyst's commentary."
+    },
+    {
+      "id": "S21",
+      "title": "Hudson River Trading: The Secretive Firm Beating Citadel Securities (LinkedIn post)",
+      "publisher": "Rupak Ghose (LinkedIn)",
+      "url": "https://www.linkedin.com/posts/rupak-ghose-53084743_hudson-river-trading-is-making-more-revenue-activity-7373635482355773440-BZmk",
+      "date": "2025-09",
+      "type": "social_or_forum",
+      "reliability": "low",
+      "supports": "Group headcount of about 100 in 2014. 2020 revenue 'in the $1-1.5 billion range' with about 50% margins. H1 2025 revenue of $5.3bn. Origins not cited."
+    },
+    {
+      "id": "S22",
+      "title": "Kindly trading firm that loves technologists generates $8m per head",
+      "publisher": "eFinancialCareers (Sarah Butcher), citing Rupak Ghose",
+      "url": "https://www.efinancialcareers.com/news/working-for-hudson-river-trading",
+      "date": "2025-09-09",
+      "type": "trade_press",
+      "reliability": "low",
+      "supports": "HRT 'only employed 400-500 people in 2021' and 'now has around 1,100' (likely recycled from Business Insider's 1,110)."
+    },
+    {
+      "id": "S23",
+      "title": "Hudson River Trading paid £820k per head to its UK staff and spent £2.4m per head on equipment",
+      "publisher": "eFinancialCareers (from Companies House filings)",
+      "url": "https://www.efinancialcareers.com/news/hudson-river-trading-pay-uk-high-frequency-trading",
+      "date": "2026-09-23",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "The three UK entities (HRTSVC, HRT Europe, HRT Research) had 165 staff in FY2025, up from 152 in 2024. UK subsidiaries only."
+    },
+    {
+      "id": "S24",
+      "title": "Does Hudson River Trading pay its best people $100m+?",
+      "publisher": "eFinancialCareers",
+      "url": "https://www.efinancialcareers.com/news/hudson-river-trading-pay",
+      "date": "2026-09-14",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "At least 200 net hires in 2026 to mid-September, described as about +20%. Basis for the derived figure of about 1,250 (1,150-1,400) staff in September 2026."
+    },
+    {
+      "id": "S25",
+      "title": "Hudson River Trading | LinkedIn company page",
+      "publisher": "LinkedIn",
+      "url": "https://www.linkedin.com/company/hudson-river-trading",
+      "date": "2026-10-08",
+      "type": "social_or_forum",
+      "reliability": "low",
+      "supports": "1,387 associated member profiles; size band 1,001-5,000. Used as a loose upper cross-check, since the count may include former staff and interns."
+    },
+    {
+      "id": "S26",
+      "title": "Hudson River Trading: How $8B in Revenue Reveals the Death of Latency Arbitrage",
+      "publisher": "Navnoor Bawa (Substack)",
+      "url": "https://www.navnoorbawaresearch.com/p/hudson-river-trading-how-8b-in-revenue",
+      "date": "2025-11-12",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Blog paraphrase that 2024's $8bn was 'nearly doubling 2023', implying about $4bn for 2023. This misreads S&P's 9M2024 earnings comparison as full-year revenue."
+    },
+    {
+      "id": "S27",
+      "title": "Hudson River Trading posts $11.4B trading windfall amid market tumult",
+      "publisher": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/hudson-river-trading-11b-windfall/",
+      "date": "2026-08-19",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Sums H1 2026 trading revenue to about $17.8bn (Q1 6.4 + Q2 11.4). Low-quality relay; the figure rests on the Bloomberg and FT components."
+    },
+    {
+      "id": "S28",
+      "title": "How Hudson River Trading is Breaking Records in 2025",
+      "publisher": "Disruption Banking",
+      "url": "https://www.disruptionbanking.com/2025/12/02/how-hudson-river-trading-is-breaking-records-in-2025/",
+      "date": "2025-12-02",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Says 2025 YTD revenue exceeded $9bn through Q3, consistent with 2.72 + 2.62 + 3.7. Internally inconsistent elsewhere."
+    },
+    {
+      "id": "S29",
+      "title": "HRT's Record Quarter, Jane Street's $15B Loss (relaying Bloomberg)",
+      "publisher": "Briefs.co / Odaily (relaying Bloomberg)",
+      "url": "https://www.briefs.co/news/hrt-s-record-quarter-coincides-with-jane-street-s-billion-do/",
+      "date": "2026-08-19",
+      "type": "aggregator_or_blog",
+      "reliability": "medium",
+      "supports": "Q2 2025 adjusted EBITDA of $1.75bn (comparator to Q2 2026's roughly $8bn adjusted EBITDA). Used for the FY2025 margin cross-check."
+    },
+    {
+      "id": "S30",
+      "title": "Hudson River Trading Company Profile: Financials, Valuation, and Growth",
+      "publisher": "PrivCo",
+      "url": "https://system.privco.com/company/hudson-river-trading_private_stock_annual_report_financials",
+      "date": "unknown",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Modelled revenue of $90-380m for 2021-2024, 10-100x too low against press-reported figures. Recorded only to show why it was EXCLUDED."
+    }
+  ],
+  "caveats": [
+    "CIRCULAR SOURCING: nearly every 2024-2026 figure traces to one origin, anonymous people with access to HRT's lender reporting, reported first by Bloomberg (Katherine Doherty). Hedgeweek, Investing.com, eFC, Crypto Briefing, Odaily, GuruFocus and Substack posts are relays, not confirmations. Only Q2 2026 (FT plus Bloomberg) and FY2025 (Bloomberg plus Reuters) have two top-tier outlets, and even those may share the same origin.",
+    "PRELIMINARY: FY2025 ($12.3bn) was 'initial estimates' and Q1 2026 ($6.4bn) was 'preliminary pending final results'. Audited figures are not public.",
+    "METRIC DRIFT: 'net trading revenue' (2024-2025) and 'trading revenue' (2021, 2026) are assumed to be the same lender-reported metric, but this is unconfirmed. Q2 EBITDA figures are 'adjusted'. 'Profit' (Q1 2026) and 'net income' (Q2 2026) may differ.",
+    "HEADCOUNT TRAP: US DOL Form 5500 participant counts (about 800-860 in 2023-2025) cover US plan participants only. UK counts (152 in 2024, 165 in 2025) are UK subsidiaries only. Neither is firm-wide. Business Insider's 1,110 is the only precise firm-wide count, and later figures of about 1,100 recycle it.",
+    "2015-2019 PnL has no evidence base; those rows are regime-based estimates and should not be used for point comparisons. 2021-2023 are anchored only by Q1 2021 and an ambiguous S&P 'earnings nearly doubled' comparison (9M vs FY, earnings vs revenue).",
+    "EXCLUDED: PrivCo ($90-380m), IncFact (over $500m) and Growjo (about $373m) modelled revenues are wrong by 10-100x. GuruFocus pages mix in an unrelated 'HRT' ticker. Wikipedia's 'over 1,000 people' citation to the 2018 Irish Times article does not support the claim, so 1,000+ is not dated to 2018.",
+    "2026 scale is unprecedented: H1 2026 is $17.8bn on about 1,200-1,300 staff, more than 1.4x FY2025. H1 should not be annualized, because the July 2026 selloff hit peers (Jane Street) and HRT's Q3 is unknown."
+  ],
+  "overall_confidence": "low",
+  "open_questions": [
+    "What are FY2021-FY2023 net trading revenues? The full S&P and Moody's reports (paywalled) or leveraged-loan coverage (LCD, 9fin, Octus) from the 2021-2024 term-loan deals likely contain them.",
+    "Was Q4 2024 really about $2.9bn (needed for 'nearly $8bn'), or is FY2024 closer to $7.0-7.5bn?",
+    "Q3 2026 net trading revenue (expected around mid-November 2026), and how HRT fared in the July 2026 selloff.",
+    "Firm-wide headcount by year: how many non-US staff outside the UK (Dublin, Singapore, Hong Kong, Shanghai, Mumbai, Seoul)? Did Business Insider's 1,110 include interns or contractors?",
+    "Is S&P's 'nearly doubled its earnings compared with 2023' a 9M-vs-9M comparison or 9M2024 vs FY2023, and is it earnings or revenue?",
+    "Any 2015-2019 figure at all (S&P's 2018 initial rating report or Sun Trading acquisition coverage)."
+  ],
+  "changelog": [],
+  "review_status": "draft: synthesized from 3 of 4 search lenses without adversarial review (stopped early to save budget)"
+}

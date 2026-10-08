@@ -1,0 +1,1120 @@
+{
+  "firm_key": "de_shaw",
+  "firm_name": "D. E. Shaw",
+  "pnl_definition": "Gross trading P&L = dollar investment gains across all D. E. Shaw group funds and managed accounts (alternatives such as Composite, Oculus, Valence and Cogence, plus long-oriented/active equity, multi-asset and private vehicles) BEFORE management and performance fees, calendar year, USD millions (approximately average investment capital x gross return). D. E. Shaw Research is excluded. The firm publishes no P&L, revenue or financial statements, so every row is derived or estimated: for 2022-2025 the LCH Investments (Edmond de Rothschild) single-year net gains to investors (which are AFTER fees and appear to cover hedge funds/alternatives only) are grossed up for fees and a modelled long-oriented book is added; for 2020-2021 average alternatives capital x reported net Composite/Oculus returns is grossed up the same way; 2015-2019 and 2026 YTD are model estimates without any firm-specific return data. This is not the firm's own revenue (its fee income is only a fraction of these gains).",
+  "headcount_definition": "Total employees of the D. E. Shaw group worldwide, approximately at year end (2026: latest known figure), taken from the firm's own website ('more than X people': >1,000 late 2014, >1,200 2018, >1,300 Dec 2019, >1,700 Nov 2020, >1,900 Dec 2021, >2,000 Dec 2022-Sep 2023, >2,500 Mar 2024-Dec 2025, >3,000 Feb-Oct 2026). These are lower bounds without precise as-of dates, so mids sit somewhat above the floor and gaps (2015-2017, 2023-2025) are interpolated. Form ADV Item 5A employee counts (435 in FY2015 rising to 998 in FY2025) are NOT used: they cover only the US registered adviser and its relying advisers and exclude D. E. Shaw India and other non-adviser affiliates, so they are roughly one-third of the group. It is not stated whether the website figure includes contractors or D. E. Shaw Research; bands allow for this.",
+  "fx_note": "All inputs are in USD (LCH, press, deshaw.com and SEC figures); no currency conversion was needed.",
+  "methodology": "Synthesized from two completed research lenses (press and primary filings/company website); no new searches were run. Investment capital comes from archived deshaw.com snapshots (lower-bound 'more than' figures), averaged within each year; regulatory AUM from Form ADV is leverage-inflated and only noted. For 2022-2025, LCH single-year net gains ($8.2bn, $4.2bn, $11.1bn, $12.7bn; chain-checked against the cumulative $56.1bn, $67.2bn and $79.9bn) are grossed up using fee-paying share ~65-75%, performance fee ~30-33% and management fee ~3%, and estimated gains on the ~$18-25bn long-oriented book are added; 2020-2021 use average alternatives capital x reported Composite/Oculus net returns with the same gross-up. 2015-2019 and 2026 YTD have no firm-specific returns in the evidence, so they are capital x assumed long-run returns (Composite/Oculus annualised net ~12.5-14%) plus equity-market-like returns on the long book, cross-checked against the primary lens's Monte Carlo, with wide bars. Headcount uses the group-wide website figure; Form ADV counts are cited only to show the subset trap.",
+  "entities": [
+    {
+      "key": "firm",
+      "name": "D. E. Shaw (firm-wide)",
+      "description": "The D. E. Shaw group: D. E. Shaw & Co., L.P. and affiliates worldwide (New York, London, Asia Pacific, D. E. Shaw India and others), all funds and managed accounts including alternatives (Composite, Oculus, Valence, Cogence, macro/credit), long-oriented/active equity, multi-asset and private strategies. D. E. Shaw Research is excluded from PnL."
+    }
+  ],
+  "rows": [
+    {
+      "year": 2015,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1800,
+        "mid": 4300,
+        "high": 7500
+      },
+      "headcount": {
+        "low": 950,
+        "mid": 1100,
+        "high": 1300
+      },
+      "aum_usd_m": {
+        "low": 35500,
+        "mid": 37000,
+        "high": 39500
+      },
+      "is_partial_year": false,
+      "period_label": "FY2015",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S5",
+        "S6",
+        "S4",
+        "S24",
+        "S32"
+      ],
+      "notes": "Returns used: none in evidence (Composite and Oculus 2015 returns not found). PnL is a model estimate: alternatives ~55-60% of ~$37bn average investment capital (deshaw.com >$36bn Mar-2015, >$37bn Jul-2015) at an assumed ~12% net (long-run Composite/Oculus annualised net ~12.5-14%), grossed up to ~$3.8-4.4bn, plus a ~$15bn long-oriented book at roughly flat equity-market returns. Primary-lens Monte Carlo gave $4.5bn (2.2-7.0). Headcount interpolated between website floors >1,000 (late 2014) and >1,200 (Oct 2018); Form ADV US registrant reported 435 (subset, not used). Regulatory AUM $85.1bn is gross and leverage-inflated (not used)."
+    },
+    {
+      "year": 2016,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 2500,
+        "mid": 5300,
+        "high": 8500
+      },
+      "headcount": {
+        "low": 1000,
+        "mid": 1150,
+        "high": 1350
+      },
+      "aum_usd_m": {
+        "low": 36500,
+        "mid": 39000,
+        "high": 42000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2016",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S7",
+        "S8",
+        "S4",
+        "S24",
+        "S33"
+      ],
+      "notes": "Returns used: none in evidence. Model: alternatives (~$22-23bn) at assumed ~10-11% net, grossed up to ~$3.6-4.0bn, plus long-oriented book (~$16bn) at equity-market-like returns (~+10%), ~$1.5bn. Primary-lens model $5.6bn (3.7-7.7); bars widened because no D. E. Shaw-specific return exists for 2016. Capital >$37bn (Mar-2016) to >$40bn (Oct-2016). Headcount interpolated (no website figure for 2016); ADV US registrant 473 (subset)."
+    },
+    {
+      "year": 2017,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 4500,
+        "mid": 8500,
+        "high": 12500
+      },
+      "headcount": {
+        "low": 1050,
+        "mid": 1200,
+        "high": 1400
+      },
+      "aum_usd_m": {
+        "low": 41000,
+        "mid": 43500,
+        "high": 46500
+      },
+      "is_partial_year": false,
+      "period_label": "FY2017",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S9",
+        "S10",
+        "S24",
+        "S34"
+      ],
+      "notes": "Returns used: none in evidence. Model: alternatives (~$25bn) at assumed ~11% net grossed up (~$4.2-4.6bn) plus long-oriented book (~$18bn) in a strong equity year (~+20%), ~$4bn. Primary-lens model $9.1bn (7.2-11.0); widened because the long-oriented share before 2018 is not disclosed. Capital >$42bn (Apr-2017), >$43bn (Jul-2017). Headcount interpolated; ADV US registrant 521 (subset)."
+    },
+    {
+      "year": 2018,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 300,
+        "mid": 3400,
+        "high": 6800
+      },
+      "headcount": {
+        "low": 1150,
+        "mid": 1250,
+        "high": 1400
+      },
+      "aum_usd_m": {
+        "low": 43000,
+        "mid": 47000,
+        "high": 51000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2018",
+      "pnl_basis": "estimated",
+      "headcount_basis": "reported_primary",
+      "confidence": "low",
+      "source_ids": [
+        "S11",
+        "S24",
+        "S35"
+      ],
+      "notes": "Returns used: none in evidence. Model: alternatives (~$27-28bn, per the Dec-2018 website split of $28bn alternatives / $22bn long-oriented) at assumed ~10-11% net, grossed up (~$4.8bn), offset by long-oriented losses in the Q4-2018 equity sell-off (~-$1.3bn). Primary-lens model $3.3bn (1.0-5.6). Capital ~$50bn at Dec-2018 is 'investment and committed capital' (definition widened in 2018), so the 2017-18 step is partly definitional. Headcount: website >1,200 (Oct 2018-Mar 2019) floor; ADV US registrant 576 (subset)."
+    },
+    {
+      "year": 2019,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 6500,
+        "mid": 11500,
+        "high": 15500
+      },
+      "headcount": {
+        "low": 1250,
+        "mid": 1350,
+        "high": 1450
+      },
+      "aum_usd_m": {
+        "low": 48000,
+        "mid": 51000,
+        "high": 55000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2019",
+      "pnl_basis": "estimated",
+      "headcount_basis": "reported_primary",
+      "confidence": "low",
+      "source_ids": [
+        "S12",
+        "S25",
+        "S36"
+      ],
+      "notes": "Returns used: none in evidence. Model: alternatives (~$28-30bn) at assumed ~11-12% net, grossed up (~$5.0-5.4bn), plus ~$22bn long-oriented book in a very strong equity year (~+25-30%), ~$6bn. Primary-lens model $12.1bn (9.7-14.6). Capital >$50bn (Sep-2019). Headcount: website >1,300 (Dec 2019); ADV US registrant 628 (subset)."
+    },
+    {
+      "year": 2020,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 8500,
+        "mid": 12500,
+        "high": 16500
+      },
+      "headcount": {
+        "low": 1600,
+        "mid": 1750,
+        "high": 1900
+      },
+      "aum_usd_m": {
+        "low": 49000,
+        "mid": 52500,
+        "high": 57000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2020",
+      "pnl_basis": "derived",
+      "headcount_basis": "reported_primary",
+      "confidence": "low",
+      "source_ids": [
+        "S66",
+        "S55",
+        "S13",
+        "S14",
+        "S51",
+        "S26",
+        "S27",
+        "S37"
+      ],
+      "notes": "Returns used: Composite +19.4%, Oculus +25.4% net (FundFire/FT, people familiar). No LCH dollar figure found for 2020. Derived: ~$34bn alternatives (Dec-2020: $35bn of $55bn) x ~19-21% blended net = ~$6.5bn net (press lens ~$6-7bn), grossed up to ~$9.2bn. Gross-up: fee-paying share ~65-75% of alternatives capital (rest internal/employee capital, fee-free), blended performance fee ~30-33% (Composite 30% raised to 35% c.2022; Oculus 25% to 30%), management fee ~3% of fee-paying capital (ADV brochure maxima 3.5%/40%). Plus ~$19-20bn long-oriented book x equity-like ~+16% = ~$3bn. Primary-lens model $12.9bn (9.8-16.2). Composite briefly reopened to $2bn of new money. Headcount: website >1,400 (Jun 2020) then >1,700 (Nov 2020-Jun 2021); the step may be partly definitional. ADV US registrant 699 (subset)."
+    },
+    {
+      "year": 2021,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 10000,
+        "mid": 14800,
+        "high": 19500
+      },
+      "headcount": {
+        "low": 1850,
+        "mid": 1950,
+        "high": 2100
+      },
+      "aum_usd_m": {
+        "low": 55000,
+        "mid": 58500,
+        "high": 62500
+      },
+      "is_partial_year": false,
+      "period_label": "FY2021",
+      "pnl_basis": "derived",
+      "headcount_basis": "reported_primary",
+      "confidence": "low",
+      "source_ids": [
+        "S65",
+        "S64",
+        "S55",
+        "S62",
+        "S14",
+        "S15",
+        "S28",
+        "S38"
+      ],
+      "notes": "Returns used: Composite +18.5% (II) / +18.8% (Reuters), Oculus ~+15% (blog citing Bloomberg; low reliability). No single-year LCH figure; LCH's $71.2bn 2021-23 total for Citadel+Millennium+D. E. Shaw implies ~$21bn combined for the three in 2021. Derived: ~$39bn alternatives x ~17% net = ~$6.7bn net, grossed up to ~$9.8bn. Gross-up: fee-paying share ~65-75% of alternatives capital (rest internal/employee capital, fee-free), blended performance fee ~30-33% (Composite 30% raised to 35% c.2022; Oculus 25% to 30%), management fee ~3% of fee-paying capital (ADV brochure maxima 3.5%/40%). Plus ~$20bn long-oriented book x ~+25% = ~$5bn. Primary-lens model $15.2bn (11.7-19.3). Capital >$55bn (Dec-2020) to >$60bn (Sep-2021). Headcount: website >1,900 (Dec 2021-Sep 2022); ADV US registrant 705 (subset)."
+    },
+    {
+      "year": 2022,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 6300,
+        "mid": 9200,
+        "high": 12800
+      },
+      "headcount": {
+        "low": 1950,
+        "mid": 2100,
+        "high": 2300
+      },
+      "aum_usd_m": {
+        "low": 58000,
+        "mid": 61000,
+        "high": 65000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2022",
+      "pnl_basis": "derived",
+      "headcount_basis": "reported_primary",
+      "confidence": "medium",
+      "source_ids": [
+        "S63",
+        "S64",
+        "S59",
+        "S57",
+        "S16",
+        "S29",
+        "S39"
+      ],
+      "notes": "Returns used: Composite +24.7% (Reuters) / 24.6% (II), Oculus +20% / 20.1%. LCH net gain to investors $8.2bn (single-year; end-2022 cumulative ~$51.9bn derived as 56.1-4.2). Derived: LCH $8.2bn net grossed up to ~$11.9bn (10.3-13.8) for alternatives. Gross-up: fee-paying share ~65-75% of alternatives capital (rest internal/employee capital, fee-free), blended performance fee ~30-33% (Composite 30% raised to 35% c.2022; Oculus 25% to 30%), management fee ~3% of fee-paying capital (ADV brochure maxima 3.5%/40%). Less ~$3.3bn estimated losses on the ~$18-22bn long-oriented book in the 2022 equity bear market. Primary-lens model $10.9bn (8.5-13.5) used capital x return (alts net $9.1bn, above LCH), so this row sits lower. Headcount: website >2,000 (Dec 2022-Sep 2023); ADV US registrant 759 (subset)."
+    },
+    {
+      "year": 2023,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 7800,
+        "mid": 10500,
+        "high": 13500
+      },
+      "headcount": {
+        "low": 2150,
+        "mid": 2450,
+        "high": 2600
+      },
+      "aum_usd_m": {
+        "low": 58000,
+        "mid": 61000,
+        "high": 65000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2023",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S56",
+        "S57",
+        "S58",
+        "S60",
+        "S61",
+        "S17",
+        "S29",
+        "S30",
+        "S40"
+      ],
+      "notes": "Returns used: Composite +9.6%, Oculus +7.8% (Reuters). LCH single-year net gain $4.2bn (cumulative since 1988 $56.1bn; TipRanks wrongly reports the $56.1bn as 2023 profit). Derived: $4.2bn net grossed up to ~$6.5bn for alternatives (press lens $6.8bn, primary $7.2bn). Gross-up: fee-paying share ~65-75% of alternatives capital (rest internal/employee capital, fee-free), blended performance fee ~30-33% (Composite 30% raised to 35% c.2022; Oculus 25% to 30%), management fee ~3% of fee-paying capital (ADV brochure maxima 3.5%/40%). Plus ~$19bn long-oriented book x ~+20% = ~$3.8bn. Primary-lens model $11.3bn (9.9-12.9). Firm returned virtually all 2023 profits to outside investors. Founder Rich List income $750m (cross-check). Headcount interpolated: website >2,000 to Sep-2023, >2,500 from Mar-2024; ADV US registrant 879 (subset)."
+    },
+    {
+      "year": 2024,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 15500,
+        "mid": 19800,
+        "high": 24000
+      },
+      "headcount": {
+        "low": 2450,
+        "mid": 2700,
+        "high": 2950
+      },
+      "aum_usd_m": {
+        "low": 59000,
+        "mid": 62500,
+        "high": 67000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2024",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S52",
+        "S53",
+        "S54",
+        "S18",
+        "S19",
+        "S30",
+        "S41"
+      ],
+      "notes": "Returns used: Composite +18%, Oculus +36.1% (record year). LCH single-year net gain $11.1bn, #1 for the year (cumulative $67.2bn; 67.2-56.1=11.1 chain-checks). Derived: $11.1bn net grossed up to ~$15.7bn for alternatives (press lens $16bn, 14-18.5). Gross-up: fee-paying share ~65-75% of alternatives capital (rest internal/employee capital, fee-free), blended performance fee ~30-33% (Composite 30% raised to 35% c.2022; Oculus 25% to 30%), management fee ~3% of fee-paying capital (ADV brochure maxima 3.5%/40%). Plus ~$19-20bn long-oriented book x ~+20% = ~$4bn. Primary-lens model $20.6bn (18.0-23.4). Firm returned half of 2024 profits. Capital >$60bn (Sep-2024), >$65bn (Jan/Mar-2025). Founder income $1.6bn (cross-check). Headcount: website floor >2,500 held Mar-2024 to Dec-2025, so year-end 2024 is interpolated; ADV US registrant 928 (subset)."
+    },
+    {
+      "year": 2025,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 17500,
+        "mid": 22500,
+        "high": 27500
+      },
+      "headcount": {
+        "low": 2650,
+        "mid": 2950,
+        "high": 3150
+      },
+      "aum_usd_m": {
+        "low": 65000,
+        "mid": 71000,
+        "high": 78000
+      },
+      "is_partial_year": false,
+      "period_label": "FY2025",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S45",
+        "S44",
+        "S46",
+        "S47",
+        "S48",
+        "S49",
+        "S50",
+        "S51",
+        "S19",
+        "S20",
+        "S21",
+        "S30",
+        "S1",
+        "S42",
+        "S43"
+      ],
+      "notes": "Returns used: Composite +18.5%, Oculus +28.2% (Reuters/Bloomberg, people familiar; through July: 9.3%/9.6%). LCH single-year net gain $12.7bn, #3 (cumulative $79.9bn; 79.9-67.2=12.7 chain-checks). Derived: $12.7bn grossed up to ~$18.0bn for alternatives (press lens $18.5bn, 16-21). Gross-up: fee-paying share ~65-75% of alternatives capital (rest internal/employee capital, fee-free), blended performance fee ~30-33% (Composite 30% raised to 35% c.2022; Oculus 25% to 30%), management fee ~3% of fee-paying capital (ADV brochure maxima 3.5%/40%). Plus ~$22-25bn long-oriented book at equity-like returns, ~$4bn. Primary-lens model $24.4bn (21.4-27.8). No profits returned for 2025 (kept in funds), which helps explain capital rising from >$65bn (Mar) to >$70bn (Sep) and >$85bn (Dec-2025). LCH's end-2025 AUM of $72.4bn is a narrower scope. Regulatory AUM $213.4bn (FY2025 ADV) is leverage-inflated and not used. Founder income $2.0bn (cross-check). Headcount: website >2,500 to Dec-2025, >3,000 from Feb-2026; ADV US registrant 998 (subset)."
+    },
+    {
+      "year": 2026,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 3000,
+        "mid": 12000,
+        "high": 25000
+      },
+      "headcount": {
+        "low": 2950,
+        "mid": 3150,
+        "high": 3450
+      },
+      "aum_usd_m": {
+        "low": 85000,
+        "mid": 97000,
+        "high": 112000
+      },
+      "is_partial_year": true,
+      "period_label": "2026-01-01 to 2026-09-30 (estimated YTD; no reported 2026 return)",
+      "pnl_basis": "estimated",
+      "headcount_basis": "reported_primary",
+      "confidence": "low",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S22",
+        "S23",
+        "S67"
+      ],
+      "notes": "Returns used: none (no 2026 Composite or Oculus return or LCH figure in evidence). ESTIMATE for 2026-01-01 to 2026-09-30: ~$90bn average earning capital (website >$85bn Dec-2025, >$90bn Mar-2026, >$100bn Jun-2026, >$115bn Sep-1-2026 'investment and committed capital'; committed capital does not earn until called). Alternatives ~$55-60bn at an assumed ~20%/yr gross (long-run ~13% net grossed up) for 9 months = ~$8.7bn, plus ~$30-35bn long-only/privates (Rupak Ghose estimate ~$35bn) at an assumed ~10%/yr = ~$2.4bn. Mid ~$12bn with very wide bars. Primary-lens model $15.7bn (8.6-23.4). The +$15bn capital jump Jun-Sep 2026 may reflect strong gains, new private commitments or scope; not resolved. Headcount: latest known website figure >3,000 (live 2026-10-08)."
+    }
+  ],
+  "ytd_2026": {
+    "cutoff_date": "2026-09-30",
+    "period_label": "2026-01-01 to 2026-09-30 (estimated YTD; no reported 2026 return)",
+    "description": "ESTIMATED, NOT REPORTED. The evidence contains no 2026 Composite, Oculus or LCH figure. The latest capital datapoint is >$115bn 'investment and committed capital' as of 2026-09-01 and the latest headcount is >3,000 (deshaw.com, accessed 2026-10-08). PnL is ~9 months of assumed long-run gross returns on ~$90bn average earning capital: mid $12.0bn, 90% band $3.0-25.0bn."
+  },
+  "caveats": [
+    "Headcount trap: Form ADV Item 5A employee counts (FY2023 879, FY2024 928, FY2025 998) cover only the US registered adviser plus relying advisers and exclude D. E. Shaw India and other affiliates. Aggregators such as FINTRX repeat 998 as firm headcount. The group-wide website figure (~2,500 for 2024-2025, >3,000 in 2026) is used instead. Website figures are lower bounds that move in steps, and the Jun-to-Nov 2020 jump (>1,400 to >1,700) may be partly definitional.",
+    "Regulatory AUM ($77-128bn in 2015-2023, $154.6bn FY2024, $213.4bn FY2025) and Schedule D gross asset values (Composite $91bn, Oculus $56bn) are leverage-inflated, about 2.5-3x investment capital. They are never used as the capital base.",
+    "LCH figures are net of fees, are LCH estimates, and appear to cover only hedge funds/alternatives (2023's $4.2bn matches ~9% on ~$45bn of alternatives). They are grossed up, and long-oriented gains are added by model, so every PnL row is derived or estimated, never reported.",
+    "Single-year vs cumulative: $56.1bn (2023), $67.2bn (2024) and $79.9bn (2025) are LCH since-inception totals. TipRanks wrongly reports $56.1bn as 2023 profit; the single-year 2023 figure is $4.2bn.",
+    "Annual fund returns come from 'people familiar' (Bloomberg/Reuters), not firm disclosures. Many syndications recycle one report, and sources differ slightly (Composite 2021 18.5% vs 18.8%; 2022 24.6% vs 24.7%; Oculus 2022 20% vs 20.1%). Oculus 2020-2021 rests on a blog citing Bloomberg.",
+    "2015-2019 have no D. E. Shaw-specific return or gain data in the evidence. These rows are model estimates using assumed long-run fund returns and broad equity-market-like returns for the long book (an assumption from outside the evidence), so bars are wide.",
+    "The capital definition widened in 2018 to 'investment and committed capital', and the 2025-2026 jump (>$70bn to >$115bn) coincided with a redesigned page, retained 2025 profits and new launches. Since 2018 profits have been returned annually (virtually all of 2023, half of 2024, none of 2025), so capital-based estimates are sensitive to timing.",
+    "The gross-up assumptions (fee-paying share, Composite performance fee raised from 30% to 35% c.2022, Oculus from 25% to 30%, ~3% management fee) carry ~+/-15% uncertainty on the alternatives gross figure. The size and returns of the long-oriented/active-equity book (~$18-35bn) are not disclosed annually.",
+    "D. E. Shaw founder Rich List income ($900m 2022, $750m 2023, $1.6bn 2024, $2.0bn 2025; he owns ~70%) is a consistency cross-check only, not PnL."
+  ],
+  "overall_confidence": "low",
+  "open_questions": [
+    "Composite and Oculus net returns for 2015-2019 and LCH single-year net gains for 2015-2021, e.g. from early-January Bloomberg/Reuters articles and LCH tables (chain back from cumulative $51.9bn at end-2022).",
+    "Any 2026 YTD fund return (monthly/quarterly Bloomberg reports), and whether the Jun-Sep 2026 capital jump to >$115bn reflects gains, private commitments or scope.",
+    "Size and annual returns of the long-oriented/active-equity, multi-asset and private books (2018 split was $28bn alternatives / $22bn long-oriented; Rupak Ghose puts long-only plus privates ~$35bn in 2026).",
+    "Whether the website headcount includes D. E. Shaw Research, contractors or interns, and how large D. E. Shaw India is.",
+    "Share of internal/employee (fee-free) capital in the alternatives funds, which drives the gross-up.",
+    "LCH's end-2025 AUM of $72.4bn vs the firm's >$85bn, and an unverified LCH end-2024 AUM claim of $41.1bn."
+  ],
+  "changelog": [],
+  "review_status": "draft: synthesized from 2 of 4 search lenses without adversarial review (stopped early to save budget)",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Who We Are",
+      "publisher": "D. E. Shaw & Co. (deshaw.com)",
+      "url": "https://www.deshaw.com/who-we-are",
+      "date": "accessed 2026-10-08",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "headcount 3000 people (as of 2026-10-08 (website)); headcount 3000 people (site text Feb 2026 - Oct 2026 (live))"
+    },
+    {
+      "id": "S2",
+      "title": "D. E. Shaw - Investment Management page (live)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://www.deshaw.com/what-we-do/investment-management",
+      "date": "2026-10-08",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 115000 USD_m (as of 2026-09-01)"
+    },
+    {
+      "id": "S3",
+      "title": "What We Do",
+      "publisher": "D. E. Shaw & Co. (deshaw.com)",
+      "url": "https://www.deshaw.com/what-we-do",
+      "date": "accessed 2026-10-08 (figure as of 2026-09-01)",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 115 USD_bn (as of 2026-09-01)"
+    },
+    {
+      "id": "S4",
+      "title": "deshaw.com WhoWeAre.shtml (Wayback snapshot 20141215092651)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20141215092651/http://deshaw.com/WhoWeAre.shtml",
+      "date": "2014-12-15",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 34000 USD_m (as of 2014-10-01 (deshaw.com snapshot 2014-12-15)); headcount 1000 people (as of late 2014 (snapshot 2014-12-15))"
+    },
+    {
+      "id": "S5",
+      "title": "deshaw.com WhoWeAre.shtml (Wayback 20150409071440)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20150409071440/http://deshaw.com/WhoWeAre.shtml",
+      "date": "2015-04-09",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 36000 USD_m (as of 2015-03-01)"
+    },
+    {
+      "id": "S6",
+      "title": "deshaw.com WhoWeAre.shtml (Wayback 20151117140851)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20151117140851/http://deshaw.com/WhoWeAre.shtml",
+      "date": "2015-11-17",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 37000 USD_m (as of 2015-07-01)"
+    },
+    {
+      "id": "S7",
+      "title": "deshaw.com WhoWeAre.shtml (Wayback 20160620214535)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20160620214535/http://deshaw.com/WhoWeAre.shtml",
+      "date": "2016-06-20",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 37000 USD_m (as of 2016-03-01)"
+    },
+    {
+      "id": "S8",
+      "title": "deshaw.com WhoWeAre.shtml (Wayback 20161107181136)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20161107181136/http://deshaw.com/WhoWeAre.shtml",
+      "date": "2016-11-07",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 40000 USD_m (as of 2016-10-01)"
+    },
+    {
+      "id": "S9",
+      "title": "deshaw.com WhoWeAre.shtml (Wayback 20170706081522)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20170706081522/http://deshaw.com/WhoWeAre.shtml",
+      "date": "2017-07-06",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 42000 USD_m (as of 2017-04-01)"
+    },
+    {
+      "id": "S10",
+      "title": "deshaw.com WhoWeAre.shtml (Wayback 20171203183434)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20171203183434/http://deshaw.com/WhoWeAre.shtml",
+      "date": "2017-12-03",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 43000 USD_m (as of 2017-07-01)"
+    },
+    {
+      "id": "S11",
+      "title": "deshaw.com/what-we-do/investment-approach (Wayback 20190328061124)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20190328061124/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2019-03-28",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 50000 USD_m (as of 2018-12-01)"
+    },
+    {
+      "id": "S12",
+      "title": "deshaw.com investment-approach (Wayback 20191206202704)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20191206202704/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2019-12-06",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 50000 USD_m (as of 2019-09-01)"
+    },
+    {
+      "id": "S13",
+      "title": "deshaw.com investment-approach (Wayback 20200604162533; 20201031070544)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20201031070544/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2020-10-31",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 50000 USD_m (as of 2020-04-01 and 2020-09-01)"
+    },
+    {
+      "id": "S14",
+      "title": "deshaw.com investment-approach (Wayback 20210216153945)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20210216153945/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2021-02-16",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 55000 USD_m (as of 2020-12-01)"
+    },
+    {
+      "id": "S15",
+      "title": "deshaw.com investment-approach (Wayback 20211202002427)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20211202002427/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2021-12-02",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 60000 USD_m (as of 2021-09-01)"
+    },
+    {
+      "id": "S16",
+      "title": "deshaw.com investment-approach (Wayback 20220523233756; 20221209053803)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20221209053803/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2022-12-09",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 60000 USD_m (as of 2022-03-01 and 2022-09-01)"
+    },
+    {
+      "id": "S17",
+      "title": "deshaw.com investment-approach (Wayback 20230520012325; 20230917203453; 20231207181818)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20231207181818/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2023-12-07",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 60000 USD_m (as of 2023-03-01 / 06-01 / 09-01)"
+    },
+    {
+      "id": "S18",
+      "title": "deshaw.com investment-approach (Wayback 20240530000222; 20241204024601)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20241204024601/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2024-12-04",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 60000 USD_m (as of 2024-03-01 and 2024-09-01)"
+    },
+    {
+      "id": "S19",
+      "title": "deshaw.com investment-approach (Wayback 20250605001214)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20250605001214/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2025-06-05",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 65000 USD_m (as of 2025-03-01)"
+    },
+    {
+      "id": "S20",
+      "title": "deshaw.com investment-approach (Wayback 20251216114610)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20251216114610/https://www.deshaw.com/what-we-do/investment-approach",
+      "date": "2025-12-16",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 70000 USD_m (as of 2025-09-01)"
+    },
+    {
+      "id": "S21",
+      "title": "deshaw.com/what-we-do/investment-management (Wayback 20260113175755)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20260113175755/https://www.deshaw.com/what-we-do/investment-management",
+      "date": "2026-01-13",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 85000 USD_m (as of 2025-12-01)"
+    },
+    {
+      "id": "S22",
+      "title": "deshaw.com investment-management (Wayback 20260402163739)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20260402163739/https://www.deshaw.com/what-we-do/investment-management",
+      "date": "2026-04-02",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 90000 USD_m (as of 2026-03-01)"
+    },
+    {
+      "id": "S23",
+      "title": "deshaw.com investment-management (Wayback 20260828181817)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20260828181817/https://www.deshaw.com/what-we-do/investment-management",
+      "date": "2026-08-28",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "aum 100000 USD_m (as of 2026-06-01)"
+    },
+    {
+      "id": "S24",
+      "title": "deshaw.com/who-we-are (Wayback 20181012124851; 20190328061138)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20181012124851/https://www.deshaw.com/who-we-are",
+      "date": "2018-10-12",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "headcount 1200 people (site text Oct 2018 - Mar 2019)"
+    },
+    {
+      "id": "S25",
+      "title": "deshaw.com/who-we-are (Wayback 20191206203432)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20191206203432/https://www.deshaw.com/who-we-are",
+      "date": "2019-12-06",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "headcount 1300 people (site text Dec 2019)"
+    },
+    {
+      "id": "S26",
+      "title": "deshaw.com/who-we-are (Wayback 20200604142202)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20200604142202/https://www.deshaw.com/who-we-are",
+      "date": "2020-06-04",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "headcount 1400 people (site text Jun 2020)"
+    },
+    {
+      "id": "S27",
+      "title": "deshaw.com/who-we-are (Wayback 20201126035609; 20210301153443; 20210623021836)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20201126035609/https://www.deshaw.com/who-we-are",
+      "date": "2020-11-26",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "headcount 1700 people (site text Nov 2020 - Jun 2021)"
+    },
+    {
+      "id": "S28",
+      "title": "deshaw.com/who-we-are (Wayback 20211202003239; 20220516061317; 20220914174700)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20211202003239/https://www.deshaw.com/who-we-are",
+      "date": "2021-12-02",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "headcount 1900 people (site text Dec 2021 - Sep 2022)"
+    },
+    {
+      "id": "S29",
+      "title": "deshaw.com/who-we-are (Wayback 20221205181054; 20230322215715; 20230928141832)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20221205181054/https://www.deshaw.com/who-we-are",
+      "date": "2022-12-05",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "headcount 2000 people (site text Dec 2022 - Sep 2023)"
+    },
+    {
+      "id": "S30",
+      "title": "deshaw.com/who-we-are (Wayback 20240304081323 ... 20251216114416)",
+      "publisher": "D. E. Shaw group",
+      "url": "https://web.archive.org/web/20240304081323/https://www.deshaw.com/who-we-are",
+      "date": "2024-03-04",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "headcount 2500 people (site text Mar 2024 - Dec 2025)"
+    },
+    {
+      "id": "S31",
+      "title": "SEC Registered Investment Adviser Report 2015-06-01 (Form ADV Item 5A extract)",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/data/frequently-requested-foia-document-information-about-registered-investment-advisers-and-exempt/ia060115.zip",
+      "date": "2015-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 461 people (FY2014 (Form ADV annual amendment filed 2015-05-01)); aum 84647.8 USD_m (as of FY-end 2014); headcount 91 people (FY2014)"
+    },
+    {
+      "id": "S32",
+      "title": "SEC Registered Investment Adviser Report 2016-06-01",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/data/frequently-requested-foia-document-information-about-registered-investment-advisers-and-exempt/ia060116.zip",
+      "date": "2016-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 435 people (FY2015 (ADV filed 2016-03-30)); aum 85143.1 USD_m (as of FY-end 2015)"
+    },
+    {
+      "id": "S33",
+      "title": "SEC IA data ia060117",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/data/frequently-requested-foia-document-information-about-registered-investment-advisers-and-exempt/ia060117.zip",
+      "date": "2017-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 473 people (FY2016 (ADV filed 2017-05-05)); aum 81316.8 USD_m (as of FY-end 2016)"
+    },
+    {
+      "id": "S34",
+      "title": "SEC Registered Investment Adviser Report 2018-6-1",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060118.zip",
+      "date": "2018-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 521 people (FY2017 (ADV filed 2018-05-30)); aum 80097.2 USD_m (as of FY-end 2017)"
+    },
+    {
+      "id": "S35",
+      "title": "SEC Registered Investment Adviser Report 2019-06-03",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060319-1.zip",
+      "date": "2019-06-03",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 576 people (FY2018 (ADV filed 2019-03-28)); aum 77143 USD_m (as of FY-end 2018)"
+    },
+    {
+      "id": "S36",
+      "title": "SEC IA data ia060120",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060120.zip",
+      "date": "2020-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 628 people (FY2019 (ADV filed 2020-03-30)); aum 82122 USD_m (as of FY-end 2019)"
+    },
+    {
+      "id": "S37",
+      "title": "SEC IA data ia060121",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060121.zip",
+      "date": "2021-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 699 people (FY2020 (ADV filed by 2021-05-28)); aum 111937 USD_m (as of FY-end 2020)"
+    },
+    {
+      "id": "S38",
+      "title": "SEC IA data ia060122",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-and-exempt-reporting-advisers/ia060122.zip",
+      "date": "2022-06-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 705 people (FY2021 (ADV filed 2022-03-31)); aum 128024 USD_m (as of FY-end 2021)"
+    },
+    {
+      "id": "S39",
+      "title": "SEC IA data ia060223.xlsx",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-exempt-reporting-advisers/ia060223.xlsx",
+      "date": "2023-06-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 759 people (FY2022 (ADV filed 2023-05-17)); aum 109282 USD_m (as of FY-end 2022)"
+    },
+    {
+      "id": "S40",
+      "title": "SEC IA data ia060524.xlsx",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-exempt-reporting-advisers/ia060524.xlsx",
+      "date": "2024-06-05",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 879 people (FY2023 (ADV filed 2024-04-01)); aum 120475 USD_m (as of FY-end 2023)"
+    },
+    {
+      "id": "S41",
+      "title": "SEC IA data ia060225.xlsx",
+      "publisher": "U.S. SEC",
+      "url": "https://www.sec.gov/files/investment/data/information-about-registered-investment-advisers-exempt-reporting-advisers/ia060225.xlsx",
+      "date": "2025-06-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 928 people (FY2024 (ADV filed 2025-03-31)); aum 154587 USD_m (as of FY-end 2024)"
+    },
+    {
+      "id": "S42",
+      "title": "Form ADV Part 1A, D. E. Shaw & Co., L.P. (IAPD PDF); SEC IA data ia060126 / ia09012026",
+      "publisher": "U.S. SEC (IAPD)",
+      "url": "https://reports.adviserinfo.sec.gov/reports/ADV/108679/PDF/108679.pdf",
+      "date": "2026-08-14",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "headcount 998 people (FY2025 (annual ADV filed 2026-03-31; repeated in amendment of 2026-08-14)); aum 213365 USD_m (as of FY-end 2025); other 90958.3 USD_m (current gross asset value at FY2025 ADV)"
+    },
+    {
+      "id": "S43",
+      "title": "Form ADV Part 2A Brochure, Item 5 Fees and Compensation",
+      "publisher": "U.S. SEC (IAPD)",
+      "url": "https://files.adviserinfo.sec.gov/IAPD/Content/Common/crd_iapd_Brochure.aspx?BRCHR_VRSN_ID=1054880",
+      "date": "2026-08-14",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "other 3.5 pct (current (brochure dated 2026-08-14))"
+    },
+    {
+      "id": "S44",
+      "title": "Best Performing Hedge Funds Of Q1 2026 And 2025 (citing Edmond de Rothschild / LCH estimates)",
+      "publisher": "Hedge Fund Alpha (ValueWalk)",
+      "url": "https://hedgefundalpha.com/news/best-performing-hedge-funds/",
+      "date": "2026-05-28",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "investor_net_gains 12.7 USD_bn (FY2025); other 79.9 USD_bn (as of 2025-12-31 (cumulative since 1988)); aum 72.4 USD_bn (as of 2025-12-31)"
+    },
+    {
+      "id": "S45",
+      "title": "Chris Hohn's TCI Tops Hedge Fund Gains in 2025",
+      "publisher": "Institutional Investor (LCH Investments)",
+      "url": "https://www.institutionalinvestor.com/article/chris-hohns-tci-tops-hedge-fund-gains-2025",
+      "date": "2026-01",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "investor_net_gains 12700 USD_m (FY2025)"
+    },
+    {
+      "id": "S46",
+      "title": "D.E. Shaw's flagship funds trump market volatility to beat S&P 500 in 2025, source says (Reuters)",
+      "publisher": "Reuters (syndicated by WMBD)",
+      "url": "https://wmbdradio.com/2026/01/02/d-e-shaws-flagship-funds-trump-market-volatility-to-beat-sp-500-in-2025-source-says/",
+      "date": "2026-01-02",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "aum 85 USD_bn (as of 2025-12-01); net_return_pct 18.5 pct (FY2025)"
+    },
+    {
+      "id": "S47",
+      "title": "Bridgewater, D.E. Shaw Among Top Hedge Fund Gainers of 2025",
+      "publisher": "Bloomberg (via Bloomberg Law)",
+      "url": "https://news.bloomberglaw.com/international-trade/bridgewater-d-e-shaw-among-biggest-hedge-fund-gainers-in-2025",
+      "date": "2026-01-02",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "net_return_pct 28.2 pct (FY2025)"
+    },
+    {
+      "id": "S48",
+      "title": "Top hedge fund performers 2025 (Fortune/Bloomberg); II Rich List 25th; Hedgeweek",
+      "publisher": "Fortune / Institutional Investor / Hedgeweek (citing Bloomberg)",
+      "url": "https://fortune.com/2026/01/02/top-hedge-fund-performers-2025-bridgewater-de-shaw-citadel-millennium/",
+      "date": "2026-01-02",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "net_return_pct 18.5 pct (FY2025)"
+    },
+    {
+      "id": "S49",
+      "title": "DE Shaw's Oculus fund rallies in final week of July",
+      "publisher": "Hedgeweek (citing Bloomberg / investor letter)",
+      "url": "https://www.hedgeweek.com/de-shaws-oculus-fund-rallies-in-final-week-of-july/",
+      "date": "2025-08-11",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "net_return_pct 9.3 pct (YTD through end-July 2025); net_return_pct 9.6 pct (YTD through end-July 2025); aum 60 USD_bn (as of Aug 2025)"
+    },
+    {
+      "id": "S50",
+      "title": "The Rich List: Institutional Investor's 25th Annual Ranking of the Highest-Earning Hedge Fund Managers",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/hedge-funds/rich-list-institutional-investors-25th-annual-ranking-highest-earning-hedge",
+      "date": "2026-03-26",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "other 2 USD_bn (FY2025); net_return_pct 28.2 pct (FY2025)"
+    },
+    {
+      "id": "S51",
+      "title": "D.E. Shaw halts profit returns to clients despite strong 2025 gains",
+      "publisher": "Investing.com (summarising Bloomberg)",
+      "url": "https://www.investing.com/news/stock-market-news/de-shaw-halts-profit-returns-to-clients-despite-strong-2025-gains-93CH-4427520",
+      "date": "2026-01-02",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "other 2 USD_bn (FY2020); other 2000 USD_m (2020 (Covid))"
+    },
+    {
+      "id": "S52",
+      "title": "D.E. Shaw Tops a 2024 Hedge Fund Ranking",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2eaxu6g8f1zzvc4ipdc74/hedge-funds/d-e-shaw-tops-a-2024-hedge-fund-ranking",
+      "date": "2025-01 (exact day not captured; LCH table released ~2025-01-19/20)",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "investor_net_gains 11.1 USD_bn (FY2024); other 67.2 USD_bn (as of 2024-12-31 (cumulative)); net_return_pct 36.1 pct (FY2024); investor_net_gains 11100 USD_m (FY2024)"
+    },
+    {
+      "id": "S53",
+      "title": "D.E. Shaw plans to return billions following high hedge fund gains",
+      "publisher": "Investing.com (summarising Bloomberg)",
+      "url": "https://www.investing.com/news/stock-market-news/de-shaw-plans-to-return-billions-following-high-hedge-fund-gains-93CH-3793780",
+      "date": "2025-01-02",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "net_return_pct 18 pct (FY2024); aum 65 USD_bn (as of early Jan 2025)"
+    },
+    {
+      "id": "S54",
+      "title": "The Rich List: The 24th Annual Ranking of the Highest-Earning Hedge Fund Managers",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2ekchq8rll8mbbn2glq80/hedge-funds/the-rich-list-the-24th-annual-ranking-of-the-highest-earning-hedge-fund-managers",
+      "date": "2025-03-21",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "other 1.6 USD_bn (FY2024); net_return_pct 18 pct (FY2024); net_return_pct 36.1 pct (FY2024)"
+    },
+    {
+      "id": "S55",
+      "title": "How D.E. Shaw's Oculus Fund Made a 36% Return in 2024 (citing Bloomberg data)",
+      "publisher": "Disruption Banking",
+      "url": "https://www.disruptionbanking.com/2025/01/09/how-d-e-shaws-oculus-fund-made-a-36-return-in-2024/",
+      "date": "2025-01-09",
+      "type": "aggregator_or_blog",
+      "reliability": "medium",
+      "supports": "net_return_pct 15 pct (FY2021); net_return_pct 25 pct (FY2020)"
+    },
+    {
+      "id": "S56",
+      "title": "Top global hedge funds tripled gains for clients in 2023, LCH finds (Reuters)",
+      "publisher": "Reuters via Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/top-global-hedge-funds-tripled-gains-for-clients-in-2023-lch-finds-3279045",
+      "date": "2024-01-21",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "investor_net_gains 4.2 USD_bn (FY2023)"
+    },
+    {
+      "id": "S57",
+      "title": "Ken Griffin Is the Top Money Manager - Again",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2cqvcuzt7kd6hdnsys2yo/portfolio/ken-griffin-is-the-top-money-manager-again",
+      "date": "2024-01-22",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "other 56.1 USD_bn (as of 2023-12-31 (cumulative)); investor_net_gains 4200 USD_m (FY2023 (calendar)); other 56100 USD_m (since inception through 2023-12-31)"
+    },
+    {
+      "id": "S58",
+      "title": "D.E. Shaw's biggest hedge fund up about 10% in 2023 - source (Reuters)",
+      "publisher": "Reuters via Investing.com",
+      "url": "https://investing.com/news/economy/de-shaws-biggest-hedge-fund-up-about-10-in-2023--source-3265701",
+      "date": "2024-01-02",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "net_return_pct 9.6 pct (FY2023); net_return_pct 7.8 pct (FY2023)"
+    },
+    {
+      "id": "S59",
+      "title": "How D.E. Shaw Performed in 2023",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2cnvua4jp2dt6lp7yboqo/portfolio/how-d-e-shaw-performed-in-2023",
+      "date": "2024-01-02",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "net_return_pct 24.6 pct (FY2022); net_return_pct 9.6 pct (FY2023); net_return_pct 20.1 pct (FY2022); net_return_pct 7.8 pct (FY2023)"
+    },
+    {
+      "id": "S60",
+      "title": "How D.E. Shaw performed in 2023",
+      "publisher": "Institutional Investor",
+      "url": "https://inv.institutionalinvestor.com/article/2cnvua4jp2dt6lp7yboqo/portfolio/how-d-e-shaw-performed-in-2023",
+      "date": "2024-01",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "aum 60 USD_bn (as of Jan 2024)"
+    },
+    {
+      "id": "S61",
+      "title": "The 23rd Annual Ranking of the Highest-Earning Hedge Fund Managers",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2d0quhk4ghsahyyia26m8/corner-office/the-23nd-annual-ranking-of-the-highest-earning-hedge-fund-managers",
+      "date": "2024-03-27",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "other 750 USD_m (FY2023)"
+    },
+    {
+      "id": "S62",
+      "title": "Great Money Managers - LCH Investments",
+      "publisher": "Hedge Fund Alpha (LCH investor letter)",
+      "url": "https://hedgefundalpha.com/investor-letters/great-money-managers-lch-investments/",
+      "date": "2024-01-21",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "investor_net_gains 71.2 USD_bn (FY2021-FY2023 cumulative)"
+    },
+    {
+      "id": "S63",
+      "title": "The Rich List: The 22nd Annual Ranking of the Highest-Earning Hedge Fund Managers",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2bstpd4t08pc8xwj4we80/corner-office/the-rich-list-the-22nd-annual-ranking-of-the-highest-earning-hedge-fund-managers",
+      "date": "2023-03-07",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "investor_net_gains 8.2 USD_bn (FY2022); aum 60 USD_bn (as of early 2023); other 900 USD_m (FY2022)"
+    },
+    {
+      "id": "S64",
+      "title": "Flagship DE Shaw hedge fund chalks 24.7% gain in 2022",
+      "publisher": "Hedgeweek (citing Reuters)",
+      "url": "https://www.hedgeweek.com/flagship-de-shaw-hedge-fund-chalks-247-gain-2022/",
+      "date": "2023-01-04",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "net_return_pct 24.7 pct (FY2022); net_return_pct 20 pct (FY2022); net_return_pct 18.8 pct (FY2021)"
+    },
+    {
+      "id": "S65",
+      "title": "D.E. Shaw's Two Largest Funds Saw Gains in 2021",
+      "publisher": "Institutional Investor",
+      "url": "https://www.institutionalinvestor.com/article/2bstolshmelxxynrefe9s/portfolio/d-e-shaws-two-largest-funds-saw-gains-in-2021",
+      "date": "2022-01",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "net_return_pct 18.5 pct (FY2021); aum 60 USD_bn (as of Jan 2022)"
+    },
+    {
+      "id": "S66",
+      "title": "Citadel, Millennium, D.E. Shaw Post 20%-Plus Returns in '20 (FundFire repost)",
+      "publisher": "FundFire (Financial Times group), reposted by Clearbrook",
+      "url": "https://www.clearbrookglobal.com/citadel-millennium-d-e-shaw-post-20-plus-returns-in-20/",
+      "date": "2021-01-22",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "net_return_pct 19.4 pct (FY2020); net_return_pct 25.4 pct (FY2020); aum 55 USD_bn (as of 2020-12-01)"
+    },
+    {
+      "id": "S67",
+      "title": "Is D.E. Shaw from Mars and Two Sigma from Venus? (quoting deshaw.com)",
+      "publisher": "Rupak Ghose (Substack)",
+      "url": "https://rupakghose.substack.com/p/is-de-shaw-from-mars-and-two-sigma",
+      "date": "2026",
+      "type": "aggregator_or_blog",
+      "reliability": "medium",
+      "supports": "aum 100 USD_bn (as of 2026-06-01)"
+    }
+  ]
+}
