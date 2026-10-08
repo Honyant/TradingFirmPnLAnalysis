@@ -1,0 +1,708 @@
+<title>PnL per Head Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: one research column (max 1180px). Masthead, control rail, forest plot as the hero, trajectory, small multiples, firm ledger, method notes. */
+:root {
+  --bg: #f1f3f5; --surface: #fdfdfc; --ink: #0f1720; --ink-2: #465160; --muted: #737d8b;
+  --grid: #e3e7eb; --axis: #c3cad2; --hair: rgba(15, 23, 32, .10);
+  --accent: #2a78d6; --accent-ink: #1c5cab; --wash: rgba(42, 120, 214, .13); --sel: rgba(42, 120, 214, .07);
+  --context: #c4cbd3; --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a;
+  --good: #0ca30c; --warn: #fab219; --serious: #ec835a; --crit: #d03b3b;
+  --chip: #e7ebef; --tip-bg: #0f1720; --tip-ink: #f3f5f7;
+  --f-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0f13; --surface: #12181e; --ink: #eef2f5; --ink-2: #b3bcc6; --muted: #8a939e;
+    --grid: #222a32; --axis: #36404b; --hair: rgba(255, 255, 255, .10);
+    --accent: #3987e5; --accent-ink: #86b6ef; --wash: rgba(57, 135, 229, .20); --sel: rgba(57, 135, 229, .10);
+    --context: #3b4551; --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+    --chip: #1b232b; --tip-bg: #eef2f5; --tip-ink: #0f1720; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b0f13; --surface: #12181e; --ink: #eef2f5; --ink-2: #b3bcc6; --muted: #8a939e;
+  --grid: #222a32; --axis: #36404b; --hair: rgba(255, 255, 255, .10);
+  --accent: #3987e5; --accent-ink: #86b6ef; --wash: rgba(57, 135, 229, .20); --sel: rgba(57, 135, 229, .10);
+  --context: #3b4551; --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+  --chip: #1b232b; --tip-bg: #eef2f5; --tip-ink: #0f1720; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 15px/1.55 var(--f-body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; display: grid; gap: 40px; }
+@media (max-width: 520px) { .wrap { padding-inline: 16px; gap: 32px; } }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; letter-spacing: -.01em; }
+h2 { font-size: 1.45rem; font-weight: 700; font-stretch: 88%; }
+h3 { font-size: 1.15rem; font-weight: 700; }
+p { margin: 0; }
+a { color: var(--accent-ink); }
+button, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.num, .mono { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+
+/* masthead */
+.mast { display: grid; gap: 14px; padding-block-end: 22px; border-bottom: 1px solid var(--hair); }
+.eyebrow { font: 500 .74rem/1 var(--f-data); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.mast h1 { font-size: clamp(2.4rem, 6.4vw, 4.4rem); font-weight: 800; font-stretch: 116%; line-height: .95; letter-spacing: -.025em; }
+.mast h1 .slash { color: var(--accent); font-weight: 500; }
+.dek { max-width: 66ch; color: var(--ink-2); font-size: 1.02rem; }
+.status { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 4px 0 0; }
+.status div { display: grid; gap: 2px; min-width: 0; }
+.status dt { font: 500 .68rem/1.2 var(--f-data); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.status dd { margin: 0; font: 500 .92rem/1.3 var(--f-data); }
+
+/* controls */
+.controls { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: end; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--hair); }
+@media (max-width: 600px) { .controls { position: static; gap: 10px 14px; } }
+.ctl { display: grid; gap: 5px; }
+.ctl > span { font: 500 .66rem/1 var(--f-data); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.seg { display: inline-flex; background: var(--chip); border-radius: 7px; padding: 2px; gap: 2px; }
+.seg button { border: 0; background: transparent; padding: 5px 10px; border-radius: 5px; cursor: pointer; font-size: .84rem; color: var(--ink-2); white-space: nowrap; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); font-weight: 600; box-shadow: 0 1px 2px var(--hair); }
+.seg button:hover:not([aria-pressed="true"]) { color: var(--ink); }
+select { background: var(--surface); border: 1px solid var(--axis); border-radius: 6px; padding: 4px 8px; font-size: .86rem; }
+
+/* sections */
+section { display: grid; gap: 14px; min-width: 0; }
+.sec-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 18px; }
+.sec-sub { color: var(--ink-2); font-size: .92rem; max-width: 72ch; }
+.panel { background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; padding: 16px; min-width: 0; }
+.chart { width: 100%; min-width: 0; position: relative; }
+.chart svg { display: block; overflow: visible; }
+.note { font-size: .82rem; color: var(--muted); }
+
+/* KPI strip */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+@media (max-width: 600px) { .kpis { grid-template-columns: 1fr 1fr; gap: 8px; } .kpi .v { font-size: 1.25rem; } }
+.kpi { display: grid; gap: 4px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; min-width: 0; }
+.kpi .k { font-size: .8rem; color: var(--ink-2); }
+.kpi .v { font: 600 1.55rem/1.15 var(--f-body); }
+.kpi .r { font: 400 .78rem/1.3 var(--f-data); color: var(--muted); }
+
+/* svg text + marks */
+.t-label { fill: var(--ink); font: 500 13px var(--f-body); }
+.t-sub { fill: var(--ink-2); font: 400 12px var(--f-body); }
+.t-val { fill: var(--ink); font: 500 12px var(--f-data); }
+.t-rng { fill: var(--muted); font: 400 11px var(--f-data); }
+.t-axis { fill: var(--muted); font: 400 11px var(--f-data); }
+.t-end { fill: var(--ink); font: 600 12px var(--f-body); }
+.gridline { stroke: var(--grid); stroke-width: 1; }
+.zeroline { stroke: var(--axis); stroke-width: 1; }
+.row-hit { fill: transparent; cursor: pointer; }
+.row-hit.on { fill: var(--sel); }
+.whisk { stroke: var(--accent); stroke-width: 2; stroke-linecap: round; }
+.whisk.est { stroke-opacity: .55; }
+.dot { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+.dot.hollow { fill: var(--surface); stroke: var(--accent); stroke-width: 2; }
+.ctx { fill: none; stroke: var(--context); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.ctx-hit { fill: none; stroke: transparent; stroke-width: 12; cursor: pointer; }
+.selline { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.dash { stroke-dasharray: 4 4; }
+.band { fill: var(--wash); stroke: none; }
+.cross { stroke: var(--axis); stroke-width: 1; }
+.overlay { fill: transparent; }
+
+/* chips */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--hair); background: var(--surface); border-radius: 999px; padding: 3px 10px; cursor: pointer; font-size: .82rem; color: var(--ink-2); }
+.chip::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--context); }
+.chip[aria-pressed="true"] { color: var(--ink); border-color: var(--accent); font-weight: 600; }
+.chip[aria-pressed="true"]::before { background: var(--accent); }
+
+/* small multiples */
+.sm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.sm { display: grid; gap: 4px; padding: 12px 12px 8px; background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; cursor: pointer; min-width: 0; text-align: left; }
+.sm.on { border-color: var(--accent); }
+.sm-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.sm-h b { font: 600 .92rem/1.2 var(--f-body); }
+.sm-h span { font: 500 .8rem/1.2 var(--f-data); color: var(--ink-2); white-space: nowrap; }
+.sm-leg { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: .72rem; color: var(--ink-2); }
+.sm-leg i { display: inline-block; width: 10px; height: 2px; vertical-align: middle; margin-right: 4px; }
+.toggle { display: inline-flex; align-items: center; gap: 6px; font-size: .84rem; color: var(--ink-2); cursor: pointer; }
+
+/* ledger */
+.ledger-head { display: grid; gap: 8px; }
+.ledger-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+.ledger-title h3 { font-size: 1.6rem; font-stretch: 100%; }
+.pill { display: inline-flex; align-items: center; gap: 5px; font: 500 .72rem/1 var(--f-data); padding: 4px 8px; border-radius: 999px; background: var(--chip); color: var(--ink-2); white-space: nowrap; }
+.pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.pill.high::before { background: var(--good); }
+.pill.medium::before { background: var(--warn); }
+.pill.low::before { background: var(--serious); }
+.pill.plain::before { display: none; }
+.defs { display: grid; grid-template-columns: minmax(110px, max-content) 1fr; gap: 6px 16px; margin: 0; font-size: .88rem; }
+.defs dt { color: var(--muted); font: 500 .7rem/1.6 var(--f-data); letter-spacing: .08em; text-transform: uppercase; }
+.defs dd { margin: 0; color: var(--ink-2); min-width: 0; }
+@media (max-width: 560px) { .defs { grid-template-columns: 1fr; } .defs dd { margin-bottom: 6px; } }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--hair); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+th, td { padding: 8px 10px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--hair); }
+th { font: 500 .68rem/1.3 var(--f-data); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); background: var(--surface); position: sticky; top: 0; }
+td.n { font-family: var(--f-data); font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.n small { display: block; color: var(--muted); font-size: .74rem; }
+tr:last-child td { border-bottom: 0; }
+.bchip { display: inline-block; font: 500 .68rem/1 var(--f-data); padding: 3px 6px; border-radius: 4px; background: var(--chip); color: var(--ink-2); margin: 0 4px 4px 0; white-space: nowrap; }
+.bchip.rep { background: var(--wash); color: var(--accent-ink); }
+.srcref { font: 500 .74rem var(--f-data); margin-right: 4px; cursor: pointer; }
+td.notes { min-width: 260px; max-width: 520px; color: var(--ink-2); }
+details summary { cursor: pointer; color: var(--accent-ink); font-size: .8rem; }
+details[open] summary { margin-bottom: 4px; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px 28px; }
+.cols ul, .method ul { margin: 6px 0 0; padding-left: 18px; color: var(--ink-2); font-size: .88rem; display: grid; gap: 5px; }
+.srclist { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; font-size: .84rem; }
+.srclist li { display: grid; grid-template-columns: 44px 1fr; gap: 8px; padding: 6px 8px; border-radius: 6px; min-width: 0; }
+.srclist li.flash { background: var(--sel); }
+.srclist .sid { font: 500 .78rem var(--f-data); color: var(--muted); }
+.srclist .meta { color: var(--muted); font-size: .76rem; }
+.srclist a { word-break: break-word; }
+
+/* method */
+.method { display: grid; gap: 18px; }
+.method p { color: var(--ink-2); max-width: 72ch; font-size: .93rem; }
+.formula { font: 400 .84rem/1.6 var(--f-data); background: var(--surface); border: 1px solid var(--hair); border-radius: 8px; padding: 10px 14px; overflow-x: auto; color: var(--ink); }
+footer { color: var(--muted); font-size: .8rem; border-top: 1px solid var(--hair); padding-top: 14px; }
+
+/* tooltip */
+.tip { position: fixed; z-index: 20; pointer-events: none; background: var(--tip-bg); color: var(--tip-ink); border-radius: 8px; padding: 9px 11px; font-size: .8rem; max-width: 300px; box-shadow: 0 6px 24px rgba(0, 0, 0, .25); display: grid; gap: 3px; }
+.tt-h { font-weight: 600; margin-bottom: 3px; }
+.tt-r { display: grid; grid-template-columns: 74px auto 1fr; gap: 8px; align-items: baseline; }
+.tt-r span { opacity: .75; }
+.tt-r b { font: 600 .8rem var(--f-data); }
+.tt-r i { font: 400 .74rem var(--f-data); opacity: .75; font-style: normal; }
+.tt-f { opacity: .75; font-size: .74rem; margin-top: 3px; }
+@media (prefers-reduced-motion: no-preference) { .sm, .chip, .seg button { transition: border-color .15s, background-color .15s, color .15s; } }
+</style>
+
+<div class="wrap" id="app">
+  <header class="mast">
+    <div class="eyebrow">Eleven quantitative trading firms · 2015 to 2026 YTD</div>
+    <h1>PnL <span class="slash">/</span> head</h1>
+    <p class="dek">How much trading profit each firm produces per employee, year by year, with 90% error bars on every figure. Built from filings, rating-agency and press reports, each firm researched by independent search agents and attacked by adversarial verifiers before it landed here.</p>
+    <dl class="status" id="status"></dl>
+  </header>
+
+  <nav class="controls" aria-label="Chart controls">
+    <div class="ctl"><span>Metric</span><div class="seg" data-key="metric">
+      <button type="button" data-val="ph">PnL per head</button><button type="button" data-val="pnl">PnL</button><button type="button" data-val="hc">Headcount</button></div></div>
+    <div class="ctl"><span>Year</span><select id="year" aria-label="Year"></select></div>
+    <div class="ctl"><span>Error bars</span><div class="seg" data-key="err">
+      <button type="button" data-val="quad">Combined 90%</button><button type="button" data-val="worst">Worst case</button></div></div>
+    <div class="ctl"><span>2026</span><div class="seg" data-key="ytd">
+      <button type="button" data-val="ytd">Year to date</button><button type="button" data-val="ann">Annualized</button></div></div>
+    <div class="ctl"><span>Scale</span><div class="seg" data-key="scale">
+      <button type="button" data-val="linear">Linear</button><button type="button" data-val="log">Log</button></div></div>
+  </nav>
+
+  <section id="overview" aria-labelledby="ov-title">
+    <div class="sec-head"><h2 id="ov-title">PnL per head</h2><p class="sec-sub" id="ov-sub"></p></div>
+    <div class="kpis" id="kpis"></div>
+    <div class="panel"><div id="forest" class="chart" role="img" aria-label="Ranked firm values with 90% intervals"></div>
+      <p class="note" style="margin-top:10px">Filled dot: figure reported in a filing or by the press. Hollow dot and faded whisker: estimated or derived. Whisker: 90% interval. Click a row to open that firm below.</p></div>
+  </section>
+
+  <section id="trajectory" aria-labelledby="tr-title">
+    <div class="sec-head"><h2 id="tr-title">Trajectory</h2><p class="sec-sub">Pick a firm to highlight it against the other ten. The shaded band is its 90% interval; the dashed segment leads into 2026 year-to-date.</p></div>
+    <div class="chips" id="chips" aria-label="Highlight a firm"></div>
+    <div class="panel"><div id="traj" class="chart"></div></div>
+  </section>
+
+  <section id="multiples" aria-labelledby="sm-title">
+    <div class="sec-head"><h2 id="sm-title">Every firm on its own scale</h2>
+      <label class="toggle"><input type="checkbox" id="shared"> Use one shared scale</label></div>
+    <div class="sm-grid" id="sm"></div>
+  </section>
+
+  <section id="ledger" aria-labelledby="lg-title">
+    <div class="sec-head"><h2 id="lg-title">Firm ledger</h2><p class="sec-sub">Every year, every band, every source. Select a firm with the chips above, a chart row, or a panel.</p></div>
+    <div id="ledger-body" class="method"></div>
+  </section>
+
+  <section id="method" aria-labelledby="m-title">
+    <div class="sec-head"><h2 id="m-title">How the numbers were built</h2></div>
+    <div class="method" id="method-body"></div>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+<div id="tip" class="tip" hidden></div>
+
+<script id="data" type="application/json">/*__DATA__*/{}</script>
+<script>
+(() => {
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const YEARS = D.years;
+  const NS = 'http://www.w3.org/2000/svg';
+  const $ = (q) => document.querySelector(q);
+  const S = { metric: 'ph', year: D.default_year, err: 'quad', ytd: 'ytd', scale: 'linear', sel: null, entity: null, shared: false };
+
+  const ITEMS = [];
+  D.firms.forEach((f) => {
+    ITEMS.push({ id: f.key + ':' + f.primary_entity, firm: f, ek: f.primary_entity, label: f.key === 'renaissance' ? 'Renaissance (total)' : f.name, short: f.short });
+    if (f.key === 'renaissance') {
+      ITEMS.push({ id: 'renaissance:medallion', firm: f, ek: 'medallion', label: 'RenTec · Medallion', short: 'Medallion', sub: true });
+      ITEMS.push({ id: 'renaissance:rief_rida', firm: f, ek: 'rief_rida', label: 'RenTec · RIEF + RIDA', short: 'RIEF+RIDA', sub: true });
+    }
+  });
+  S.sel = ITEMS[0].id;
+  const item = (id) => ITEMS.find((i) => i.id === id);
+
+  const esc = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  function s(tag, attrs, parent) {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs || {}) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function usd(v) {
+    const sg = v < 0 ? '−' : '';
+    const a = Math.abs(v);
+    if (a >= 1000) return sg + '$' + (a / 1000).toFixed(a >= 10000 ? 1 : 2) + 'B';
+    if (a >= 100) return sg + '$' + a.toFixed(0) + 'M';
+    if (a >= 10) return sg + '$' + a.toFixed(1) + 'M';
+    if (a >= 1) return sg + '$' + a.toFixed(2) + 'M';
+    return sg + '$' + Math.round(a * 1000) + 'K';
+  }
+  const people = (v) => Math.round(v).toLocaleString('en-US');
+  function usdAxis(v) {
+    const sg = v < 0 ? '−' : '';
+    const a = Math.abs(v);
+    const trim = (n) => String(+n.toFixed(2));
+    if (a === 0) return '$0';
+    if (a >= 1000) return sg + '$' + trim(a / 1000) + 'B';
+    if (a >= 1) return sg + '$' + trim(a) + 'M';
+    return sg + '$' + trim(a * 1000) + 'K';
+  }
+  const METRIC = {
+    ph: { label: 'PnL per head', fmt: usd, axis: usdAxis },
+    pnl: { label: 'PnL', fmt: usd, axis: usdAxis },
+    hc: { label: 'Headcount', fmt: people, axis: people },
+  };
+  const BASIS = { reported_primary: 'Filing', reported_press: 'Press', derived: 'Derived', estimated: 'Estimate' };
+  const isRep = (b) => String(b).startsWith('reported');
+  const yearLabel = (y) => (y === 2026 ? (S.ytd === 'ann' ? '2026 annualized' : '2026 YTD') : String(y));
+
+  function rowOf(it, yr) { return (it.firm.series[it.ek] || []).find((r) => r.year === yr); }
+  function bands(it, yr) {
+    const r = rowOf(it, yr);
+    if (!r) return null;
+    const k = yr === 2026 && S.ytd === 'ann' && r.ann ? r.ann : 1;
+    return { r, k, ph: (S.err === 'quad' ? r.ph_quad : r.ph_worst).map((x) => x * k), pnl: r.pnl.map((x) => x * k), hc: r.hc };
+  }
+  function val(it, yr) {
+    const b = bands(it, yr);
+    if (!b) return null;
+    const a = b[S.metric];
+    return { lo: a[0], mid: a[1], hi: a[2], r: b.r };
+  }
+  const basisOf = (r) => (S.metric === 'hc' ? r.hc_basis : S.metric === 'pnl' ? r.pnl_basis : (isRep(r.pnl_basis) && isRep(r.hc_basis) ? 'reported' : r.pnl_basis === 'estimated' || r.hc_basis === 'estimated' ? 'estimated' : 'derived'));
+
+  function niceTicks(lo, hi, n) {
+    const span = hi - lo || 1;
+    const raw = span / n;
+    const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+    const e = raw / mag;
+    const step = (e >= 7.5 ? 10 : e >= 3.5 ? 5 : e >= 1.5 ? 2 : 1) * mag;
+    const out = [];
+    for (let v = Math.ceil(lo / step) * step; v <= hi + step * 1e-6; v += step) out.push(Math.abs(v) < step * 1e-9 ? 0 : v);
+    return out;
+  }
+  function logTicks(lo, hi) {
+    const out = [];
+    for (let e = Math.floor(Math.log10(lo)); e <= Math.ceil(Math.log10(hi)); e++) {
+      for (const m of [1, 2, 5]) { const v = m * Math.pow(10, e); if (v >= lo * 0.999 && v <= hi * 1.001) out.push(v); }
+    }
+    return out;
+  }
+  function mkScale(d0, d1, r0, r1, log) {
+    if (log) { const a = Math.log(d0), b = Math.log(d1); return (v) => r0 + (Math.log(Math.max(v, d0)) - a) / (b - a) * (r1 - r0); }
+    return (v) => r0 + (v - d0) / (d1 - d0 || 1) * (r1 - r0);
+  }
+  function domain(vals, log) {
+    if (log) {
+      const pos = vals.filter((v) => v > 0);
+      if (!pos.length) return [1, 10];
+      let lo = Math.min(...pos), hi = Math.max(...pos);
+      lo = Math.pow(10, Math.floor(Math.log10(lo) * 2) / 2);
+      hi = Math.pow(10, Math.ceil(Math.log10(hi) * 2) / 2);
+      return [lo, hi];
+    }
+    let lo = Math.min(0, ...vals), hi = Math.max(...vals);
+    const t = niceTicks(lo, hi, 5);
+    const step = t.length > 1 ? t[1] - t[0] : 1;
+    if (hi > t[t.length - 1]) hi = t[t.length - 1] + step; else hi = t[t.length - 1];
+    if (lo < 0 && lo < t[0]) lo = t[0] - step; else if (lo < 0) lo = t[0];
+    return [lo, hi];
+  }
+
+  const tip = $('#tip');
+  function showTip(ev, html) {
+    tip.innerHTML = html;
+    tip.hidden = false;
+    const r = tip.getBoundingClientRect();
+    let x = ev.clientX + 14, y = ev.clientY + 14;
+    if (x + r.width > innerWidth - 8) x = ev.clientX - r.width - 14;
+    if (y + r.height > innerHeight - 8) y = ev.clientY - r.height - 14;
+    tip.style.left = Math.max(8, x) + 'px';
+    tip.style.top = Math.max(8, y) + 'px';
+  }
+  const hideTip = () => { tip.hidden = true; };
+  function tipHTML(it, yr) {
+    const b = bands(it, yr);
+    if (!b) return '';
+    const r = b.r;
+    const line = (k, a, f) => `<div class="tt-r"><span>${k}</span><b>${f(a[1])}</b><i>${f(a[0])} – ${f(a[2])}</i></div>`;
+    return `<div class="tt-h">${esc(it.label)} · ${yearLabel(yr)}</div>` +
+      line('PnL/head', b.ph, usd) + line('PnL', b.pnl, usd) + line('Headcount', b.hc, people) +
+      `<div class="tt-f">${BASIS[r.pnl_basis] || r.pnl_basis} PnL · ${BASIS[r.hc_basis] || r.hc_basis} headcount · ${esc(r.confidence)} confidence${r.partial ? '<br>' + esc(r.period) : ''}${b.k !== 1 ? '<br>annualized ×' + b.k.toFixed(2) : ''}</div>`;
+  }
+
+  function select(id) {
+    S.sel = id;
+    S.entity = null;
+    renderAll(false);
+  }
+
+  /* status + controls */
+  function renderStatus() {
+    const R = D.research || {};
+    const cut = D.firms.map((f) => f.ytd_cutoff).filter(Boolean).sort();
+    const nsrc = D.firms.reduce((n, f) => n + (f.sources || []).length, 0);
+    const items = [
+      ['Data as of', (D.generated_at || '').slice(0, 10)],
+      ['2026 cutoffs', cut.length ? (cut[0] === cut[cut.length - 1] ? cut[0] : cut[0] + ' to ' + cut[cut.length - 1]) : 'n/a'],
+      ['Sources cited', String(nsrc)],
+      ['Research agents', R.agents_total ? String(R.agents_total) : 'n/a'],
+      ['Research rounds', R.rounds ? String(R.rounds.length) : '1'],
+    ];
+    $('#status').innerHTML = items.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('');
+  }
+  function syncControls() {
+    document.querySelectorAll('.seg').forEach((g) => {
+      g.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(S[g.dataset.key] === b.dataset.val)));
+    });
+    $('#year').value = String(S.year);
+    $('#shared').checked = S.shared;
+  }
+  function initControls() {
+    $('#year').innerHTML = YEARS.slice().reverse().map((y) => `<option value="${y}">${y === 2026 ? '2026 (YTD)' : y}</option>`).join('');
+    document.querySelectorAll('.seg').forEach((g) => g.addEventListener('click', (e) => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      S[g.dataset.key] = b.dataset.val;
+      renderAll(true);
+    }));
+    $('#year').addEventListener('change', (e) => { S.year = +e.target.value; renderAll(true); });
+    $('#shared').addEventListener('change', (e) => { S.shared = e.target.checked; renderSM(); });
+  }
+
+  /* KPI strip: primary entity of each firm */
+  function renderKPIs() {
+    const prim = ITEMS.filter((i) => !i.sub);
+    const got = prim.map((it) => bands(it, S.year)).filter(Boolean);
+    const sum = (k, j) => got.reduce((n, b) => n + b[k][j], 0);
+    const quad = (k, side) => Math.sqrt(got.reduce((n, b) => n + Math.pow(side < 0 ? b[k][1] - b[k][0] : b[k][2] - b[k][1], 2), 0));
+    const P = sum('pnl', 1), H = sum('hc', 1);
+    const plo = P - quad('pnl', -1), phi = P + quad('pnl', 1);
+    const hlo = H - quad('hc', -1), hhi = H + quad('hc', 1);
+    const rep = got.filter((b) => isRep(b.r.pnl_basis)).length;
+    const mixed = S.year === 2026 ? ' · cutoffs differ by firm' : '';
+    const tiles = [
+      ['Combined PnL, ' + got.length + ' firms', usd(P), `90%: ${usd(plo)} – ${usd(phi)}${mixed}`],
+      ['Combined headcount', people(H), `90%: ${people(hlo)} – ${people(hhi)}`],
+      ['Pooled PnL per head', usd(P / H), `range ${usd(plo / hhi)} – ${usd(phi / hlo)}`],
+      ['PnL figures reported, not estimated', `${rep} of ${got.length}`, 'filled dots below'],
+    ];
+    $('#kpis').innerHTML = tiles.map(([k, v, r]) => `<div class="kpi"><span class="k">${k}</span><span class="v">${v}</span><span class="r">${r}</span></div>`).join('');
+  }
+
+  /* hero: forest plot */
+  function renderForest() {
+    const host = $('#forest');
+    host.innerHTML = '';
+    const W = Math.max(280, host.clientWidth);
+    const narrow = W < 600;
+    const labW = narrow ? 118 : 196, valW = narrow ? 0 : 168, padR = 14;
+    const rows = ITEMS.map((it) => ({ it, v: val(it, S.year) })).filter((d) => d.v).sort((a, b) => b.v.mid - a.v.mid);
+    const log = S.scale === 'log';
+    const [d0, d1] = domain(rows.flatMap((d) => [d.v.lo, d.v.hi, d.v.mid]), log);
+    const rowH = narrow ? 40 : 31, top = 6, axisH = 26;
+    const H = top + rows.length * rowH + axisH;
+    const svg = s('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}` }, host);
+    const x = mkScale(d0, d1, labW, W - valW - padR, log);
+    let ticks = log ? logTicks(d0, d1) : niceTicks(d0, d1, narrow ? 3 : 6);
+    if (log && narrow && ticks.length > 5) ticks = ticks.filter((t) => String(t).startsWith('1'));
+    ticks.forEach((t) => {
+      s('line', { x1: x(t), x2: x(t), y1: top, y2: H - axisH, class: t === 0 && !log ? 'zeroline' : 'gridline' }, svg);
+      s('text', { x: x(t), y: H - 8, 'text-anchor': 'middle', class: 't-axis' }, svg).textContent = METRIC[S.metric].axis(t);
+    });
+    rows.forEach((d, i) => {
+      const y0 = top + i * rowH, cy = y0 + (narrow ? 14 : rowH / 2);
+      const g = s('g', {}, svg);
+      s('rect', { x: 0, y: y0, width: W, height: rowH, rx: 4, class: 'row-hit' + (d.it.id === S.sel ? ' on' : '') }, g);
+      const lab = s('text', { x: d.it.sub ? 12 : 0, y: cy + 4, class: d.it.sub ? 't-sub' : 't-label' }, g);
+      lab.textContent = narrow ? d.it.short : d.it.label;
+      const v = d.v, b = basisOf(v.r), est = !isRep(b);
+      const fmt = METRIC[S.metric].fmt;
+      if (narrow) s('text', { x: d.it.sub ? 12 : 0, y: cy + 19, class: 't-rng' }, g).textContent = fmt(v.mid) + ' (' + fmt(v.lo) + '–' + fmt(v.hi) + ')';
+      else {
+        s('text', { x: W - valW + 8, y: cy + 4, class: 't-val' }, g).textContent = fmt(v.mid);
+        s('text', { x: W - valW + 70, y: cy + 4, class: 't-rng' }, g).textContent = fmt(v.lo) + '–' + fmt(v.hi);
+      }
+      if (log && v.mid <= 0) {
+        s('text', { x: labW + 4, y: cy + 4, class: 't-rng' }, g).textContent = 'not positive, hidden on log scale';
+      } else {
+        const xl = x(log ? Math.max(v.lo, d0) : v.lo), xh = x(v.hi), xm = x(v.mid);
+        s('line', { x1: xl, x2: xh, y1: cy, y2: cy, class: 'whisk' + (est ? ' est' : '') }, g);
+        if (!(log && v.lo <= d0)) s('line', { x1: xl, x2: xl, y1: cy - 5, y2: cy + 5, class: 'whisk' + (est ? ' est' : '') }, g);
+        s('line', { x1: xh, x2: xh, y1: cy - 5, y2: cy + 5, class: 'whisk' + (est ? ' est' : '') }, g);
+        s('circle', { cx: xm, cy, r: 5, class: 'dot' + (est ? ' hollow' : '') }, g);
+      }
+      g.addEventListener('mousemove', (e) => showTip(e, tipHTML(d.it, S.year)));
+      g.addEventListener('mouseleave', hideTip);
+      g.addEventListener('click', () => select(d.it.id));
+    });
+  }
+
+  /* chips */
+  function renderChips() {
+    $('#chips').innerHTML = ITEMS.map((it) => `<button type="button" class="chip" data-id="${it.id}" aria-pressed="${it.id === S.sel}">${esc(it.label)}</button>`).join('');
+  }
+  $('#chips').addEventListener('click', (e) => { const b = e.target.closest('.chip'); if (b) select(b.dataset.id); });
+
+  /* trajectory */
+  function pathOf(pts) { return pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(''); }
+  function renderTraj() {
+    const host = $('#traj');
+    host.innerHTML = '';
+    const W = Math.max(280, host.clientWidth), narrow = W < 600;
+    const H = narrow ? 270 : 360, m = { l: narrow ? 50 : 62, r: narrow ? 14 : 92, t: 12, b: 26 };
+    const log = S.scale === 'log';
+    const sel = item(S.sel);
+    const all = [];
+    ITEMS.forEach((it) => YEARS.forEach((y) => { const v = val(it, y); if (v) { all.push(v.mid); if (it === sel) all.push(v.lo, v.hi); } }));
+    const [d0, d1] = domain(all, log);
+    const svg = s('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}` }, host);
+    const x = mkScale(YEARS[0], YEARS[YEARS.length - 1], m.l, W - m.r, false);
+    const y = mkScale(d0, d1, H - m.b, m.t, log);
+    (log ? logTicks(d0, d1) : niceTicks(d0, d1, 5)).forEach((t) => {
+      s('line', { x1: m.l, x2: W - m.r, y1: y(t), y2: y(t), class: t === 0 && !log ? 'zeroline' : 'gridline' }, svg);
+      s('text', { x: m.l - 8, y: y(t) + 4, 'text-anchor': 'end', class: 't-axis' }, svg).textContent = METRIC[S.metric].axis(t);
+    });
+    YEARS.forEach((yr, i) => {
+      if (narrow && i % 2 && yr !== 2026) return;
+      s('text', { x: x(yr), y: H - 6, 'text-anchor': 'middle', class: 't-axis' }, svg).textContent = yr === 2026 ? '26 YTD' : (narrow ? "'" + String(yr).slice(2) : yr);
+    });
+    const ptsOf = (it) => YEARS.map((yr) => { const v = val(it, yr); return v && !(log && v.mid <= 0) ? [x(yr), y(v.mid), v, yr] : null; }).filter(Boolean);
+    const drawLine = (pts, cls) => {
+      const full = pts.filter((p) => p[3] < 2026), last = pts.filter((p) => p[3] >= 2025);
+      if (full.length > 1) s('path', { d: pathOf(full), class: cls }, svg);
+      if (last.length === 2) s('path', { d: pathOf(last), class: cls + ' dash' }, svg);
+    };
+    ITEMS.filter((it) => it !== sel).forEach((it) => {
+      const pts = ptsOf(it);
+      drawLine(pts, 'ctx');
+      const hit = s('path', { d: pathOf(pts), class: 'ctx-hit' }, svg);
+      hit.addEventListener('click', () => select(it.id));
+      hit.addEventListener('mousemove', (e) => showTip(e, `<div class="tt-h">${esc(it.label)}</div><div class="tt-f">Click to highlight</div>`));
+      hit.addEventListener('mouseleave', hideTip);
+    });
+    const pts = ptsOf(sel);
+    const bandPts = YEARS.map((yr) => { const v = val(sel, yr); return v ? [x(yr), y(log ? Math.max(v.lo, d0) : v.lo), y(v.hi)] : null; }).filter(Boolean);
+    if (bandPts.length > 1) {
+      const d = bandPts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[2].toFixed(1)).join('') +
+        bandPts.slice().reverse().map((p) => 'L' + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join('') + 'Z';
+      s('path', { d, class: 'band' }, svg);
+    }
+    drawLine(pts, 'selline');
+    pts.forEach((p) => s('circle', { cx: p[0], cy: p[1], r: 4, class: 'dot' + (isRep(basisOf(p[2].r)) && p[3] !== 2026 ? '' : ' hollow') }, svg));
+    if (pts.length && !narrow) {
+      const lp = pts[pts.length - 1];
+      s('text', { x: lp[0] + 10, y: lp[1] + 4, class: 't-end' }, svg).textContent = sel.short;
+    }
+    const cross = s('line', { x1: 0, x2: 0, y1: m.t, y2: H - m.b, class: 'cross', visibility: 'hidden' }, svg);
+    const ov = s('rect', { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, class: 'overlay' }, svg);
+    ov.style.pointerEvents = 'none';
+    svg.addEventListener('mousemove', (e) => {
+      const bb = svg.getBoundingClientRect();
+      const px = e.clientX - bb.left;
+      if (px < m.l - 10 || px > W - m.r + 10) { cross.setAttribute('visibility', 'hidden'); return; }
+      const yr = YEARS.reduce((a, b) => (Math.abs(x(b) - px) < Math.abs(x(a) - px) ? b : a));
+      cross.setAttribute('x1', x(yr)); cross.setAttribute('x2', x(yr)); cross.setAttribute('visibility', 'visible');
+      if (e.target.classList && e.target.classList.contains('ctx-hit')) return;
+      const ranked = ITEMS.map((it) => ({ it, v: val(it, yr) })).filter((d) => d.v).sort((a, b) => b.v.mid - a.v.mid);
+      const rank = ranked.findIndex((d) => d.it === sel) + 1;
+      showTip(e, tipHTML(sel, yr) + (rank ? `<div class="tt-f">Rank ${rank} of ${ranked.length} on ${METRIC[S.metric].label.toLowerCase()}</div>` : ''));
+    });
+    svg.addEventListener('mouseleave', () => { cross.setAttribute('visibility', 'hidden'); hideTip(); });
+  }
+
+  /* small multiples */
+  function renderSM() {
+    const host = $('#sm');
+    host.innerHTML = '';
+    const log = S.scale === 'log';
+    const ents = (f) => (f.key === 'renaissance' ? ['medallion', 'rief_rida', 'firm_total'] : [f.primary_entity]);
+    const colors = ['var(--s1)', 'var(--s2)', 'var(--s3)'];
+    const vOf = (f, ek, yr) => val({ firm: f, ek }, yr);
+    let shared = null;
+    if (S.shared) {
+      const all = [];
+      D.firms.forEach((f) => ents(f).forEach((ek) => YEARS.forEach((yr) => { const v = vOf(f, ek, yr); if (v) all.push(v.lo, v.hi); })));
+      shared = domain(all, log);
+    }
+    D.firms.forEach((f) => {
+      const card = document.createElement('button');
+      card.type = 'button';
+      const prim = ITEMS.find((i) => i.firm === f && !i.sub);
+      card.className = 'sm' + (item(S.sel).firm === f ? ' on' : '');
+      const latest = vOf(f, f.primary_entity, 2025);
+      card.innerHTML = `<div class="sm-h"><b>${esc(f.name)}</b><span>${latest ? '2025 ' + METRIC[S.metric].fmt(latest.mid) : ''}</span></div>`;
+      if (f.key === 'renaissance') card.innerHTML += `<div class="sm-leg"><span><i style="background:var(--s1)"></i>Medallion</span><span><i style="background:var(--s2)"></i>RIEF + RIDA</span><span><i style="background:var(--s3)"></i>Total</span></div>`;
+      host.appendChild(card);
+      const W = Math.max(200, card.clientWidth - 24), H = 118, m = { l: 46, r: 8, t: 8, b: 18 };
+      const vals = [];
+      ents(f).forEach((ek) => YEARS.forEach((yr) => { const v = vOf(f, ek, yr); if (v) vals.push(v.lo, v.hi); }));
+      const [d0, d1] = shared || domain(vals, log);
+      const svg = s('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}` }, card);
+      const x = mkScale(YEARS[0], YEARS[YEARS.length - 1], m.l, W - m.r, false);
+      const y = mkScale(d0, d1, H - m.b, m.t, log);
+      const tk = log ? logTicks(d0, d1) : niceTicks(d0, d1, 2);
+      tk.forEach((t) => {
+        s('line', { x1: m.l, x2: W - m.r, y1: y(t), y2: y(t), class: t === 0 && !log ? 'zeroline' : 'gridline' }, svg);
+        s('text', { x: m.l - 6, y: y(t) + 4, 'text-anchor': 'end', class: 't-axis' }, svg).textContent = METRIC[S.metric].axis(t);
+      });
+      [2015, 2020, 2026].forEach((yr) => s('text', { x: x(yr), y: H - 4, 'text-anchor': yr === 2015 ? 'start' : yr === 2026 ? 'end' : 'middle', class: 't-axis' }, svg).textContent = yr === 2026 ? '26 YTD' : yr);
+      ents(f).forEach((ek, ei) => {
+        const col = ents(f).length > 1 ? colors[ei] : 'var(--accent)';
+        const pts = YEARS.map((yr) => { const v = vOf(f, ek, yr); return v && !(log && v.mid <= 0) ? [x(yr), y(v.mid), v, yr] : null; }).filter(Boolean);
+        if (ents(f).length === 1) {
+          const bp = YEARS.map((yr) => { const v = vOf(f, ek, yr); return v ? [x(yr), y(log ? Math.max(v.lo, d0) : v.lo), y(v.hi)] : null; }).filter(Boolean);
+          if (bp.length > 1) s('path', { d: bp.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[2].toFixed(1)).join('') + bp.slice().reverse().map((p) => 'L' + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join('') + 'Z', class: 'band' }, svg);
+        }
+        const full = pts.filter((p) => p[3] < 2026), last = pts.filter((p) => p[3] >= 2025);
+        if (full.length > 1) s('path', { d: pathOf(full), class: 'selline', style: `stroke:${col}` }, svg);
+        if (last.length === 2) s('path', { d: pathOf(last), class: 'selline dash', style: `stroke:${col}` }, svg);
+        const lp = pts[pts.length - 1];
+        if (lp) s('circle', { cx: lp[0], cy: lp[1], r: 4, class: 'dot hollow', style: `stroke:${col}` }, svg);
+      });
+      svg.addEventListener('mousemove', (e) => {
+        const bb = svg.getBoundingClientRect();
+        const px = (e.clientX - bb.left) * (W / bb.width);
+        const yr = YEARS.reduce((a, b) => (Math.abs(x(b) - px) < Math.abs(x(a) - px) ? b : a));
+        const its = f.key === 'renaissance' ? ITEMS.filter((i) => i.firm === f) : [prim];
+        showTip(e, its.map((it) => tipHTML(it, yr)).join('<hr style="border:0;border-top:1px solid currentColor;opacity:.2;margin:6px 0">'));
+      });
+      svg.addEventListener('mouseleave', hideTip);
+      card.addEventListener('click', () => select(prim.id));
+    });
+  }
+
+  /* ledger */
+  function renderLedger() {
+    const it = item(S.sel), f = it.firm;
+    const ek = S.entity || it.ek;
+    const ent = f.entities.find((e) => e.key === ek) || f.entities[0];
+    const rows = f.series[ek] || [];
+    const srcIds = new Set((f.sources || []).map((x) => x.id));
+    const typeLabel = { market_maker: 'Market maker / prop trading', public_market_maker: 'Public market maker', hedge_fund: 'Quant hedge fund' }[f.type] || f.type;
+    const rng = (a, fmt) => `${fmt(a[1])}<small>${fmt(a[0])} – ${fmt(a[2])}</small>`;
+    const err = S.err === 'quad' ? 'combined 90%' : 'worst case';
+    let html = `<div class="ledger-head"><div class="ledger-title"><h3>${esc(f.name)}</h3><span class="pill plain">${typeLabel}</span>
+      <span class="pill ${esc(f.overall_confidence)}">${esc(f.overall_confidence)} confidence overall</span>
+      <span class="pill plain">2026 YTD through ${esc(f.ytd_cutoff || 'n/a')}</span></div>
+      <dl class="defs"><dt>PnL means</dt><dd>${esc(f.pnl_definition)}</dd><dt>Headcount</dt><dd>${esc(f.headcount_definition)}</dd>
+      <dt>2026 cutoff</dt><dd>${esc(f.ytd_period)}${f.ytd_description ? ' · ' + esc(f.ytd_description) : ''}</dd>
+      ${f.fx_note ? `<dt>Currency</dt><dd>${esc(f.fx_note)}</dd>` : ''}<dt>Method</dt><dd>${esc(f.methodology)}</dd></dl></div>`;
+    if (f.entities.length > 1) {
+      html += `<div class="tabs">${f.entities.map((e) => `<button type="button" class="chip" data-ent="${e.key}" aria-pressed="${e.key === ek}">${esc(e.name)}</button>`).join('')}</div>
+        <p class="note">${esc(ent.description)}. Headcount is the whole firm in every entity view, so per-head figures share one denominator.</p>`;
+    }
+    html += `<div class="tbl-wrap"><table><thead><tr><th>Year</th><th>PnL (USD)</th><th>Headcount</th><th>PnL per head (${err})</th><th>Basis</th><th>Confidence</th><th>Sources</th><th>Notes</th></tr></thead><tbody>`;
+    rows.slice().reverse().forEach((r) => {
+      const b = bands({ firm: f, ek }, r.year);
+      html += `<tr><td class="n">${r.year === 2026 ? '2026 YTD' : r.year}${r.partial ? `<small>${esc(r.period)}</small>` : ''}${b.k !== 1 ? `<small>annualized ×${b.k.toFixed(2)}</small>` : ''}</td>
+        <td class="n">${rng(b.pnl, usd)}</td><td class="n">${rng(b.hc, people)}</td><td class="n">${rng(b.ph, usd)}</td>
+        <td><span class="bchip ${isRep(r.pnl_basis) ? 'rep' : ''}">PnL: ${BASIS[r.pnl_basis] || esc(r.pnl_basis)}</span><span class="bchip ${isRep(r.hc_basis) ? 'rep' : ''}">HC: ${BASIS[r.hc_basis] || esc(r.hc_basis)}</span></td>
+        <td><span class="pill ${esc(r.confidence)}">${esc(r.confidence)}</span></td>
+        <td>${(r.sources || []).map((id) => srcIds.has(id) ? `<a class="srcref" data-src="${esc(id)}">${esc(id)}</a>` : `<span class="srcref">${esc(id)}</span>`).join('')}</td>
+        <td class="notes">${r.notes ? (r.notes.length > 160 ? `<details><summary>${esc(r.notes.slice(0, 120))}…</summary>${esc(r.notes)}</details>` : esc(r.notes)) : ''}</td></tr>`;
+    });
+    html += `</tbody></table></div>`;
+    const list = (title, arr) => (arr && arr.length ? `<div><h3>${title}</h3><ul>${arr.map((c) => `<li>${esc(c)}</li>`).join('')}</ul></div>` : '');
+    html += `<div class="cols">${list('Caveats', f.caveats)}${list('What would shrink the error bars', f.open_questions)}</div>`;
+    if (f.changelog && f.changelog.length) html += `<details><summary>Changes made after adversarial review (${f.changelog.length})</summary><ul>${f.changelog.map((c) => `<li>${esc(c)}</li>`).join('')}</ul></details>`;
+    html += `<div><h3>Sources (${(f.sources || []).length})</h3><ul class="srclist" id="srclist" style="margin-top:8px">${(f.sources || []).map((x) =>
+      `<li id="src-${esc(x.id)}"><span class="sid">${esc(x.id)}</span><span><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><br><span class="meta">${esc(x.publisher)} · ${esc(x.date)} · ${esc(String(x.type).replace(/_/g, ' '))} · ${esc(x.reliability)} reliability</span></span></li>`).join('')}</ul></div>`;
+    $('#ledger-body').innerHTML = html;
+  }
+  $('#ledger-body').addEventListener('click', (e) => {
+    const t = e.target.closest('[data-ent]');
+    if (t) { S.entity = t.dataset.ent; renderLedger(); return; }
+    const sref = e.target.closest('[data-src]');
+    if (sref) {
+      const li = document.getElementById('src-' + sref.dataset.src);
+      if (li) {
+        li.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+        li.classList.add('flash');
+        setTimeout(() => li.classList.remove('flash'), 1600);
+      }
+    }
+  });
+
+  /* method */
+  function renderMethod() {
+    const R = D.research || {};
+    const rounds = (R.rounds || []).map((r) => `<li><b>Round ${r.round}</b> (${esc(r.started || '')}${r.finished ? ' to ' + esc(r.finished) : ''}): ${esc(r.summary || '')}</li>`).join('');
+    $('#method-body').innerHTML = `
+      <p><b>What PnL means here.</b> For market makers and prop shops (Jane Street, HRT, Citadel Securities, Optiver, IMC, XTX, Jump) it is net trading revenue: trading gains after exchange, clearing and financing costs, before pay and overheads. Virtu uses its reported Adjusted Net Trading Income. For the hedge funds (Renaissance, D. E. Shaw, Two Sigma) it is gross trading P&amp;L, meaning the dollar gains of the funds before management and performance fees, roughly capital times gross return. That makes the two groups comparable as "money the trading produced", but the hedge-fund figures are derived rather than reported, so their bands are wider. Euro and sterling figures are converted at annual average rates.</p>
+      <p><b>What headcount means.</b> Total employees of the whole firm, all functions and offices. For Renaissance, Medallion and the outside funds share the same staff, so all three entity views divide by the full firm headcount.</p>
+      <p><b>Error bars.</b> Every PnL and headcount figure carries a 90% interval set by the research agents under a shared calibration guide: about ±2–5% for a matching primary filing, ±5–15% for top-tier press citing documents, ±15–30% for single-source or "people familiar" reports, ±20–40% for derived figures, and ±40–100% or wider for pure estimates. PnL per head is computed in code from those two bands:</p>
+      <div class="formula">mid = PnL<sub>mid</sub> ÷ Headcount<sub>mid</sub><br>combined 90% = mid × exp(∓√(ln(PnL band)² + ln(headcount band)²)) &nbsp;(independent errors, log scale; linear propagation when the PnL band crosses zero)<br>worst case = PnL<sub>low</sub> ÷ Headcount<sub>high</sub> &nbsp;to&nbsp; PnL<sub>high</sub> ÷ Headcount<sub>low</sub></div>
+      <p><b>2026.</b> Year-to-date through each firm's latest reliable data point, so cutoffs differ by firm (see each ledger). The annualized view scales YTD PnL linearly by days elapsed, which ignores seasonality and the fact that strong quarters cluster; treat it as a run-rate, not a forecast.</p>
+      <p><b>How the research ran.</b> Each firm got its own multi-agent workflow: four independent search agents (financial press, primary documents, headcount history, most recent data), a synthesizer that built the year-by-year table, two adversarial critics (a source auditor that re-checked load-bearing numbers and a consistency critic that attacked definitions, arithmetic and calibration), and a reconciler that ruled on every challenge. Later rounds targeted the widest bands and weakest sources.</p>
+      ${rounds ? `<ul>${rounds}</ul>` : ''}
+      <p><b>Source discipline.</b> Agents ranked sources: filings and official documents, then Bloomberg, FT, WSJ and Reuters reporting from documents, then trade press, with blogs, wikis, forums and AI-written pages used only as leads. They were told to trace recycled claims to their origin and to watch for year, metric, currency and entity mix-ups. Most private-firm figures still come from press reports of debt-offering documents, which are good but not audited disclosures.</p>
+      <p><b>Use with care.</b> These are estimates of private firms' economics. The bands express how sure the evidence lets us be, and the hollow dots mark where the evidence runs out. Download-free data lives in the repository as <span class="mono">data/dataset.json</span> and <span class="mono">data/pnl_per_head.csv</span>.</p>`;
+    $('#foot').innerHTML = `Generated ${esc(D.generated_at || '')}. ${D.build_warnings && D.build_warnings.length ? D.build_warnings.length + ' build warnings recorded in dataset.json.' : ''}`;
+  }
+
+  function renderTitles() {
+    const ml = METRIC[S.metric].label;
+    $('#ov-title').textContent = ml + ', ' + yearLabel(S.year);
+    $('#ov-sub').textContent = S.metric === 'ph'
+      ? 'Ranked by the central estimate. ' + (S.err === 'quad' ? 'Bars combine PnL and headcount uncertainty as independent errors.' : 'Bars show the full worst-case range from the two bands.')
+      : 'Ranked by the central estimate, with 90% intervals.';
+    $('#tr-title').textContent = ml + ' over time';
+  }
+
+  function renderAll(controlsChanged) {
+    syncControls();
+    renderTitles();
+    renderKPIs();
+    renderForest();
+    renderChips();
+    renderTraj();
+    renderSM();
+    renderLedger();
+  }
+
+  initControls();
+  renderStatus();
+  renderMethod();
+  renderAll(true);
+  let raf = 0, lastW = 0;
+  new ResizeObserver(() => {
+    const w = $('#app').clientWidth;
+    if (w === lastW) return;
+    lastW = w;
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => { renderForest(); renderTraj(); renderSM(); });
+  }).observe($('#app'));
+})();
+</script>
