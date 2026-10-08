@@ -1,0 +1,724 @@
+{
+  "firm_key": "citadel_sec",
+  "firm_name": "Citadel Securities",
+  "pnl_definition": "Net trading revenue of Citadel Securities (the market maker: Citadel Securities LP/GP and affiliates, firm-wide), calendar year, USD millions: trading gains net of exchange, clearing, payment-for-order-flow and financing costs, before compensation and operating expenses. The firm is private and files no consolidated income statement; all firm-wide figures are Bloomberg/Reuters reports of debt-investor materials. Bloomberg labels the same series 'net trading revenue', 'trading revenue' or 'revenue'; all are treated as net trading revenue (no gross figure exists).",
+  "headcount_definition": "Approximate total Citadel Securities employees worldwide (all affiliates), in persons. Sources give rounded point-in-time figures (e.g. ~1,600 in May 2023, ~1,800 in late 2025) without stating year-end vs average; rows treat them as the approximate average level for the year. Shared-services staff employed by Citadel Enterprise Americas may be excluded. UK Companies House subsidiary counts (244-277) are not firm-wide and are excluded.",
+  "fx_note": "All figures are reported in USD by the sources; no FX conversion was needed. UK subsidiary filings are also in USD but are excluded from firm-wide totals.",
+  "methodology": "Firm-wide PnL for 2020-2025 and H1 2026 comes from Bloomberg (and one independent Reuters) reports citing people familiar and term-loan investor materials; these anonymous figures are internally consistent, with quarterly sums matching half-year and annual totals within 1-2% and year-on-year growth rates reconciling across years, so they receive ±4-5% bars. 2018 is derived from Bloomberg's statement that 2020 was 'almost double the previous high in 2018', and 2019 is bounded by H1 2019 profit of $982M, a sub-$1B Q4 2019 and being below 2018. 2015-2017 have no datapoints and are backcast estimates below the 2018 record with wide asymmetric bars. Headcount anchors are ~700 (2017, second-hand Forbes), ~970 (Jan 2021 LinkedIn), ~1,600 (2023, Wikipedia citing Bloomberg) and ~1,800 (2025, IFR plus Ghose's revenue per head); other years are interpolated. Synthesized from the press, primary and recent lenses only (the headcount lens did not finish), with no new searching.",
+  "entities": [
+    {
+      "key": "firm",
+      "name": "Citadel Securities (firm-wide)",
+      "description": "Citadel Securities LP/GP and affiliates: the global market maker (equities, options, fixed income, FX, crypto), founded by Ken Griffin and led by CEO Peng Zhao. Excludes Citadel LLC (the hedge fund, e.g. the Wellington fund) and does not add up subsidiary-level figures (Citadel Securities LLC US broker-dealer, UK/Europe or India subsidiaries)."
+    }
+  ],
+  "rows": [
+    {
+      "year": 2015,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1200,
+        "mid": 2000,
+        "high": 2900
+      },
+      "headcount": {
+        "low": 400,
+        "mid": 550,
+        "high": 750
+      },
+      "is_partial_year": false,
+      "period_label": "FY2015",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S1",
+        "S5"
+      ],
+      "notes": "No PnL or headcount datapoint exists for 2015. Estimate backcast from the 2018 record (~$3.55B; 2018 was the pre-2020 high, so 2015 was lower) and the firm's growth trajectory; a moderately volatile year (Aug-2015 flash crash). Wide asymmetric bars reflect a pure estimate. Headcount backcast from ~700 reported for 2017 (S5)."
+    },
+    {
+      "year": 2016,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1400,
+        "mid": 2200,
+        "high": 3100
+      },
+      "headcount": {
+        "low": 450,
+        "mid": 620,
+        "high": 800
+      },
+      "is_partial_year": false,
+      "period_label": "FY2016",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S1",
+        "S5"
+      ],
+      "notes": "No datapoint. Estimate interpolated between the 2015 prior and the 2018 derived high; 2016 had episodic volatility (Brexit, US election) and continued share gains. Headcount interpolated toward ~700 (2017, S5). Pure estimate, wide bars."
+    },
+    {
+      "year": 2017,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1700,
+        "mid": 2500,
+        "high": 3300
+      },
+      "headcount": {
+        "low": 550,
+        "mid": 700,
+        "high": 850
+      },
+      "is_partial_year": false,
+      "period_label": "FY2017",
+      "pnl_basis": "estimated",
+      "headcount_basis": "reported_press",
+      "confidence": "low",
+      "source_ids": [
+        "S1",
+        "S5",
+        "S25"
+      ],
+      "notes": "No PnL datapoint. 2017 was a record low-volatility year, so set below 2018 (~$3.55B). Rupak Ghose's '18% CAGR over 8 years' to $12.2B in 2025 (S25) implies ~$3.25B if the base year is 2017, or ~$3.8B if it is 2018; the chart base year is unknown, so this is only a soft upper anchor. Headcount ~700 is Forbes (2017) via eFinancialCareers (S5): second-hand, low reliability, unclear whether all staff are counted."
+    },
+    {
+      "year": 2018,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 3100,
+        "mid": 3550,
+        "high": 4100
+      },
+      "headcount": {
+        "low": 600,
+        "mid": 780,
+        "high": 950
+      },
+      "is_partial_year": false,
+      "period_label": "FY2018",
+      "pnl_basis": "derived",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S1",
+        "S25",
+        "S33"
+      ],
+      "notes": "Derived, not reported: Bloomberg (S1) said 2020's $6.7B was 'almost double the previous high in 2018', i.e. 6.7/(1.65-2.0) = ~$3.35-4.05B; Ghose's CAGR (S25) gives ~$3.7-3.95B if the series starts in 2018. Strong year (Feb-2018 Volmageddon, Q4-2018 selloff). The UK subsidiary's revenue was also higher in 2018 than 2019 (S33, subsidiary only, not added). Headcount interpolated between ~700 (2017) and ~950 (2020)."
+    },
+    {
+      "year": 2019,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 2600,
+        "mid": 3200,
+        "high": 3650
+      },
+      "headcount": {
+        "low": 680,
+        "mid": 860,
+        "high": 1050
+      },
+      "is_partial_year": false,
+      "period_label": "FY2019",
+      "pnl_basis": "estimated",
+      "headcount_basis": "estimated",
+      "confidence": "low",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S33"
+      ],
+      "notes": "No annual PnL figure. Constraints: (a) below the 2018 high (S1); (b) H1 2019 profit was $982M (S3, S4; Bloomberg via Crain's/Wikipedia), implying H1 revenue ~$1.8-2.5B at a 40-55% margin; (c) Q4 2019 was below $1B because the $1B+ quarterly streak began in Q1 2020; (d) eFinancialCareers' 'doubled revenues to $6.7bn' read literally gives ~$3.3B. A lean low-volatility year. Mid $3.2B with a skew to the downside. Headcount interpolated."
+    },
+    {
+      "year": 2020,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 6400,
+        "mid": 6700,
+        "high": 7000
+      },
+      "headcount": {
+        "low": 800,
+        "mid": 950,
+        "high": 1150
+      },
+      "is_partial_year": false,
+      "period_label": "FY2020",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ],
+      "notes": "FY2020 net trading revenue $6.7B (Bloomberg via Infobae, S1, from people familiar / debt-investor materials); H1 ~$4.0B (S2) + Q4 $1.7B leaves Q3 ~$1.0B, consistent. EBITDA $4.1B (S1); H1 profit $2.36B is unverified (search-summary echo risk), so no FY net income given. Headcount derived from 970 LinkedIn self-identified staff in Jan 2021 and the author's ~1,000 upper estimate (S5); LinkedIn counts are noisy, hence wide bars."
+    },
+    {
+      "year": 2021,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 6600,
+        "mid": 7000,
+        "high": 7400
+      },
+      "headcount": {
+        "low": 950,
+        "mid": 1150,
+        "high": 1400
+      },
+      "is_partial_year": false,
+      "period_label": "FY2021",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "estimated",
+      "confidence": "medium",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S9"
+      ],
+      "notes": "Bloomberg (S6) reported record 'revenue' of $7B topping 2020's $6.7B; labelled 'revenue' but the same series as net trading revenue. Cross-check: 2022's $7.5B was up ~7.1% (S9), implying ~$7.0B. H1 2021 ~$3.41B is derived from H1 2022 +23% (S7). Retail/meme-stock and crypto boom year. Headcount interpolated between ~970 (Jan 2021) and ~1,600 (2023)."
+    },
+    {
+      "year": 2022,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 7200,
+        "mid": 7500,
+        "high": 7800
+      },
+      "headcount": {
+        "low": 1150,
+        "mid": 1400,
+        "high": 1650
+      },
+      "is_partial_year": false,
+      "period_label": "FY2022",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "estimated",
+      "confidence": "medium",
+      "source_ids": [
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S17",
+        "S8"
+      ],
+      "notes": "Record $7.5B (Bloomberg S9, Reuters/WSJ S10, restated in S17); the primary lens notes a spokesperson confirmed it, the only non-anonymous figure in the series. H1 2022 $4.2B (S11), Q3 2022 $1.66B (S12), so Q4 ~$1.6B. H1 EBITDA ~$2.6B (S8). Volatile bear-market year. Do not confuse with Citadel LLC hedge-fund figures (~$28B revenue / $16B gains in 2022). Headcount interpolated."
+    },
+    {
+      "year": 2023,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 6000,
+        "mid": 6300,
+        "high": 6600
+      },
+      "headcount": {
+        "low": 1400,
+        "mid": 1600,
+        "high": 1800
+      },
+      "net_income_usd_m": {
+        "low": 1500,
+        "mid": 1850,
+        "high": 2100
+      },
+      "is_partial_year": false,
+      "period_label": "FY2023",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "reported_press",
+      "confidence": "medium",
+      "source_ids": [
+        "S13",
+        "S11",
+        "S12",
+        "S16",
+        "S31"
+      ],
+      "notes": "FY2023 $6.3B (Bloomberg S13, not fetched); consistent with 2024's +55% to $9.7B (S16) -> $6.26B and with H1 $2.73B (S11) + Q3 $1.8B (S12) + Q4 ~$1.77B. Muted market. Net income derived only: 2024's $4.2B 'more than doubled' implies <$2.1B; EBITDA ~$2.78B (from 2024 +87%) less the ~$1.0B EBITDA-to-NI gap seen in 2024 gives ~$1.8B. Headcount ~1,600 is a Wikipedia infobox value citing a May-2023 Bloomberg Businessweek profile (S31), not verified in the original: low reliability."
+    },
+    {
+      "year": 2024,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 9300,
+        "mid": 9700,
+        "high": 10100
+      },
+      "headcount": {
+        "low": 1500,
+        "mid": 1700,
+        "high": 1900
+      },
+      "net_income_usd_m": {
+        "low": 3900,
+        "mid": 4200,
+        "high": 4500
+      },
+      "is_partial_year": false,
+      "period_label": "FY2024",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S15",
+        "S16",
+        "S13",
+        "S14",
+        "S24",
+        "S30",
+        "S32"
+      ],
+      "notes": "FY2024 $9.7B (Bloomberg S15 headline; Hedgeweek S16), +55% YoY. Q1 $2.3B (S13) + Q2 $2.6B (S14) = H1 $4.9B; H2 ~$4.8B. EBITDA $5.2B; net income $4.2B 'more than doubled' (S16; Wikipedia S30 echoes it). Comp ~$3.0B (S24). Headcount interpolated between ~1,600 (2023) and ~1,800 (2025); $3.0B comp / 1,700 = ~$1.8M per head is plausible. UK Companies House 244 (S32) is the UK services sub-group only and is excluded."
+    },
+    {
+      "year": 2025,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 11700,
+        "mid": 12200,
+        "high": 12700
+      },
+      "headcount": {
+        "low": 1650,
+        "mid": 1800,
+        "high": 1950
+      },
+      "net_income_usd_m": {
+        "low": 5000,
+        "mid": 5400,
+        "high": 5700
+      },
+      "is_partial_year": false,
+      "period_label": "FY2025",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "reported_press",
+      "confidence": "medium",
+      "source_ids": [
+        "S23",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S25",
+        "S29",
+        "S24",
+        "S30",
+        "S32"
+      ],
+      "notes": "Record FY2025 $12.2B (Bloomberg via BGov, S23). Quarterlies reconcile: Q1 $3.4B (S18) + Q2 $2.39B (S19) + Q3 $2.64B (S21) + Q4 $3.8B (S25) = $12.23B; H1 $5.77B confirmed independently by Reuters (S20); 9M $8.4B (S22). EBITDA $6.5B. Net income $5.4B (S29, citing The New Yorker) matches quarterly NI of ~1.7+0.9+1.0+1.7. Headcount ~1,800 from IFR (S22, likely firm-supplied, point-in-time late 2025), consistent with Ghose's $6.8M/head (~1,790, S25); Wikipedia (S30) is not independent. UK sub-group 277 (S32) excluded. A June-2026 Substack that calls $9.7B 'last year' is mis-dated and ignored."
+    },
+    {
+      "year": 2026,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 11000,
+        "mid": 11600,
+        "high": 12200
+      },
+      "headcount": {
+        "low": 1750,
+        "mid": 1900,
+        "high": 2100
+      },
+      "net_income_usd_m": {
+        "low": 4900,
+        "mid": 5200,
+        "high": 5500
+      },
+      "is_partial_year": true,
+      "period_label": "2026-01-01 to 2026-06-30 (H1 2026 YTD)",
+      "pnl_basis": "reported_press",
+      "headcount_basis": "estimated",
+      "confidence": "medium",
+      "source_ids": [
+        "S26",
+        "S27",
+        "S28",
+        "S29",
+        "S32"
+      ],
+      "notes": "YTD through 2026-06-30 (H1 only; not comparable to full years). Q1 $4.3B (+28%, S26) + Q2 $7.3B (record, more than tripled YoY, S27/S28) = $11.6B, the sum used by Disruption Banking (S29); no H1 figure was reported directly and no Q3 2026 figure existed as of 2026-10-08. Net income Q1 $1.9B + Q2 $3.3B = $5.2B. Q2 is extraordinary and rests on anonymous Bloomberg sourcing; low-quality sites (e.g. Briefs.co '200% jump') were disregarded. Headcount estimated from ~1,800 (2025) plus continued hiring (the UK sub-group grew 13.5% in 2025, S32)."
+    }
+  ],
+  "ytd_2026": {
+    "cutoff_date": "2026-06-30",
+    "period_label": "2026-01-01 to 2026-06-30 (H1 2026 YTD)",
+    "description": "2026 YTD is the six months ended 2026-06-30: Q1 2026 net trading revenue $4.3B (Bloomberg, reported 2026-05-28) plus Q2 2026 $7.3B (Bloomberg, reported 2026-08-27) = $11.6B; net income $1.9B + $3.3B = $5.2B. As of 2026-10-08 no Q3 2026 figure had been reported (these usually leak in late November or December), so H1 is the latest reliable cutoff."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Citadel Securities reaps record $6.7 billion on volatility (Bloomberg republished)",
+      "publisher": "Infobae (republishing Bloomberg News)",
+      "url": "https://www.infobae.com/en/2021/01/22/citadel-securities-reaps-record-67-billion-on-volatility",
+      "date": "2021-01-22",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "FY2020 net trading revenue $6.7B (almost double the previous high in 2018), Q4 2020 $1.7B, FY2020 EBITDA $4.1B; basis for derived 2018"
+    },
+    {
+      "id": "S2",
+      "title": "Citadel Securities Doubled Profit as Dominance Grew in 2020",
+      "publisher": "Bloomberg News",
+      "url": "https://www.bloomberg.com/news/articles/2020-09-25/citadel-doubled-profit-increased-dominance-in-wild-2020-trading",
+      "date": "2020-09-25",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "H1 2020 net trading revenue about $4.0B; H1 2020 profit $2.36B vs $982M in H1 2019 (not fetched, 403)"
+    },
+    {
+      "id": "S3",
+      "title": "Citadel Securities doubled profit as dominance grew in 2020",
+      "publisher": "Crain's Chicago Business (Bloomberg)",
+      "url": "https://www.chicagobusiness.com/finance-banking/citadel-securities-doubled-profit-dominance-grew-2020",
+      "date": "2020-09-25",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "H1 2020 profit $2.36B and H1 2019 profit $982M (not fetched; seen via Wikipedia citation)"
+    },
+    {
+      "id": "S4",
+      "title": "Ken Griffin (Wikipedia), citing Bloomberg / Crain's",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ken_Griffin",
+      "date": "2020-09-25",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Second-hand H1 2019 profit $982M and H1 2020 profit $2.36B"
+    },
+    {
+      "id": "S5",
+      "title": "Citadel Securities' enormous profits per employee",
+      "publisher": "eFinancialCareers (citing Forbes 2017)",
+      "url": "https://www.efinancialcareers.com/news/2021/01/citadel-securities-pay",
+      "date": "2021-01",
+      "type": "trade_press",
+      "reliability": "low",
+      "supports": "Headcount about 700 (Forbes, 2017) and 970 LinkedIn self-identified staff (Jan 2021); author uses ~1,000 as 2020 upper estimate"
+    },
+    {
+      "id": "S6",
+      "title": "Citadel Securities Opens Up After Record $7 Billion Windfall",
+      "publisher": "Bloomberg News (via Bloomberg Law)",
+      "url": "https://news.bloomberglaw.com/securities-law/citadel-securities-opens-up-after-record-7-billion-windfall",
+      "date": "2022-03-15",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "FY2021 revenue $7B, topping the 2020 record of $6.7B"
+    },
+    {
+      "id": "S7",
+      "title": "Ken Griffin's Citadel Securities Trading Revenue Hits Record $4.2 Billion",
+      "publisher": "Bloomberg News",
+      "url": "https://www.bloomberg.com/news/articles/2022-08-15/citadel-securities-first-half-trading-revenue-hits-4-2-billion",
+      "date": "2022-08-15",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "H1 2022 net trading revenue $4.2B, up about 23% (implies H1 2021 about $3.4B); not fetched"
+    },
+    {
+      "id": "S8",
+      "title": "Citadel Securities trading revenue hits record $4.2 billion",
+      "publisher": "Crain's Chicago Business (Bloomberg)",
+      "url": "https://www.chicagobusiness.com/finance-banking/citadel-securities-trading-revenue-hits-record-42-billion",
+      "date": "2022-08",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "H1 2022 EBITDA about $2.6B; not fetched"
+    },
+    {
+      "id": "S9",
+      "title": "Ken Griffin's Citadel Securities Posts Record Revenue, Hedge Fund Surges",
+      "publisher": "Bloomberg News",
+      "url": "https://www.bloomberg.com/news/articles/2023-01-05/ken-griffin-s-citadel-securities-posts-record-revenue-hedge-fund-surges",
+      "date": "2023-01-05",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "FY2022 net trading revenue $7.5B (record; up about 7% on 2021); not fetched"
+    },
+    {
+      "id": "S10",
+      "title": "Citadel posts record revenues for hedge fund, securities ops",
+      "publisher": "Reuters / Wall Street Journal",
+      "url": "https://www.reuters.com/article/usa-funds-citadel-idCAL4N33Q371",
+      "date": "2023-01-05",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "FY2022 Citadel Securities revenue $7.5B; headline mixes hedge fund and market maker"
+    },
+    {
+      "id": "S11",
+      "title": "Citadel Securities Trading Revenue Slides 35% on Muted Market",
+      "publisher": "Bloomberg News (via Bloomberg Law)",
+      "url": "https://news.bloomberglaw.com/capital-markets/citadel-securities-trading-revenue-slides-35-on-muted-market",
+      "date": "2023-07-24",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "H1 2023 net trading revenue $2.73B vs record H1 2022 $4.2B"
+    },
+    {
+      "id": "S12",
+      "title": "Citadel Securities Revenue Jumps to $1.8 Billion on Volatility",
+      "publisher": "Bloomberg News",
+      "url": "https://www.bloomberg.com/news/articles/2023-12-11/citadel-securities-revenue-jumps-to-1-8-billion-on-volatility",
+      "date": "2023-12-11",
+      "type": "top_tier_press",
+      "reliability": "medium",
+      "supports": "Q3 2023 net trading revenue $1.8B vs Q3 2022 $1.66B; not fetched"
+    },
+    {
+      "id": "S13",
+      "title": "Citadel Securities Revenue Reaches $2.3 Billion in First Quarter",
+      "publisher": "Bloomberg News",
+      "url": "https://www.bloomberg.com/news/articles/2024-05-15/citadel-securities-revenue-reaches-2-3-billion-in-first-quarter",
+      "date": "2024-05-15",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "Q1 2024 net trading revenue $2.3B; FY2023 $6.3B; not fetched"
+    },
+    {
+      "id": "S14",
+      "title": "Citadel Securities, Jane Street on track for record revenue haul (Bloomberg)",
+      "publisher": "American Banker / Asset Securitization Report (Bloomberg)",
+      "url": "https://asreport.americanbanker.com/articles/citadel-securities-jane-street-on-track-for-record-haul",
+      "date": "2024-09-03",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "H1 2024 net trading revenue $4.9B (Q2 $2.6B); H1 2024 EBITDA $2.7B vs H1 2023 $1.1B"
+    },
+    {
+      "id": "S15",
+      "title": "Citadel Securities' $9.7 Billion Trading Revenue Passes Barclays",
+      "publisher": "Bloomberg News",
+      "url": "https://www.bloomberg.com/news/articles/2025-03-06/citadel-securities-9-7-billion-trading-revenue-passes-barclays",
+      "date": "2025-03-06",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "FY2024 net trading revenue $9.7B (headline; body not fetched)"
+    },
+    {
+      "id": "S16",
+      "title": "Griffin's Citadel Securities reports record $9.7bn trading revenue",
+      "publisher": "Hedgeweek (citing Bloomberg 2025-03-06)",
+      "url": "https://www.hedgeweek.com/griffins-citadel-securities-reports-record-9-7bn-trading-revenue/",
+      "date": "2025-03-10",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "FY2024 net trading revenue $9.7B (+55%), net income $4.2B (more than doubled), EBITDA $5.2B (+87%); net trading capital $13.5B end-2023 to $16B end-2024"
+    },
+    {
+      "id": "S17",
+      "title": "Citadel Securities tops European banks with record $9.7bn trading revenue - Bloomberg",
+      "publisher": "Investing.com (citing Bloomberg)",
+      "url": "https://www.investing.com/news/stock-market-news/citadel-securities-tops-european-banks-with-record-97bn-trading-revenue--bloomberg-93CH-3913131",
+      "date": "2025-03-06",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Restates FY2022 record of $7.5B alongside FY2024 $9.7B"
+    },
+    {
+      "id": "S18",
+      "title": "Citadel Securities smashes Q1 records with $3.4bn in trading revenue",
+      "publisher": "Hedgeweek (citing Bloomberg 2025-05-27)",
+      "url": "https://www.hedgeweek.com/citadel-securities-smashes-q1-records-with-3-4bn-in-trading-revenue/",
+      "date": "2025-05-28",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Q1 2025 net trading revenue $3.4B, net income $1.7B (+70% YoY), EBITDA $1.9B"
+    },
+    {
+      "id": "S19",
+      "title": "Citadel Securities reports 8.4% drop in Q2 trading revenue - Bloomberg",
+      "publisher": "Investing.com (citing Bloomberg)",
+      "url": "https://www.investing.com/news/stock-market-news/citadel-securities-reports-84-drop-in-q2-trading-revenue--bloomberg-93CH-4217044",
+      "date": "2025-08-29",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Q2 2025 net trading revenue $2.39B; H1 2025 $5.77B"
+    },
+    {
+      "id": "S20",
+      "title": "Citadel Securities trading revenue slips in 2Q, source says",
+      "publisher": "Reuters (via Investing.com)",
+      "url": "https://www.investing.com/news/stock-market-news/citadel-securities-trading-revenue-slips-in-2q-source-says-4217083",
+      "date": "2025-08-29",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "H1 2025 net trading revenue $5.77B (independent of Bloomberg's $5.8B)"
+    },
+    {
+      "id": "S21",
+      "title": "Jane Street and Citadel Q3 revenues at record levels",
+      "publisher": "Investing.com (citing Bloomberg 2025-12-01)",
+      "url": "https://www.investing.com/news/stock-market-news/jane-street-and-citadel-q3-revenues-at-record-levels-93CH-4384364",
+      "date": "2025-12-01",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Q3 2025 net trading revenue $2.64B"
+    },
+    {
+      "id": "S22",
+      "title": "Flow Marketmaker: Citadel Securities (IFR Awards 2025)",
+      "publisher": "IFR (International Financing Review, LSEG)",
+      "url": "https://www.ifre.com/ifr-awards/2327839/flow-marketmaker-citadel-securities",
+      "date": "2025-12",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "9M 2025 net trading revenue $8.4B; 'about a sixth of its 1,800 employees hold PhDs'"
+    },
+    {
+      "id": "S23",
+      "title": "Citadel Securities Nets Record $12 Billion Trading Haul",
+      "publisher": "Bloomberg News (via Bloomberg Government)",
+      "url": "https://news.bgov.com/international-trade/citadel-securities-nets-record-12-billion-trading-haul-1",
+      "date": "2026-03-24",
+      "type": "top_tier_press",
+      "reliability": "high",
+      "supports": "FY2025 net trading revenue $12.2B; FY2025 EBITDA $6.5B"
+    },
+    {
+      "id": "S24",
+      "title": "Citadel Securities' trading revenue reached a record high of $12 billion in 2025 (Wallstreetcn)",
+      "publisher": "Bitget News / Wallstreetcn (translation of Bloomberg)",
+      "url": "https://www.bitget.com/news/detail/12560605300356",
+      "date": "2026-03-24",
+      "type": "aggregator_or_blog",
+      "reliability": "medium",
+      "supports": "Compensation expense $3.5B for Jan-Nov 2025 and about $3.0B for FY2024"
+    },
+    {
+      "id": "S25",
+      "title": "Citadel Securities and HFT industry diverge",
+      "publisher": "Rupak Ghose (Substack)",
+      "url": "https://rupakghose.substack.com/p/citadel-securities-and-hft-industry",
+      "date": "2026-03-27",
+      "type": "aggregator_or_blog",
+      "reliability": "medium",
+      "supports": "Q4 2025 net trading revenue $3.8B and net income $1.7B; ~$1B net income in each of Q2/Q3 2025; $6.8M revenue per head in 2025 (implies ~1,790 staff); 18% revenue CAGR over 8 years"
+    },
+    {
+      "id": "S26",
+      "title": "Citadel Securities posts record $4.3 billion trading revenue",
+      "publisher": "Investing.com (citing Bloomberg 2026-05-28)",
+      "url": "https://in.investing.com/news/economy-news/citadel-securities-posts-record-43-billion-trading-revenue-93CH-5432220",
+      "date": "2026-05-29",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Q1 2026 net trading revenue $4.3B (+28% YoY); net income $1.9B"
+    },
+    {
+      "id": "S27",
+      "title": "Citadel Securities posts record $7.3bn trading revenue",
+      "publisher": "Hedgeweek (citing Bloomberg 2026-08-27)",
+      "url": "https://www.hedgeweek.com/citadel-securities-posts-record-7-3bn-trading-revenue/",
+      "date": "2026-08-28",
+      "type": "trade_press",
+      "reliability": "high",
+      "supports": "Q2 2026 net trading revenue $7.3B (more than tripled YoY); net income $3.3B"
+    },
+    {
+      "id": "S28",
+      "title": "Citadel Securities hits record $7.3 billion revenue, Bloomberg reports",
+      "publisher": "Investing.com via Yahoo Finance (citing Bloomberg)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/citadel-securities-hits-record-7-214521242.html",
+      "date": "2026-08-27",
+      "type": "aggregator_or_blog",
+      "reliability": "medium",
+      "supports": "Q2 2026 net income $3.3B, up more than 250%"
+    },
+    {
+      "id": "S29",
+      "title": "Citadel Securities Made $3.3B in Three Months. How Much of That Profit Will Its Employees Pocket?",
+      "publisher": "Disruption Banking (citing The New Yorker / Bloomberg)",
+      "url": "https://www.disruptionbanking.com/2026/08/29/citadel-securities-made-3-3b-in-three-months-how-much-of-that-profit-will-its-employees-pocket/",
+      "date": "2026-08-29",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "H1 2026 revenue $11.6B and net income $5.2B (sum of Q1+Q2); FY2025 net income $5.4B"
+    },
+    {
+      "id": "S30",
+      "title": "Citadel Securities (Wikipedia)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Citadel_Securities",
+      "date": "2026-10-08",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Infobox: 1,800 employees (2025); net income $4.2B (2024); H1 2020 revenue about $4B"
+    },
+    {
+      "id": "S31",
+      "title": "Citadel Securities (Wikipedia infobox, revision 1331846659)",
+      "publisher": "Wikipedia (citing Bloomberg Businessweek 2023-05-11)",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1331846659",
+      "date": "2026-01-08",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "Pre-March-2026 infobox: 1,600 employees (2023)"
+    },
+    {
+      "id": "S32",
+      "title": "Citadel Securities Europe Services Limited Annual Report FY2025, Note 8 Staff Costs",
+      "publisher": "UK Companies House (company 14346588)",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/14346588/filing-history/MzU0NTYxOTAwNGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-09-18",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "UK services sub-group monthly average headcount 277 (2025) and 244 (2024): UK/Europe subsidiary only, NOT firm-wide; used only as a growth-direction check"
+    },
+    {
+      "id": "S33",
+      "title": "Citadel Securities (Europe) Posts 30% Decline in 2019 Revenue",
+      "publisher": "Finance Magnates (from Companies House filings)",
+      "url": "https://www.financemagnates.com/forex/brokers/citadels-technology-arm-posts-30-decline-in-2019-revenue/",
+      "date": "2020-09-23",
+      "type": "trade_press",
+      "reliability": "low",
+      "supports": "UK subsidiary net revenue about $175M in 2019 vs $251M in 2018: subsidiary only; directional support that 2019 was weaker than 2018"
+    },
+    {
+      "id": "S34",
+      "title": "Citadel Securities LLC Statement of Financial Condition as of December 31, 2025 (Form X-17A-5)",
+      "publisher": "SEC EDGAR (CIK 1146184)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1146184/000114618426000004/CDRG_BS_Only_FS_2025.pdf",
+      "date": "2026-02-27",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "US broker-dealer sub-entity balance sheet only (member's capital $8.7B end-2025); no income statement, so no primary PnL exists"
+    }
+  ],
+  "caveats": [
+    "No primary filing gives firm-wide PnL: Citadel Securities is private, the US broker-dealer X-17A-5 is balance-sheet only (S34), and UK Companies House accounts cover subsidiaries with heavy intercompany flows. Every firm-wide figure from 2020 on is an anonymous Bloomberg/Reuters leak, mostly from term-loan investor materials.",
+    "Most outlets (Hedgeweek, Investing.com, Yahoo, Bitget, Disruption Banking, Substacks) recycle Bloomberg, so they add no independent confirmation; Reuters' H1 2025 $5.77B is the main independent cross-check. Investing.com pages are AI-assisted.",
+    "Bloomberg uses 'net trading revenue', 'trading revenue' and 'revenue' for what appears to be one series; the exact netting (e.g. of payment for order flow, ~$2.6B a year circa 2021) is not disclosed.",
+    "2015-2019 PnL has no direct datapoint: 2018 is derived from 'almost double' wording, 2019 from constraints, and 2015-2017 are pure estimates.",
+    "Headcount is the weakest series: only four rough anchors, two of them second-hand (Forbes via eFinancialCareers; Wikipedia citing paywalled Bloomberg). UK Companies House counts (244 in 2024, 277 in 2025) are the UK services sub-group only and are excluded.",
+    "Traps excluded: Citadel LLC hedge-fund figures (~$28B 2022 revenue, $16B 2022 gains, 3,153 employees in 2024, '$90B net gains since 1990'); a mis-dated June-2026 newsletter calling 2024's $9.7B 'last year'; search summaries mislabelling H1 2022's $4.2B as 2020 and H1 2024's $4.9B as H1 2025.",
+    "2026 is H1 only (to 2026-06-30) and Q2 2026's $7.3B is an extraordinary single-quarter figure; do not annualise it naively.",
+    "Net income is given only for 2023 (derived bound), 2024, 2025 and H1 2026; Wikipedia's $4.2B for 2024 is not tied to a quoted sentence but matches Hedgeweek's 'more than doubled its net income to $4.2bn'."
+  ],
+  "overall_confidence": "medium",
+  "open_questions": [
+    "Any direct figure for 2015-2019 net trading revenue (e.g. from 2017-2019 term-loan documents or Moody's/S&P reports)?",
+    "Firm-wide headcount for 2018-2024 and 2026, and whether the ~1,800 figure is year-end, average, or excludes Citadel Enterprise Americas shared-services staff.",
+    "Exact netting in Bloomberg's 'net trading revenue' (PFOF, exchange fees, financing) and whether 'revenue' for 2021 and 2025-2026 is identical in definition.",
+    "Q3 2026 net trading revenue (expected to be reported late November or December 2026).",
+    "Whether the 2025 $5.4B net income (via The New Yorker) and the 2024 $4.2B are net income or another profit measure."
+  ],
+  "changelog": [],
+  "review_status": "draft: synthesized from 3 of 4 search lenses without adversarial review (stopped early to save budget)"
+}

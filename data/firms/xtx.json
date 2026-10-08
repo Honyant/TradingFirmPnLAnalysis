@@ -1,0 +1,966 @@
+{
+  "firm_key": "xtx",
+  "firm_name": "XTX Markets",
+  "pnl_definition": "Reconstructed group-wide net trading revenue, before staff costs, XTX Research LLP partner profit shares and other operating costs, by calendar year in USD millions. XTX publishes no consolidated group accounts: the Cayman parents explicitly do not consolidate. For 2015-2018, the figure is XTX Markets Ltd's filed revenue, as that entity was effectively the whole group. From 2019/2020, it is XTX Markets Technologies Ltd's gross profit-split service fee (before netting the LLP research fee), plus revenue retained by the UK trading entities, plus the retained revenue/profit and costs of non-UK trading entities (XTX Markets LLC, XTX Capital, etc.), all from Companies House and SEC EDGAR filings. Intra-group fees are counted once. Non-trading gains are excluded (XTX Investments venture marks; gold/interest gains at XTX Holdings Ltd). net_income_usd_m is reconstructed group profit BEFORE TAX, treating LLP partner profit allocations as compensation (i.e. excluding the partner pool). Notes give the figure including the pool.",
+  "headcount_definition": "Estimated average group headcount worldwide: employees plus individual XTX Research LLP members, excluding contractors where possible. No filing discloses group headcount. The UK component comes from filed annual averages: XTX Markets Ltd (to 2020), XTX Markets Technologies Ltd (from 2020), and XTX Research LLP members and employees. Non-UK staff (Paris, Singapore, New York, Mumbai, Yerevan, Nordic data centres) are inferred: about 0-10 in 2015-2018, rising to about 90 in 2025. Company statements bound the range: the FY2025 Modern Slavery statement's '200+ staff members or contractors' and the website's '300 employees' (Oct 2026). So does Bloomberg via eFinancialCareers ('over 250', early 2025). The Companies House figures of 98-127 for 2023-2025 are XTX Markets Technologies Ltd only. The about-43-person LLP and the zero-employee trading and holding entities are components, not the group.",
+  "fx_note": "GBP figures are converted at annual average GBP/USD rates: 2015 1.528, 2016 1.355, 2017 1.289, 2018 1.335, 2019 1.277, 2020 1.284, 2021 1.376, 2022 1.237, 2023 1.244, 2024 1.278, 2025 ~1.32, 2026 YTD ~1.35 (assumed). XTX reports in GBP but earns much of its revenue in USD, so the USD series partly reflects FX moves. The 2025-2026 bands include about ±1-2% for FX uncertainty. XTX Markets LLC figures are natively USD.",
+  "methodology": "Every figure comes from a primary-documents research lens that downloaded and read Companies House filings (XTX Markets Ltd, XTX Markets Technologies Ltd, XTX Holdings (UK) Ltd, XTX Markets Trading Ltd, XTX Research LLP, XTX Holdings Ltd, XTX Capital, XTX Investments) and SEC EDGAR filings for XTX Markets LLC. Because there are no group accounts, group revenue was rebuilt entity by entity, with intra-group service and research fees counted once. It was cross-checked against the sum of entity pre-tax profits plus external costs, and the gap between the two methods sets the 2019-2025 bands. Press 'combined revenue' totals (£2.74bn for 2024, £3.93bn for 2025) were rejected because they double-count intra-group fees and leave out the LLP research fee. Headcount combines filed UK averages with inferred non-UK staff and is bounded by company and Bloomberg statements. Every year from 2015 to 2025 is filing-based, so no year was interpolated; 2026 YTD (1 Jan-30 Sep) is a run-rate estimate with wide bands.",
+  "entities": [
+    {
+      "key": "firm",
+      "name": "XTX Markets (group-wide)",
+      "description": "All XTX Markets trading, service and holding entities under Alex Gerko's ultimate control: XTX Markets Ltd, XTX Markets Trading Ltd, XTX Holdings (UK) Ltd, XTX Markets Technologies Ltd (IP/services; UK staff employer since 2020), XTX Research LLP (partners' vehicle), XTX Markets LLC (US broker-dealer), XTX Markets SAS (Paris), XTX Markets Pte (Singapore), XTX Capital, and the Cayman holding chain (XTX Holdings Ltd, Midco, Topco). Intra-group fees are eliminated. XTX Investments' venture portfolio is excluded from PnL."
+    }
+  ],
+  "rows": [
+    {
+      "year": 2015,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 106,
+        "mid": 111,
+        "high": 118
+      },
+      "headcount": {
+        "low": 40,
+        "mid": 47,
+        "high": 56
+      },
+      "net_income_usd_m": {
+        "low": 68,
+        "mid": 73,
+        "high": 78
+      },
+      "is_partial_year": false,
+      "period_label": "FY2015 (company formed 30 Jan 2015; trading from 1 Jul 2015)",
+      "pnl_basis": "reported_primary",
+      "headcount_basis": "derived",
+      "confidence": "high",
+      "source_ids": [
+        "S1",
+        "S21"
+      ],
+      "notes": "PnL: XTX Markets Ltd FY2015 net revenue was £72.4m. That entity was effectively the whole group, and the XTX Research LLP fee (£17.6m) is internal, so it is not added. Converted at 1.528, that is $111m. This covers H2 only (trading began 1 Jul 2015), and the income was mostly advisory/fee income from GSA, not direct trading P&L. Net income: XTX Markets Ltd profit of £47.6m, after the LLP fee. Including the LLP partner pool, group profit was about £64.5m ($99m). Headcount: XTX Markets Ltd's filed average of 28, plus about 19 estimated LLP members and staff."
+    },
+    {
+      "year": 2016,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 172,
+        "mid": 179,
+        "high": 188
+      },
+      "headcount": {
+        "low": 60,
+        "mid": 68,
+        "high": 78
+      },
+      "net_income_usd_m": {
+        "low": 95,
+        "mid": 103,
+        "high": 111
+      },
+      "is_partial_year": false,
+      "period_label": "FY2016",
+      "pnl_basis": "reported_primary",
+      "headcount_basis": "derived",
+      "confidence": "high",
+      "source_ids": [
+        "S2",
+        "S21"
+      ],
+      "notes": "PnL: XTX Markets Ltd net revenue was £131.9m (group £132m, range £131-136m), or $179m at 1.355. It was mostly fee income from GSA/GPT1, not direct trading P&L. Net income: XTX Markets Ltd profit of £75.8m; including the LLP partner pool, about £104m. Headcount: XTX Markets Ltd average 43 plus 24 at XTX Research LLP (both filed), plus about 1 non-UK."
+    },
+    {
+      "year": 2017,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 192,
+        "mid": 200,
+        "high": 210
+      },
+      "headcount": {
+        "low": 70,
+        "mid": 80,
+        "high": 92
+      },
+      "net_income_usd_m": {
+        "low": 89,
+        "mid": 97,
+        "high": 104
+      },
+      "is_partial_year": false,
+      "period_label": "FY2017",
+      "pnl_basis": "reported_primary",
+      "headcount_basis": "derived",
+      "confidence": "high",
+      "source_ids": [
+        "S3",
+        "S22"
+      ],
+      "notes": "PnL: XTX Markets Ltd net revenue was £154.6m (group £155m, range £154-159m), or $200m at 1.289. This was a lean, low-volatility year for FX and market-making: revenue grew only 17% and profit was flat. The Singapore (Pte) and US (LLC) entities were cost centres paid by XTX Markets Ltd. Net income: XTX Markets Ltd profit of £75.0m; including the LLP pool, about £106m. Headcount: XTX Markets Ltd 47 plus LLP 29 (both filed), plus about 4 non-UK (inferred)."
+    },
+    {
+      "year": 2018,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 395,
+        "mid": 410,
+        "high": 428
+      },
+      "headcount": {
+        "low": 88,
+        "mid": 98,
+        "high": 112
+      },
+      "net_income_usd_m": {
+        "low": 191,
+        "mid": 207,
+        "high": 224
+      },
+      "is_partial_year": false,
+      "period_label": "FY2018",
+      "pnl_basis": "reported_primary",
+      "headcount_basis": "derived",
+      "confidence": "high",
+      "source_ids": [
+        "S4",
+        "S22"
+      ],
+      "notes": "PnL: XTX Markets Ltd net revenue was £305.2m, plus XTX Markets LLC, which only started trading in Dec 2018. Group £307m (range £305-315m), or $410m at 1.335. Net income: XTX Markets Ltd profit of £155.2m; including the LLP pool, about £220m (LLP gross revenue £70.2m). Headcount: XTX Markets Ltd 59 (filed), plus about 30 at the LLP and about 9 non-UK (both inferred)."
+    },
+    {
+      "year": 2019,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 505,
+        "mid": 536,
+        "high": 600
+      },
+      "headcount": {
+        "low": 100,
+        "mid": 115,
+        "high": 135
+      },
+      "net_income_usd_m": {
+        "low": 240,
+        "mid": 267,
+        "high": 294
+      },
+      "is_partial_year": false,
+      "period_label": "FY2019",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S5",
+        "S6",
+        "S23",
+        "S34"
+      ],
+      "notes": "PnL: XTX Markets Ltd net revenue was £339.8m. Trading at the Singapore, US and French entities (Pte/LLC/SAS) is added; they paid XTX Markets Ltd £53.7m for services, and the LLC's derived net income was about $16m. Group £420m (range £405-470m), or $536m at 1.277. The band is wide because the non-UK revenue is reconstructed. The market was lean, but XTX still grew through share gains. Net income: XTX Markets Ltd profit of £196.4m plus about £13m at the LLC gives about £209m. Excluded is the £101.6m LLP partner profit; including it, about £311m. Headcount: XTX Markets Ltd 66 (filed), plus about 33 at the LLP and about 16 non-UK (inferred)."
+    },
+    {
+      "year": 2020,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 1460,
+        "mid": 1566,
+        "high": 1660
+      },
+      "headcount": {
+        "low": 112,
+        "mid": 130,
+        "high": 150
+      },
+      "net_income_usd_m": {
+        "low": 805,
+        "mid": 878,
+        "high": 950
+      },
+      "is_partial_year": false,
+      "period_label": "FY2020",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S6",
+        "S7",
+        "S11",
+        "S24",
+        "S29",
+        "S35",
+        "S53"
+      ],
+      "notes": "PnL: 2020 is a restructuring year. XTX Markets Technologies Ltd (formed Nov 2019) began collecting profit-split service fees. Group revenue is the sum of entity pre-tax profits (XTX Markets Ltd £203.0m, Technologies £395.1m, LLP £367.3m, LLC about £85m) plus external costs: £1,220m (range £1,150-1,280m), or $1,566m at 1.284. This was a strong, COVID-volatility year. Finance Magnates' '£1.065bn Technologies revenue' is actually Technologies plus XTX Markets Ltd; not used. Net income: about £684m excluding the LLP pool; about £1,051m including it. Headcount: XTX Markets Ltd 42 plus Technologies 30 (a period average, as staff moved across during the year), plus the LLP and non-UK staff."
+    },
+    {
+      "year": 2021,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 2110,
+        "mid": 2257,
+        "high": 2380
+      },
+      "headcount": {
+        "low": 145,
+        "mid": 170,
+        "high": 215
+      },
+      "net_income_usd_m": {
+        "low": 1200,
+        "mid": 1312,
+        "high": 1420
+      },
+      "is_partial_year": false,
+      "period_label": "FY2021",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S7",
+        "S12",
+        "S13",
+        "S16",
+        "S20",
+        "S25",
+        "S30",
+        "S36",
+        "S51"
+      ],
+      "notes": "PnL: Technologies' gross service fee was £1,470.8m; its filed net revenue of £903.5m is after the LLP research fee. Adding about £70m retained at XTX Markets Ltd, XTX Markets Trading Ltd and the LLC (derived net income $178.7m) gives £1,640m (range £1,550-1,710m), or $2,257m at 1.376. Finance Magnates' '£1.477bn Technologies revenue' is mislabelled; not used. Net income: about £954m excluding the £557.4m LLP pool; about £1,511m including it. Headcount: Technologies' filed average of 137 is probably on a broader basis (see the 2022 restatement), so the band is wide."
+    },
+    {
+      "year": 2022,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 2850,
+        "mid": 3031,
+        "high": 3170
+      },
+      "headcount": {
+        "low": 150,
+        "mid": 175,
+        "high": 220
+      },
+      "net_income_usd_m": {
+        "low": 1720,
+        "mid": 1870,
+        "high": 2020
+      },
+      "is_partial_year": false,
+      "period_label": "FY2022",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S8",
+        "S13",
+        "S14",
+        "S17",
+        "S25",
+        "S31",
+        "S37",
+        "S52"
+      ],
+      "notes": "PnL: Technologies' gross fee was £2,296.6m (filed net revenue £1,512.6m). Adding about £35m retained by the UK group plus the LLC (derived net income $196.5m) and other non-UK entities gives £2,450m (range £2,330-2,530m), or $3,031m at 1.237. This was a strong rates/FX-volatility year. The FT's '£2.5bn revenue / £1.1bn profit' (via Wikipedia) seems to use the press summing method and is unverified. Net income: about £1,512m excluding the £767.9m LLP pool; about £2,280m including it. Headcount: Technologies' 2022 average was first filed as 133, then restated to 84 with identical wages. The estimate is 84 plus about 40 LLP and about 50 non-UK."
+    },
+    {
+      "year": 2023,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 2880,
+        "mid": 3048,
+        "high": 3170
+      },
+      "headcount": {
+        "low": 180,
+        "mid": 205,
+        "high": 235
+      },
+      "net_income_usd_m": {
+        "low": 1420,
+        "mid": 1539,
+        "high": 1660
+      },
+      "is_partial_year": false,
+      "period_label": "FY2023",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S9",
+        "S14",
+        "S17",
+        "S26",
+        "S38",
+        "S50"
+      ],
+      "notes": "PnL: Technologies' gross fee was £2,118.8m (filed net revenue £1,353.9m). Adding £222.5m retained by the UK group plus the LLC (derived net income $165.7m) gives £2,450m (range £2,340-2,520m), or $3,048m at 1.244. That is flat on 2022 in GBP, in calmer markets. Finance Magnates' 'UK profit £835.4m' covers the UK entities only; not used. Net income: about £1,237m excluding the £746.6m LLP pool; about £1,984m including it. Headcount: the Companies House figure of 98 (3 directors + 95) is Technologies only. Adding the LLP (about 40) and non-UK staff (about 65) gives the group estimate."
+    },
+    {
+      "year": 2024,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 4560,
+        "mid": 4856,
+        "high": 5060
+      },
+      "headcount": {
+        "low": 210,
+        "mid": 240,
+        "high": 275
+      },
+      "net_income_usd_m": {
+        "low": 2390,
+        "mid": 2593,
+        "high": 2800
+      },
+      "is_partial_year": false,
+      "period_label": "FY2024",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S10",
+        "S15",
+        "S18",
+        "S27",
+        "S32",
+        "S39",
+        "S47",
+        "S48"
+      ],
+      "notes": "PnL: Technologies' gross fee was £3,324m (filed net revenue £2,043.4m). Adding £239m retained by the UK group, the LLC (derived net income $389m) and XTX Capital gives £3,800m (range £3,600-3,920m), or $4,856m at 1.278. This was a record-volume year. The press 'combined revenue £2.74bn' (eFinancialCareers / Finance Magnates) double-counts intra-group fees and leaves out the LLP research fee; not used. Net income: about £2,029m excluding the £1,280m LLP pool, which was split among about 30 partners; about £3,309m including it. Headcount: Technologies 113 (filed), plus about 45 LLP members and staff (2024 member count filed as 31, later 26) and about 80 non-UK. Bloomberg (via eFinancialCareers, Apr 2025) says 'over 250', and eFinancialCareers treats Technologies' 113 as about 45% of the total."
+    },
+    {
+      "year": 2025,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 6330,
+        "mid": 6613,
+        "high": 6900
+      },
+      "headcount": {
+        "low": 230,
+        "mid": 260,
+        "high": 300
+      },
+      "net_income_usd_m": {
+        "low": 3120,
+        "mid": 3387,
+        "high": 3660
+      },
+      "is_partial_year": false,
+      "period_label": "FY2025",
+      "pnl_basis": "derived",
+      "headcount_basis": "derived",
+      "confidence": "medium",
+      "source_ids": [
+        "S10",
+        "S15",
+        "S19",
+        "S28",
+        "S33",
+        "S40",
+        "S41",
+        "S42",
+        "S43",
+        "S44",
+        "S45",
+        "S47",
+        "S49"
+      ],
+      "notes": "PnL: Technologies' gross fee was £4,756m; its filed net revenue of £3,022.4m is after the £1,734m LLP research fee. Adding £82m retained by the UK group, the LLC (about £246m derived net income) and XTX Capital ($33.5m) gives £5,010m (range £4,870-5,150m), or $6,613m at about 1.32. Excluded: £217m of venture gains at XTX Investments and gold/interest gains at XTX Holdings Ltd. Finance Magnates' '£3.93bn, +43%' adds Technologies' net revenue to XTX Holdings (UK)'s consolidated revenue. That double-counts £829m of intra-group fees and leaves out the LLP fee; not used. Net income: about £2,566m excluding the £1,727m LLP pool; about £4,293m ($5.67bn) including it. Headcount: about 169 UK staff are filed (Technologies 127, plus 43 at the LLP: 24 members including a corporate member, and 19 employees). About 90 non-UK staff are undisclosed (SAS has fewer than 50). The range is bounded by the Modern Slavery statement's '200+ staff members or contractors' and Bloomberg's 'over 250'."
+    },
+    {
+      "year": 2026,
+      "entity": "firm",
+      "pnl_usd_m": {
+        "low": 3300,
+        "mid": 5400,
+        "high": 7400
+      },
+      "headcount": {
+        "low": 255,
+        "mid": 290,
+        "high": 330
+      },
+      "net_income_usd_m": {
+        "low": 1500,
+        "mid": 2750,
+        "high": 3900
+      },
+      "is_partial_year": true,
+      "period_label": "2026-01-01 to 2026-09-30 (estimated YTD; no reported 2026 PnL)",
+      "pnl_basis": "estimated",
+      "headcount_basis": "derived",
+      "confidence": "low",
+      "source_ids": [
+        "S15",
+        "S28",
+        "S46",
+        "S49"
+      ],
+      "notes": "PnL: no 2026 P&L is public, and FY2026 accounts are not due until about April 2027. This is an ESTIMATE for 1 Jan-30 Sep 2026. Nine-twelfths of FY2025's £5.01bn is £3.76bn; nudged up about 7% for continued growth and record market volumes, that gives about £4.0bn, or $5,400m at an assumed 1.35. The 90% band of $3,300-7,400m reflects XTX's historical year-on-year swings (0% to +190% in GBP). Hard 2026 signals, consistent with continued strong profitability but not P&L: Technologies paid £592m of dividends in Jan-Mar 2026 (£331m in Jan, £261m in Mar); about $165m of capital was injected into XTX Capital in Jan-Apr; and XTX Markets Ltd and XTX Markets Trading Ltd reduced capital in Jul 2026. Net income assumes a margin of about 51% excluding the LLP pool (2023-2025: 50-53%). This is a 9-MONTH figure; multiply by 4/3 to compare with full years. Headcount: the website said '300 employees' on 2026-10-08. That may be stale, since Wikipedia ties the same figure to 2024, so the Jan-Sep average is set at about 290."
+    }
+  ],
+  "ytd_2026": {
+    "cutoff_date": "2026-09-30",
+    "period_label": "2026-01-01 to 2026-09-30 (estimated YTD; no reported 2026 PnL)",
+    "description": "XTX reports only annually; FY2026 accounts are due around April 2027. The 2026 row is an ESTIMATE for the first nine months: 9/12 of FY2025 group revenue, nudged up for continued growth and record volumes, with a 90% band of about ±38%. The only 2026 hard data are Technologies' dividends of £592m (Jan-Mar 2026), capital injections into XTX Capital (Jan-Apr), capital reductions at UK trading entities (Jul), and the website headcount (300, as of 2026-10-08). Multiply PnL by 4/3 for full-year comparisons."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "XTX Markets Limited annual report and financial statements 31 December 2015",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzE1NjEzODQwMGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2016-09-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2015 XTX Markets Limited: net_trading_revenue 72.367 GBP_m; 2015 XTX Markets Limited: net_income_or_profit 47.592 GBP_m; 2015 XTX Markets Limited: headcount 28 people; 2015 XTX Markets Limited: comp_expense 4.182 GBP_m"
+    },
+    {
+      "id": "S2",
+      "title": "XTX Markets Limited annual report 31 December 2016",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzE4MjMxNjA1NmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2017-08-07",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2016 XTX Markets Limited: net_trading_revenue 131.88 GBP_m; 2016 XTX Markets Limited: net_income_or_profit 75.835 GBP_m; 2016 XTX Markets Limited: headcount 43 people"
+    },
+    {
+      "id": "S3",
+      "title": "XTX Markets Limited annual report 31 December 2017",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzIxMDAzNjU2M2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2018-07-19",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2017 XTX Markets Limited: net_trading_revenue 154.573 GBP_m; 2017 XTX Markets Limited: net_income_or_profit 74.99 GBP_m; 2017 XTX Markets Limited: headcount 47 people"
+    },
+    {
+      "id": "S4",
+      "title": "XTX Markets Limited annual report 31 December 2018",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzI0MDQ1MDU2MmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2019-08-01",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2018 XTX Markets Limited: net_trading_revenue 305.238 GBP_m; 2018 XTX Markets Limited: net_income_or_profit 155.193 GBP_m; 2018 XTX Markets Limited: headcount 59 people"
+    },
+    {
+      "id": "S5",
+      "title": "XTX Markets Limited annual report 31 December 2019",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzI3NDM5MjkzM2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2020-08-04",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2019 XTX Markets Limited: net_trading_revenue 339.814 GBP_m; 2019 XTX Markets Limited: net_income_or_profit 196.361 GBP_m"
+    },
+    {
+      "id": "S6",
+      "title": "XTX Markets Limited annual report 31 December 2020 (2019 comparative)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzMwOTU5NDY3M2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-08-08",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2019 XTX Markets Limited: headcount 66 people; 2020 XTX Markets Limited: net_trading_revenue 651.865 GBP_m; 2020 XTX Markets Limited: headcount 42 people"
+    },
+    {
+      "id": "S7",
+      "title": "XTX Markets Limited annual report 31 December 2021 (2020 comparative)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzMzOTY0NTQ4M2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2022-05-18",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2020 XTX Markets Limited: net_income_or_profit 202.964 GBP_m; 2021 XTX Markets Limited: net_trading_revenue 531.558 GBP_m; 2021 XTX Markets Limited: net_income_or_profit 37.905 GBP_m"
+    },
+    {
+      "id": "S8",
+      "title": "XTX Markets Limited annual report 31 December 2022",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzM4NTY0Njc3OGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2023-07-14",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2022 XTX Markets Limited: net_trading_revenue 136.4 GBP_m"
+    },
+    {
+      "id": "S9",
+      "title": "XTX Markets Limited annual report 31 December 2023",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzQyMTY5MzA2NGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2024-05-17",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2023 XTX Markets Limited: net_trading_revenue 65 GBP_m"
+    },
+    {
+      "id": "S10",
+      "title": "XTX Markets Limited annual report 31 December 2025 (2024 comparative, CBCR)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09415174/filing-history/MzUxMjU2MDY2MWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-04-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2024 XTX Markets Limited: net_trading_revenue 60.867 GBP_m; 2025 XTX Markets Limited: net_trading_revenue 62.041 GBP_m; 2025 XTX Markets Limited: headcount 0 people"
+    },
+    {
+      "id": "S11",
+      "title": "XTX Markets Technologies Limited annual report period ended 31 December 2020",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12300034/filing-history/MzMwOTU5NDY3MmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-08-08",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2020 XTX Markets Technologies Limited: net_trading_revenue 412.802 GBP_m; 2020 XTX Markets Technologies Limited: net_income_or_profit 395.1 GBP_m; 2020 XTX Markets Technologies Limited: headcount 30 people"
+    },
+    {
+      "id": "S12",
+      "title": "XTX Markets Technologies Limited annual report 31 December 2021 / 2022 comparative",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12300034/filing-history/MzMzOTY0NTQ4NGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2022-05-18",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2021 XTX Markets Technologies Limited: net_trading_revenue 903.451 GBP_m"
+    },
+    {
+      "id": "S13",
+      "title": "XTX Markets Technologies Limited annual report 31 December 2022 (2021 comparative)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12300034/filing-history/MzM4NTY0Njc3NmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2023-07-14",
+      "type": "primary_filing",
+      "reliability": "medium",
+      "supports": "2021 XTX Markets Technologies Limited: headcount 137 people; 2022 XTX Markets Technologies Limited: net_trading_revenue 1512.56 GBP_m; 2022 XTX Markets Technologies Limited: headcount 133 people"
+    },
+    {
+      "id": "S14",
+      "title": "XTX Markets Technologies Limited annual report 31 December 2023 (2022 comparative)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12300034/filing-history/MzQyMTY5MzA2M2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2024-05-17",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2022 XTX Markets Technologies Limited: net_income_or_profit 1330.77 GBP_m; 2022 XTX Markets Technologies Limited: headcount 84 people; 2023 XTX Markets Technologies Limited: net_trading_revenue 1353.88 GBP_m; 2023 XTX Markets Technologies Limited: net_income_or_profit 1087.04 GBP_m; 2023 XTX Markets Technologies Limited: headcount 98 people"
+    },
+    {
+      "id": "S15",
+      "title": "XTX Markets Technologies Limited annual report 31 December 2025 (2024 comparative)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12300034/filing-history/MzUxMjU2MDU3NGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-04-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2024 XTX Markets Technologies Limited: net_trading_revenue 2043.37 GBP_m; 2024 XTX Markets Technologies Limited: net_income_or_profit 1678.86 GBP_m; 2024 XTX Markets Technologies Limited: headcount 113 people; 2025 XTX Markets Technologies Limited: net_trading_revenue 3022.38 GBP_m; 2025 XTX Markets Technologies Limited: net_income_or_profit 2277.11 GBP_m; 2025 XTX Markets Technologies Limited: headcount 127 people; 2026 XTX Markets Technologies Limited: other 592 GBP_m"
+    },
+    {
+      "id": "S16",
+      "title": "XTX Holdings (UK) Limited consolidated annual report period ended 31 December 2021",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12827536/filing-history/MzMzOTY0NTQ4NWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2022-05-18",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2021 XTX Holdings: net_trading_revenue 372.8 GBP_m"
+    },
+    {
+      "id": "S17",
+      "title": "XTX Holdings (UK) Limited annual report 31 December 2023 (2022 comparative)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12827536/filing-history/MzQyMTY5MzA2NWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2024-05-17",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2022 XTX Holdings: net_trading_revenue 972.743 GBP_m; 2023 XTX Holdings: net_trading_revenue 654.4 GBP_m"
+    },
+    {
+      "id": "S18",
+      "title": "XTX Holdings (UK) Limited annual report 31 December 2024",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12827536/filing-history/MzQ4MTkyMzcyNmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2025-09-19",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2024 XTX Holdings: net_trading_revenue 696.934 GBP_m"
+    },
+    {
+      "id": "S19",
+      "title": "XTX Holdings (UK) Limited annual report and consolidated financial statements 31 December 2025",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12827536/filing-history/MzUxMjU2MDY0OGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-04-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2025 XTX Holdings: net_trading_revenue 911.245 GBP_m; 2025 XTX Holdings: net_income_or_profit 29.594 GBP_m"
+    },
+    {
+      "id": "S20",
+      "title": "XTX Markets Trading Limited annual report period to 31 December 2021",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/12832334/filing-history/MzMzOTY0NTQ3OGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2022-05-18",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2021 XTX Markets Trading Limited: net_trading_revenue 41.1 GBP_m"
+    },
+    {
+      "id": "S21",
+      "title": "XTX Research LLP annual report 31 December 2016 (2015 comparative)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC397853/filing-history/MzE4MzA0MzA5MmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2017-08-16",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2015 XTX Research LLP: gross_revenue 17.609 GBP_m; 2016 XTX Research LLP: headcount 24 people"
+    },
+    {
+      "id": "S22",
+      "title": "XTX Research LLP annual report 31 December 2018 (2017 comparative)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC397853/filing-history/MzI0MjI1NTEzMWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2019-08-22",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2017 XTX Research LLP: headcount 29 people; 2018 XTX Research LLP: gross_revenue 70.164 GBP_m"
+    },
+    {
+      "id": "S23",
+      "title": "XTX Research LLP annual report 31 December 2019",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC397853/filing-history/MzI4NjQ4ODcxOGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2020-12-22",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2019 XTX Research LLP: net_income_or_profit 101.621 GBP_m"
+    },
+    {
+      "id": "S24",
+      "title": "XTX Research LLP annual report 31 December 2020",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC397853/filing-history/MzMwOTU5NDY3NGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-08-08",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2020 XTX Research LLP: net_income_or_profit 367.277 GBP_m"
+    },
+    {
+      "id": "S25",
+      "title": "XTX Research LLP annual report 31 December 2022 (2021 comparative)",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC397853/filing-history/MzM4NzQ3ODk0MGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2023-07-27",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2021 XTX Research LLP: net_income_or_profit 557.362 GBP_m; 2022 XTX Research LLP: net_income_or_profit 767.859 GBP_m"
+    },
+    {
+      "id": "S26",
+      "title": "XTX Research LLP annual report 31 December 2023",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC397853/filing-history/MzQzMTAwODIyMGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2024-08-05",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2023 XTX Research LLP: net_income_or_profit 746.635 GBP_m"
+    },
+    {
+      "id": "S27",
+      "title": "XTX Research LLP annual report 31 December 2024",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC397853/filing-history/MzQ3ODM2NjUxOWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2025-08-22",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2024 XTX Research LLP: net_income_or_profit 1280.35 GBP_m"
+    },
+    {
+      "id": "S28",
+      "title": "XTX Research LLP annual report 31 December 2025",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/OC397853/filing-history/MzU0MDgxMDIyNmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-08-27",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2025 XTX Research LLP: net_income_or_profit 1727.15 GBP_m; 2025 XTX Research LLP: headcount 43 people"
+    },
+    {
+      "id": "S29",
+      "title": "XTX Holdings Limited annual report 31 December 2020",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC034610/filing-history/MzMxNTA5MDY0NmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-10-04",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2020 XTX Holdings Limited: other 471 GBP_m"
+    },
+    {
+      "id": "S30",
+      "title": "XTX Holdings Limited annual report 31 December 2021",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC034610/filing-history/MzM1OTgwMjExMmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2022-11-25",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2021 XTX Holdings Limited: other 775 GBP_m"
+    },
+    {
+      "id": "S31",
+      "title": "XTX Holdings Limited annual report 31 December 2022",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC034610/filing-history/MzM4NzY4Nzk5MGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2023-08-09",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2022 XTX Holdings Limited: other 1764 GBP_m"
+    },
+    {
+      "id": "S32",
+      "title": "XTX Holdings Limited annual report 31 December 2024",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC034610/filing-history/MzQ2MzYzNjQyOGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2025-04-23",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2024 XTX Holdings Limited: other 1860.76 GBP_m"
+    },
+    {
+      "id": "S33",
+      "title": "XTX Holdings Limited annual report 31 December 2025",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC034610/filing-history/MzUxNjM3NjM4NmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-04-15",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2025 XTX Holdings Limited: other 3438.2 GBP_m"
+    },
+    {
+      "id": "S34",
+      "title": "XTX Markets LLC Statement of Financial Condition Dec 31 2019 (Form X-17A-5)",
+      "publisher": "SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1715650/000171565020000003/xtxllcsofc2019ocr.pdf",
+      "date": "2020-02-28",
+      "type": "primary_filing",
+      "reliability": "medium",
+      "supports": "2019 XTX Markets LLC: net_income_or_profit 16.2 USD_m"
+    },
+    {
+      "id": "S35",
+      "title": "XTX Markets LLC Statement of Financial Condition Dec 31 2020",
+      "publisher": "SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1715650/000171565021000002/xtxllcsofc2020v2.pdf",
+      "date": "2021-03-01",
+      "type": "primary_filing",
+      "reliability": "medium",
+      "supports": "2020 XTX Markets LLC: net_income_or_profit 109.6 USD_m"
+    },
+    {
+      "id": "S36",
+      "title": "XTX Markets LLC Statement of Financial Condition Dec 31 2021",
+      "publisher": "SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1715650/000171565022000004/xtxllcsofc2021v3.pdf",
+      "date": "2022-02-28",
+      "type": "primary_filing",
+      "reliability": "medium",
+      "supports": "2021 XTX Markets LLC: net_income_or_profit 178.7 USD_m"
+    },
+    {
+      "id": "S37",
+      "title": "XTX Markets LLC Statement of Financial Condition Dec 31 2022",
+      "publisher": "SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1715650/000171565023000003/xtxllcsofc2022v2.pdf",
+      "date": "2023-02-28",
+      "type": "primary_filing",
+      "reliability": "medium",
+      "supports": "2022 XTX Markets LLC: net_income_or_profit 196.5 USD_m"
+    },
+    {
+      "id": "S38",
+      "title": "XTX Markets LLC Statement of Financial Condition Dec 31 2023",
+      "publisher": "SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1715650/000171565024000005/xtxllcsofc2023v2.pdf",
+      "date": "2024-02-27",
+      "type": "primary_filing",
+      "reliability": "medium",
+      "supports": "2023 XTX Markets LLC: net_income_or_profit 165.7 USD_m"
+    },
+    {
+      "id": "S39",
+      "title": "XTX Markets LLC Statement of Financial Condition Dec 31 2024",
+      "publisher": "SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1715650/000171565025000003/xtxllcsofc2024.pdf",
+      "date": "2025-02-27",
+      "type": "primary_filing",
+      "reliability": "medium",
+      "supports": "2024 XTX Markets LLC: net_income_or_profit 389 USD_m"
+    },
+    {
+      "id": "S40",
+      "title": "XTX Markets LLC Statement of Financial Condition as of December 31, 2025",
+      "publisher": "SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1715650/000171565026000003/xtxllcsofc2025.pdf",
+      "date": "2026-02-27",
+      "type": "primary_filing",
+      "reliability": "medium",
+      "supports": "2025 XTX Markets LLC: net_income_or_profit 325.2 USD_m"
+    },
+    {
+      "id": "S41",
+      "title": "XTX Capital Limited annual report 31 December 2025",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC037965/filing-history/MzUyMDUwNzE4MWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-05-18",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2025 XTX Capital Limited: net_trading_revenue 33.5 USD_m"
+    },
+    {
+      "id": "S42",
+      "title": "XTX Investments Limited strategic report 31 December 2025",
+      "publisher": "Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC035174/filing-history/MzU0MDgwMjE4NGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-09-02",
+      "type": "primary_filing",
+      "reliability": "high",
+      "supports": "2025 XTX Investments Limited: other 217 GBP_m"
+    },
+    {
+      "id": "S43",
+      "title": "XTX Markets Limited MIFIDPRU Disclosures Year Ended 31 December 2025",
+      "publisher": "XTX Markets (company website)",
+      "url": "https://www.xtxmarkets.com/assets/disclosures/uk-mifidpru-xtx-markets-limited.pdf",
+      "date": "2026-03-01",
+      "type": "company_official",
+      "reliability": "high",
+      "supports": "2025 XTX Markets Limited / XTX Markets Trading Limited: comp_expense 51.458 GBP_m"
+    },
+    {
+      "id": "S44",
+      "title": "XTX Markets SAS - Publication des informations au titre du 3eme pilier au 31 decembre 2025",
+      "publisher": "XTX Markets (company website)",
+      "url": "https://www.xtxmarkets.com/assets/disclosures/fr-pillar-3-disclosures.pdf",
+      "date": "2026-03-23",
+      "type": "company_official",
+      "reliability": "medium",
+      "supports": "2025 XTX Markets SAS: headcount 50 people"
+    },
+    {
+      "id": "S45",
+      "title": "Modern Slavery Statement for the Financial Year Ended 31 December 2025",
+      "publisher": "XTX Markets (company website)",
+      "url": "https://www.xtxmarkets.com/assets/disclosures/uk-modern-slavery.pdf",
+      "date": "2026-06-01",
+      "type": "company_official",
+      "reliability": "medium",
+      "supports": "2025 XTX Markets group: headcount 200 people"
+    },
+    {
+      "id": "S46",
+      "title": "xtxmarkets.com homepage",
+      "publisher": "XTX Markets",
+      "url": "https://www.xtxmarkets.com/",
+      "date": "2026-10-08",
+      "type": "company_official",
+      "reliability": "medium",
+      "supports": "2026 XTX Markets group: headcount 300 people"
+    },
+    {
+      "id": "S47",
+      "title": "XTX Markets pay (citing Bloomberg)",
+      "publisher": "eFinancialCareers",
+      "url": "https://www.efinancialcareers.com/news/xtx-markets-pay",
+      "date": "2025-04-07",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "2025 XTX Markets group: headcount 250 people; 2024 XTX Markets: net_trading_revenue 2740 GBP_m"
+    },
+    {
+      "id": "S48",
+      "title": "Lucrative electronic market maker XTX pays $19.9m per head to its 30 partners",
+      "publisher": "eFinancialCareers",
+      "url": "https://www.efinancialcareers.co.uk/news/lucrative-electronic-market-maker-xtx-pays-19-9m-per-head-to-its-30-partners",
+      "date": "2025-08-26",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "2024 XTX Research LLP: net_income_or_profit 1280 GBP_m"
+    },
+    {
+      "id": "S49",
+      "title": "XTX Markets Revenue Rises 43% to £3.93 Billion in 2025",
+      "publisher": "Finance Magnates",
+      "url": "https://www.financemagnates.com/forex/brokers/xtx-markets-revenue-rises-43-to-393-billion-in-2025/",
+      "date": "2026-04-03",
+      "type": "trade_press",
+      "reliability": "low",
+      "supports": "2025 XTX Markets: net_trading_revenue 3933.6 GBP_m (rejected for group totals: sums entity revenues, double-counting intra-group fees)"
+    },
+    {
+      "id": "S50",
+      "title": "XTX Holdings (UK) Limited Posts Double-Digit Profit Decline in 2023",
+      "publisher": "Finance Magnates",
+      "url": "https://www.financemagnates.com/forex/xtx-holdings-uk-limited-posts-double-digit-profit-decline-in-2023/",
+      "date": "2024-05-19",
+      "type": "trade_press",
+      "reliability": "low",
+      "supports": "2023 XTX Markets: net_income_or_profit 835.4 GBP_m (rejected for group totals: sums entity revenues, double-counting intra-group fees)"
+    },
+    {
+      "id": "S51",
+      "title": "XTX's UK Profits Jumped by 42% in 2021",
+      "publisher": "Finance Magnates",
+      "url": "https://www.financemagnates.com/forex/brokers/xtx-markets-2021-revenue-dropped-by-18-cites-brexit/",
+      "date": "2022-05-19",
+      "type": "trade_press",
+      "reliability": "low",
+      "supports": "2021 XTX Markets Technologies Limited: net_trading_revenue 1477 GBP_m (rejected for group totals: sums entity revenues, double-counting intra-group fees)"
+    },
+    {
+      "id": "S52",
+      "title": "Wikipedia: XTX Markets (citing Financial Times, N. Asgari, 17 Jul 2023 and FN London)",
+      "publisher": "Wikipedia (citing Financial Times)",
+      "url": "https://en.wikipedia.org/wiki/XTX_Markets",
+      "date": "2023-07-17",
+      "type": "aggregator_or_blog",
+      "reliability": "low",
+      "supports": "2022 XTX Markets: net_trading_revenue 2500 GBP_m (unverified, second-hand; appears to use the same summing method)"
+    },
+    {
+      "id": "S53",
+      "title": "XTX Markets Almost Doubles Its Revenue in 2020, Profit Gains",
+      "publisher": "Finance Magnates",
+      "url": "https://financemagnates.com/forex/xtx-markets-almost-doubles-its-revenue-in-2020-profit-gains",
+      "date": "2021-08-10",
+      "type": "trade_press",
+      "reliability": "medium",
+      "supports": "2020 XTX Markets Limited: net_trading_revenue 651.9 GBP_m"
+    }
+  ],
+  "caveats": [
+    "No consolidated group accounts exist, so every group revenue and profit figure here is a reconstruction from entity filings. Entity-level numbers are high reliability; group totals are about ±3-7% for 2020 onwards.",
+    "Widely repeated press totals are not comparable with this series: Finance Magnates / eFinancialCareers report £3.93bn for 2025 and £2.74bn for 2024, and the FT £2.5bn for 2022. They add Technologies' net revenue to the trading entities' revenue, double-counting intra-group fees and leaving out the LLP research fee. Our 2025 figure is about 27% higher than the press total.",
+    "Entity revenues are intra-group and must not be summed. Technologies' revenue is entirely intra-group service fees, and the LLP's revenue all comes from Technologies. XTX Markets Ltd's revenue fell from £652m (2020) to £62m (2025) because activity migrated to other entities, not because the business shrank.",
+    "net_income_usd_m is pre-tax and excludes LLP partner profit shares (£1.73bn in 2025), treating them as compensation. Including them, 2025 profit is about $5.67bn; after UK corporation tax (19-25%), the excluded-pool figure would be lower.",
+    "Headcount is a group estimate. Companies House averages (98/113/127 for 2023-2025) cover XTX Markets Technologies Ltd only. Technologies' 2022 average was restated from 133 to 84, and 2021's 137 is probably on the broader basis. Non-UK staff (about 90 in 2025) are not disclosed anywhere.",
+    "2015 covers only H2 trading (from 1 Jul 2015), and 2015-2016 revenue was mostly fee income from GSA/GPT1, not direct trading P&L.",
+    "The 2026 YTD figure is a modelled estimate with no reported P&L behind it, and covers 9 months only.",
+    "This is a draft from a single (primary-documents) research lens: FT, Bloomberg and other top-tier press coverage was not checked systematically, and there was no adversarial review."
+  ],
+  "overall_confidence": "medium",
+  "open_questions": [
+    "P&L and headcount of the non-UK entities (XTX Markets SAS, XTX Markets Pte, India, Armenia, Nordic data-centre entities, XTX Holdings LLC) are undisclosed; how much revenue do they retain beyond the profit-split fees paid to Technologies?",
+    "XTX Markets LLC files only a balance sheet, so its net income is derived from retained earnings and dividends (2021 assumes no dividend). Are these figures right?",
+    "Why did Technologies' non-LLP affiliate payments jump from £128m (2024) to £393m (2025)? Overseas staff or data centres?",
+    "Is the website's '300 employees' current (2026) or stale (2024), and does it include contractors?",
+    "Should partner-pool profit be counted in net income for comparisons with partnership-style peers?",
+    "No 2026 data exists beyond dividends and capital movements; FY2026 filings, expected around April 2027, will replace the estimate."
+  ],
+  "changelog": [],
+  "review_status": "draft: synthesized from 1 of 4 search lenses without adversarial review (stopped early to save budget)"
+}
