@@ -1,6 +1,6 @@
 # Trading Firm PnL per Head
 
-Year-by-year estimates of trading PnL, headcount and PnL per head for eleven quantitative trading firms, 2015 through 2026 year-to-date, with 90% error bars on every figure.
+Year-by-year estimates of trading PnL, headcount and PnL per head for twelve quantitative trading firms, 2015 through 2026 year-to-date, with 90% error bars on every figure.
 
 | Key | Firm | PnL definition |
 |---|---|---|
@@ -15,6 +15,7 @@ Year-by-year estimates of trading PnL, headcount and PnL per head for eleven qua
 | `virtu` | Virtu Financial | Adjusted Net Trading Income (reported, non-GAAP) |
 | `xtx` | XTX Markets | Revenue per UK Companies House accounts |
 | `jump` | Jump Trading | Net trading revenue (mostly estimated) |
+| `drw` | DRW (incl. Cumberland DRW) | Net trading revenue (mostly estimated) |
 
 ## Dashboard
 
@@ -71,7 +72,7 @@ Each firm had its own multi-agent workflow:
 3. **Challenge**: two adversarial critics. A source auditor re-verified load-bearing numbers against their sources. A consistency critic attacked definitions, FX arithmetic, headcount jumps, per-head plausibility and interval calibration.
 4. **Reconcile**: a final agent ruled on every challenge and logged the changes.
 
-**Status of this edition:** research was stopped early to save budget. The search lenses that finished (one to four per firm, recorded in `data/raw/<key>_round1.json` and each firm's `review_status`) were synthesized into tables. Steps 3 and 4 did not run, so no firm's table has been adversarially reviewed. Optiver's consistency critic did finish, and its challenges are saved in the raw file but were not applied.
+**Status of this edition:** research was stopped early to save budget. The search lenses that finished (one to four per firm, recorded in `data/raw/<key>_round1.json` and each firm's `review_status`) were synthesized into tables. Steps 3 and 4 did not run, so no firm's table has been adversarially reviewed. Optiver's consistency critic did finish, and its challenges are saved in the raw file but were not applied. DRW was added later and ran the full pipeline, critics and reconciler included.
 
 Agents ranked sources by trust: filings and official documents first, then Bloomberg, FT, WSJ and Reuters reporting from documents, then trade press. Blogs, wikis, forums and AI-written pages served only as leads. Agents were told to trace recycled claims back to their origin. Most private-firm figures still rest on press reports of debt-offering documents, which are informative but are not audited public disclosures.
 

@@ -26,6 +26,7 @@ FIRMS = [
     ("virtu", "Virtu Financial", "Virtu", "public_market_maker"),
     ("xtx", "XTX Markets", "XTX", "market_maker"),
     ("jump", "Jump Trading", "Jump", "market_maker"),
+    ("drw", "DRW", "DRW", "market_maker"),
 ]
 PRIMARY_ENTITY = {"renaissance": "firm_total"}
 RENTEC_ALIASES = {
