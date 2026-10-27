@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T08:54:56Z",
+ "generated_at": "2026-10-27T00:11:53Z",
  "years": [
   2015,
   2016,
@@ -18,13 +18,19 @@
  "research": {
   "started_at": "2026-10-08T07:49Z",
   "stopped_at": "2026-10-08T08:48Z",
-  "agents_total": 42,
+  "agents_total": 50,
   "rounds": [
    {
     "round": 1,
     "started": "07:49 UTC",
     "finished": "08:48 UTC",
     "summary": "One workflow per firm. 34 search and synthesis agents completed before the run was stopped to save budget: all four search lenses for Optiver, IMC and Virtu; three for Jane Street, HRT and Citadel Securities; two for Renaissance, D. E. Shaw, Two Sigma and Jump; one for XTX. Optiver, IMC and Virtu were synthesized inside their workflows; the other eight were synthesized afterwards from the saved evidence, with no further web searching. Adversarial critics and reconciliation did not complete for any firm."
+   },
+   {
+    "round": 2,
+    "started": "2026-10-26",
+    "finished": "2026-10-27",
+    "summary": "DRW added through the full pipeline: four search lenses, synthesis, a source auditor and a consistency critic, then a reconciler. All 8 agents completed."
    }
   ]
  },
@@ -11346,6 +11352,1317 @@
      "type": "aggregator_or_blog",
      "reliability": "low",
      "supports": "2021 revenue $120M and net income $12M, for an uncertain entity (search snippet). REJECTED."
+    }
+   ]
+  },
+  {
+   "key": "drw",
+   "name": "DRW",
+   "short": "DRW",
+   "type": "market_maker",
+   "primary_entity": "firm",
+   "entities": [
+    {
+     "key": "firm",
+     "name": "DRW (firm-wide)",
+     "description": "DRW Holdings LLC / DRW Trading Group and its trading affiliates globally: DRW Investments LLC, DRW Canada/Vigilant, DRW Singapore and DRW Europe B.V., the UK entities, Houston energy, the former Chopper and RGM teams, and Cumberland DRW (crypto). Excludes DRW Venture Capital, commercial real estate (Convexity) and Don Wilson's personal investments."
+    }
+   ],
+   "series": {
+    "firm": [
+     {
+      "year": 2015,
+      "pnl": [
+       540.0,
+       750.0,
+       1000.0
+      ],
+      "hc": [
+       640.0,
+       700.0,
+       760.0
+      ],
+      "ph_quad": [
+       0.7636478148933383,
+       1.0714285714285714,
+       1.448181804269802
+      ],
+      "ph_worst": [
+       0.7105263157894737,
+       1.0714285714285714,
+       1.5625
+      ],
+      "partial": false,
+      "period": "FY2015 (2015-01-01 to 2015-12-31); headcount at ~2015-12-31",
+      "pnl_basis": "derived",
+      "hc_basis": "derived",
+      "confidence": "low",
+      "sources": [
+       "S3",
+       "S2",
+       "S18",
+       "S17",
+       "S28",
+       "S27",
+       "S38"
+      ],
+      "notes": "PnL is derived from a hard floor. DRW Investments, LLC (DRWI; main US prop-trading entity including its UK branch; audited US GAAP accounts at Companies House) had FY2015 total revenue of $470.4m less trading expenses (commissions/execution and interest) of $59.6m, giving $410.8m net trading revenue, up 34% from $306.7m in FY2014. Entity net income was $272.4m after $72.2m compensation. Other units sat outside or alongside DRWI: Chopper Trading (acquired Jan 2015; booking entity unknown), DRW Canada/Vigilant, DRW Europe, the new Singapore office and a small Cumberland. The group figure assumes DRWI was 41-76% of group PnL (mid 55%). That share is higher than the 2018 share (~38.5%) because the group was less diversified in 2015. No firm-wide revenue figure exists for 2015. Headcount: US 401(k) active participants at 31 Dec 2015 were 497 (welfare plan 517) and UK LLP average staff was 32. Bloomberg (Jan 2015) said 'more than 500' before Chopper, which itself had 'more than 200'. Net retention of Chopper staff was about 100: Chopper's 401(k) fell from 190 to 9 active while DRW's rose from 394 to 497. Bloomberg (Mar 2016) said '700-person'. Bottom-up: US ~500 + UK ~32 + Canada ~130 (estimated) + Singapore ~15 + other ~25, about 700. Average heads in 2015 about 660."
+     },
+     {
+      "year": 2016,
+      "pnl": [
+       500.0,
+       690.0,
+       930.0
+      ],
+      "hc": [
+       700.0,
+       725.0,
+       770.0
+      ],
+      "ph_quad": [
+       0.6858168568203256,
+       0.9517241379310345,
+       1.28539819453466
+      ],
+      "ph_worst": [
+       0.6493506493506493,
+       0.9517241379310345,
+       1.3285714285714285
+      ],
+      "partial": false,
+      "period": "FY2016 (2016-01-01 to 2016-12-31); headcount at ~2016-12-01",
+      "pnl_basis": "derived",
+      "hc_basis": "reported_press",
+      "confidence": "low",
+      "sources": [
+       "S4",
+       "S16",
+       "S17",
+       "S29",
+       "S39"
+      ],
+      "notes": "PnL is derived. DRWI FY2016 net trading revenue was $378.8m ($454.8m revenue less $76.0m trading expenses), down 8%; entity net income was $245.6m. The group figure is DRWI divided by an assumed share of 41-76% (mid 55%), the same structure as 2015. RGM Advisors was not yet acquired (80 active in its own 401(k) at end-2016) and Cumberland was small. Market regime was moderate (Brexit, US election). No firm-wide revenue figure was found. Headcount: Reuters (1 Dec 2016) described 'his privately held 725-employee company, DRW Holdings LLC', a specific, non-round number. US 401(k) active participants at end-2016 were 500 (welfare plan 525), a US share of about 0.69. Bloomberg (Mar 2016) said '700-person'. UK LLP average staff was 38. Average heads in 2016 about 710."
+     },
+     {
+      "year": 2017,
+      "pnl": [
+       580.0,
+       800.0,
+       1080.0
+      ],
+      "hc": [
+       780.0,
+       840.0,
+       910.0
+      ],
+      "ph_quad": [
+       0.6837345711352789,
+       0.9523809523809523,
+       1.2973570573177686
+      ],
+      "ph_worst": [
+       0.6373626373626373,
+       0.9523809523809523,
+       1.3846153846153846
+      ],
+      "partial": false,
+      "period": "FY2017 (2017-01-01 to 2017-12-31); headcount at ~2017-12-31",
+      "pnl_basis": "derived",
+      "hc_basis": "derived",
+      "confidence": "low",
+      "sources": [
+       "S5",
+       "S6",
+       "S30",
+       "S40",
+       "S49",
+       "S57",
+       "S16",
+       "S19"
+      ],
+      "notes": "PnL is derived. DRWI FY2017 net trading revenue was $404.9m ($487.2m revenue less $82.2m trading expenses), up 7%; entity net income was $269.6m. Units added since 2016: Cumberland in the 2017 crypto boom (WSJ, Dec 2017, company-reported: more than $20bn of crypto traded in the year; volume, not revenue), RGM Advisors (Austin, about 70 staff), the Houston energy team (Nov 2017) and DRW Singapore (company-only total net revenue S$40.3m, profit before tax S$1.6m). The DRWI share is assumed at 37-70% (mid ~51%), on a path from 55% in 2016 to 38.5% in 2018. 2017 was a low-volatility year for markets broadly; peers Optiver and IMC were down. The FT's 'single London-based subsidiary [that] made almost $1bn in revenue over 2017 and 2018' is DRWI itself ($487m + $376m = $863m of total revenue before about $82-84m a year of trading costs), not an additional entity. Headcount is derived: US 401(k) active participants at year-end were 580 (welfare plan 603) and UK average staff was 49. 580/0.69 gives about 840, between Reuters' 725 (Dec 2016) and eFC's ~900 (Oct 2018). Average heads in 2017 about 785."
+     },
+     {
+      "year": 2018,
+      "pnl": [
+       500.0,
+       760.0,
+       1100.0
+      ],
+      "hc": [
+       850.0,
+       900.0,
+       960.0
+      ],
+      "ph_quad": [
+       0.5528152957256381,
+       0.8444444444444444,
+       1.2276019238390932
+      ],
+      "ph_worst": [
+       0.5208333333333334,
+       0.8444444444444444,
+       1.2941176470588236
+      ],
+      "partial": false,
+      "period": "FY2018 (2018-01-01 to 2018-12-31); headcount at ~2018-10 to 2018-12",
+      "pnl_basis": "derived",
+      "hc_basis": "reported_press",
+      "confidence": "low",
+      "sources": [
+       "S5",
+       "S6",
+       "S19",
+       "S31",
+       "S41",
+       "S50",
+       "S26",
+       "S1",
+       "S71",
+       "S72"
+      ],
+      "notes": "PnL is derived. DRWI FY2018 net trading revenue was $292.1m ($376.2m revenue less $84.1m trading expenses: $65.2m commissions/fees and $18.4m interest), down 28%; entity net income was $131.2m. This was DRWI's last filing (its UK establishment closed Feb 2020). The DRWI share is now assumed at 26.5-58% (mid 38.5%), revised from the draft's 42%. The draft's own cross-check against Bloomberg-implied 2019 group figures gives 34% (net) to 38% (revenue). Peers had a stronger 2018 than 2017 or 2019 (Optiver $1,535m vs $919m/$1,269m; IMC $709m vs $417m/$520m), and part of DRWI's fall may reflect booking moving to other entities, such as DRW Europe B.V. ahead of Brexit (unproven). Other units grew: DRW Singapore total net revenue S$83.7m vs S$40.3m, profit before tax S$15.9m. Cumberland's only figure is the SEC allegation of more than $400m revenue from Mar 2018 to Oct 2024, about $60m+ a year on average, in a case dismissed in Mar 2025. RGM, Houston, Canada and Europe also contributed. Result: $292.1m / 0.385 = about $760m (range about $500m to $1.1bn). Headcount: eFC (8 Oct 2018) said DRW 'employs about 900 people globally'. US 401(k) active participants at year-end were 614 (welfare plan 633). UK average staff was 58; Singapore about 40. Average heads in 2018 about 870."
+     },
+     {
+      "year": 2019,
+      "pnl": [
+       650.0,
+       830.0,
+       1030.0
+      ],
+      "hc": [
+       1000.0,
+       1030.0,
+       1100.0
+      ],
+      "ph_quad": [
+       0.6256088164572811,
+       0.8058252427184466,
+       1.0020161862621733
+      ],
+      "ph_worst": [
+       0.5909090909090909,
+       0.8058252427184466,
+       1.03
+      ],
+      "partial": false,
+      "period": "FY2019 (2019-01-01 to 2019-12-31); headcount at ~2019-11/12",
+      "pnl_basis": "derived",
+      "hc_basis": "reported_press",
+      "confidence": "medium",
+      "sources": [
+       "S1",
+       "S7",
+       "S8",
+       "S32",
+       "S42",
+       "S50",
+       "S12",
+       "S5"
+      ],
+      "notes": "PnL is derived from Bloomberg (18 Jun 2021; people familiar; loan-marketing context). 2020 revenue rose 50% to about $1.5bn and EBITDA rose 67% to about $750m, implying 2019 revenue of about $1.0bn (about $0.94-1.07bn given rounding) and EBITDA of about $450m. It is unknown whether 'revenue' is gross or net of trading costs. DRW's audited DRWI accounts present gross 'Total revenue' with trading expenses of 12.7-22.4% below it (22.4% in 2018), while S&P refers to 'net revenue'. The two readings were weighted about 50/50. Gross reading: a 13-18% trading-cost haircut plus 5-10% for VC and real estate gives about $760-830m. Net reading: about $880-950m. Mid $830m, lowered from $860m after the source auditor's challenge. net_income_usd_m is a proxy, not reported: implied EBITDA of about $450m less small term-loan interest (first $300m loan Nov 2019), depreciation and amortisation, and foreign taxes. It is holding-level and includes VC and real estate. DRW Singapore company-only revenue was flat at S$83.7m. Headcount: Moody's (7 Nov 2019) said 'the firm has grown steadily to over 1000 employees operating in ten offices'. That is a floor, so the low is now 1,000. US 401(k) active participants at year-end were 688 (welfare plan 676) and UK average staff was 65 (Apr-Dec 2019). Average heads in 2019 about 965.",
+      "ni": [
+       330.0,
+       400.0,
+       470.0
+      ]
+     },
+     {
+      "year": 2020,
+      "pnl": [
+       1000.0,
+       1270.0,
+       1550.0
+      ],
+      "hc": [
+       1030.0,
+       1100.0,
+       1200.0
+      ],
+      "ph_quad": [
+       0.895247250747102,
+       1.1545454545454545,
+       1.4240627267599797
+      ],
+      "ph_worst": [
+       0.8333333333333334,
+       1.1545454545454545,
+       1.5048543689320388
+      ],
+      "partial": false,
+      "period": "FY2020 (2020-01-01 to 2020-12-31); headcount at ~2020-12-31",
+      "pnl_basis": "derived",
+      "hc_basis": "derived",
+      "confidence": "medium",
+      "sources": [
+       "S1",
+       "S9",
+       "S12",
+       "S33",
+       "S43",
+       "S44",
+       "S51",
+       "S2",
+       "S3",
+       "S4",
+       "S5"
+      ],
+      "notes": "This is the only firm-wide annual PnL figure found. Bloomberg (18 Jun 2021): 'At futures, options and cryptocurrencies trader DRW Holdings LLC, revenue and Ebitda surged in 2020 by 50% and 67%, respectively, to about $1.5 billion and $750 million, people familiar with the matter said.' It was verified only through matching syndicated snippets; Bloomberg returned 403. S&P (Feb 2021) said 'profitability was up considerably in 2020... While some peers posted even stronger results'. The basis label changed from reported_press to derived, because the row value is a conversion of an undefined holding-level 'revenue'. Gross reading (DRW's audited format; trading costs 11-17% of revenue, at the low end in a high-volume year), with 5-10% removed for VC and real estate: about $1.15-1.29bn. Net reading: about $1.35-1.43bn. The ~50/50 blend gives a mid of $1.27bn. The low of $1.0bn allows gross revenue, a larger VC/crypto-equity share in 2020 and rounding of 'about'; the high of $1.55bn allows net revenue and a small VC share. Corroboration: DRW Singapore company-only revenue more than doubled to S$195m (profit before tax S$84m). Calibration for 2021-2025: 0.7 x UK all-in staff cost per head ($542k) x ~1,065 average heads gives about $405m of comp, about 32% of $1.27bn, consistent with a ~50% EBITDA margin on gross revenue. net_income_usd_m is a proxy, not reported: EBITDA of about $750m less interest on the ~$300m term loan, depreciation and amortisation, and foreign taxes. It is holding-level and includes VC and real estate. Headcount is derived: US 401(k) active participants at year-end were 746 (+8%; welfare plan 718) and UK average staff was 63. Bottom-up: US 746 + UK ~70 + Canada ~170 (estimated) + Singapore ~45 + other ~40, about 1,070. The headcount was raised to about 1,100, low 1,030, because the same method undershot Moody's '>1,000' floor in Nov 2019 by about 30-50. Average heads in 2020 about 1,065.",
+      "ni": [
+       590.0,
+       680.0,
+       770.0
+      ]
+     },
+     {
+      "year": 2021,
+      "pnl": [
+       900.0,
+       1400.0,
+       2050.0
+      ],
+      "hc": [
+       1120.0,
+       1230.0,
+       1350.0
+      ],
+      "ph_quad": [
+       0.724643922617803,
+       1.1382113821138211,
+       1.6856719998400675
+      ],
+      "ph_worst": [
+       0.6666666666666666,
+       1.1382113821138211,
+       1.8303571428571428
+      ],
+      "partial": false,
+      "period": "FY2021 (2021-01-01 to 2021-12-31); headcount at ~2021-12-31",
+      "pnl_basis": "estimated",
+      "hc_basis": "derived",
+      "confidence": "low",
+      "sources": [
+       "S9",
+       "S34",
+       "S44",
+       "S51",
+       "S26",
+       "S43"
+      ],
+      "notes": "Estimated; no firm-wide figure exists. Comp-scaling: 0.7 x UK all-in cost per head ($549k; \u00a337.5m / 94) x ~1,165 average heads gives about $448m of firm comp. At the 2020-calibrated ~32% comp ratio that implies about $1.40bn (31% gives $1.45bn; 35% gives $1.28bn). The mid was raised from $1.35bn, which used an un-evidenced 31-35% band. Signals are mixed. Positives: the crypto boom (Cumberland; DRW VC gains are out of scope), UK LLP turnover \u00a366.6m to \u00a380.3m (+21%), UK performance fees from affiliates \u00a367.4m, and UK cost per head flat. Negatives: DRW Singapore company-only revenue fell 42% to S$112.5m (profit before tax S$24.8m vs S$84m). Peers were mixed (Optiver -25%, IMC flat, Virtu -16%). The draft's Moody's quote ('strong performance thus far in 2021', at an Oct 2021 upgrade to Ba2) is not in the cited TCR issue and is unverified; Moody's did rate DRW Ba2 by Dec 2024. The $500m term loan was refinanced in Feb 2021; its interest (about $20-25m) is not deducted. Bars run -36%/+46%: the UK-to-firm pay factor (0.55-0.9), the comp ratio and UK representativeness are all assumptions. Headcount is derived: US 401(k) active participants at year-end were 826 (+11%; welfare plan 800) and UK average staff was 94. Bottom-up: US 826 + UK ~120 + Canada ~190 (estimated) + Singapore ~50 + other ~40, about 1,230. Average heads in 2021 about 1,165 (6% below year-end)."
+     },
+     {
+      "year": 2022,
+      "pnl": [
+       1250.0,
+       1950.0,
+       2900.0
+      ],
+      "hc": [
+       1360.0,
+       1490.0,
+       1620.0
+      ],
+      "ph_quad": [
+       0.8324085666341731,
+       1.308724832214765,
+       1.9665855312448282
+      ],
+      "ph_worst": [
+       0.7716049382716049,
+       1.308724832214765,
+       2.1323529411764706
+      ],
+      "partial": false,
+      "period": "FY2022 (2022-01-01 to 2022-12-31); headcount at ~2022-12-31",
+      "pnl_basis": "estimated",
+      "hc_basis": "derived",
+      "confidence": "low",
+      "sources": [
+       "S35",
+       "S45",
+       "S46",
+       "S52",
+       "S53",
+       "S12"
+      ],
+      "notes": "Estimated; no firm-wide figure exists, but the signals point to a peak year. UK LLP 2022 accounts (related-party note; verified by reconciler OCR): performance fees received were \u00a3122.7m from other related parties plus \u00a330.6m from members, \u00a3153.3m in total, against \u00a367.4m in 2021. The draft's '\u00a3122.7m (restated)' was wrong; the figure was not restated. UK turnover was \u00a3175.2m. UK operating profit was \u00a355.5m, an exceptional figure against \u00a35-6m in other years. UK wages were \u00a384.6m for 169 staff, all-in about \u00a3570k ($705k) per head. DRW Singapore profit before tax was S$70.4m vs S$24.8m. The regime was record rates and energy/commodity volatility, which is DRW's core (S&P: more rates-weighted than peers). Possible drag: the FTX/crypto crash via Cumberland. Comp-scaling: 0.7 x $705k x ~1,360 average heads gives about $671m. At 32% that implies $2.10bn. The mid is trimmed about 7% to $1.95bn because the UK's exceptional profit and pay jump point to UK (European energy-crisis) desks outperforming the group, so the UK pay proxy overstates firm pay. That trim is applied symmetrically, and 2023 is left untrimmed. Peers were mixed (Optiver +27%, IMC flat, Virtu -23%, Jump about -27%). Term-loan interest of about $25-40m is not deducted. Bars are -36%/+49%. Headcount is derived: US 401(k) active participants at year-end were 967 (+17%; welfare plan 938; amended Oct 2024 filing) and UK average staff was 169 (+80%). Bottom-up: US 967 + UK ~200 + Canada ~220 (estimated) + Singapore ~55 + other ~50, about 1,490. Average heads in 2022 about 1,360 (9% below year-end)."
+     },
+     {
+      "year": 2023,
+      "pnl": [
+       950.0,
+       1420.0,
+       2100.0
+      ],
+      "hc": [
+       1680.0,
+       1820.0,
+       1950.0
+      ],
+      "ph_quad": [
+       0.5189187463137771,
+       0.7802197802197802,
+       1.163233875642171
+      ],
+      "ph_worst": [
+       0.48717948717948717,
+       0.7802197802197802,
+       1.25
+      ],
+      "partial": false,
+      "period": "FY2023 (2023-01-01 to 2023-12-31); headcount at ~2023-12-31",
+      "pnl_basis": "estimated",
+      "hc_basis": "derived",
+      "confidence": "low",
+      "sources": [
+       "S20",
+       "S36",
+       "S46",
+       "S47",
+       "S53",
+       "S54",
+       "S6",
+       "S23",
+       "S73",
+       "S74"
+      ],
+      "notes": "Estimated; no firm-wide figure exists. The UK cost basis was checked by the reconciler (OCR of the FY2024 accounts). The 2023 comparative shows staff costs of \u00a376,031,909 against 244 average staff (39 technology, 79 operations and support, 126 trading), so \u00a3312k ($388k) per head is on a consistent basis. The consistency critic's 'mixed bases' concern is rejected. Comp-scaling: 0.7 x $388k x ~1,655 average heads gives about $449m. At the calibrated ~31.5% comp ratio that is about $1.42bn, raised from $1.35bn. No trim was applied, symmetric with 2022: the 45% fall in UK bonus pay per head partly reflects UK-specific normalisation and staff-mix change toward technology. DRW-specific negatives place DRW at the weak end of peers (peer net revenue -12 to -18%): UK performance fees fell to \u00a3102.7m in total (\u00a386.5m from other related parties plus \u00a316.2m from members; -33%), UK operating profit fell to \u00a35.3m, and DRW Singapore profit before tax fell to S$47.7m (revenue restated to S$121m). Result: -27% year on year. A Moody's 'solid financial performance in 2023 to date' quote was relayed by a lens but its source issue was not identified; it is unverified. The FT's 'Singapore subsidiary brought in $312mn in net revenues' is S$408.8m of originally reported revenue grossed up with about S$292m of repo interest, later restated; not used. Term-loan interest of about $70-80m is not deducted. Headcount: The TRADE (3 Jul 2023) said 'roughly 1700 members of staff globally'. US 401(k) active participants at year-end were 1,174 (+21%); the welfare plan's 1,725 reflects a change in count basis and is not used. UK average staff was 244 (restated from 291). Bottom-up at year-end: US 1,174 + UK ~290 + Canada ~250 + Singapore/HK ~70 + other ~60, about 1,820-1,850. Revelio's 2,067 (Q4 2023) is LinkedIn-modelled and biased high. Average heads in 2023 about 1,655 (9% below year-end)."
+     },
+     {
+      "year": 2024,
+      "pnl": [
+       1200.0,
+       1850.0,
+       2800.0
+      ],
+      "hc": [
+       1950.0,
+       2080.0,
+       2200.0
+      ],
+      "ph_quad": [
+       0.5748390573901792,
+       0.8894230769230769,
+       1.3528948304725457
+      ],
+      "ph_worst": [
+       0.5454545454545454,
+       0.8894230769230769,
+       1.435897435897436
+      ],
+      "partial": false,
+      "period": "FY2024 (2024-01-01 to 2024-12-31); headcount at ~2024-11/12",
+      "pnl_basis": "estimated",
+      "hc_basis": "reported_press",
+      "confidence": "low",
+      "sources": [
+       "S6",
+       "S10",
+       "S11",
+       "S12",
+       "S37",
+       "S47",
+       "S54",
+       "S15",
+       "S23",
+       "S26"
+      ],
+      "notes": "Estimated; no firm-wide figure exists (FT, Nov 2024: 'Its revenue and profit figures are private'). S&P (Feb 2025): 'good, albeit lower-than-peer profitability', with 2024 results 'good, but not as strong' as competitors', because DRW is less exposed to equity volatility and more to rates. Moody's (Dec 2024): 'solid financial performance in 2024 to date'. The term loan was refinanced at $900m (Jun 2024) and upsized to $1.15bn in Dec 2024 to add trading capital (Moody's item says $200m, S&P says $250m). VC and real estate (5-10% of net revenue per S&P) are excluded. UK LLP: performance fees \u00a3135.2m (+32% vs 2023's \u00a3102.7m total; none from members), turnover \u00a3171.2m, operating profit \u00a36.2m, all-in cost \u00a3371k ($474k) per head. DRW Singapore's profit before tax of S$91.3m was mostly a S$92.9m subsidiary dividend (S$40-44m dividends also in 2022-23). Comp-scaling: 0.7 x $474k x ~1,950 average heads gives about $647m of firm comp. At 35% (above the 32% calibration, per S&P's explicit statement that DRW lagged its peers) that implies about $1.85bn, raised from $1.80bn (at 32% it would be $2.0bn). Peers grew 24-64% (Optiver +26%, IMC +64%, Virtu +32%); DRW's +30% sits at their low end. Term-loan interest of about $80-90m is not deducted. Bars widened to -35%/+51%. Headcount: FT (Nov 2024) said 'about 2,100 staff'. US 401(k) active participants at year-end were 1,262 (about 60% of 2,100) and UK average staff was 322. Bottom-up: US 1,262 + UK ~350 + Canada ~285 + Asia ~90 + other ~70, about 2,060. Average heads in 2024 about 1,950."
+     },
+     {
+      "year": 2025,
+      "pnl": [
+       1350.0,
+       2150.0,
+       3300.0
+      ],
+      "hc": [
+       2030.0,
+       2200.0,
+       2420.0
+      ],
+      "ph_quad": [
+       0.607737241339416,
+       0.9772727272727273,
+       1.5112655289250203
+      ],
+      "ph_worst": [
+       0.5578512396694215,
+       0.9772727272727273,
+       1.625615763546798
+      ],
+      "partial": false,
+      "period": "FY2025 (2025-01-01 to 2025-12-31); headcount at ~2025-12-31",
+      "pnl_basis": "estimated",
+      "hc_basis": "derived",
+      "confidence": "low",
+      "sources": [
+       "S48",
+       "S14",
+       "S55",
+       "S56",
+       "S21",
+       "S22",
+       "S25",
+       "S24",
+       "S58",
+       "S23",
+       "S59",
+       "S15",
+       "S65",
+       "S66",
+       "S67",
+       "S68"
+      ],
+      "notes": "Estimated; no firm-wide figure exists. Comp-scaling: 0.7 x UK all-in cost per head $528k (\u00a3150.4m / 376) x ~2,140 average heads gives about $791m. At about 36.5% comp ratio (raised from 35% because UK pay growth outran UK performance-fee growth: fee per UK head was flat at about \u00a3415k) that is about $2.17bn. Mid $2.15bn (+16%), raised from $1.95bn. The draft's trim for 'Singapore weakness' is removed. DRW Singapore's 56% fall in fair-value trading gains (S$46.2m) coincides with service-fee income rising to S$96.3m (from S$51.5m) and S$1.65bn of related-party net trading gains (nil in 2024). That points to a booking and transfer-pricing restructuring rather than weaker performance: gains plus fees were -9%. UK LLP: performance fees \u00a3155.9m (+15%), turnover \u00a3202.0m (+18%), and an operating loss of \u00a33.5m, which is a cost-plus transfer-pricing residual and not trading PnL. DRW reports record ETF volume of $1.9T (volume, not PnL). Peers had a record year: Optiver +36%, IMC +40%, Virtu ANTI +34%, Citadel Securities +26%, HRT about +58%. DRW is kept below peer growth given S&P's description of DRW lagging peers in 2024 and the flat UK fee per head. The upper tail ($3.3bn) allows peer-median growth or more. Term-loan interest of about $90-100m is not deducted. Headcount is derived: UK average staff 376 (+54); eFC (Nov 2025, unnamed sources) gives Singapore about 100 and Hong Kong about 20; DRW Canada reported 298 full-time staff (Mar 2026 profile, probably 2025 data); US about 1,340 (estimated; plan-year 2025 Form 5500 not yet published). FIA and Wikipedia (citing Financial News) say 'over 2,000'/2,000. Revelio's Q4 2025 figure of 2,468 is LinkedIn-modelled and biased high by about 15-20%. Average heads in 2025 about 2,140."
+     },
+     {
+      "year": 2026,
+      "pnl": [
+       -220.0,
+       75.0,
+       480.0
+      ],
+      "hc": [
+       2050.0,
+       2230.0,
+       2450.0
+      ],
+      "ph_quad": [
+       -0.09869631232027633,
+       0.033632286995515695,
+       0.21526692497852123
+      ],
+      "ph_worst": [
+       -0.1073170731707317,
+       0.033632286995515695,
+       0.23414634146341465
+      ],
+      "partial": true,
+      "period": "2026-01-01 to 2026-03-31 (Q1 2026 only; DO NOT ANNUALIZE); headcount = approximate Q1 2026 average",
+      "pnl_basis": "estimated",
+      "hc_basis": "estimated",
+      "confidence": "low",
+      "sources": [
+       "S14",
+       "S13",
+       "S22",
+       "S23",
+       "S60",
+       "S48",
+       "S61",
+       "S64",
+       "S69",
+       "S70"
+      ],
+      "notes": "Q1 2026 only, the latest period with any PnL data. DO NOT ANNUALIZE: the quarter mixes a large one-off North American power and gas loss with a record industry quarter, so x4 is meaningless. eFinancialCareers (4 Aug 2026; actual headline 'DRW raised pay to \u00a3340k per head in London after hiring'; wording verified by both critics) says: 'The FT reported in June that it parted ways with its North American head of power and natural gas trading... after the firm made an adjusted loss of $176m in the first quarter of 2026.' The FT article (12 Jun 2026) could not be accessed, and the draft's quoted FT headline 'Group took $176mn hit' could not be traced, so it is dropped. Moody's put the Ba2 CFR on review for downgrade on 16 Jun 2026, citing a proprietary trading-risk appetite that 'may be higher than peers' and 'above average revenue and earnings volatility'. The outcome is unknown: no TCR issue after 28 Jul 2026 is online. Scenario weights:\n(a) A firm-level adjusted loss after costs, about 55%, favoured by eFC's 'the firm made' and Moody's language. Adding back about $200-290m of Q1 costs (salaries, technology, occupancy, plus desk-level bonus accrual at profitable desks) gives net trading revenue of about +$20m to +$115m.\n(b) A trading-level loss, about 20%: about -$176m.\n(c) A loss on the power/gas desk only, about 25%. The rest of the firm is valued at 1.0-1.3x the 2025 quarterly run-rate (about $540m), reflecting a record Q1 for market makers (Virtu Q1 ANTI $786.5m, +58.2%, verified; Citadel Securities $4.3bn; HRT $6.4bn), but tempered because DRW is less equity-volatility-exposed. Less the $176m, that gives about +$360m to +$525m.\nThe median is about +$75m (mid); the probability-weighted mean is about +$105m; the 90% interval is -$220m to +$480m. net_income_usd_m records the reported 'adjusted loss' of -$176m as the mid. The range runs from about -$450m (if the $176m is trading-level, so costs come on top) to about +$180m (if it is desk-level and the rest of the firm was profitable). Its definition ('adjusted') is unknown. Nothing after 31 Mar 2026 was found. Headcount, Q1 2026 average to match the PnL period: year-end 2025 about 2,200 plus modest growth gives about 2,230. drw.com (fetched Oct 2026, undated) says 'over 2,000 employees'. Revelio (Mar 2026, 2,528) and Tracxn (Sep 2026, 2,500) are LinkedIn-modelled and biased high by about 15-20%. Built In's 1,825 is undated and probably stale.",
+      "ni": [
+       -450.0,
+       -176.0,
+       180.0
+      ],
+      "ann": 4.055555555555555
+     }
+    ]
+   },
+   "pnl_definition": "Net trading revenue of DRW's trading businesses: DRW Holdings LLC / DRW Trading Group and its trading affiliates globally, including Cumberland DRW. It means trading gains net of direct trading costs (exchange, clearing and brokerage fees, execution costs, and financing of trading positions), before compensation and other operating expenses. Calendar year, USD millions. Excluded: DRW Venture Capital, commercial real estate (Convexity) and Don Wilson's personal investments. Interest on the holding company's term loan is not deducted, for comparability with peers' reported net trading revenue (for example Virtu's ANTI, which excludes corporate-debt interest). The ratings agencies note that the loan proceeds partly fund trading capital. Rough size of that interest, not reported: about $20-25m in 2021, $25-40m in 2022, $70-80m in 2023, $80-90m in 2024 and $90-100m in 2025, on $500m rising to $900m and then $1.15bn. The only firm-wide figure is Bloomberg's FY2020 holding-level 'revenue' of about $1.5bn. It is not known whether that figure is gross or net of trading costs, so it was converted with a blended haircut: about 8-9% for probable trading costs (the gross and net readings weighted roughly 50/50) plus about 6% for VC and real estate (5-10% of net revenue per S&P), giving about $1.27bn. net_income_usd_m has three uses, all proxies. 2019 and 2020 are holding-level profit proxies derived from reported or implied EBITDA, and they include VC and real estate. 2026 Q1 records the reported 'adjusted loss of $176m', whose definition is unknown.",
+   "headcount_definition": "Total employees of DRW's trading group, all functions and offices, excluding contractors where possible. Values are approximate year-end (31 Dec) point estimates. The exception is 2026, which is an approximate Q1 2026 average to match the Q1-only PnL. Each year is built bottom-up from three inputs: US 401(k) active participants at plan year-end from DOL Form 5500 (DRW Holdings LLC), which is a US-only floor; DRW UK Partners LLP average staff from Companies House, adjusted toward year-end; and estimates for Canada, Singapore and Hong Kong, the Netherlands, Israel and other offices. The bottom-up totals are anchored to dated firm-wide figures: 725 (Reuters, Dec 2016), about 900 (eFC, Oct 2018), over 1,000 (Moody's, Nov 2019), about 1,700 (The TRADE, Jul 2023) and about 2,100 (FT, Nov 2024). Annual average headcount runs about 2-11% below year-end in growth years: about 6% in 2021, 9-10% in 2022 and 9-11% in 2023. Each row's notes give the approximate average. PnL per head computed on year-end heads therefore understates per-average-head productivity by up to about 11% in fast-growth years compared with peers that report average FTE.",
+   "fx_note": "The PnL anchors are already in USD: DRW Investments, LLC's US GAAP accounts, Bloomberg's FY2020 figures, the FT and eFC, and the SEC complaint. GBP figures from DRW UK Partners LLP (staff costs, performance fees, turnover) are used only as scaling and direction indicators, converted at the orchestrator's annual-average GBPUSD rates: 2020 1.284, 2021 1.376, 2022 1.237, 2023 1.244, 2024 1.278, 2025 about 1.32. The 2015-2024 rates match known annual averages. The 2025 rate was kept as given, because no web check was possible (search budget exhausted); an error of +/-0.02 would move the 2025 UK cost per head by about 1.5% and the row by less than that. UK all-in staff cost per head: 2020 \u00a3422k ($542k), 2021 \u00a3399k ($549k), 2022 \u00a3570k ($705k), 2023 \u00a3312k ($388k, on \u00a376.03m and 244 average staff as shown in the FY2024 comparative), 2024 \u00a3371k ($474k), 2025 \u00a3400k ($528k). DRW Singapore Pte Ltd figures are in SGD (functional currency confirmed by the source auditor) and are used only for year-on-year direction. They are not converted into any row value. No EUR figures were used.",
+   "methodology": "There is one firm-wide PnL anchor. Bloomberg (18 Jun 2021, people familiar, during a loan process) reported FY2020 revenue of about $1.5bn (+50%) and EBITDA of about $750m (+67%). FY2019 is implied from those growth rates. Both years were converted to the project definition with a blended haircut. One reading is that Bloomberg's 'revenue' is gross: DRW's audited DRWI accounts present 'Total revenue' before trading expenses of 12.7-22.4% of revenue. The other is that it is net: S&P speaks of 'net revenue'. The two readings were weighted roughly 50/50, and 5-10% for VC and real estate (S&P) was removed. Result: 2020 about $1.27bn, 2019 about $0.83bn.\n\n2015-2018: the hard anchor is the audited net trading revenue of DRW Investments, LLC (DRWI), DRW's main US prop-trading entity, which filed whole-entity accounts at Companies House to FY2018. It was scaled to the group by an assumed DRWI share of group PnL. The share path runs about 55% in 2015-16, 51% in 2017 and 38.5% in 2018. In 2018 it is cross-checked against the Bloomberg-implied 2019 group figure, a 34-38% share.\n\n2021-2025: no figures exist. Firm compensation = 0.7 (range 0.55-0.9) x the UK LLP's audited all-in staff cost per head x average firm headcount. That comp is divided by a comp ratio anchored at the ~32% the 2020 calibration implies, moving up to 35-37% only where DRW-specific evidence supports it: S&P's 'good, but not as strong' as peers in 2024, and UK pay outrunning UK performance fees in 2025. Judgment trims are applied only for identified UK-specific effects, such as the 2022 European energy-desk outperformance, and are applied symmetrically, so 2023 is untrimmed. Direction is cross-checked against UK LLP performance fees from affiliates and members, UK turnover and operating profit, DRW Singapore results (taking account of transfer-pricing and booking changes), rating-agency text and peer regimes (Optiver, IMC and Virtu primary figures).\n\nConsequence: for 2021-2025, PnL per head is essentially the UK pay per head times 0.7 divided by the comp ratio. It is model-derived, and PnL and headcount errors are positively correlated by construction.\n\n2026: Q1 only, from the FT's 'adjusted loss of $176m' as relayed by eFC. Scope and definition are unresolved, so three scenarios are weighted: firm-level after costs about 55%, trading-level about 20%, desk-only about 25%. The rest-of-firm run-rate in the desk-only scenario is valued at the strong Q1 2026 industry regime.\n\nHeadcount: bottom-up from DOL Form 5500 US 401(k) counts and UK LLP accounts, plus office estimates, anchored to dated press and rating-agency counts.\n\nThe reconciler ran no new web searches (shared budget exhausted). It directly fetched or OCR'd: the UK LLP FY2024 accounts (2023 comparative staff costs and headcount), the UK LLP 2022 related-party note (performance fees from members) and Virtu's Q1 2026 8-K. It also probed Troubled Company Reporter issues after 28 Jul 2026; none are online.",
+   "overall_confidence": "low",
+   "ytd_cutoff": "2026-03-31",
+   "ytd_period": "2026-01-01 to 2026-03-31 (Q1 2026)",
+   "ytd_description": "Q1 2026 only. Do not annualize. The only 2026 PnL data point is the FT-reported (12 Jun 2026; relayed verbatim by eFinancialCareers on 4 Aug 2026) statement that DRW parted ways with its North American head of power and gas trading 'after the firm made an adjusted loss of $176m in the first quarter of 2026'. Two things are unresolved: whether the $176m is firm-wide or desk-level, and whether 'adjusted' means before or after compensation. eFC's wording and Moody's 16 Jun 2026 downgrade review (citing 'above average revenue and earnings volatility') favour a firm-level reading. The project-definition estimate of Q1 net trading revenue (before compensation) is a mid of +$75m, with a 90% interval of -$220m to +$480m, scenario-weighted. The upper tail reflects a desk-only loss in a record industry quarter (Virtu Q1 2026 ANTI +58.2%). net_income_usd_m records the reported -$176m adjusted loss (range -$450m to +$180m). No H1, Q3 or YTD figure after 31 Mar 2026 was found, and the outcome of Moody's review is unknown. Headcount is the approximate Q1 2026 average, about 2,230.",
+   "caveats": [
+    "Only one firm-wide PnL figure exists: Bloomberg's FY2020 holding-level revenue of about $1.5bn and EBITDA of about $750m, sourced to people familiar during a loan process, with 'revenue' undefined. FY2019 is implied from its growth rates. Every other year is derived from partial-entity data or estimated, so bars are wide and the 2021-2025 year-to-year profile is driven by proxies, not reported results.",
+    "Gross vs net ambiguity in the FY2020 anchor. DRW's audited DRWI accounts present gross 'Total revenue' before trading expenses (12.7-22.4% of revenue), while S&P refers to 'net revenue'. The two readings are weighted roughly 50/50 and 5-10% is removed for VC and real estate. If Bloomberg's figure is gross, 2019-2020 are about 5% overstated; if it is net, about 8% understated.",
+    "The 2015-2018 rows scale one audited entity, DRW Investments, LLC, by an assumed share of group PnL: about 55% in 2015-16, 51% in 2017 and 38.5% in 2018, with ranges of 26-76%. That share is the dominant uncertainty in those rows.",
+    "2021-2025 PnL is model-derived: 0.7 (0.55-0.9) x UK LLP all-in staff cost per head x average firm headcount / comp ratio (anchored at ~32% from 2020; 35-37% in 2024-25). PnL per head for those years is therefore essentially UK pay per head x 0.7 / comp ratio, not independent evidence. PnL and headcount errors are positively correlated by construction, so a per-head band built assuming independent errors (as in build.py) overstates the per-head uncertainty slightly for these years. The UK staff mix also shifted toward technology (technology staff 39 to 75 to 111 in 2023-2025) and the UK's share of firm staff rose from about 6% (2020) to about 17% (2025), which makes the UK-to-firm pay factor less stable.",
+    "The subsidiary figures cannot be added together or read as trading PnL. They are transfer-priced: UK LLP turnover is service income plus performance fees (from affiliates and, in 2022-23, from members); the UK trading companies' results are swept by group adjustments; DRW Singapore's revenue includes intra-group service fees, subsidiary dividends and, in 2025, a booking change, and its 2022-23 figures are grossed up with repo interest. The UK LLP's 2025 operating loss is a cost-plus residual, not trading performance.",
+    "Press items traced back to their origin: the FT's 'London subsidiary made almost $1bn revenue over 2017-2018' is DRWI's $863m of total revenue before trading costs. The FT's '$312mn net revenues' for Singapore in 2023 is a gross-up artefact, later restated to S$121m.",
+    "The 2026 row covers Q1 only, to 2026-03-31. DO NOT ANNUALIZE. It rests on eFC's verbatim relay of an FT article that was not accessed. Whether the '$176m adjusted loss' is firm-wide or desk-level, and before or after compensation, is unresolved, so the row uses scenario weighting. The outcome of Moody's June 2026 downgrade review is unknown.",
+    "Term-loan interest is not deducted, for comparability with peers' net trading revenue, even though the rating agencies say the proceeds partly fund trading capital. Rough size, not reported: about $20-25m (2021), $25-40m (2022), $70-80m (2023), $80-90m (2024) and $90-100m (2025). Deducting it would lower those rows by about 2-5%.",
+    "Headcount values are approximate year-end points except 2026, which is a Q1 average. Annual averages run 2-11% below year-end in growth years; the approximate averages are in each row's notes. US 401(k) active counts are US-only floors. Canada (before the 2026 profile), Netherlands, Israel and other offices are estimated. The UK 2023 figure was restated from 291 to 244. The DOL welfare-plan count of 1,725 for 2023 reflects a change in count basis. LinkedIn-modelled aggregators (Revelio, Tracxn) run about 15-20% above bottom-up and press figures.",
+    "Cumberland DRW's only figures are SEC allegations: more than $400m of revenue and more than $27m of profit cumulatively from Mar 2018 to Oct 2024, in a case dismissed with prejudice in Mar 2025. Cumberland also moves positions to a DRW affiliate. No annual Cumberland PnL exists.",
+    "Several rating-agency quotes used qualitatively are unsourced: Moody's 'strong performance thus far in 2021' (Oct 2021 Ba2 upgrade), 'solid financial performance in 2023 to date' and 'Cumberland relatively small'. The source audit found they are not in the TCR issues the draft attributed them to. Moody's 'solid financial performance in 2024 to date' is confirmed.",
+    "Aggregator revenue figures were rejected: PrivCo ($65-250m), Owler, Growjo, RocketReach, ZoomInfo ($1bn) and AlgoTradingMap (~$5bn) are unsourced, mutually contradictory and inconsistent with the primary data.",
+    "The shared web-search budget was exhausted before both the critique and reconciliation steps, so no new searches were possible. The reconciler verified only by direct fetch or OCR: the UK LLP FY2024 accounts, the UK LLP 2022 related-party note and Virtu's Q1 2026 8-K. TCR issues after 28 Jul 2026 are not online. The Bloomberg 2021, FT 2024, FT June 2026 and Financial News 2025 originals were never fetched directly."
+   ],
+   "open_questions": [
+    "Full Moody's and S&P credit reports on DRW Holdings LLC (2019-2026). They are behind subscriptions but almost certainly show annual net revenue, EBITDA and leverage, and would replace the 2015-2025 estimates with near-primary figures. They would also settle whether DRW's 'revenue' is gross or net of trading costs. Leveraged-loan coverage of the 2019, 2021 and 2024 term loans and the Dec 2024 upsize (Bloomberg, LCD, 9fin, Octus/Reorg) may quote revenue or EBITDA.",
+    "The outcome of Moody's 16 Jun 2026 review for downgrade, which normally concludes within about 90 days and may include H1 2026 commentary. TCR issues after 28 Jul 2026 are not online.",
+    "The text of the FT article of 12 Jun 2026 (FT content id 58558368-a938-4194-ba0d-cb10f3a0915d): whether the $176m Q1 2026 adjusted loss is group-wide or desk-level, how 'adjusted' is defined, and any H1 or Q3 2026 results.",
+    "The full text of the Bloomberg article of 18 Jun 2021: the definition of DRW's 'revenue' (gross or net of exchange and clearing fees; whether VC and real estate are included) and whether other years were mentioned.",
+    "Dutch KvK annual accounts for DRW Europe B.V. and DRW Europe Derivatives B.V., probably consolidated European trading (the 2024 S$92.9m dividend to DRW Singapore suggests material subsidiary profits). Also any Canadian, Israeli or Hong Kong entity accounts.",
+    "Whether DRWI's 28% revenue fall in 2018 reflects booking moving to DRW Europe B.V. or other entities ahead of Brexit (relevant to the 2018 group estimate).",
+    "Cumberland DRW financial statements filed with state money-transmitter regulators or the NYDFS, which could give annual crypto PnL.",
+    "The plan-year 2025 Form 5500 (expected around Oct 2026) for US headcount at end-2025, and DRW Canada headcount history for 2015-2024 to tighten the bottom-up totals.",
+    "The Financial News article of 3 Sep 2025 ('Trading giant DRW boosts pay and headcount in London') and any Crain's Chicago coverage of DRW's office and headcount, for dated firm-wide counts in 2020-2022."
+   ],
+   "changelog": [
+    "2020 PnL: 1,050/1,300/1,560 -> 1,000/1,270/1,550 and pnl_basis reported_press -> derived. Partially accepted the source auditor's major challenge. The row value is a conversion of an undefined 'revenue', so 'derived' is correct. DRW's audited gross-revenue format supports a larger trading-cost haircut, but S&P's use of 'net revenue' keeps the net reading live, so the two were weighted ~50/50. The proposed $1.24bn, which effectively assumes the gross reading at ~70%, was not adopted.",
+    "2019 PnL: 690/860/1,040 -> 650/830/1,030. Partially accepted the source auditor's minor challenge, for the same gross/net reasoning (proposal 640/820/1,020).",
+    "2019 headcount: 970/1,020/1,100 -> 1,000/1,030/1,100 and basis reported_primary -> reported_press. Accepted both critics: Moody's 'over 1000 employees' (Nov 2019) is a floor, and US 401(k) counts kept rising.",
+    "2020 headcount: 990/1,080/1,190 -> 1,030/1,100/1,200. Follow-on to the 2019 floor: the bottom-up method undershot Moody's floor by about 30-50 in 2019, US 401(k) actives rose 8% in 2020, and a low below 2019's floor was implausible.",
+    "2018 PnL: 470/690/950 -> 500/760/1,100. Partially accepted the consistency critic (major). The draft's 42% DRWI share contradicted its own 34-38% cross-check, and the peer regime was strongest in 2018. Adopted a 38.5% share mid (critic: 37%; $790m) because the booking-shift argument is plausible but unproven. 2017 is unchanged.",
+    "2021-2025 comp-scaling (consistency critic, major): partially accepted. The comp-ratio anchor is reset to the ~32% that the recalibrated 2020 implies (0.7 x $542k x ~1,065 average heads = ~$405m comp on $1.27bn). Drift to 35-37% is allowed only in 2024-25, where S&P's 'not as strong as competitors' and UK pay outrunning UK fees give DRW-specific support. Judgment trims are applied symmetrically (2022 trimmed, 2023 not). A caveat now states that 2021-2025 PnL per head is model-derived and that PnL and headcount errors are positively correlated. The critic's argument that S&P's statement describes only a level captured by the 2020 calibration was rejected for 2024-25, because S&P compares DRW's 2024 results specifically with peers'.",
+    "2021 PnL: 950/1,350/1,900 -> 900/1,400/2,050. Calibrated comp ratio and the consistency critic's wider-bars challenge (accepted).",
+    "2022 PnL: 1,300/1,850/2,600 -> 1,250/1,950/2,900. Calibrated ratio ($2.10bn) less a 7% UK-energy-outperformance trim; wider bars accepted. Supported by the corrected UK evidence: \u00a3153.3m performance fees and \u00a355.5m operating profit.",
+    "2023 PnL: 950/1,350/2,000 -> 950/1,420/2,100. Partially accepted the consistency critic (proposal 1,450/950-2,150): no extra trim, symmetric with 2022. REJECTED its 'mixed bases' claim: the reconciler OCR'd the FY2024 UK accounts, whose 2023 comparative shows staff costs of \u00a376,031,909 against 244 average staff (39/79/126), so \u00a3312k per head is on one basis.",
+    "2024 PnL: 1,250/1,800/2,600 -> 1,200/1,850/2,800. Wider bars accepted (critic proposed 1,150/1,800/2,800); mid nudged up by the comp-ratio recalibration (35% instead of 33-38%).",
+    "2025 PnL: 1,300/1,950/2,900 -> 1,350/2,150/3,300. Accepted the source auditor's point that DRW Singapore's 56% fall in fair-value gains is a booking/transfer-pricing change (service fees S$96.3m vs S$51.5m; S$1.65bn of related-party trading gains), so the 'Singapore weakness' trim is removed. Adopted the consistency critic's 2,150 mid and 3,300 high (peers +26-58%; UK fees +15%, turnover +18%), keeping DRW below peer growth.",
+    "2026 Q1 PnL: -220/50/420 -> -220/75/480. The critics conflicted (source auditor -220/60/330; consistency critic -230/75/550). Both confirm eFC's verbatim 'the firm made an adjusted loss of $176m', so the firm-level after-cost scenario is weighted ~55%, trading-level ~20%, desk-only ~25%. The desk-only scenario is revalued at the strong Q1 2026 regime (Virtu ANTI +58.2%, verified by fetch), which raises the high end, but with only ~25% weight the high is 480, not 550. The proposed cut to 330 is rejected because it ignores the record-quarter regime.",
+    "2026 headcount: 2,050/2,250/2,520 (mid/late 2026) -> 2,050/2,230/2,450 (Q1 2026 average). Accepted the consistency critic: the denominator should match the Q1-only PnL period. A 'DO NOT ANNUALIZE' flag was added to the period label, notes and ytd description.",
+    "2026 net_income_usd_m added: -450/-176/+180. It records the reported 'adjusted loss of $176m' (firm-level reading as mid), with bars spanning the trading-level and desk-level readings. Accepted the consistency critic's basis/label challenge. 2019-2020 net income is kept but explicitly labelled as EBITDA-derived holding-level proxies including VC and real estate.",
+    "UK LLP performance-fee narrative corrected (source auditor; verified by reconciler OCR of the 2022 related-party note). 2022 total was \u00a3153.3m (\u00a3122.7m from other related parties plus \u00a330.6m from members), not '\u00a3122.7m restated'. 2023 total was \u00a3102.7m. Year-on-year changes are now -33% (2023), +32% (2024) and +15% (2025). The 2022 UK operating profit of \u00a355.5m is added as peak-year evidence. No values changed from this item alone.",
+    "Term-loan interest: kept excluded, but the rationale changed from 'corporate financing' to peer comparability (Virtu ANTI excludes corporate-debt interest), because the rating agencies say the proceeds fund trading capital (source auditor, accepted). Estimated annual amounts are now stated per row; the draft's '$50-110m from 2022' caveat overstated 2022.",
+    "Headcount definition: 'averages 3-7% below year-end' corrected to 2-11%, with approximate average heads in every row's notes (consistency critic, accepted).",
+    "Source attributions corrected (source auditor, accepted). S9 contains only the S&P item, so the Moody's 2021/2023 quotes are flagged as unsourced. S11's upsize is $200m per Moody's vs $250m per S&P, and the 'Cumberland relatively small' quote is unsourced. S14's real headline is 'DRW raised pay to \u00a3340k per head in London after hiring', and the FT headline 'Group took $176mn hit' is dropped as untraceable. S21 is undated. The S36 welfare-plan count of 1,725 is explained as a change in count basis. S45-S48 were updated with verified fee, turnover and operating-profit figures.",
+    "New sources S64-S74 added, all real URLs from the critics and present in the project's peer tables: Virtu Q1 2026 and Q4 2025 8-Ks, Optiver and IMC annual reports, and Bloomberg/Investing.com peer-regime articles. S64 was verified by the reconciler's fetch."
+   ],
+   "review_status": "final",
+   "sources": [
+    {
+     "id": "S1",
+     "title": "Jane Street, DRW Traders Made Billions as Virus Hit Markets",
+     "publisher": "Bloomberg News (Tom Maloney; syndicated on BNN Bloomberg)",
+     "url": "https://www.bloomberg.com/news/articles/2021-06-18/jane-street-and-drw-traders-made-billions-in-pandemic-markets",
+     "date": "2021-06-18",
+     "type": "top_tier_press",
+     "reliability": "medium",
+     "supports": "FY2020 DRW Holdings revenue of about $1.5bn (+50%) and EBITDA of about $750m (+67%), per people familiar, in a loan-marketing context. Implies FY2019 at about $1.0bn and about $450m. Verified only through multiple syndicated snippets (Bloomberg returned 403); 'revenue' is undefined (gross vs net of trading costs)."
+    },
+    {
+     "id": "S2",
+     "title": "DRW Investments, LLC Financial Report FY2015 (2014 comparative), Companies House FC026974",
+     "publisher": "UK Companies House (filing by DRW Investments, LLC; RSM US audited)",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC026974/filing-history/MzE2NTkzNDU5M2FkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2017-01-05",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "DRWI FY2014 baseline: total revenue $357.3m, trading expenses $50.5m, net trading revenue $306.7m, net income $199.0m. Entity only; gross 'Total revenue' presentation with trading expenses below."
+    },
+    {
+     "id": "S3",
+     "title": "DRW Investments, LLC Financial Report FY2016 (2015 comparative), Companies House FC026974",
+     "publisher": "UK Companies House (filing by DRW Investments, LLC)",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC026974/filing-history/MzE5NDQ3MTg4NGFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2018-01-04",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "DRWI FY2015: revenue $470.4m, trading expenses $59.6m (12.7%), net trading revenue $410.8m, net income $272.4m, compensation $72.2m. Entity only."
+    },
+    {
+     "id": "S4",
+     "title": "DRW Investments, LLC Financial Report FY2017 (2016 comparative), Companies House FC026974",
+     "publisher": "UK Companies House (filing by DRW Investments, LLC)",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC026974/filing-history/MzIyNjY2NjA4OWFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2019-02-11",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "DRWI FY2016: revenue $454.8m, trading expenses $76.0m (16.7%), net trading revenue $378.8m, net income $245.6m. Entity only."
+    },
+    {
+     "id": "S5",
+     "title": "DRW Investments, LLC Financial Report FY2018 (2017 comparative), Companies House FC026974",
+     "publisher": "UK Companies House (filing by DRW Investments, LLC)",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC026974/filing-history/MzI1NjM5NDE1OGFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2020-02-04",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "DRWI FY2017: revenue $487.2m, trading expenses $82.2m, net trading revenue $404.9m, net income $269.6m. FY2018: revenue $376.2m, trading expenses $84.1m (22.4%), net trading revenue $292.1m, net income $131.2m. The last filing (UK establishment closed Feb 2020)."
+    },
+    {
+     "id": "S6",
+     "title": "Is Chicago's Don Wilson the smartest man in trading?",
+     "publisher": "Financial Times (read via uk.headtopics.com reprint)",
+     "url": "https://uk.headtopics.com/is-chicago-s-don-wilson-the-smartest-man-in-trading-61698706",
+     "date": "2024-11-11",
+     "type": "top_tier_press",
+     "reliability": "medium",
+     "supports": "About 2,100 staff (Nov 2024); 'revenue and profit figures are private'; more than half of income from fundamental bets. The 'London subsidiary made almost $1bn revenue over 2017-2018' is DRWI ($863m). The 'Singapore $312mn net revenues' is a gross-up artefact (S$408.8m) and is not used."
+    },
+    {
+     "id": "S7",
+     "title": "DRW HOLDINGS: Moody's Assigns B1 Rating to $300MM First Lien Loan",
+     "publisher": "Moody's Investors Service via Troubled Company Reporter (bankrupt.com)",
+     "url": "http://www.bankrupt.com/TCR_Public/191107.mbx",
+     "date": "2019-11-07",
+     "type": "rating_agency",
+     "reliability": "high",
+     "supports": "'The firm has grown steadily to over 1000 employees operating in ten offices' (Nov 2019). Loan proceeds for general corporate purposes and to increase trading capital at operating subsidiaries."
+    },
+    {
+     "id": "S8",
+     "title": "DRW HOLDINGS: S&P Assigns 'BB-' ICR; Outlook Stable",
+     "publisher": "S&P Global Ratings via Troubled Company Reporter",
+     "url": "http://www.bankrupt.com/TCR_Public/191111.mbx",
+     "date": "2019-11-11",
+     "type": "rating_agency",
+     "reliability": "high",
+     "supports": "First $300m term loan B; unregulated entities account for the vast majority of earnings. No revenue figures."
+    },
+    {
+     "id": "S9",
+     "title": "DRW HOLDINGS: S&P Assigns 'BB-' Rating on Senior Secured Term Loan",
+     "publisher": "S&P Global Ratings via Troubled Company Reporter",
+     "url": "http://www.bankrupt.com/TCR_Public/210215.mbx",
+     "date": "2021-02-15",
+     "type": "rating_agency",
+     "reliability": "high",
+     "supports": "$500m term loan refinancing; S&P: 'DRW's profitability was up considerably in 2020... While some peers posted even stronger results in 2020'. Corrected attribution: this issue contains only the S&P item. The Moody's quotes previously attached here ('strong performance thus far in 2021'; 'solid financial performance in 2023 to date') are not in it and remain unsourced."
+    },
+    {
+     "id": "S10",
+     "title": "DRW HOLDINGS: S&P Rates New Senior Secured Term Loan 'BB-'",
+     "publisher": "S&P Global Ratings via Troubled Company Reporter",
+     "url": "http://www.bankrupt.com/TCR_Public/240619.mbx",
+     "date": "2024-06-19",
+     "type": "rating_agency",
+     "reliability": "high",
+     "supports": "The new term loan due 2031 refinances the existing $900m term loan. Debt size only."
+    },
+    {
+     "id": "S11",
+     "title": "DRW HOLDINGS: $200MM Term Loan Upsize No Impact on Moody's Ba2 CFR",
+     "publisher": "Moody's Ratings via Troubled Company Reporter",
+     "url": "http://bankrupt.com/TCR_Public/241209.mbx",
+     "date": "2024-12-09",
+     "type": "rating_agency",
+     "reliability": "high",
+     "supports": "'Solid financial performance in 2024 to date' (confirmed); upsize proceeds to increase trading capital. The upsize is $200m here vs $250m per S&P (S12). Corrected: the 'Cumberland DRW relatively small' quote is not in this item and is unsourced."
+    },
+    {
+     "id": "S12",
+     "title": "DRW HOLDINGS: S&P Affirms 'BB-' Long-Term ICR, Outlook Stable",
+     "publisher": "S&P Global Ratings via Troubled Company Reporter",
+     "url": "http://www.bankrupt.com/TCR_Public/250220.mbx",
+     "date": "2025-02-20",
+     "type": "rating_agency",
+     "reliability": "high",
+     "supports": "VC and commercial real estate are 5-10% of net revenue; 'good, albeit lower-than-peer profitability'; 2024 results 'good, but not as strong' as competitors; more rates-weighted than peers; debt $1.15bn after the $250m upsize, which 'provides additional stable funding to support further growth'."
+    },
+    {
+     "id": "S13",
+     "title": "DRW HOLDINGS: Moody's Puts 'Ba2' CFR on Review for Downgrade",
+     "publisher": "Moody's Ratings via Troubled Company Reporter",
+     "url": "http://bankrupt.com/TCR_Public/260616.mbx",
+     "date": "2026-06-16",
+     "type": "rating_agency",
+     "reliability": "high",
+     "supports": "Review for downgrade citing a proprietary trading-risk appetite that 'may be higher than peers' and 'above average revenue and earnings volatility', plus a review of risk governance. No figures. No TCR issue after 28 Jul 2026 is online, so the outcome is unknown."
+    },
+    {
+     "id": "S14",
+     "title": "DRW raised pay to \u00a3340k per head in London after hiring",
+     "publisher": "eFinancialCareers (Alex McMurray), citing Financial Times June 2026",
+     "url": "https://www.efinancialcareers.co.uk/news/drw-made-a-loss-in-its-uk-entity-after-hiring-and-raising-pay",
+     "date": "2026-08-04",
+     "type": "trade_press",
+     "reliability": "medium",
+     "supports": "Verbatim: 'The FT reported in June that it parted ways with its North American head of power and natural gas trading... after the firm made an adjusted loss of $176m in the first quarter of 2026.' Also: UK LLP swung from a \u00a36.2m profit (2024) to a \u00a33.5m operating loss (2025); UK staff up 54 to 376. The headline corrected from the URL slug. The FT headline 'Group took $176mn hit' is not in this article and is unverified."
+    },
+    {
+     "id": "S15",
+     "title": "HFTs and electronic trading firms: Who they hire and what they do",
+     "publisher": "eFinancialCareers",
+     "url": "https://www.efinancialcareers.co.uk/news/high-frequency-trading-hiring-and-pay",
+     "date": "2026-02-13",
+     "type": "trade_press",
+     "reliability": "low",
+     "supports": "'2,000 staff, including over 800 technologists' (likely circular with drw.com); 2024 average pay of \u00a3321.8k for 322 UK staff."
+    },
+    {
+     "id": "S16",
+     "title": "CFTC takes Chicago firm, founder to trial over manipulation claims",
+     "publisher": "Reuters (via Investing.com)",
+     "url": "https://investing.com/news/stock-market-news/cftc-takes-chicago-firm,-founder-to-trial-over-manipulation-claims-444982",
+     "date": "2016-12-01",
+     "type": "top_tier_press",
+     "reliability": "high",
+     "supports": "'his privately held 725-employee company, DRW Holdings LLC' (Dec 2016)."
+    },
+    {
+     "id": "S17",
+     "title": "Manipulation or Brilliant Trade? The Curious Case of Don Wilson",
+     "publisher": "Bloomberg (via Traders Magazine reprint)",
+     "url": "https://www.tradersmagazine.com/departments/buyside/manipulation-or-brilliant-trade-the-curious-case-of-don-wilson/",
+     "date": "2016-03-09",
+     "type": "top_tier_press",
+     "reliability": "medium",
+     "supports": "'the 700-person derivatives powerhouse DRW Holdings LLC' (Mar 2016)."
+    },
+    {
+     "id": "S18",
+     "title": "DRW Acquires HFT Firm Chopper, Joining Chicago-Based Traders",
+     "publisher": "Bloomberg (via Traders Magazine reprint)",
+     "url": "https://www.tradersmagazine.com/departments/buyside/drw-acquires-hft-firm-chopper-joining-chicago-based-traders/",
+     "date": "2015-01-15",
+     "type": "top_tier_press",
+     "reliability": "medium",
+     "supports": "DRW 'employs more than 500 people' before the Chopper acquisition; Chopper had 'more than 200 employees'."
+    },
+    {
+     "id": "S19",
+     "title": "Technologists in trading firms now in 'powerful' position, says DRW's Asia head",
+     "publisher": "eFinancialCareers",
+     "url": "https://www.efinancialcareers.hk/news/2018/10/drw-hiring-technologists-singapore",
+     "date": "2018-10-08",
+     "type": "trade_press",
+     "reliability": "medium",
+     "supports": "DRW 'employs about 900 people globally' (Oct 2018); Singapore about 40."
+    },
+    {
+     "id": "S20",
+     "title": "DRW to break into Hong Kong market for first time with new trading desk",
+     "publisher": "The TRADE",
+     "url": "https://www.thetradenews.com/drw-to-break-into-hong-kong-market-for-first-time-with-new-trading-desk/",
+     "date": "2023-07-03",
+     "type": "trade_press",
+     "reliability": "medium",
+     "supports": "'roughly 1700 members of staff globally'; about 60 in Singapore (Jul 2023)."
+    },
+    {
+     "id": "S21",
+     "title": "FIA Hall of Fame: Don Wilson",
+     "publisher": "FIA (Futures Industry Association)",
+     "url": "https://www.fia.org/hall-fame/articles/don-wilson",
+     "date": "undated",
+     "type": "other",
+     "reliability": "medium",
+     "supports": "'DRW employs over 2,000 employees globally' (quote confirmed). The page is undated; the earlier '2025-03' date is unverified."
+    },
+    {
+     "id": "S22",
+     "title": "Who We Are",
+     "publisher": "DRW (drw.com)",
+     "url": "https://www.drw.com/work-at-drw/who-we-are",
+     "date": "2026-10-26",
+     "type": "company_official",
+     "reliability": "medium",
+     "supports": "'over 2,000 employees', '800+ technologists' (undated marketing copy, fetched Oct 2026)."
+    },
+    {
+     "id": "S23",
+     "title": "DRW Holdings Number of Employees",
+     "publisher": "Revelio Labs",
+     "url": "https://www.reveliolabs.com/companies/drw-holdings/employees",
+     "date": "2026-08",
+     "type": "aggregator_or_blog",
+     "reliability": "low",
+     "supports": "LinkedIn-modelled series (Q4 2023 2,067; Q4 2024 2,290; Q4 2025 2,468; Mar 2026 2,528). Biased high; used only as an upper bound."
+    },
+    {
+     "id": "S24",
+     "title": "Top Employer: DRW Canada Co. (Montreal's Top Employers 2026)",
+     "publisher": "Mediacorp Canada / Canada's Top 100 Employers",
+     "url": "https://reviews.canadastop100.com/top-employer-drw-canada",
+     "date": "2026-03-16",
+     "type": "other",
+     "reliability": "medium",
+     "supports": "DRW Canada: 298 full-time and 5 part-time employees (company-supplied, probably 2025 data)."
+    },
+    {
+     "id": "S25",
+     "title": "Prop trading firm DRW is silently stacking up in Singapore",
+     "publisher": "eFinancialCareers",
+     "url": "https://www.efinancialcareers.com.au/news/drw-hiring-singapore",
+     "date": "2025-11-18",
+     "type": "trade_press",
+     "reliability": "low",
+     "supports": "Singapore about 100 people (from about 70 a year earlier) and Hong Kong about 20, per unnamed sources."
+    },
+    {
+     "id": "S26",
+     "title": "SEC v. Cumberland DRW LLC, Complaint, No. 1:24-cv-09842 (N.D. Ill.)",
+     "publisher": "U.S. Securities and Exchange Commission",
+     "url": "https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-168.pdf",
+     "date": "2024-10-10",
+     "type": "primary_filing",
+     "reliability": "medium",
+     "supports": "Cumberland allegedly generated more than $400m of revenue and more than $27m of profit from crypto trading, Mar 2018 to Oct 2024. Cumulative, an allegation, and the case was dismissed with prejudice in Mar 2025. Also states that Cumberland moves positions to a DRW affiliate, so Cumberland entity figures understate the crypto business."
+    },
+    {
+     "id": "S27",
+     "title": "Form 5500 dataset, plan year 2014 (DRW Trading Group 401(k) plan; Chopper Trading LLC 401(k) plan)",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2014/Latest/F_5500_2014_Latest.zip",
+     "date": "2015-08-25",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "DRW US 401(k) active participants at end-2014: 394; Chopper Trading 401(k) active at end-2014: 190."
+    },
+    {
+     "id": "S28",
+     "title": "Form 5500 dataset, plan year 2015 (DRW 401(k) and welfare plans)",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2015/Latest/F_5500_2015_Latest.zip",
+     "date": "2016-08-17",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at end-2015: 497 (welfare plan 517)."
+    },
+    {
+     "id": "S29",
+     "title": "Form 5500 dataset, plan year 2016 (DRW 401(k); RGM Advisors 401(k))",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2016/Latest/F_5500_2016_Latest.zip",
+     "date": "2017-06-22",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at end-2016: 500 (welfare plan 525); RGM Advisors 80 active."
+    },
+    {
+     "id": "S30",
+     "title": "Form 5500 dataset, plan year 2017 (DRW 401(k))",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2017/Latest/F_5500_2017_Latest.zip",
+     "date": "2018-08-14",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at end-2017: 580 (welfare plan 603)."
+    },
+    {
+     "id": "S31",
+     "title": "Form 5500 dataset, plan year 2018 (DRW 401(k))",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2018/Latest/F_5500_2018_Latest.zip",
+     "date": "2019-10-15",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at end-2018: 614 (welfare plan 633)."
+    },
+    {
+     "id": "S32",
+     "title": "Form 5500 dataset, plan year 2019 (DRW 401(k))",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2019/Latest/F_5500_2019_Latest.zip",
+     "date": "2020-08-06",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at end-2019: 688 (welfare plan 676)."
+    },
+    {
+     "id": "S33",
+     "title": "Form 5500 dataset, plan year 2020 (DRW 401(k))",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2020/Latest/F_5500_2020_Latest.zip",
+     "date": "2021-10-11",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at start of plan year 2020: 700; at end-2020: 746 (welfare plan 718)."
+    },
+    {
+     "id": "S34",
+     "title": "Form 5500 dataset, plan year 2021 (DRW 401(k))",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2021/Latest/F_5500_2021_Latest.zip",
+     "date": "2022-10-17",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at end-2021: 826 (welfare plan 800)."
+    },
+    {
+     "id": "S35",
+     "title": "Form 5500 dataset, plan year 2022 (DRW 401(k), amended filing)",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2022/Latest/F_5500_2022_Latest.zip",
+     "date": "2024-10-11",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at end-2022: 967 (welfare plan 938)."
+    },
+    {
+     "id": "S36",
+     "title": "Form 5500 dataset, plan year 2023 (DRW 401(k); welfare plan)",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2023/Latest/F_5500_2023_Latest.zip",
+     "date": "2024-10-11",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at end-2023: 1,174. The welfare plan's 1,725 appears as the end-2023 count and again as the start-2024 count before falling to 1,205 at end-2024, which indicates a change in count basis. Not used."
+    },
+    {
+     "id": "S37",
+     "title": "Form 5500 dataset, plan year 2024 (DRW 401(k); welfare plan)",
+     "publisher": "US Department of Labor (EBSA)",
+     "url": "https://www.askebsa.dol.gov/FOIA%20Files/2024/Latest/F_5500_2024_Latest.zip",
+     "date": "2025-10-15",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "US 401(k) active at end-2024: 1,262 (welfare plan 1,205). Latest available; the plan-year 2025 filing was not in the DOL dataset as of its 30 Sep 2026 update."
+    },
+    {
+     "id": "S38",
+     "title": "DRW UK Partners LLP Report and Financial Statements, year ended 31 March 2016",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzE1OTA2ODYwMWFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2016-10-07",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "UK average staff 32 (FY to Mar-2016), 37 in the prior year; turnover \u00a325.4m (service income)."
+    },
+    {
+     "id": "S39",
+     "title": "DRW UK Partners LLP Report and Financial Statements, year ended 31 March 2017",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzE5MzAzNTMyOGFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2017-12-18",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "UK average staff 38 (FY to Mar-2017)."
+    },
+    {
+     "id": "S40",
+     "title": "DRW UK Partners LLP Report and Financial Statements, year ended 31 March 2018",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzIyMjg4NzY5N2FkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2018-12-24",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "UK average staff 49; wages \u00a311.9m (FY to Mar-2018)."
+    },
+    {
+     "id": "S41",
+     "title": "DRW UK Partners LLP Report and Financial Statements, year ended 31 March 2019",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzI1NDEyNTE3M2FkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2020-01-08",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "UK average staff 58; wages \u00a313.6m; turnover \u00a349.6m (FY to Mar-2019)."
+    },
+    {
+     "id": "S42",
+     "title": "DRW UK Partners LLP Report and Financial Statements, period ended 31 December 2019",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzI4NDk3OTI0NWFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2020-12-03",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "UK average staff 65 (Apr-Dec 2019)."
+    },
+    {
+     "id": "S43",
+     "title": "DRW UK Partners LLP full accounts made up to 31 December 2020",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzMxNDIzMDUyNWFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2021-09-21",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "UK average staff 63; wages \u00a323.1m; turnover \u00a366.6m (2020)."
+    },
+    {
+     "id": "S44",
+     "title": "DRW UK Partners LLP full accounts made up to 31 December 2021",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzM1MzMxNjQ2M2FkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2022-09-29",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "UK average staff 94; total staff costs \u00a337.5m (2021) and \u00a326.6m (2020 comparative); turnover \u00a380.3m."
+    },
+    {
+     "id": "S45",
+     "title": "DRW UK Partners LLP full accounts made up to 31 December 2022",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzM5MTQ2MjQ4OGFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2023-09-05",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "UK average staff 169; wages \u00a384.6m; total staff costs \u00a396.3m; turnover \u00a3175.2m; operating profit \u00a355.5m (members' remuneration \u00a356.0m). Performance fees received: \u00a330,634,679 from members plus \u00a3122,708,428 from other related parties, \u00a3153.3m in total (2021: \u00a367,357,376). Related-party figures verified by reconciler OCR. The note states that DRW Holdings, LLC prepares group consolidated accounts (not public)."
+    },
+    {
+     "id": "S46",
+     "title": "DRW UK Partners LLP full accounts made up to 31 December 2023",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzQzMDg4MzcwMmFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2024-08-06",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "2023 staff costs \u00a376.0m (wages \u00a365.9m); performance fees \u00a386.5m from other related parties plus \u00a316.2m from members, \u00a3102.7m in total (2022 total \u00a3153.3m, not restated); operating profit \u00a35.3m; staff 291 as originally reported (later restated to 244)."
+    },
+    {
+     "id": "S47",
+     "title": "DRW UK Partners LLP full accounts made up to 31 December 2024",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzQ3OTM0NzMxNmFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2025-09-01",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "2024: average staff 322 (75 technology, 80 operations and support, 167 trading); staff costs \u00a3119,424,202; turnover \u00a3171.2m; operating profit \u00a36.2m; performance fees \u00a3135,217,795 from other related parties (2023: \u00a386,487,730). 2023 comparative (verified by reconciler OCR): 244 staff (39/79/126) and staff costs \u00a376,031,909, so the restated headcount and the staff costs are on one basis."
+    },
+    {
+     "id": "S48",
+     "title": "DRW UK Partners LLP Report and Financial Statements, year ended 31 December 2025",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/OC359474/filing-history/MzUzNTQ5NTk4OWFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2026-07-31",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "UK average staff 376 (technology 111, operations 78, trading 187); staff costs \u00a3150.4m; turnover \u00a3202.0m; performance fees \u00a3155.9m (2024 \u00a3135.2m); operating loss \u00a33.5m (transfer-pricing residual)."
+    },
+    {
+     "id": "S49",
+     "title": "DRW Singapore Pte. Ltd. FY2018 financial statements (2017 comparative), Companies House FC036980",
+     "publisher": "UK Companies House (filing by DRW Singapore Pte. Ltd.)",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC036980/filing-history/MzI1MzU4MjI4MmFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2020-01-02",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "Company-only FY2017 total net revenue S$40.3m; profit before tax S$1.6m."
+    },
+    {
+     "id": "S50",
+     "title": "DRW Singapore Pte. Ltd. full accounts made up to 31 December 2019",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC036980/filing-history/MzQzMjE2MDMyNmFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2024-08-28",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "Company-only total net revenue S$83.7m in both 2018 and 2019; profit before tax S$15.9m (2018) and S$1.6m (2019)."
+    },
+    {
+     "id": "S51",
+     "title": "DRW Singapore Pte. Ltd. full accounts made up to 31 December 2021",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC036980/filing-history/MzQzMjE2MDMyOGFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2024-08-28",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "Company-only total net revenue S$195.3m (2020) and S$112.5m (2021); profit before tax S$84.0m and S$24.8m."
+    },
+    {
+     "id": "S52",
+     "title": "DRW Singapore Pte. Ltd. full accounts made up to 31 December 2022",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC036980/filing-history/MzQzMjE2MDMyOWFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2024-08-28",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "Company-only 2022 total net revenue S$269.4m (grossed up with interest income); profit before tax S$70.4m."
+    },
+    {
+     "id": "S53",
+     "title": "DRW Singapore Pte. Ltd. full accounts made up to 31 December 2023",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC036980/filing-history/MzQzMjE2MDMzMGFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2024-08-28",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "Original 2023 total net revenue S$408.8m, including S$291.8m interest income offset by S$291.9m finance costs (the source of the FT's '$312mn'); profit before tax S$47.7m."
+    },
+    {
+     "id": "S54",
+     "title": "DRW Singapore Pte. Ltd. financial statements FY2024 (2023 restated)",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC036980/filing-history/MzQ2NjU4NzQ4MWFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2025-05-27",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "2023 restated to S$121.2m; 2024 total net revenue S$252.5m including a S$92.9m subsidiary dividend; profit before tax S$91.3m; fair-value gains S$105.2m; service fees S$51.5m."
+    },
+    {
+     "id": "S55",
+     "title": "DRW Singapore Pte. Ltd. financial statements, year ended 31 December 2025",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/FC036980/filing-history/MzUzNDM5MzMyN2FkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2026-07-30",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "2025 total net revenue S$149.3m; fair-value trading gains S$46.2m (-56%); service fee income from related parties S$96.3m (2024 S$51.5m); related-party net trading gains S$1.65bn (2024 nil), indicating a booking change; profit before tax S$21.1m; employee costs S$58.2m (+32%). Functional currency SGD."
+    },
+    {
+     "id": "S56",
+     "title": "DRW Investments (UK) Limited annual report FY2025",
+     "publisher": "UK Companies House",
+     "url": "https://find-and-update.company-information.service.gov.uk/company/02329842/filing-history/MzUxNDMxMzIxNWFkaXF6a2N4/document?format=pdf&download=0",
+     "date": "2026-04-13",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "Revenue \u00a30.32m after a \u00a320.5m group transfer-pricing adjustment; no employees. Shows that UK trading-entity results are swept by transfer pricing."
+    },
+    {
+     "id": "S57",
+     "title": "Bitcoin's Trading Star Is Chicago High-Speed Firm That Nods to the Grateful Dead",
+     "publisher": "Wall Street Journal (reprinted on cumberland.io)",
+     "url": "https://cumberland.io/news/bitcoins-trading-star-is-chicago-high-speed-firm-that-nods-to-the-grateful-dead",
+     "date": "2017-12-04",
+     "type": "top_tier_press",
+     "reliability": "low",
+     "supports": "Cumberland (company-reported) traded more than $20bn of crypto in the prior year. Volume, not revenue; seen in a snippet only."
+    },
+    {
+     "id": "S58",
+     "title": "Exchange Traded Funds (ETFs)",
+     "publisher": "DRW (drw.com)",
+     "url": "https://www.drw.com/access-our-liquidity/exchange-traded-funds",
+     "date": "2026",
+     "type": "company_official",
+     "reliability": "medium",
+     "supports": "$1.9 trillion of DRW ETF trading volume in 2025 (volume only)."
+    },
+    {
+     "id": "S59",
+     "title": "DRW Trading Group (Wikipedia infobox, citing Financial News 2025-09-03)",
+     "publisher": "Wikipedia / Financial News",
+     "url": "https://en.wikipedia.org/wiki/DRW_Trading_Group",
+     "date": "2025-09-03",
+     "type": "aggregator_or_blog",
+     "reliability": "low",
+     "supports": "Number of employees 2,000 (2025); the underlying Financial News article was not accessed."
+    },
+    {
+     "id": "S60",
+     "title": "DRW Trading Group - 2026 Company Profile",
+     "publisher": "Tracxn",
+     "url": "https://tracxn.com/d/companies/drw-trading-group/__OyiIg9Z7wHs1VkJkZz7_BaOGYuD-f4SpOpKAA3_CuQs",
+     "date": "2026-09-30",
+     "type": "aggregator_or_blog",
+     "reliability": "low",
+     "supports": "Employee count 2,500 as of Sep 2026 (method unknown; upper bound only)."
+    },
+    {
+     "id": "S61",
+     "title": "DRW company profile",
+     "publisher": "Built In",
+     "url": "https://builtin.com/company/drw",
+     "date": "2026-10-26",
+     "type": "aggregator_or_blog",
+     "reliability": "low",
+     "supports": "'1,825 Total Employees' (undated, likely stale)."
+    },
+    {
+     "id": "S62",
+     "title": "DRW Holdings LLC Company Profile: Financials, Valuation, and Growth",
+     "publisher": "PrivCo",
+     "url": "https://www.privco.com/company/drw-securities-llc",
+     "date": "2026",
+     "type": "aggregator_or_blog",
+     "reliability": "low",
+     "supports": "REJECTED: revenue of $65m (2020), $120m (2021), $90m (2022), $250m (2023). Contradicted by DRWI's primary accounts and Bloomberg; probably a broker-dealer or modelled figure."
+    },
+    {
+     "id": "S63",
+     "title": "High-Frequency Trading & Prop Trading Firms (Tier 1 table)",
+     "publisher": "algotradingmap.com",
+     "url": "https://algotradingmap.com/categories/hft",
+     "date": "2026",
+     "type": "aggregator_or_blog",
+     "reliability": "low",
+     "supports": "REJECTED: undated, unsourced '~$5,000M Revenue' and '~1,000' employees; likely AI or SEO content."
+    },
+    {
+     "id": "S64",
+     "title": "Virtu Announces First Quarter 2026 Results (8-K Ex. 99.1)",
+     "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000012/exhibit991q126.htm",
+     "date": "2026-04-29",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "Peer regime: 'Adjusted Net Trading Income increased 58.2% to $786.5 million for this quarter, compared to $497.1 million' (Q1 2026; verified by reconciler fetch)."
+    },
+    {
+     "id": "S65",
+     "title": "Virtu Announces Fourth Quarter 2025 Results (8-K Ex. 99.1)",
+     "publisher": "Virtu Financial Inc. (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1592386/000159238626000003/exhibit991q425.htm",
+     "date": "2026-01-29",
+     "type": "primary_filing",
+     "reliability": "high",
+     "supports": "Peer regime: Virtu FY2025 ANTI $2,145.3m vs $1,597.7m in 2024 (+34%), per the consistency critic and the project's Virtu table."
+    },
+    {
+     "id": "S66",
+     "title": "Optiver Holding B.V. Annual Report 2025",
+     "publisher": "Optiver",
+     "url": "https://fchsja.files.cmp.optimizely.com/download/1112f87c587b11f1a206962f76febc3d",
+     "date": "2026-03-31",
+     "type": "company_official",
+     "reliability": "high",
+     "supports": "Peer regime: Optiver 2025 net trading income about $5.15bn vs $3.78bn in 2024 (+36%), per the project's Optiver table."
+    },
+    {
+     "id": "S67",
+     "title": "IMC GH LLC Annual Report 2025",
+     "publisher": "IMC Global Holdings LLC",
+     "url": "https://cdn.sanity.io/files/l1io23s3/production/42a83890cf5d1735090e988ba91a595c889e8d09.pdf",
+     "date": "2026-03-25",
+     "type": "company_official",
+     "reliability": "high",
+     "supports": "Peer regime: IMC 2025 net trading revenue about $3,120m vs $2,235m in 2024 (+40%), per the project's IMC table."
+    },
+    {
+     "id": "S68",
+     "title": "Citadel Securities Nets Record $12 Billion Trading Haul",
+     "publisher": "Bloomberg News (via Bloomberg Government)",
+     "url": "https://news.bgov.com/international-trade/citadel-securities-nets-record-12-billion-trading-haul-1",
+     "date": "2026-03-24",
+     "type": "top_tier_press",
+     "reliability": "medium",
+     "supports": "Peer regime: Citadel Securities 2025 net trading revenue about $12.2bn vs $9.7bn (+26%)."
+    },
+    {
+     "id": "S69",
+     "title": "Citadel Securities posts record $4.3 billion trading revenue",
+     "publisher": "Investing.com (citing Bloomberg)",
+     "url": "https://in.investing.com/news/economy-news/citadel-securities-posts-record-43-billion-trading-revenue-93CH-5432220",
+     "date": "2026-05-29",
+     "type": "trade_press",
+     "reliability": "medium",
+     "supports": "Peer regime: Citadel Securities Q1 2026 trading revenue $4.3bn, up 28%."
+    },
+    {
+     "id": "S70",
+     "title": "Hudson River Trading Notches Record $6.4 Billion Quarterly Markets Haul",
+     "publisher": "Bloomberg News",
+     "url": "https://www.bloomberg.com/news/articles/2026-05-11/hudson-river-trading-notches-record-6-4-billion-quarterly-markets-haul",
+     "date": "2026-05-11",
+     "type": "top_tier_press",
+     "reliability": "medium",
+     "supports": "Peer regime: HRT Q1 2026 net trading revenue about $6.4bn (record)."
+    },
+    {
+     "id": "S71",
+     "title": "Optiver reports solid results in 2019",
+     "publisher": "Optiver (press release)",
+     "url": "https://optiver.com/optiver-reports-solid-results-in-2019/",
+     "date": "2020-04-16",
+     "type": "company_official",
+     "reliability": "high",
+     "supports": "Peer regime 2017-2019: Optiver 2019 lower than 2018 (project table: $919m, $1,535m, $1,269m)."
+    },
+    {
+     "id": "S72",
+     "title": "Inkomsten en winst beurshandelaar IMC gedaald, dividend van \u20ac71 miljoen is doekje voor het bloeden",
+     "publisher": "Quote (quotenet.nl)",
+     "url": "https://www.quotenet.nl/financien/beurs/a32312291/inkomsten-en-winst-beurshandelaar-imc-gedaald-dividend-van-euro71-miljoen-is-doekje-voor-het-bloeden/",
+     "date": "2020-04-29",
+     "type": "trade_press",
+     "reliability": "medium",
+     "supports": "Peer regime: IMC 2019 income and profit fell from 2018 (project table: $417m, $709m, $520m for 2017-2019)."
+    },
+    {
+     "id": "S73",
+     "title": "Optiver Annual Review 2023",
+     "publisher": "Optiver",
+     "url": "https://fchsja.files.cmp.optimizely.com/download/1065907e587b11f1b0b4c64d56670ec3",
+     "date": "2024-04-03",
+     "type": "company_official",
+     "reliability": "high",
+     "supports": "Peer regime 2023: Optiver net trading income down from 2022 (project table: $3,464m to $2,998m)."
+    },
+    {
+     "id": "S74",
+     "title": "IMC Annual Report 2023",
+     "publisher": "IMC B.V.",
+     "url": "https://cdn.sanity.io/files/l1io23s3/production/230602f0997010ebbc22337f140fc0532656e731.pdf",
+     "date": "2024-03-14",
+     "type": "company_official",
+     "reliability": "high",
+     "supports": "Peer regime 2023: IMC net trading income down from 2022 (project table: $1,645m to $1,367m)."
     }
    ]
   }
